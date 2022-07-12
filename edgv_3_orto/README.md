@@ -37,3 +37,9 @@ Organização dos dados:
 - camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
 - tol: 0.00001 grau
 - nome camada flags: flag_vertice_nao_compartilhado_em_seg_compartilhado
+
+## 7. Identificar Vérfice Próximo de Aresta (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_vertice_proximo_de_aresta_alt_hid_carta_orto.model3
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
+- tol: 0.00001 grau
+- nome camada flags: flag_vertice_proximo_aresta
