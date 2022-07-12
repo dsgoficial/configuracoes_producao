@@ -56,7 +56,7 @@
         <Option type="List" name="ALG_NAME">
           <Option type="Map">
             <Option value="2" type="int" name="source"/>
-            <Option value="dsgtools:identifyvertexnearedge" type="QString" name="static_value"/>
+            <Option value="dsgtools:identifyvertexnearedges" type="QString" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="INPUTLAYERS">
@@ -86,7 +86,20 @@
       </Option>
     </Option>
   </Option>
-  <Option name="designerParameterValues"/>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="dsgtools:batchrunalgorithm_1:flag_vertice_proximo_aresta">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="System" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option name="modelVariables"/>
