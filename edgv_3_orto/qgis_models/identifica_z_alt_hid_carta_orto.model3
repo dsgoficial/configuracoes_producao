@@ -1,0 +1,126 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="dsgtools:batchrunalgorithm_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="115" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Batch Run Algorithm" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="268" type="double" name="component_pos_x"/>
+      <Option value="100" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:batchrunalgorithm_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="flag_z">
+          <Option value="dsgtools:batchrunalgorithm_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="flag_z" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="431" type="double" name="component_pos_x"/>
+          <Option value="218" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="flag_z" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ALG_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="dsgtools:identifyzanglesbetweenfeatures" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="INPUT" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="OUTPUT" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PARAMETER_DICT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="{&#xa;    &quot;ANGLE&quot;: 300,&#xa;    &quot;OUTPUT&quot;: &quot;TEMPORARY_OUTPUT&quot;&#xa;}" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="dsgtools:batchrunalgorithm_1:flag_densidade_incorreta_vertices">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="System" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="EDGV 3.0 Orto" type="QString" name="model_group"/>
+  <Option value="Identificar Z (Altimetria e Hidrografia) Carta Orto" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="dsgtools:batchrunalgorithm_1:flag_z">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="flag_z" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="dsgtools:batchrunalgorithm_1:flag_z" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>

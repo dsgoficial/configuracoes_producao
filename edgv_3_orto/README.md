@@ -43,3 +43,31 @@ Organização dos dados:
 - camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
 - tol: 0.00001 grau
 - nome camada flags: flag_vertice_proximo_aresta
+
+## 8. Identificar Geometrias com Densidade Incorreta de Vértices (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_geometrias_com_densidade_incorreta_de_vertices_alt_hid_carta_orto.model3
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
+- tol: 0.00001 grau
+- nome camada flags: flag_densidade_incorreta_vertices
+
+## 9. Identificar Ângulos Pequenos (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_angulos_pequenos_alt_hid_carta_orto.model3
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
+- tol: 40 graus
+- nome camada flags: flag_angulo_pequeno
+
+## 10. Identificar Ângulos Pequenos Entre Camadas (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_angulos_pequenos_entre_camadas_alt_hid_carta_orto.model3
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,infra_barragem_l
+- tol: 10 graus
+- nome camada flags: flag_angulo_pequeno_entre_camadas
+
+## 10. Identificar Z (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_z_alt_hid_carta_orto.model3
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
+- nome camada flags: flag_z
+
+## 11. Rotinas Validade de Vértices (Altimetria e Hidrografia) Carta Orto
+- arquivo: rotinas_validade_de_vertices_alt_hid.model3
+- descrição: rotina que consolida as rotinas 5 a 10. Serve para rodar fora do workflow ou encapsular em alguns casos do workflow.
+- nome camada flags: flags_validade_vertices
