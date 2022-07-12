@@ -1,0 +1,240 @@
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="dsgtools:exportToMemoryLayer_1" type="Map">
+      <Option name="active" type="bool" value="true" />
+      <Option name="alg_config" />
+      <Option name="alg_id" type="QString" value="dsgtools:exportToMemoryLayer" />
+      <Option name="color" type="QString" value="" />
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value="" />
+        <Option name="component_description" type="QString" value="" />
+        <Option name="component_height" type="double" value="60" />
+        <Option name="component_pos_x" type="double" value="561" />
+        <Option name="component_pos_y" type="double" value="458" />
+        <Option name="component_width" type="double" value="100" />
+        <Option name="outputs_collapsed" type="bool" value="true" />
+        <Option name="parameters_collapsed" type="bool" value="true" />
+      </Option>
+      <Option name="component_description" type="QString" value="Export To Memory Layer (works only on models)" />
+      <Option name="component_height" type="double" value="30" />
+      <Option name="component_pos_x" type="double" value="512" />
+      <Option name="component_pos_y" type="double" value="459" />
+      <Option name="component_width" type="double" value="200" />
+      <Option name="dependencies" />
+      <Option name="id" type="QString" value="dsgtools:exportToMemoryLayer_1" />
+      <Option name="outputs" />
+      <Option name="outputs_collapsed" type="bool" value="true" />
+      <Option name="parameters_collapsed" type="bool" value="true" />
+      <Option name="params" type="Map">
+        <Option name="INPUT_LAYER" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="dsgtools:identifydangles_1" />
+            <Option name="output_name" type="QString" value="FLAGS" />
+            <Option name="source" type="int" value="1" />
+          </Option>
+        </Option>
+        <Option name="OUTPUT_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="QString" value="pontas_livre" />
+          </Option>
+        </Option>
+        <Option name="OUTPUT_QML_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="QString" value="" />
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:identifydangles_1" type="Map">
+      <Option name="active" type="bool" value="true" />
+      <Option name="alg_config" />
+      <Option name="alg_id" type="QString" value="dsgtools:identifydangles" />
+      <Option name="color" type="QString" value="" />
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value="" />
+        <Option name="component_description" type="QString" value="" />
+        <Option name="component_height" type="double" value="60" />
+        <Option name="component_pos_x" type="double" value="561" />
+        <Option name="component_pos_y" type="double" value="217" />
+        <Option name="component_width" type="double" value="100" />
+        <Option name="outputs_collapsed" type="bool" value="true" />
+        <Option name="parameters_collapsed" type="bool" value="true" />
+      </Option>
+      <Option name="component_description" type="QString" value="Identify Dangles" />
+      <Option name="component_height" type="double" value="30" />
+      <Option name="component_pos_x" type="double" value="499" />
+      <Option name="component_pos_y" type="double" value="328" />
+      <Option name="component_width" type="double" value="200" />
+      <Option name="dependencies" />
+      <Option name="id" type="QString" value="dsgtools:identifydangles_1" />
+      <Option name="outputs" />
+      <Option name="outputs_collapsed" type="bool" value="true" />
+      <Option name="parameters_collapsed" type="bool" value="true" />
+      <Option name="params" type="Map">
+        <Option name="IGNOREINNER" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="bool" value="false" />
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:mergevectorlayers_1" />
+            <Option name="output_name" type="QString" value="OUTPUT" />
+            <Option name="source" type="int" value="1" />
+          </Option>
+        </Option>
+        <Option name="LINEFILTERLAYERS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="invalid" />
+          </Option>
+        </Option>
+        <Option name="POLYGONFILTERLAYERS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="invalid" />
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="bool" value="false" />
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="Raiodebusca" />
+            <Option name="source" type="int" value="0" />
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="bool" value="true" />
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_1" type="Map">
+      <Option name="active" type="bool" value="true" />
+      <Option name="alg_config" />
+      <Option name="alg_id" type="QString" value="native:mergevectorlayers" />
+      <Option name="color" type="QString" value="" />
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value="" />
+        <Option name="component_description" type="QString" value="" />
+        <Option name="component_height" type="double" value="60" />
+        <Option name="component_pos_x" type="double" value="548" />
+        <Option name="component_pos_y" type="double" value="134" />
+        <Option name="component_width" type="double" value="100" />
+        <Option name="outputs_collapsed" type="bool" value="true" />
+        <Option name="parameters_collapsed" type="bool" value="true" />
+      </Option>
+      <Option name="component_description" type="QString" value="Merge vector layers" />
+      <Option name="component_height" type="double" value="30" />
+      <Option name="component_pos_x" type="double" value="494" />
+      <Option name="component_pos_y" type="double" value="196" />
+      <Option name="component_width" type="double" value="200" />
+      <Option name="dependencies" />
+      <Option name="id" type="QString" value="native:mergevectorlayers_1" />
+      <Option name="outputs" />
+      <Option name="outputs_collapsed" type="bool" value="true" />
+      <Option name="parameters_collapsed" type="bool" value="true" />
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2" />
+            <Option name="static_value" type="invalid" />
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="Camadaslinha" />
+            <Option name="source" type="int" value="0" />
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" />
+  <Option name="groupBoxes" />
+  <Option name="help" />
+  <Option name="modelVariables" />
+  <Option name="model_group" type="QString" value="missoes" />
+  <Option name="model_name" type="QString" value="Identifica ponta livre entre camadas" />
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="Camadaslinha" type="Map">
+      <Option name="default" type="invalid" />
+      <Option name="defaultGui" type="invalid" />
+      <Option name="description" type="QString" value="Camadas linha" />
+      <Option name="flags" type="int" value="0" />
+      <Option name="help" type="QString" value="" />
+      <Option name="layer_type" type="int" value="1" />
+      <Option name="metadata" />
+      <Option name="min_inputs" type="int" value="0" />
+      <Option name="name" type="QString" value="Camadaslinha" />
+      <Option name="parameter_type" type="QString" value="multilayer" />
+    </Option>
+    <Option name="Raiodebusca" type="Map">
+      <Option name="data_type" type="int" value="1" />
+      <Option name="default" type="double" value="2" />
+      <Option name="defaultGui" type="invalid" />
+      <Option name="description" type="QString" value="Raio de busca" />
+      <Option name="flags" type="int" value="0" />
+      <Option name="help" type="QString" value="" />
+      <Option name="max" type="double" value="1.7976931348623157e+308" />
+      <Option name="metadata" />
+      <Option name="min" type="double" value="0" />
+      <Option name="name" type="QString" value="Raiodebusca" />
+      <Option name="parameter_type" type="QString" value="number" />
+    </Option>
+  </Option>
+  <Option name="parameterOrder" />
+  <Option name="parameters" type="Map">
+    <Option name="Camadaslinha" type="Map">
+      <Option name="color" type="QString" value="" />
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value="" />
+        <Option name="component_description" type="QString" value="" />
+        <Option name="component_height" type="double" value="60" />
+        <Option name="component_pos_x" type="double" value="309" />
+        <Option name="component_pos_y" type="double" value="42" />
+        <Option name="component_width" type="double" value="100" />
+        <Option name="outputs_collapsed" type="bool" value="true" />
+        <Option name="parameters_collapsed" type="bool" value="true" />
+      </Option>
+      <Option name="component_description" type="QString" value="Camadaslinha" />
+      <Option name="component_height" type="double" value="30" />
+      <Option name="component_pos_x" type="double" value="499" />
+      <Option name="component_pos_y" type="double" value="76" />
+      <Option name="component_width" type="double" value="200" />
+      <Option name="name" type="QString" value="Camadaslinha" />
+      <Option name="outputs_collapsed" type="bool" value="true" />
+      <Option name="parameters_collapsed" type="bool" value="true" />
+    </Option>
+    <Option name="Raiodebusca" type="Map">
+      <Option name="color" type="QString" value="" />
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value="" />
+        <Option name="component_description" type="QString" value="" />
+        <Option name="component_height" type="double" value="60" />
+        <Option name="component_pos_x" type="double" value="919" />
+        <Option name="component_pos_y" type="double" value="15" />
+        <Option name="component_width" type="double" value="100" />
+        <Option name="outputs_collapsed" type="bool" value="true" />
+        <Option name="parameters_collapsed" type="bool" value="true" />
+      </Option>
+      <Option name="component_description" type="QString" value="Raiodebusca" />
+      <Option name="component_height" type="double" value="30" />
+      <Option name="component_pos_x" type="double" value="198" />
+      <Option name="component_pos_y" type="double" value="252" />
+      <Option name="component_width" type="double" value="200" />
+      <Option name="name" type="QString" value="Raiodebusca" />
+      <Option name="outputs_collapsed" type="bool" value="true" />
+      <Option name="parameters_collapsed" type="bool" value="true" />
+    </Option>
+  </Option>
+</Option>
