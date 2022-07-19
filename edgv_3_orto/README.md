@@ -29,12 +29,12 @@ Organização dos dados:
 
 ## 5. Identificar Vérfice Não Compartilhado nas Intersecções (Altimetria e Hidrografia) Carta Orto
 - arquivo: identifica_vertice_nao_compartilhado_nas_interseccoes_alt_hid_carta_orto.model3
-- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
 - nome camada flags: flag_vertice_nao_compartilhado
 
 ## 6. Identificar Vérfice Não Compartilhado nos Segmentos Compartilhados (Altimetria e Hidrografia) Carta Orto
 - arquivo: identifica_vertice_nao_compartilhado_nos_segmentos_compartilhados_alt_hid_carta_orto.model3
-- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
 - tol: 0.00001 grau
 - nome camada flags: flag_vertice_nao_compartilhado_em_seg_compartilhado
 
@@ -53,7 +53,7 @@ Organização dos dados:
 ## 9. Identificar Ângulos Pequenos (Altimetria e Hidrografia) Carta Orto
 - arquivo: identifica_angulos_pequenos_alt_hid_carta_orto.model3
 - camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l
-- tol: 40 graus
+- tol: 10 graus
 - nome camada flags: flag_angulo_pequeno
 
 ## 10. Identificar Ângulos Pequenos Entre Camadas (Altimetria e Hidrografia) Carta Orto
@@ -71,3 +71,7 @@ Organização dos dados:
 - arquivo: rotinas_validade_de_vertices_alt_hid.model3
 - descrição: rotina que consolida as rotinas 5 a 10. Serve para rodar fora do workflow ou encapsular em alguns casos do workflow.
 - nome camada flags: flags_validade_vertices
+
+## 12. Identificar Overlaps Dentro da Mesma Camada (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_overlaps_linhas_alt_hid_carta_orto.model3
+- nome camada flags: flags_overlaps_l, flags_overlaps_a
