@@ -88,4 +88,21 @@ Organização dos dados:
 - camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
-- nome camada flags: flags_undershoot_e_desconectadas
+- nome camada flags: flags_linhas_nao_unidas
+
+## 15. Identificar Linhas Não Segmentadas nas Intersecções (Altimetria e Hidrografia) Carta Orto
+- arquivo: identificar_linhas_nao_segmentadas_nas_interseccoes_alt_hid.model3
+- camadas: elemnat_trecho_drenagem_l
+- camadas filtro linha: aquisicao_limite_massa_dagua_l,infra_barragem_l,infra_barragem_l
+- nome camada flags: flags_drenagens_nao_segmentadas
+## 16. Identificar Elementos Pequenos na Rede (Altimetria e Hidrografia) Carta Orto
+- arquivo: identificar_elementos_pequenos_na_rede.model3
+- camada: elemnat_trecho_drenagem_l
+- tamanho: 100 m (0.001 grau)
+
+## 17. Identificar Erros na Construção da Rede de Drenagem (Altimetria e Hidrografia) Carta Orto
+- arquivo: identificar_erros_rede_drenagem.model3
+- camadas: elemnat_trecho_drenagem_l
+- camadas filtro linha: aquisicao_limite_massa_dagua_l,infra_barragem_l,infra_barragem_l
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
+- nome camada flags: flags_rede_drenagem
