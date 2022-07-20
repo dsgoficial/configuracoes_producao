@@ -106,3 +106,21 @@ Organização dos dados:
 - camadas filtro linha: aquisicao_limite_massa_dagua_l,infra_barragem_l,infra_barragem_l
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
 - nome camada flags: flags_rede_drenagem
+
+## 18. Identificar Erros na Construção das Curvas de Nível (Altimetria e Hidrografia) Carta Orto
+- arquivos:
+    - identificar_erros_na_construcao_das_curvas_de_nivel_25k.model3
+    - identificar_erros_na_construcao_das_curvas_de_nivel_50k.model3
+    - identificar_erros_na_construcao_das_curvas_de_nivel_100k.model3
+    - identificar_erros_na_construcao_das_curvas_de_nivel_250k.model3
+- camadas: elemnat_curva_nivel_l
+- equidistancias:
+    - 25k: 10
+    - 50k: 20
+    - 100k: 40
+    - 250k: 100
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
+- nome camada flags: flags_modelo_p, flags_modelo_l, flags_modelo_a
+- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
+
+## 19. Fechar Polígonos de Massa D'água (Altimetria e Hidrografia) Carta Orto
