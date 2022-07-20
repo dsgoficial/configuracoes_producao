@@ -99,6 +99,7 @@ Organização dos dados:
 - arquivo: identificar_elementos_pequenos_na_rede.model3
 - camada: elemnat_trecho_drenagem_l
 - tamanho: 1000 m (0.01 grau)
+- nome camada flags: flags_linhas_pequenas
 
 ## 17. Identificar Erros na Construção da Rede de Drenagem (Altimetria e Hidrografia) Carta Orto
 - arquivo: identificar_erros_rede_drenagem.model3
