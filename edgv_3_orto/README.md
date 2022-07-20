@@ -75,3 +75,8 @@ Organização dos dados:
 ## 12. Identificar Overlaps Dentro da Mesma Camada (Altimetria e Hidrografia) Carta Orto
 - arquivo: identifica_overlaps_linhas_alt_hid_carta_orto.model3
 - nome camada flags: flags_overlaps_l, flags_overlaps_a
+
+## 13. Identificar Undershoot com Moldura e Conexão de Linhas (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_undershoot_moldura_conexao_linhas_alt_hid.model3
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,infra_barragem_l
+- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
