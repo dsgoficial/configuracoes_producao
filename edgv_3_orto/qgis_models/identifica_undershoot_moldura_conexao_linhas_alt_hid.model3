@@ -37,7 +37,7 @@
         <Option name="IGNORE_DANGLES_ON_UNSEGMENTED_LINES" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="static_value" value="true" type="bool"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
@@ -115,7 +115,7 @@
         <Option name="IGNORE_DANGLES_ON_UNSEGMENTED_LINES" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="static_value" value="true" type="bool"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
@@ -193,7 +193,7 @@
         <Option name="IGNORE_DANGLES_ON_UNSEGMENTED_LINES" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="static_value" value="true" type="bool"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
@@ -271,7 +271,7 @@
         <Option name="IGNORE_DANGLES_ON_UNSEGMENTED_LINES" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="static_value" value="true" type="bool"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
@@ -430,7 +430,20 @@
       </Option>
     </Option>
   </Option>
-  <Option name="designerParameterValues"/>
+  <Option name="designerParameterValues" type="Map">
+    <Option name="native:mergevectorlayers_1:flags_undershoot_e_desconectadas" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="System" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option name="modelVariables"/>
