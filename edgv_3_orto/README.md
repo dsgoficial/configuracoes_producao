@@ -80,3 +80,12 @@ Organização dos dados:
 - arquivo: identifica_undershoot_moldura_conexao_linhas_alt_hid.model3
 - camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,infra_barragem_l
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
+- nome camada flags: flags_overlaps_l, flags_overlaps_a
+
+## 14. Identificar Linhas Segmentadas com Mesmo Conjunto de Atributos (Altimetria e Hidrografia) Carta Orto
+- arquivo: identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos.model3
+- descrição: não roda em curva de nível, pois elas são intencionalmente cortadas.
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l
+- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
+- nome camada flags: flags_undershoot_e_desconectadas
