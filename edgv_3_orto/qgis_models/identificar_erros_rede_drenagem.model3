@@ -201,7 +201,7 @@
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="aux_moldura_area_continua_a,aux_moldura_a,moldura" type="QString"/>
+            <Option name="static_value" value="aux_moldura_a,moldura,aux_moldura_area_continua_a" type="QString"/>
           </Option>
         </Option>
       </Option>

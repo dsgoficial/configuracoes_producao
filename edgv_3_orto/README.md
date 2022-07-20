@@ -124,3 +124,5 @@ Organização dos dados:
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 
 ## 19. Fechar Polígonos de Massa D'água (Altimetria e Hidrografia) Carta Orto
+- arquivo: fechar_poligonos_massa_dagua.model3
+- camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
