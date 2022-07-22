@@ -199,8 +199,8 @@
                 "onFlagsRaised": "halt",
                 "loadOutput": true,
                 "flagLayerNames": [
-                    "flags_overlaps_l",
-                    "flags_overlaps_a"
+                    "flags_undershoot_l",
+                    "flags_undershoot_a"
                 ]
             },
             "source": {
@@ -321,6 +321,6 @@
     "metadata": {
         "author": "Cap Borba",
         "version": "0.1",
-        "lastModified": "20/07/2022 16:40:44"
+        "lastModified": "22/07/2022 13:49:51"
     }
 }

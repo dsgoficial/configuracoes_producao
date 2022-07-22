@@ -1,185 +1,185 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option type="Map" name="children">
-    <Option type="Map" name="dsgtools:batchrunalgorithm_1">
-      <Option type="bool" value="true" name="active"/>
+  <Option name="children" type="Map">
+    <Option name="dsgtools:batchrunalgorithm_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="dsgtools:batchrunalgorithm" name="alg_id"/>
-      <Option type="QString" value="" name="color"/>
-      <Option type="Map" name="comment">
-        <Option type="QString" value="" name="color"/>
-        <Option type="QString" value="" name="component_description"/>
-        <Option type="double" value="60" name="component_height"/>
-        <Option type="double" value="320" name="component_pos_x"/>
-        <Option type="double" value="115" name="component_pos_y"/>
-        <Option type="double" value="100" name="component_width"/>
-        <Option type="bool" value="true" name="outputs_collapsed"/>
-        <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option name="alg_id" type="QString" value="dsgtools:batchrunalgorithm"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="320"/>
+        <Option name="component_pos_y" type="double" value="115"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option type="QString" value="identifica overlaps linha" name="component_description"/>
-      <Option type="double" value="30" name="component_height"/>
-      <Option type="double" value="215" name="component_pos_x"/>
-      <Option type="double" value="86" name="component_pos_y"/>
-      <Option type="double" value="200" name="component_width"/>
+      <Option name="component_description" type="QString" value="identifica overlaps linha"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="215"/>
+      <Option name="component_pos_y" type="double" value="86"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="dsgtools:batchrunalgorithm_1" name="id"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="flags_overlaps_l">
-          <Option type="QString" value="dsgtools:batchrunalgorithm_1" name="child_id"/>
-          <Option type="QString" value="" name="color"/>
-          <Option type="Map" name="comment">
-            <Option type="QString" value="" name="color"/>
-            <Option type="QString" value="" name="component_description"/>
-            <Option type="double" value="60" name="component_height"/>
-            <Option type="double" value="0" name="component_pos_x"/>
-            <Option type="double" value="0" name="component_pos_y"/>
-            <Option type="double" value="100" name="component_width"/>
-            <Option type="bool" value="true" name="outputs_collapsed"/>
-            <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option name="id" type="QString" value="dsgtools:batchrunalgorithm_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_overlaps_l" type="Map">
+          <Option name="child_id" type="QString" value="dsgtools:batchrunalgorithm_1"/>
+          <Option name="color" type="QString" value=""/>
+          <Option name="comment" type="Map">
+            <Option name="color" type="QString" value=""/>
+            <Option name="component_description" type="QString" value=""/>
+            <Option name="component_height" type="double" value="60"/>
+            <Option name="component_pos_x" type="double" value="0"/>
+            <Option name="component_pos_y" type="double" value="0"/>
+            <Option name="component_width" type="double" value="100"/>
+            <Option name="outputs_collapsed" type="bool" value="true"/>
+            <Option name="parameters_collapsed" type="bool" value="true"/>
           </Option>
-          <Option type="QString" value="flags_overlaps_l" name="component_description"/>
-          <Option type="double" value="30" name="component_height"/>
-          <Option type="double" value="415" name="component_pos_x"/>
-          <Option type="double" value="131" name="component_pos_y"/>
-          <Option type="double" value="200" name="component_width"/>
-          <Option type="invalid" name="default_value"/>
-          <Option type="bool" value="false" name="mandatory"/>
-          <Option type="QString" value="flags_overlaps_l" name="name"/>
-          <Option type="QString" value="OUTPUT" name="output_name"/>
-          <Option type="bool" value="true" name="outputs_collapsed"/>
-          <Option type="bool" value="true" name="parameters_collapsed"/>
+          <Option name="component_description" type="QString" value="flags_overlaps_l"/>
+          <Option name="component_height" type="double" value="30"/>
+          <Option name="component_pos_x" type="double" value="415"/>
+          <Option name="component_pos_y" type="double" value="131"/>
+          <Option name="component_width" type="double" value="200"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="flags_overlaps_l"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+          <Option name="outputs_collapsed" type="bool" value="true"/>
+          <Option name="parameters_collapsed" type="bool" value="true"/>
         </Option>
       </Option>
-      <Option type="bool" value="true" name="outputs_collapsed"/>
-      <Option type="bool" value="true" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="dsgtools:identifyoverlaps" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="dsgtools:identifyoverlaps"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,infra_barragem_l,elemnat_elemento_hidrografico_l" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,infra_barragem_l,elemnat_elemento_hidrografico_l"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="INPUT" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="INPUT"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="FLAGS" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="FLAGS"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;: &quot;TEMPORARY_OUTPUT&quot;&#xa;}" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;: &quot;TEMPORARY_OUTPUT&quot;&#xa;}"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="dsgtools:batchrunalgorithm_2">
-      <Option type="bool" value="true" name="active"/>
+    <Option name="dsgtools:batchrunalgorithm_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="dsgtools:batchrunalgorithm" name="alg_id"/>
-      <Option type="QString" value="" name="color"/>
-      <Option type="Map" name="comment">
-        <Option type="QString" value="" name="color"/>
-        <Option type="QString" value="" name="component_description"/>
-        <Option type="double" value="60" name="component_height"/>
-        <Option type="double" value="473" name="component_pos_x"/>
-        <Option type="double" value="290" name="component_pos_y"/>
-        <Option type="double" value="100" name="component_width"/>
-        <Option type="bool" value="true" name="outputs_collapsed"/>
-        <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option name="alg_id" type="QString" value="dsgtools:batchrunalgorithm"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="473"/>
+        <Option name="component_pos_y" type="double" value="290"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option type="QString" value="identifica overlaps poligono" name="component_description"/>
-      <Option type="double" value="30" name="component_height"/>
-      <Option type="double" value="212" name="component_pos_x"/>
-      <Option type="double" value="235" name="component_pos_y"/>
-      <Option type="double" value="200" name="component_width"/>
+      <Option name="component_description" type="QString" value="identifica overlaps poligono"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="212"/>
+      <Option name="component_pos_y" type="double" value="235"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="dsgtools:batchrunalgorithm_2" name="id"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="flags_overlaps_a">
-          <Option type="QString" value="dsgtools:batchrunalgorithm_2" name="child_id"/>
-          <Option type="QString" value="" name="color"/>
-          <Option type="Map" name="comment">
-            <Option type="QString" value="" name="color"/>
-            <Option type="QString" value="" name="component_description"/>
-            <Option type="double" value="60" name="component_height"/>
-            <Option type="double" value="0" name="component_pos_x"/>
-            <Option type="double" value="0" name="component_pos_y"/>
-            <Option type="double" value="100" name="component_width"/>
-            <Option type="bool" value="true" name="outputs_collapsed"/>
-            <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option name="id" type="QString" value="dsgtools:batchrunalgorithm_2"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_overlaps_a" type="Map">
+          <Option name="child_id" type="QString" value="dsgtools:batchrunalgorithm_2"/>
+          <Option name="color" type="QString" value=""/>
+          <Option name="comment" type="Map">
+            <Option name="color" type="QString" value=""/>
+            <Option name="component_description" type="QString" value=""/>
+            <Option name="component_height" type="double" value="60"/>
+            <Option name="component_pos_x" type="double" value="0"/>
+            <Option name="component_pos_y" type="double" value="0"/>
+            <Option name="component_width" type="double" value="100"/>
+            <Option name="outputs_collapsed" type="bool" value="true"/>
+            <Option name="parameters_collapsed" type="bool" value="true"/>
           </Option>
-          <Option type="QString" value="flags_overlaps_a" name="component_description"/>
-          <Option type="double" value="30" name="component_height"/>
-          <Option type="double" value="412" name="component_pos_x"/>
-          <Option type="double" value="280" name="component_pos_y"/>
-          <Option type="double" value="200" name="component_width"/>
-          <Option type="invalid" name="default_value"/>
-          <Option type="bool" value="false" name="mandatory"/>
-          <Option type="QString" value="flags_overlaps_a" name="name"/>
-          <Option type="QString" value="OUTPUT" name="output_name"/>
-          <Option type="bool" value="true" name="outputs_collapsed"/>
-          <Option type="bool" value="true" name="parameters_collapsed"/>
+          <Option name="component_description" type="QString" value="flags_overlaps_a"/>
+          <Option name="component_height" type="double" value="30"/>
+          <Option name="component_pos_x" type="double" value="412"/>
+          <Option name="component_pos_y" type="double" value="280"/>
+          <Option name="component_width" type="double" value="200"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="flags_overlaps_a"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+          <Option name="outputs_collapsed" type="bool" value="true"/>
+          <Option name="parameters_collapsed" type="bool" value="true"/>
         </Option>
       </Option>
-      <Option type="bool" value="true" name="outputs_collapsed"/>
-      <Option type="bool" value="true" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="dsgtools:identifyoverlaps" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="dsgtools:identifyoverlaps"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="cobter_massa_dagua_a,infra_barragem_a" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="cobter_massa_dagua_a,infra_barragem_a"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="INPUT" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="INPUT"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="FLAGS" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="FLAGS"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;: &quot;TEMPORARY_OUTPUT&quot;&#xa;}" name="static_value"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;: &quot;TEMPORARY_OUTPUT&quot;&#xa;}"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
-  <Option type="Map" name="designerParameterValues">
-    <Option type="QgsProcessingOutputLayerDefinition" name="dsgtools:batchrunalgorithm_1:flag_densidade_incorreta_vertices">
+  <Option name="designerParameterValues" type="Map">
+    <Option name="dsgtools:batchrunalgorithm_1:flag_densidade_incorreta_vertices" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
-        <Option type="Map" name="create_options">
-          <Option type="QString" value="System" name="fileEncoding"/>
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" type="QString" value="System"/>
         </Option>
-        <Option type="Map" name="sink">
-          <Option type="bool" value="true" name="active"/>
-          <Option type="int" value="1" name="type"/>
-          <Option type="QString" value="TEMPORARY_OUTPUT" name="val"/>
+        <Option name="sink" type="Map">
+          <Option name="active" type="bool" value="true"/>
+          <Option name="type" type="int" value="1"/>
+          <Option name="val" type="QString" value="TEMPORARY_OUTPUT"/>
         </Option>
       </Option>
     </Option>
@@ -187,36 +187,36 @@
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option type="QString" value="EDGV 3.0 Orto" name="model_group"/>
-  <Option type="QString" value="Identificar Overlaps Dentro da Mesma Camada (Altimetria e Hidrografia) Carta Orto" name="model_name"/>
-  <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="dsgtools:batchrunalgorithm_1:flags_overlaps_l">
-      <Option type="bool" value="true" name="create_by_default"/>
-      <Option type="int" value="-1" name="data_type"/>
-      <Option type="invalid" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option type="QString" value="flags_overlaps_l" name="description"/>
-      <Option type="int" value="0" name="flags"/>
-      <Option type="QString" value="" name="help"/>
+  <Option name="model_group" type="QString" value="EDGV 3.0 Orto - Altimetria e Hidrografia"/>
+  <Option name="model_name" type="QString" value="13-Identificar overlaps dentro da mesma camada"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="dsgtools:batchrunalgorithm_1:flags_overlaps_l" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="flags_overlaps_l"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
       <Option name="metadata"/>
-      <Option type="QString" value="dsgtools:batchrunalgorithm_1:flags_overlaps_l" name="name"/>
-      <Option type="QString" value="sink" name="parameter_type"/>
-      <Option type="bool" value="false" name="supports_append"/>
-      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+      <Option name="name" type="QString" value="dsgtools:batchrunalgorithm_1:flags_overlaps_l"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_append" type="bool" value="false"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
     </Option>
-    <Option type="Map" name="dsgtools:batchrunalgorithm_2:flags_overlaps_a">
-      <Option type="bool" value="true" name="create_by_default"/>
-      <Option type="int" value="-1" name="data_type"/>
-      <Option type="invalid" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option type="QString" value="flags_overlaps_a" name="description"/>
-      <Option type="int" value="0" name="flags"/>
-      <Option type="QString" value="" name="help"/>
+    <Option name="dsgtools:batchrunalgorithm_2:flags_overlaps_a" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="flags_overlaps_a"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
       <Option name="metadata"/>
-      <Option type="QString" value="dsgtools:batchrunalgorithm_2:flags_overlaps_a" name="name"/>
-      <Option type="QString" value="sink" name="parameter_type"/>
-      <Option type="bool" value="false" name="supports_append"/>
-      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+      <Option name="name" type="QString" value="dsgtools:batchrunalgorithm_2:flags_overlaps_a"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_append" type="bool" value="false"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
