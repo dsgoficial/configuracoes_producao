@@ -2,223 +2,229 @@
 <Option type="Map">
   <Option type="Map" name="children">
     <Option type="Map" name="dsgtools:identifyterrainmodelerrorsalgorithm_1">
-      <Option value="true" type="bool" name="active"/>
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:identifyterrainmodelerrorsalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
+      <Option type="QString" name="alg_id" value="dsgtools:identifyterrainmodelerrorsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
       <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="320" type="double" name="component_pos_x"/>
-        <Option value="115" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="320"/>
+        <Option type="double" name="component_pos_y" value="115"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
       </Option>
-      <Option value="Identify Terrain Model Errors Algorithm" type="QString" name="component_description"/>
-      <Option value="68" type="double" name="component_height"/>
-      <Option value="341" type="double" name="component_pos_x"/>
-      <Option value="115" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option type="QString" name="component_description" value="Identify Terrain Model Errors Algorithm"/>
+      <Option type="double" name="component_height" value="68"/>
+      <Option type="double" name="component_pos_x" value="341"/>
+      <Option type="double" name="component_pos_y" value="115"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:identifyterrainmodelerrorsalgorithm_1" type="QString" name="id"/>
+      <Option type="QString" name="id" value="dsgtools:identifyterrainmodelerrorsalgorithm_1"/>
       <Option type="Map" name="outputs">
         <Option type="Map" name="flags_modelo_l">
-          <Option value="dsgtools:identifyterrainmodelerrorsalgorithm_1" type="QString" name="child_id"/>
-          <Option value="" type="QString" name="color"/>
+          <Option type="QString" name="child_id" value="dsgtools:identifyterrainmodelerrorsalgorithm_1"/>
+          <Option type="QString" name="color" value=""/>
           <Option type="Map" name="comment">
-            <Option value="" type="QString" name="color"/>
-            <Option value="" type="QString" name="component_description"/>
-            <Option value="60" type="double" name="component_height"/>
-            <Option value="0" type="double" name="component_pos_x"/>
-            <Option value="0" type="double" name="component_pos_y"/>
-            <Option value="100" type="double" name="component_width"/>
-            <Option value="true" type="bool" name="outputs_collapsed"/>
-            <Option value="true" type="bool" name="parameters_collapsed"/>
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
           </Option>
-          <Option value="flags_modelo_l" type="QString" name="component_description"/>
-          <Option value="30" type="double" name="component_height"/>
-          <Option value="541" type="double" name="component_pos_x"/>
-          <Option value="217" type="double" name="component_pos_y"/>
-          <Option value="200" type="double" name="component_width"/>
+          <Option type="QString" name="component_description" value="flags_modelo_l"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="541"/>
+          <Option type="double" name="component_pos_y" value="217"/>
+          <Option type="double" name="component_width" value="200"/>
           <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="flags_modelo_l" type="QString" name="name"/>
-          <Option value="LINE_FLAGS" type="QString" name="output_name"/>
-          <Option value="true" type="bool" name="outputs_collapsed"/>
-          <Option value="true" type="bool" name="parameters_collapsed"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="flags_modelo_l"/>
+          <Option type="QString" name="output_name" value="LINE_FLAGS"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
         </Option>
         <Option type="Map" name="flags_modelo_p">
-          <Option value="dsgtools:identifyterrainmodelerrorsalgorithm_1" type="QString" name="child_id"/>
-          <Option value="" type="QString" name="color"/>
+          <Option type="QString" name="child_id" value="dsgtools:identifyterrainmodelerrorsalgorithm_1"/>
+          <Option type="QString" name="color" value=""/>
           <Option type="Map" name="comment">
-            <Option value="" type="QString" name="color"/>
-            <Option value="" type="QString" name="component_description"/>
-            <Option value="60" type="double" name="component_height"/>
-            <Option value="0" type="double" name="component_pos_x"/>
-            <Option value="0" type="double" name="component_pos_y"/>
-            <Option value="100" type="double" name="component_width"/>
-            <Option value="true" type="bool" name="outputs_collapsed"/>
-            <Option value="true" type="bool" name="parameters_collapsed"/>
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
           </Option>
-          <Option value="flags_modelo_p" type="QString" name="component_description"/>
-          <Option value="30" type="double" name="component_height"/>
-          <Option value="541" type="double" name="component_pos_x"/>
-          <Option value="285" type="double" name="component_pos_y"/>
-          <Option value="200" type="double" name="component_width"/>
+          <Option type="QString" name="component_description" value="flags_modelo_p"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="541"/>
+          <Option type="double" name="component_pos_y" value="285"/>
+          <Option type="double" name="component_width" value="200"/>
           <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="flags_modelo_p" type="QString" name="name"/>
-          <Option value="POINT_FLAGS" type="QString" name="output_name"/>
-          <Option value="true" type="bool" name="outputs_collapsed"/>
-          <Option value="true" type="bool" name="parameters_collapsed"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="flags_modelo_p"/>
+          <Option type="QString" name="output_name" value="POINT_FLAGS"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
         </Option>
       </Option>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
       <Option type="Map" name="params">
         <Option type="List" name="CONTOUR_ATTR">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="cota" type="QString" name="static_value"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="cota"/>
           </Option>
         </Option>
         <Option type="List" name="CONTOUR_INTERVAL">
           <Option type="Map">
-            <Option value=" @equidistancia " type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option type="QString" name="expression" value=" @equidistancia "/>
+            <Option type="int" name="source" value="3"/>
           </Option>
         </Option>
         <Option type="List" name="GEOGRAPHIC_BOUNDS">
           <Option type="Map">
-            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="elemnat_curva_nivel_l" type="QString" name="static_value"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="elemnat_curva_nivel_l"/>
           </Option>
         </Option>
         <Option type="List" name="SELECTED">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="false" type="bool" name="static_value"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="false"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
-      <Option value="true" type="bool" name="active"/>
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
+      <Option type="QString" name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
       <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="731" type="double" name="component_pos_x"/>
-        <Option value="179" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="731"/>
+        <Option type="double" name="component_pos_y" value="179"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
       </Option>
-      <Option value="moldura" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="123" type="double" name="component_pos_x"/>
-      <Option value="235" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option type="QString" name="component_description" value="moldura"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="123"/>
+      <Option type="double" name="component_pos_y" value="235"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="id"/>
+      <Option type="QString" name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
       <Option type="Map" name="params">
         <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="aux_moldura_area_continua_a,aux_moldura_a,moldura" type="QString" name="static_value"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="aux_moldura_area_continua_a,aux_moldura_a,moldura"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option type="Map" name="dsgtools:verifycountourstacking_1">
-      <Option value="true" type="bool" name="active"/>
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:verifycountourstacking" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
+      <Option type="QString" name="alg_id" value="dsgtools:verifycountourstacking"/>
+      <Option type="QString" name="color" value=""/>
       <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="943" type="double" name="component_pos_x"/>
-        <Option value="321" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="943"/>
+        <Option type="double" name="component_pos_y" value="321"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
       </Option>
-      <Option value="Verifies the stacking of contour lines" type="QString" name="component_description"/>
-      <Option value="34" type="double" name="component_height"/>
-      <Option value="165" type="double" name="component_pos_x"/>
-      <Option value="342" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option type="QString" name="component_description" value="Verifies the stacking of contour lines"/>
+      <Option type="double" name="component_height" value="34"/>
+      <Option type="double" name="component_pos_x" value="165"/>
+      <Option type="double" name="component_pos_y" value="342"/>
+      <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:verifycountourstacking_1" type="QString" name="id"/>
+      <Option type="QString" name="id" value="dsgtools:verifycountourstacking_1"/>
       <Option type="Map" name="outputs">
         <Option type="Map" name="flags_modelo_a">
-          <Option value="dsgtools:verifycountourstacking_1" type="QString" name="child_id"/>
-          <Option value="" type="QString" name="color"/>
+          <Option type="QString" name="child_id" value="dsgtools:verifycountourstacking_1"/>
+          <Option type="QString" name="color" value=""/>
           <Option type="Map" name="comment">
-            <Option value="" type="QString" name="color"/>
-            <Option value="" type="QString" name="component_description"/>
-            <Option value="60" type="double" name="component_height"/>
-            <Option value="182" type="double" name="component_pos_x"/>
-            <Option value="31" type="double" name="component_pos_y"/>
-            <Option value="100" type="double" name="component_width"/>
-            <Option value="true" type="bool" name="outputs_collapsed"/>
-            <Option value="true" type="bool" name="parameters_collapsed"/>
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="182"/>
+            <Option type="double" name="component_pos_y" value="31"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
           </Option>
-          <Option value="flags_modelo_a" type="QString" name="component_description"/>
-          <Option value="30" type="double" name="component_height"/>
-          <Option value="544" type="double" name="component_pos_x"/>
-          <Option value="379" type="double" name="component_pos_y"/>
-          <Option value="200" type="double" name="component_width"/>
+          <Option type="QString" name="component_description" value="flags_modelo_a"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="544"/>
+          <Option type="double" name="component_pos_y" value="379"/>
+          <Option type="double" name="component_width" value="200"/>
           <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="flags_modelo_a" type="QString" name="name"/>
-          <Option value="OUTPUT" type="QString" name="output_name"/>
-          <Option value="true" type="bool" name="outputs_collapsed"/>
-          <Option value="true" type="bool" name="parameters_collapsed"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="flags_modelo_a"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
         </Option>
       </Option>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
       <Option type="Map" name="params">
         <Option type="List" name="INPUT_COUNTOUR_LINES">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="elemnat_curva_nivel_l" type="QString" name="static_value"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="elemnat_curva_nivel_l_a75b74b3_2abf_45ad_a9c6_cf9cb733fdd0"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT_IS_DEPRESSION_FIELD">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="depressao" type="QString" name="static_value"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="depressao"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT_LEVEL_GAP">
           <Option type="Map">
-            <Option value=" @equidistancia " type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option type="QString" name="expression" value=" @equidistancia "/>
+            <Option type="int" name="source" value="3"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT_LEVES_FIELD">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="cota" type="QString" name="static_value"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="cota"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RUNNING_INSIDE_MODEL">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
           </Option>
         </Option>
       </Option>
@@ -228,52 +234,52 @@
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option type="Map" name="modelVariables">
-    <Option value="10" type="QString" name="equidistancia"/>
+    <Option type="QString" name="equidistancia" value="10"/>
   </Option>
-  <Option value="EDGV 3.0 Orto - Altimetria e Hidrografia" type="QString" name="model_group"/>
-  <Option value="19-Identificar erros na construção das curvas de nível 25k" type="QString" name="model_name"/>
+  <Option type="QString" name="model_group" value="EDGV 3.0 Orto - Altimetria e Hidrografia"/>
+  <Option type="QString" name="model_name" value="19-Identificar erros na construção das curvas de nível 25k"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="dsgtools:identifyterrainmodelerrorsalgorithm_1:flags_modelo_l">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
       <Option type="invalid" name="default"/>
       <Option type="invalid" name="defaultGui"/>
-      <Option value="flags_modelo_l" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="" type="QString" name="help"/>
+      <Option type="QString" name="description" value="flags_modelo_l"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
       <Option name="metadata"/>
-      <Option value="dsgtools:identifyterrainmodelerrorsalgorithm_1:flags_modelo_l" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="false" type="bool" name="supports_append"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+      <Option type="QString" name="name" value="dsgtools:identifyterrainmodelerrorsalgorithm_1:flags_modelo_l"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
     </Option>
     <Option type="Map" name="dsgtools:identifyterrainmodelerrorsalgorithm_1:flags_modelo_p">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
       <Option type="invalid" name="default"/>
       <Option type="invalid" name="defaultGui"/>
-      <Option value="flags_modelo_p" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="" type="QString" name="help"/>
+      <Option type="QString" name="description" value="flags_modelo_p"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
       <Option name="metadata"/>
-      <Option value="dsgtools:identifyterrainmodelerrorsalgorithm_1:flags_modelo_p" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="false" type="bool" name="supports_append"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+      <Option type="QString" name="name" value="dsgtools:identifyterrainmodelerrorsalgorithm_1:flags_modelo_p"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
     </Option>
     <Option type="Map" name="dsgtools:verifycountourstacking_1:flags_modelo_a">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
       <Option type="invalid" name="default"/>
       <Option type="invalid" name="defaultGui"/>
-      <Option value="flags_modelo_a" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="" type="QString" name="help"/>
+      <Option type="QString" name="description" value="flags_modelo_a"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
       <Option name="metadata"/>
-      <Option value="dsgtools:verifycountourstacking_1:flags_modelo_a" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="false" type="bool" name="supports_append"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+      <Option type="QString" name="name" value="dsgtools:verifycountourstacking_1:flags_modelo_a"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
