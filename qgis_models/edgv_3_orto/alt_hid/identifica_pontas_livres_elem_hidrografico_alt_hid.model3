@@ -1,31 +1,31 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option name="children" type="Map">
-    <Option name="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1" type="Map">
+    <Option name="dsgtools:identifydangles_1" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:identifyunsharedvertexonintersectionsalgorithm" name="alg_id" type="QString"/>
+      <Option value="dsgtools:identifydangles" name="alg_id" type="QString"/>
       <Option value="" name="color" type="QString"/>
       <Option name="comment" type="Map">
         <Option value="" name="color" type="QString"/>
         <Option value="" name="component_description" type="QString"/>
         <Option value="60" name="component_height" type="double"/>
-        <Option value="601" name="component_pos_x" type="double"/>
-        <Option value="268" name="component_pos_y" type="double"/>
+        <Option value="1015" name="component_pos_x" type="double"/>
+        <Option value="326" name="component_pos_y" type="double"/>
         <Option value="100" name="component_width" type="double"/>
         <Option value="true" name="outputs_collapsed" type="bool"/>
         <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option value="Identify Unshared Vertex on Intersections" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="401" name="component_pos_x" type="double"/>
-      <Option value="313" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option value="pontas soltas no aquisicao_limite_elemento_hidrografico_l" name="component_description" type="QString"/>
+      <Option value="52" name="component_height" type="double"/>
+      <Option value="588.5" name="component_pos_x" type="double"/>
+      <Option value="430" name="component_pos_y" type="double"/>
+      <Option value="229" name="component_width" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1" name="id" type="QString"/>
+      <Option value="dsgtools:identifydangles_1" name="id" type="QString"/>
       <Option name="outputs" type="Map">
-        <Option name="flag_vertice_nao_compartilhado" type="Map">
-          <Option value="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1" name="child_id" type="QString"/>
+        <Option name="pontas_soltas_elem_hid" type="Map">
+          <Option value="dsgtools:identifydangles_1" name="child_id" type="QString"/>
           <Option value="" name="color" type="QString"/>
           <Option name="comment" type="Map">
             <Option value="" name="color" type="QString"/>
@@ -37,14 +37,14 @@
             <Option value="true" name="outputs_collapsed" type="bool"/>
             <Option value="true" name="parameters_collapsed" type="bool"/>
           </Option>
-          <Option value="flag_vertice_nao_compartilhado" name="component_description" type="QString"/>
+          <Option value="pontas_soltas_elem_hid" name="component_description" type="QString"/>
           <Option value="30" name="component_height" type="double"/>
-          <Option value="601" name="component_pos_x" type="double"/>
-          <Option value="358" name="component_pos_y" type="double"/>
+          <Option value="817.5" name="component_pos_x" type="double"/>
+          <Option value="508" name="component_pos_y" type="double"/>
           <Option value="200" name="component_width" type="double"/>
           <Option name="default_value" type="invalid"/>
           <Option value="false" name="mandatory" type="bool"/>
-          <Option value="flag_vertice_nao_compartilhado" name="name" type="QString"/>
+          <Option value="pontas_soltas_elem_hid" name="name" type="QString"/>
           <Option value="FLAGS" name="output_name" type="QString"/>
           <Option value="true" name="outputs_collapsed" type="bool"/>
           <Option value="true" name="parameters_collapsed" type="bool"/>
@@ -53,24 +53,88 @@
       <Option value="true" name="outputs_collapsed" type="bool"/>
       <Option value="true" name="parameters_collapsed" type="bool"/>
       <Option name="params" type="Map">
-        <Option name="INPUT_LINES" type="List">
+        <Option name="GEOGRAPHIC_BOUNDARY" type="List">
+          <Option type="Map">
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="IGNORE_DANGLES_ON_UNSEGMENTED_LINES" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="aquisicao_limite_elemento_hidrografico_l" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_IS_BOUDARY_LAYER" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="LINEFILTERLAYERS" type="List">
           <Option type="Map">
             <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" name="child_id" type="QString"/>
             <Option value="OUTPUT" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
           </Option>
         </Option>
-        <Option name="INPUT_POLYGONS" type="List">
+        <Option name="POLYGONFILTERLAYERS" type="List">
           <Option type="Map">
-            <Option value="dsgtools:stringcsvtolayerlistalgorithm_2" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="SELECTED" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
             <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0.0001" name="static_value" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="708" name="component_pos_x" type="double"/>
+        <Option value="278" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="moldura" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="336" name="component_pos_x" type="double"/>
+      <Option value="595" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="aux_moldura_a,moldura,aux_moldura_area_continua_a" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>
@@ -84,16 +148,16 @@
         <Option value="" name="color" type="QString"/>
         <Option value="" name="component_description" type="QString"/>
         <Option value="60" name="component_height" type="double"/>
-        <Option value="320" name="component_pos_x" type="double"/>
-        <Option value="115" name="component_pos_y" type="double"/>
+        <Option value="958.5" name="component_pos_x" type="double"/>
+        <Option value="568" name="component_pos_y" type="double"/>
         <Option value="100" name="component_width" type="double"/>
         <Option value="true" name="outputs_collapsed" type="bool"/>
         <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option value="Camadas Linha" name="component_description" type="QString"/>
+      <Option value="camadas filtro" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="181" name="component_pos_x" type="double"/>
-      <Option value="113" name="component_pos_y" type="double"/>
+      <Option value="348.5" name="component_pos_x" type="double"/>
+      <Option value="309" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" name="id" type="QString"/>
@@ -104,41 +168,7 @@
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l, elemnat_elemento_hidrografico_l,aquisicao_limite_elemento_hidrografico_l" name="static_value" type="QString"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
-    <Option name="dsgtools:stringcsvtolayerlistalgorithm_2" type="Map">
-      <Option value="true" name="active" type="bool"/>
-      <Option name="alg_config"/>
-      <Option value="dsgtools:stringcsvtolayerlistalgorithm" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="461" name="component_pos_x" type="double"/>
-        <Option value="262" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
-      </Option>
-      <Option value="Camadas Poligono" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="144" name="component_pos_x" type="double"/>
-      <Option value="290" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option name="dependencies"/>
-      <Option value="dsgtools:stringcsvtolayerlistalgorithm_2" name="id" type="QString"/>
-      <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUTLAYERS" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="cobter_massa_dagua_a,infra_barragem_a" name="static_value" type="QString"/>
+            <Option value="infra_barragem_l,aquisicao_limite_massa_dagua_l" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>
@@ -149,18 +179,18 @@
   <Option name="help"/>
   <Option name="modelVariables"/>
   <Option value="EDGV 3.0 Orto - Altimetria e Hidrografia" name="model_group" type="QString"/>
-  <Option value="05-Identificar vérfice não compartilhado nas intersecções" name="model_name" type="QString"/>
+  <Option value="22-Identificar pontas soltas em delimitadores de limite de elementos hidrográficos" name="model_name" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
-    <Option name="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1:flag_vertice_nao_compartilhado" type="Map">
+    <Option name="dsgtools:identifydangles_1:pontas_soltas_elem_hid" type="Map">
       <Option value="true" name="create_by_default" type="bool"/>
       <Option value="-1" name="data_type" type="int"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="flag_vertice_nao_compartilhado" name="description" type="QString"/>
+      <Option value="pontas_soltas_elem_hid" name="description" type="QString"/>
       <Option value="0" name="flags" type="int"/>
       <Option value="" name="help" type="QString"/>
       <Option name="metadata"/>
-      <Option value="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1:flag_vertice_nao_compartilhado" name="name" type="QString"/>
+      <Option value="dsgtools:identifydangles_1:pontas_soltas_elem_hid" name="name" type="QString"/>
       <Option value="sink" name="parameter_type" type="QString"/>
       <Option value="false" name="supports_append" type="bool"/>
       <Option value="true" name="supports_non_file_outputs" type="bool"/>

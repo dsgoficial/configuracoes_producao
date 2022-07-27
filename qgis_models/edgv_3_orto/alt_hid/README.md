@@ -7,7 +7,7 @@ Organização dos dados:
 ## 1. Identifica geometrias inválidas
 - arquivo: identifica_geometrias_invalidas_alt_hid_carta_orto.model3
 - verificacao separada: elemnat_curva_nivel_l
-- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_ponto_cotado_p,aquisicao_centroide_massa_dagua_p,aquisicao_centroide_elemento_hidrografico_p,elemnat_elemento_fisiografico_p,elemnat_elemento_fisiografico_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l,elemnat_elemento_hidrografico_l,elemnat_elemento_hidrografico_p,aquisicao_limite_elemento_hidrografico_l
+- camadas: aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_ponto_cotado_p,aquisicao_centroide_massa_dagua_p,aquisicao_centroide_elemento_hidrografico_p,elemnat_elemento_fisiografico_p,elemnat_elemento_fisiografico_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l,elemnat_elemento_hidrografico_l,elemnat_elemento_hidrografico_p,aquisicao_limite_elemento_hidrografico_l,aquisicao_centroide_ilha_p
 - nome camada flags: geometrias_invalidas
 
 ## 2. Identificar geometrias com mais de uma parte
@@ -100,7 +100,7 @@ Organização dos dados:
 ## 16. Identificar linhas não segmentadas nas intersecções
 - arquivo: identificar_linhas_nao_segmentadas_nas_interseccoes_alt_hid.model3
 - camadas: elemnat_trecho_drenagem_l
-- camadas filtro linha: aquisicao_limite_massa_dagua_l,infra_barragem_l,infra_barragem_l,elemnat_elemento_hidrografico_l
+- camadas filtro linha: aquisicao_limite_massa_dagua_l,infra_barragem_l,elemnat_elemento_hidrografico_l
 - nome camada flags: flags_drenagens_nao_segmentadas
 ## 17. Identificar elementos pequenos na rede
 - arquivo: identificar_elementos_pequenos_na_rede.model3
@@ -132,8 +132,9 @@ Organização dos dados:
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 
 ## 20. Identificar pontas soltas em delimitadores de corpos d'água
-
-- nome camada flags: pontas_livres_hid
+- arquivo: identifica_pontas_livres_limite_massa_dagua_alt_hid.model3
+- filtros: infra_barragem_l,elemnat_elemento_hidrografico_l
+- nome camada flags: pontas_soltas_hid
 
 ## 21. Fechar Polígonos de Massa D'água
 - arquivo: fechar_poligonos_massa_dagua.model3
@@ -141,8 +142,15 @@ Organização dos dados:
 
 ## 22. Identificar pontas soltas em delimitadores de elementos hidrográficos
 
-- nome camada flags: pontas_livres_elem_hid
+- arquivo: identifica_pontas_livres_elem_hidrografico_alt_hid.model3
+- camada: aquisicao_limite_elemento_hidrografico_l
+- filtros: infra_barragem_l,aquisicao_limite_massa_dagua_l
+- nome camada flags: pontas_soltas_elem_hid
 
 ## 23. Fechar polígonos de elementos hidrográficos e construir ilhas
 
+- arquivo: fechar_poligonos_elem_hidrograficos_e_ilhas
+- camada de centroide elem hid: aquisicao_centroide_elemento_hidrografico_p
+- camada de centroide ilha: aquisicao_centroide_ilha_p
+- camada de delimitador: aquisicao_limite_elemento_hidrografico_l
 - camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
