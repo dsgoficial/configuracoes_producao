@@ -131,6 +131,18 @@ Organização dos dados:
 - nome camada flags: flags_modelo_p, flags_modelo_l, flags_modelo_a
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 
-## 20. Fechar Polígonos de Massa D'água (Altimetria e Hidrografia) Carta Orto
+## 20. Identificar pontas soltas em delimitadores de corpos d'água
+
+- nome camada flags: pontas_livres_hid
+
+## 21. Fechar Polígonos de Massa D'água
 - arquivo: fechar_poligonos_massa_dagua.model3
+- camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
+
+## 22. Identificar pontas soltas em delimitadores de elementos hidrográficos
+
+- nome camada flags: pontas_livres_elem_hid
+
+## 23. Fechar polígonos de elementos hidrográficos e construir ilhas
+
 - camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
