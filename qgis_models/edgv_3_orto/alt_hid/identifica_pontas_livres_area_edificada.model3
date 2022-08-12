@@ -127,7 +127,7 @@
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="aquisicao_limite_massa_dagua_l,infra_barragem_l,infra_ferrovia_l,infra_mobilidade_urbana_l,infra_vala_l,infra_via_deslocamento_l" type="QString"/>
+            <Option name="static_value" value="delimitador_massa_dagua_l,infra_barragem_l,infra_ferrovia_l,infra_mobilidade_urbana_l,infra_vala_l,infra_via_deslocamento_l" type="QString"/>
           </Option>
         </Option>
       </Option>

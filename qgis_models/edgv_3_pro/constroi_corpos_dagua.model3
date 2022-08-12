@@ -139,7 +139,7 @@
         <Option type="List" name="BOUNDARY_LINE_LAYER">
           <Option type="Map">
             <Option value="2" type="int" name="source"/>
-            <Option value="aquisicao_limite_massa_dagua_l" type="QString" name="static_value"/>
+            <Option value="delimitador_massa_dagua_l" type="QString" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="CHECK_INVALID_GEOMETRIES_ON_OUTPUT_POLYGONS">
@@ -170,7 +170,7 @@
         <Option type="List" name="INPUT_CENTER_POINTS">
           <Option type="Map">
             <Option value="2" type="int" name="source"/>
-            <Option value="aquisicao_centroide_massa_dagua_p" type="QString" name="static_value"/>
+            <Option value="centroide_massa_dagua_p" type="QString" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="MERGE_OUTPUT_POLYGONS">

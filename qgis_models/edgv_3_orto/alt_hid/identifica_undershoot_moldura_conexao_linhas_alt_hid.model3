@@ -16,7 +16,7 @@
         <Option name="outputs_collapsed" type="bool" value="true"/>
         <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" type="QString" value="Undershoot e conexão no aquisicao_limite_massa_dagua_l"/>
+      <Option name="component_description" type="QString" value="Undershoot e conexão no delimitador_massa_dagua_l"/>
       <Option name="component_height" type="double" value="52"/>
       <Option name="component_pos_x" type="double" value="348.5"/>
       <Option name="component_pos_y" type="double" value="235"/>
@@ -43,7 +43,7 @@
         <Option name="INPUT" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="aquisicao_limite_massa_dagua_l"/>
+            <Option name="static_value" type="QString" value="delimitador_massa_dagua_l"/>
           </Option>
         </Option>
         <Option name="INPUT_IS_BOUDARY_LAYER" type="List">

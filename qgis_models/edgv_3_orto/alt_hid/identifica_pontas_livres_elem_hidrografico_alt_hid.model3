@@ -16,7 +16,7 @@
         <Option value="true" name="outputs_collapsed" type="bool"/>
         <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option value="pontas soltas no aquisicao_limite_elemento_hidrografico_l" name="component_description" type="QString"/>
+      <Option value="pontas soltas no delimitador_elemento_hidrografico_l" name="component_description" type="QString"/>
       <Option value="52" name="component_height" type="double"/>
       <Option value="588.5" name="component_pos_x" type="double"/>
       <Option value="430" name="component_pos_y" type="double"/>
@@ -69,7 +69,7 @@
         <Option name="INPUT" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="aquisicao_limite_elemento_hidrografico_l" name="static_value" type="QString"/>
+            <Option value="delimitador_elemento_hidrografico_l" name="static_value" type="QString"/>
           </Option>
         </Option>
         <Option name="INPUT_IS_BOUDARY_LAYER" type="List">
@@ -168,7 +168,7 @@
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="infra_barragem_l,aquisicao_limite_massa_dagua_l" name="static_value" type="QString"/>
+            <Option value="infra_barragem_l,delimitador_massa_dagua_l" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>

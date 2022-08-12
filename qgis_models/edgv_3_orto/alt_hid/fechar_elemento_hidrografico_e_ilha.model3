@@ -62,7 +62,7 @@
         <Option name="BOUNDARY_LINE_LAYER" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="aquisicao_limite_elemento_hidrografico_l" name="static_value" type="QString"/>
+            <Option value="delimitador_elemento_hidrografico_l" name="static_value" type="QString"/>
           </Option>
         </Option>
         <Option name="CHECK_INVALID_GEOMETRIES_ON_OUTPUT_POLYGONS" type="List">
@@ -94,7 +94,7 @@
         <Option name="INPUT_CENTER_POINTS" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="aquisicao_centroide_elemento_hidrografico_p" name="static_value" type="QString"/>
+            <Option value="centroide_elemento_hidrografico_p" name="static_value" type="QString"/>
           </Option>
         </Option>
         <Option name="MERGE_OUTPUT_POLYGONS" type="List">
@@ -178,7 +178,7 @@
         <Option name="BOUNDARY_LINE_LAYER" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="aquisicao_limite_massa_dagua_l" name="static_value" type="QString"/>
+            <Option value="delimitador_massa_dagua_l" name="static_value" type="QString"/>
           </Option>
         </Option>
         <Option name="CHECK_INVALID_GEOMETRIES_ON_OUTPUT_POLYGONS" type="List">
@@ -210,7 +210,7 @@
         <Option name="INPUT_CENTER_POINTS" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="aquisicao_centroide_ilha_p" name="static_value" type="QString"/>
+            <Option value="centroide_ilha_p" name="static_value" type="QString"/>
           </Option>
         </Option>
         <Option name="MERGE_OUTPUT_POLYGONS" type="List">
@@ -296,7 +296,7 @@
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="infra_barragem_l,aquisicao_limite_massa_dagua_l" name="static_value" type="QString"/>
+            <Option value="infra_barragem_l,delimitador_massa_dagua_l" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>

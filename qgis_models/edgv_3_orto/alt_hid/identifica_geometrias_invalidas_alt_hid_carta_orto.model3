@@ -36,7 +36,7 @@
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,,elemnat_ponto_cotado_p,aquisicao_centroide_massa_dagua_p,aquisicao_centroide_elemento_hidrografico_p,elemnat_elemento_fisiografico_p,elemnat_elemento_fisiografico_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l,elemnat_elemento_hidrografico_l,elemnat_elemento_hidrografico_p,aquisicao_limite_elemento_hidrografico_l"/>
+            <Option name="static_value" type="QString" value="delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,,elemnat_ponto_cotado_p,centroide_massa_dagua_p,centroide_elemento_hidrografico_p,elemnat_elemento_fisiografico_p,elemnat_elemento_fisiografico_l,cobter_massa_dagua_a,infra_barragem_a,infra_barragem_l,elemnat_elemento_hidrografico_l,elemnat_elemento_hidrografico_p,delimitador_elemento_hidrografico_l"/>
           </Option>
         </Option>
         <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">

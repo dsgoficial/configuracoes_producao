@@ -104,7 +104,7 @@
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="aquisicao_limite_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l, elemnat_elemento_hidrografico_l,aquisicao_limite_elemento_hidrografico_l" name="static_value" type="QString"/>
+            <Option value="delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l, elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>
