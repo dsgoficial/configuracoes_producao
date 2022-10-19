@@ -188,7 +188,7 @@
   <Option name="help"/>
   <Option name="modelVariables"/>
   <Option name="model_group" value="EDGV 3.0 Orto - Transportes" type="QString"/>
-  <Option name="model_name" value="11-Identificar Z" type="QString"/>
+  <Option name="model_name" value="11-Identificar Z em elementos do transporte" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="native:extractbylocation_1:flag_z" type="Map">
       <Option name="create_by_default" value="true" type="bool"/>
