@@ -4,7 +4,7 @@ Modelos construídos para a produção EDGV 3.0 Orto, de acordo com os parâmetr
 
 Organização dos dados:
 
-## 1. Identifica geometrias inválidas
+## 1. Identificar geometrias inválidas
 - arquivo: identifica_geometrias_invalidas_transportes_carta_orto.model3
 - camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - nome camada flags: geometrias_invalidas
