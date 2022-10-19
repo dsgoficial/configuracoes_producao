@@ -74,7 +74,7 @@ Organização dos dados:
 ## 12. Rotinas validade de vértices
 - arquivo: rotinas_validade_de_vertices_transportes.model3
 - descrição: rotina que consolida as rotinas 5 a 11. Serve para rodar fora do workflow ou encapsular em alguns casos do workflow.
-- nome camada flags: flags_validade_vertices_p,flags_validade_vertices_l
+- nome camada flags: flags_validade_vertices_p
 
 ## 13. Identificar overlaps dentro da mesma camada
 - arquivo: identifica_overlaps_linhas_transportes_carta_orto.model3
@@ -90,7 +90,6 @@ Organização dos dados:
 
 ## 15. Identificar linhas segmentadas com mesmo conjunto de atributos
 - arquivo: identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
-- descrição: não roda em curva de nível, pois elas são intencionalmente cortadas.
 - camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
@@ -98,25 +97,19 @@ Organização dos dados:
 
 ## 16. Identificar linhas não segmentadas nas intersecções
 - arquivo: identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
-- camadas: infra_via_deslocamento_l
-- camadas filtro linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l
-- nome camada flags: flags_drenagens_nao_segmentadas
+- camadas: infra_ferrovia_l,infra_via_deslocamento_l
+- nome camada flags: flags_elem_rede_nao_segmentados
+
 ## 17. Identificar elementos pequenos na rede
 - arquivo: identificar_elementos_pequenos_na_rede.model3
-- camada: infra_via_deslocamento_l
-- tamanho: 1000 m (0.01 grau)
+- camadas do pontas livre de primeira ordem: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- raio de busca: 1000 m (0.01 grau)
+- tamanho: 5 m (0.00005 grau)
 - nome camada flags: flags_linhas_pequenas
 
-## 18. Identificar erros na construção da rede de via deslocamento
+## 18. Identificar erros na construção das redes de rodoviárias e ferroviárias
 - arquivo: identificar_erros_rede_drenagem.model3
 - camadas: infra_via_deslocamento_l, infra_ferrovia_l
 - camadas filtro linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
-- nome camada flags: flags_rede_via_deslocamento
-
-## 19. Identificar erros na construção da rede ferroviária
-- arquivo: identificar_erros_rede_drenagem.model3
-- camadas: infra_via_deslocamento_l
-- camadas filtro linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l
-- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
-- nome camada flags: flags_rede_via_deslocamento
+- nome camada flags: flags_redes_transporte
