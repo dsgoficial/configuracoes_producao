@@ -1,12 +1,12 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Symbology|Labeling" labelsEnabled="0" version="3.22.7-Białowieża">
-  <renderer-v2 referencescale="-1" type="RuleRenderer" enableorderby="0" symbollevels="0" forceraster="0">
+<qgis labelsEnabled="0" styleCategories="Symbology|Labeling" version="3.22.7-Białowieża">
+  <renderer-v2 forceraster="0" symbollevels="0" referencescale="-1" enableorderby="0" type="RuleRenderer">
     <rules key="{dd1feb67-8326-4cbb-9a19-eeb7652a6fac}">
-      <rule key="{eec8fc14-fbc2-4c2d-bcd2-05559dd6bc71}" symbol="0"/>
-      <rule key="{8f98026e-6b00-4033-be77-5b2e44ff8a52}" checkstate="0" symbol="1"/>
+      <rule symbol="0" key="{eec8fc14-fbc2-4c2d-bcd2-05559dd6bc71}"/>
+      <rule checkstate="0" symbol="1" key="{8f98026e-6b00-4033-be77-5b2e44ff8a52}" label="Vértices"/>
     </rules>
     <symbols>
-      <symbol type="line" name="0" force_rhr="0" alpha="1" clip_to_extent="1">
+      <symbol force_rhr="0" type="line" clip_to_extent="1" name="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -14,7 +14,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+        <layer class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -80,7 +80,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="line" name="1" force_rhr="0" alpha="1" clip_to_extent="1">
+      <symbol force_rhr="0" type="line" clip_to_extent="1" name="1" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -88,7 +88,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="MarkerLine" enabled="1" pass="0">
+        <layer class="MarkerLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
             <Option type="QString" name="average_angle_length" value="4"/>
             <Option type="QString" name="average_angle_map_unit_scale" value="3x:0,0,0,0,0,0"/>
@@ -128,7 +128,7 @@
               <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol type="marker" name="@1@0" force_rhr="0" alpha="1" clip_to_extent="1">
+          <symbol force_rhr="0" type="marker" clip_to_extent="1" name="@1@0" alpha="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -136,7 +136,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
-            <layer locked="0" class="SimpleMarker" enabled="1" pass="0">
+            <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="square"/>
