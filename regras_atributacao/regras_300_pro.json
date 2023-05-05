@@ -1,8 +1,8 @@
 {
     "metadados":{
         "modelo": "EDGV 3.0 Pro",
-        "versao_modelo": "1.2",
-        "versao_regras":"0.2"
+        "versao_modelo": "1.2.15",
+        "versao_regras":"0.3"
     },
     "grupo_estilo": [
         {
@@ -1072,7 +1072,7 @@
         {
             "atributo": "posicao_pista",
             "descricao": "posicao_pista - Atributo incorreto para este tipo (R88_V)",
-            "regra": "((nr_pistas <= 1) and posicao_pista not in (97)) or ((nr_pistas > 1) and posicao_pista not in (12,13)) or (modal_uso in (3,5,6,97) and posicao_pista not in (97))",
+            "regra": "((nr_pistas <= 1) and posicao_pista not in (97)) or ((nr_pistas > 1) and posicao_pista not in (12,13)) or (modal_uso in (5,6,97) and posicao_pista not in (97))",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.infra_elemento_viario_*"
