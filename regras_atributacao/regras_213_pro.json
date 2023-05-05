@@ -1,5 +1,9 @@
 {
-    "grupo_estilo": [
+    "metadados":{
+        "modelo": "EDGV 2.1.3 Pro",
+        "versao_modelo": "5.4.1",
+        "versao_regras":"0.0"
+    },"grupo_estilo": [
         {
             "tipo_estilo": "Atributo incorreto",
             "cor_rgb": "255,127,127"
