@@ -2,7 +2,7 @@
     "metadados":{
         "modelo": "EDGV 3.0 Pro",
         "versao_modelo": "1.2.15",
-        "versao_regras":"0.3"
+        "versao_regras":"0.4"
     },
     "grupo_estilo": [
         {
@@ -752,7 +752,7 @@
         {
             "atributo": "material_construcao",
             "descricao": "material_construcao - Atributo incorreto para este tipo (R79_V)",
-            "regra": "((tipo - tipo %100)/100) in (1,2,5,6,7) and not (material_construcao in (0,1,2,3,4,5))",
+            "regra": "((tipo - tipo %100)/100) in (1,2,5,6) and not (material_construcao in (0,1,2,3,4,5))",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.infra_elemento_viario_*"
