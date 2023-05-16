@@ -1,55 +1,55 @@
-<qgis simplifyAlgorithm="0" version="3.24.3-Tisler" styleCategories="AllStyleCategories" simplifyDrawingHints="0" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="100000000" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" simplifyLocal="1" maxScale="0" simplifyMaxScale="1">
+<qgis hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" version="3.24.3-Tisler" simplifyDrawingTol="1" readOnly="0" simplifyAlgorithm="0" labelsEnabled="0" minScale="100000000" symbologyReferenceScale="-1" maxScale="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyLocal="1">
 <flags>
 <Identifiable>1</Identifiable>
 <Removable>1</Removable>
 <Searchable>1</Searchable>
 <Private>0</Private>
 </flags>
-<temporal startField="" startExpression="" endExpression="" mode="0" enabled="0" durationUnit="min" endField="" limitMode="0" durationField="" fixedDuration="0" accumulate="0">
+<temporal startExpression="" enabled="0" mode="0" durationUnit="min" startField="" durationField="" limitMode="0" fixedDuration="0" endExpression="" endField="" accumulate="0">
 <fixedRange>
 <start></start>
 <end></end>
 </fixedRange>
 </temporal>
-<renderer-v2 type="singleSymbol" referencescale="-1" symbollevels="0" forceraster="0" enableorderby="0">
+<renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0" referencescale="-1">
 <symbols>
-<symbol type="line" alpha="1" force_rhr="0" clip_to_extent="1" name="0">
+<symbol alpha="1" clip_to_extent="1" name="0" force_rhr="0" type="line">
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
-<layer class="SimpleLine" locked="0" enabled="1" pass="0">
+<layer enabled="1" class="SimpleLine" pass="0" locked="0">
 <Option type="Map">
-<Option type="QString" value="0" name="align_dash_pattern"/>
-<Option type="QString" value="square" name="capstyle"/>
-<Option type="QString" value="5;2" name="customdash"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
-<Option type="QString" value="MM" name="customdash_unit"/>
-<Option type="QString" value="0" name="dash_pattern_offset"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
-<Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
-<Option type="QString" value="0" name="draw_inside_polygon"/>
-<Option type="QString" value="bevel" name="joinstyle"/>
-<Option type="QString" value="141,90,153,255" name="line_color"/>
-<Option type="QString" value="solid" name="line_style"/>
-<Option type="QString" value="0.26" name="line_width"/>
-<Option type="QString" value="MM" name="line_width_unit"/>
-<Option type="QString" value="0" name="offset"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
-<Option type="QString" value="MM" name="offset_unit"/>
-<Option type="QString" value="0" name="ring_filter"/>
-<Option type="QString" value="0" name="trim_distance_end"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
-<Option type="QString" value="MM" name="trim_distance_end_unit"/>
-<Option type="QString" value="0" name="trim_distance_start"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
-<Option type="QString" value="MM" name="trim_distance_start_unit"/>
-<Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
-<Option type="QString" value="0" name="use_custom_dash"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
+<Option name="align_dash_pattern" type="QString" value="0"/>
+<Option name="capstyle" type="QString" value="square"/>
+<Option name="customdash" type="QString" value="5;2"/>
+<Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="customdash_unit" type="QString" value="MM"/>
+<Option name="dash_pattern_offset" type="QString" value="0"/>
+<Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
+<Option name="draw_inside_polygon" type="QString" value="0"/>
+<Option name="joinstyle" type="QString" value="bevel"/>
+<Option name="line_color" type="QString" value="255,158,23,255"/>
+<Option name="line_style" type="QString" value="solid"/>
+<Option name="line_width" type="QString" value="0.26"/>
+<Option name="line_width_unit" type="QString" value="MM"/>
+<Option name="offset" type="QString" value="0"/>
+<Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="offset_unit" type="QString" value="MM"/>
+<Option name="ring_filter" type="QString" value="0"/>
+<Option name="trim_distance_end" type="QString" value="0"/>
+<Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="trim_distance_end_unit" type="QString" value="MM"/>
+<Option name="trim_distance_start" type="QString" value="0"/>
+<Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="trim_distance_start_unit" type="QString" value="MM"/>
+<Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
+<Option name="use_custom_dash" type="QString" value="0"/>
+<Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
 </Option>
 <prop k="align_dash_pattern" v="0"/>
 <prop k="capstyle" v="square"/>
@@ -61,7 +61,7 @@
 <prop k="dash_pattern_offset_unit" v="MM"/>
 <prop k="draw_inside_polygon" v="0"/>
 <prop k="joinstyle" v="bevel"/>
-<prop k="line_color" v="141,90,153,255"/>
+<prop k="line_color" v="255,158,23,255"/>
 <prop k="line_style" v="solid"/>
 <prop k="line_width" v="0.26"/>
 <prop k="line_width_unit" v="MM"/>
@@ -80,9 +80,9 @@
 <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
 </layer>
@@ -103,52 +103,52 @@
 </activeChecks>
 <checkConfiguration/>
 </geometryOptions>
-<legend type="default-vector" showLabelLegend="0"/>
+<legend showLabelLegend="0" type="default-vector"/>
 <referencedLayers/>
 <fieldConfiguration>
-<field name="id" configurationFlags="None">
+<field configurationFlags="None" name="id">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="observacao" configurationFlags="None">
+<field configurationFlags="None" name="observacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="operador_criacao" configurationFlags="None">
+<field configurationFlags="None" name="operador_criacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="data_criacao" configurationFlags="None">
+<field configurationFlags="None" name="data_criacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="operador_atualizacao" configurationFlags="None">
+<field configurationFlags="None" name="operador_atualizacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="data_atualizacao" configurationFlags="None">
+<field configurationFlags="None" name="data_atualizacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="length_otf" configurationFlags="None">
+<field configurationFlags="None" name="length_otf">
 <editWidget type="">
 <config>
 <Option/>
@@ -157,46 +157,46 @@
 </field>
 </fieldConfiguration>
 <aliases>
-<alias field="id" name="" index="0"/>
-<alias field="observacao" name="" index="1"/>
-<alias field="operador_criacao" name="" index="2"/>
-<alias field="data_criacao" name="" index="3"/>
-<alias field="operador_atualizacao" name="" index="4"/>
-<alias field="data_atualizacao" name="" index="5"/>
-<alias field="length_otf" name="" index="6"/>
+<alias name="" field="id" index="0"/>
+<alias name="" field="observacao" index="1"/>
+<alias name="" field="operador_criacao" index="2"/>
+<alias name="" field="data_criacao" index="3"/>
+<alias name="" field="operador_atualizacao" index="4"/>
+<alias name="" field="data_atualizacao" index="5"/>
+<alias name="" field="length_otf" index="6"/>
 </aliases>
 <defaults>
-<default field="id" expression="" applyOnUpdate="0"/>
-<default field="observacao" expression="" applyOnUpdate="0"/>
-<default field="operador_criacao" expression="" applyOnUpdate="0"/>
-<default field="data_criacao" expression="" applyOnUpdate="0"/>
-<default field="operador_atualizacao" expression="" applyOnUpdate="0"/>
-<default field="data_atualizacao" expression="" applyOnUpdate="0"/>
-<default field="length_otf" expression="" applyOnUpdate="0"/>
+<default expression="" applyOnUpdate="0" field="id"/>
+<default expression="" applyOnUpdate="0" field="observacao"/>
+<default expression="" applyOnUpdate="0" field="operador_criacao"/>
+<default expression="" applyOnUpdate="0" field="data_criacao"/>
+<default expression="" applyOnUpdate="0" field="operador_atualizacao"/>
+<default expression="" applyOnUpdate="0" field="data_atualizacao"/>
+<default expression="" applyOnUpdate="0" field="length_otf"/>
 </defaults>
 <constraints>
-<constraint notnull_strength="1" field="id" constraints="3" unique_strength="1" exp_strength="0"/>
-<constraint notnull_strength="0" field="observacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="operador_criacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="data_criacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="operador_atualizacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="data_atualizacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="length_otf" constraints="0" unique_strength="0" exp_strength="0"/>
+<constraint constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1" field="id"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="observacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="operador_criacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="data_criacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="operador_atualizacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="data_atualizacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="length_otf"/>
 </constraints>
 <constraintExpressions>
-<constraint field="id" exp="" desc=""/>
-<constraint field="observacao" exp="" desc=""/>
-<constraint field="operador_criacao" exp="" desc=""/>
-<constraint field="data_criacao" exp="" desc=""/>
-<constraint field="operador_atualizacao" exp="" desc=""/>
-<constraint field="data_atualizacao" exp="" desc=""/>
-<constraint field="length_otf" exp="" desc=""/>
+<constraint exp="" desc="" field="id"/>
+<constraint exp="" desc="" field="observacao"/>
+<constraint exp="" desc="" field="operador_criacao"/>
+<constraint exp="" desc="" field="data_criacao"/>
+<constraint exp="" desc="" field="operador_atualizacao"/>
+<constraint exp="" desc="" field="data_atualizacao"/>
+<constraint exp="" desc="" field="length_otf"/>
 </constraintExpressions>
 <expressionfields>
-<field precision="0" type="6" comment="" typeName="" length="0" expression="$length" name="length_otf" subType="0"/>
+<field subType="0" name="length_otf" comment="" expression="$length" type="6" length="0" precision="0" typeName=""/>
 </expressionfields>
 <attributeactions/>
-<attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+<attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
 <columns/>
 </attributetableconfig>
 <conditionalstyles>

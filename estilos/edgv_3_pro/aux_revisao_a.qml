@@ -1,42 +1,42 @@
-<qgis simplifyAlgorithm="0" version="3.24.3-Tisler" styleCategories="AllStyleCategories" simplifyDrawingHints="0" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="100000000" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" simplifyLocal="1" maxScale="0" simplifyMaxScale="1">
+<qgis hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" version="3.24.3-Tisler" simplifyDrawingTol="1" readOnly="0" simplifyAlgorithm="0" labelsEnabled="0" minScale="100000000" symbologyReferenceScale="-1" maxScale="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyLocal="1">
 <flags>
 <Identifiable>1</Identifiable>
 <Removable>1</Removable>
 <Searchable>1</Searchable>
 <Private>0</Private>
 </flags>
-<temporal startField="" startExpression="" endExpression="" mode="0" enabled="0" durationUnit="min" endField="" limitMode="0" durationField="" fixedDuration="0" accumulate="0">
+<temporal startExpression="" enabled="0" mode="0" durationUnit="min" startField="" durationField="" limitMode="0" fixedDuration="0" endExpression="" endField="" accumulate="0">
 <fixedRange>
 <start></start>
 <end></end>
 </fixedRange>
 </temporal>
-<renderer-v2 type="singleSymbol" referencescale="-1" symbollevels="0" forceraster="0" enableorderby="0">
+<renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0" referencescale="-1">
 <symbols>
-<symbol type="fill" alpha="1" force_rhr="0" clip_to_extent="1" name="0">
+<symbol alpha="1" clip_to_extent="1" name="0" force_rhr="0" type="fill">
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
-<layer class="SimpleFill" locked="0" enabled="1" pass="0">
+<layer enabled="1" class="SimpleFill" pass="0" locked="0">
 <Option type="Map">
-<Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-<Option type="QString" value="243,166,178,255" name="color"/>
-<Option type="QString" value="bevel" name="joinstyle"/>
-<Option type="QString" value="0,0" name="offset"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
-<Option type="QString" value="MM" name="offset_unit"/>
-<Option type="QString" value="35,35,35,255" name="outline_color"/>
-<Option type="QString" value="solid" name="outline_style"/>
-<Option type="QString" value="0.26" name="outline_width"/>
-<Option type="QString" value="MM" name="outline_width_unit"/>
-<Option type="QString" value="solid" name="style"/>
+<Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="color" type="QString" value="183,72,75,255"/>
+<Option name="joinstyle" type="QString" value="bevel"/>
+<Option name="offset" type="QString" value="0,0"/>
+<Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="offset_unit" type="QString" value="MM"/>
+<Option name="outline_color" type="QString" value="35,35,35,255"/>
+<Option name="outline_style" type="QString" value="solid"/>
+<Option name="outline_width" type="QString" value="0.26"/>
+<Option name="outline_width_unit" type="QString" value="MM"/>
+<Option name="style" type="QString" value="solid"/>
 </Option>
 <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-<prop k="color" v="243,166,178,255"/>
+<prop k="color" v="183,72,75,255"/>
 <prop k="joinstyle" v="bevel"/>
 <prop k="offset" v="0,0"/>
 <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -48,9 +48,9 @@
 <prop k="style" v="solid"/>
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
 </layer>
@@ -71,86 +71,86 @@
 </activeChecks>
 <checkConfiguration/>
 </geometryOptions>
-<legend type="default-vector" showLabelLegend="0"/>
+<legend showLabelLegend="0" type="default-vector"/>
 <referencedLayers/>
 <fieldConfiguration>
-<field name="id" configurationFlags="None">
+<field configurationFlags="None" name="id">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="descricao" configurationFlags="None">
+<field configurationFlags="None" name="descricao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="subfase_id" configurationFlags="None">
+<field configurationFlags="None" name="subfase_id">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="corrigido" configurationFlags="None">
+<field configurationFlags="None" name="corrigido">
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" value="9999" name="A SER PREENCHIDO (9999)"/>
-<Option type="QString" value="2" name="Não (2)"/>
-<Option type="QString" value="1" name="Sim (1)"/>
+<Option name="map" type="Map">
+<Option name="A SER PREENCHIDO (9999)" type="QString" value="9999"/>
+<Option name="Não (2)" type="QString" value="2"/>
+<Option name="Sim (1)" type="QString" value="1"/>
 </Option>
 </Option>
 </config>
 </editWidget>
 </field>
-<field name="justificativa" configurationFlags="None">
+<field configurationFlags="None" name="justificativa">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="observacao" configurationFlags="None">
+<field configurationFlags="None" name="observacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="operador_criacao" configurationFlags="None">
+<field configurationFlags="None" name="operador_criacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="data_criacao" configurationFlags="None">
+<field configurationFlags="None" name="data_criacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="operador_atualizacao" configurationFlags="None">
+<field configurationFlags="None" name="operador_atualizacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="data_atualizacao" configurationFlags="None">
+<field configurationFlags="None" name="data_atualizacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="area_otf" configurationFlags="None">
+<field configurationFlags="None" name="area_otf">
 <editWidget type="">
 <config>
 <Option/>
@@ -159,62 +159,62 @@
 </field>
 </fieldConfiguration>
 <aliases>
-<alias field="id" name="" index="0"/>
-<alias field="descricao" name="" index="1"/>
-<alias field="subfase_id" name="" index="2"/>
-<alias field="corrigido" name="" index="3"/>
-<alias field="justificativa" name="" index="4"/>
-<alias field="observacao" name="" index="5"/>
-<alias field="operador_criacao" name="" index="6"/>
-<alias field="data_criacao" name="" index="7"/>
-<alias field="operador_atualizacao" name="" index="8"/>
-<alias field="data_atualizacao" name="" index="9"/>
-<alias field="area_otf" name="" index="10"/>
+<alias name="" field="id" index="0"/>
+<alias name="" field="descricao" index="1"/>
+<alias name="" field="subfase_id" index="2"/>
+<alias name="" field="corrigido" index="3"/>
+<alias name="" field="justificativa" index="4"/>
+<alias name="" field="observacao" index="5"/>
+<alias name="" field="operador_criacao" index="6"/>
+<alias name="" field="data_criacao" index="7"/>
+<alias name="" field="operador_atualizacao" index="8"/>
+<alias name="" field="data_atualizacao" index="9"/>
+<alias name="" field="area_otf" index="10"/>
 </aliases>
 <defaults>
-<default field="id" expression="" applyOnUpdate="0"/>
-<default field="descricao" expression="" applyOnUpdate="0"/>
-<default field="subfase_id" expression="" applyOnUpdate="0"/>
-<default field="corrigido" expression="" applyOnUpdate="0"/>
-<default field="justificativa" expression="" applyOnUpdate="0"/>
-<default field="observacao" expression="" applyOnUpdate="0"/>
-<default field="operador_criacao" expression="" applyOnUpdate="0"/>
-<default field="data_criacao" expression="" applyOnUpdate="0"/>
-<default field="operador_atualizacao" expression="" applyOnUpdate="0"/>
-<default field="data_atualizacao" expression="" applyOnUpdate="0"/>
-<default field="area_otf" expression="" applyOnUpdate="0"/>
+<default expression="" applyOnUpdate="0" field="id"/>
+<default expression="" applyOnUpdate="0" field="descricao"/>
+<default expression="" applyOnUpdate="0" field="subfase_id"/>
+<default expression="" applyOnUpdate="0" field="corrigido"/>
+<default expression="" applyOnUpdate="0" field="justificativa"/>
+<default expression="" applyOnUpdate="0" field="observacao"/>
+<default expression="" applyOnUpdate="0" field="operador_criacao"/>
+<default expression="" applyOnUpdate="0" field="data_criacao"/>
+<default expression="" applyOnUpdate="0" field="operador_atualizacao"/>
+<default expression="" applyOnUpdate="0" field="data_atualizacao"/>
+<default expression="" applyOnUpdate="0" field="area_otf"/>
 </defaults>
 <constraints>
-<constraint notnull_strength="1" field="id" constraints="3" unique_strength="1" exp_strength="0"/>
-<constraint notnull_strength="0" field="descricao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="subfase_id" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="1" field="corrigido" constraints="1" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="justificativa" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="observacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="operador_criacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="data_criacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="operador_atualizacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="data_atualizacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="area_otf" constraints="0" unique_strength="0" exp_strength="0"/>
+<constraint constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1" field="id"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="descricao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="subfase_id"/>
+<constraint constraints="1" exp_strength="0" notnull_strength="1" unique_strength="0" field="corrigido"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="justificativa"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="observacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="operador_criacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="data_criacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="operador_atualizacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="data_atualizacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="area_otf"/>
 </constraints>
 <constraintExpressions>
-<constraint field="id" exp="" desc=""/>
-<constraint field="descricao" exp="" desc=""/>
-<constraint field="subfase_id" exp="" desc=""/>
-<constraint field="corrigido" exp="" desc=""/>
-<constraint field="justificativa" exp="" desc=""/>
-<constraint field="observacao" exp="" desc=""/>
-<constraint field="operador_criacao" exp="" desc=""/>
-<constraint field="data_criacao" exp="" desc=""/>
-<constraint field="operador_atualizacao" exp="" desc=""/>
-<constraint field="data_atualizacao" exp="" desc=""/>
-<constraint field="area_otf" exp="" desc=""/>
+<constraint exp="" desc="" field="id"/>
+<constraint exp="" desc="" field="descricao"/>
+<constraint exp="" desc="" field="subfase_id"/>
+<constraint exp="" desc="" field="corrigido"/>
+<constraint exp="" desc="" field="justificativa"/>
+<constraint exp="" desc="" field="observacao"/>
+<constraint exp="" desc="" field="operador_criacao"/>
+<constraint exp="" desc="" field="data_criacao"/>
+<constraint exp="" desc="" field="operador_atualizacao"/>
+<constraint exp="" desc="" field="data_atualizacao"/>
+<constraint exp="" desc="" field="area_otf"/>
 </constraintExpressions>
 <expressionfields>
-<field precision="0" type="6" comment="" typeName="" length="0" expression="$area" name="area_otf" subType="0"/>
+<field subType="0" name="area_otf" comment="" expression="$area" type="6" length="0" precision="0" typeName=""/>
 </expressionfields>
 <attributeactions/>
-<attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+<attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
 <columns/>
 </attributetableconfig>
 <conditionalstyles>

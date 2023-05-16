@@ -1,154 +1,42 @@
-<qgis simplifyAlgorithm="0" version="3.24.3-Tisler" styleCategories="AllStyleCategories" simplifyDrawingHints="1" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="0" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" simplifyLocal="1" maxScale="0" simplifyMaxScale="1">
+<qgis hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" version="3.24.3-Tisler" simplifyDrawingTol="1" readOnly="0" simplifyAlgorithm="0" labelsEnabled="0" minScale="100000000" symbologyReferenceScale="-1" maxScale="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyLocal="1">
 <flags>
 <Identifiable>1</Identifiable>
 <Removable>1</Removable>
 <Searchable>1</Searchable>
 <Private>0</Private>
 </flags>
-<temporal startField="" startExpression="" endExpression="" mode="0" enabled="0" durationUnit="min" endField="" limitMode="0" durationField="" fixedDuration="0" accumulate="0">
+<temporal startExpression="" enabled="0" mode="0" durationUnit="min" startField="" durationField="" limitMode="0" fixedDuration="0" endExpression="" endField="" accumulate="0">
 <fixedRange>
 <start></start>
 <end></end>
 </fixedRange>
 </temporal>
-<renderer-v2 type="mergedFeatureRenderer" referencescale="-1" symbollevels="0" forceraster="0" enableorderby="0">
-<renderer-v2 type="RuleRenderer" referencescale="-1" symbollevels="0" forceraster="0" enableorderby="0">
-<rules key="{bcbf84cb-47c4-41dd-8ad9-92030a687df9}">
-<rule filter=" &quot;densamente_edificada&quot; = 1" symbol="0" key="{8fc73da4-6fd2-4894-a6c3-66deeac78ac1}"/>
-<rule filter=" &quot;densamente_edificada&quot; = 2" symbol="1" key="{509be8cc-a383-4293-b133-b1f614331d00}"/>
-<rule filter="ELSE" symbol="2" key="{5b3c533e-c5bd-4612-88db-593199fbec63}"/>
-</rules>
+<renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0" referencescale="-1">
 <symbols>
-<symbol type="fill" alpha="1" force_rhr="0" clip_to_extent="1" name="0">
+<symbol alpha="1" clip_to_extent="1" name="0" force_rhr="0" type="fill">
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
-<layer class="SimpleFill" locked="0" enabled="1" pass="0">
+<layer enabled="1" class="SimpleFill" pass="0" locked="0">
 <Option type="Map">
-<Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-<Option type="QString" value="194,151,165,255" name="color"/>
-<Option type="QString" value="bevel" name="joinstyle"/>
-<Option type="QString" value="0,0" name="offset"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
-<Option type="QString" value="MM" name="offset_unit"/>
-<Option type="QString" value="0,0,0,255" name="outline_color"/>
-<Option type="QString" value="solid" name="outline_style"/>
-<Option type="QString" value="0.1" name="outline_width"/>
-<Option type="QString" value="MM" name="outline_width_unit"/>
-<Option type="QString" value="solid" name="style"/>
+<Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="color" type="QString" value="232,113,141,255"/>
+<Option name="joinstyle" type="QString" value="bevel"/>
+<Option name="offset" type="QString" value="0,0"/>
+<Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="offset_unit" type="QString" value="MM"/>
+<Option name="outline_color" type="QString" value="35,35,35,255"/>
+<Option name="outline_style" type="QString" value="solid"/>
+<Option name="outline_width" type="QString" value="0.26"/>
+<Option name="outline_width_unit" type="QString" value="MM"/>
+<Option name="style" type="QString" value="solid"/>
 </Option>
 <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-<prop k="color" v="194,151,165,255"/>
-<prop k="joinstyle" v="bevel"/>
-<prop k="offset" v="0,0"/>
-<prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-<prop k="offset_unit" v="MM"/>
-<prop k="outline_color" v="0,0,0,255"/>
-<prop k="outline_style" v="solid"/>
-<prop k="outline_width" v="0.1"/>
-<prop k="outline_width_unit" v="MM"/>
-<prop k="style" v="solid"/>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" value="" name="name"/>
-<Option type="Map" name="properties">
-<Option type="Map" name="fillColor">
-<Option type="bool" value="true" name="active"/>
-<Option type="QString" value="project_color('marrom-escuro202-42_194-151-165_#C297A5')" name="expression"/>
-<Option type="int" value="3" name="type"/>
-</Option>
-<Option type="Map" name="outlineColor">
-<Option type="bool" value="true" name="active"/>
-<Option type="QString" value="project_color('preto-75_75-75-75_#4B4B4B')" name="expression"/>
-<Option type="int" value="3" name="type"/>
-</Option>
-</Option>
-<Option type="QString" value="collection" name="type"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-<symbol type="fill" alpha="1" force_rhr="0" clip_to_extent="1" name="1">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" value="" name="name"/>
-<Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
-</Option>
-</data_defined_properties>
-<layer class="SimpleFill" locked="0" enabled="1" pass="0">
-<Option type="Map">
-<Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-<Option type="QString" value="212,187,201,255" name="color"/>
-<Option type="QString" value="bevel" name="joinstyle"/>
-<Option type="QString" value="0,0" name="offset"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
-<Option type="QString" value="MM" name="offset_unit"/>
-<Option type="QString" value="0,0,0,255" name="outline_color"/>
-<Option type="QString" value="solid" name="outline_style"/>
-<Option type="QString" value="0.1" name="outline_width"/>
-<Option type="QString" value="MM" name="outline_width_unit"/>
-<Option type="QString" value="solid" name="style"/>
-</Option>
-<prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-<prop k="color" v="212,187,201,255"/>
-<prop k="joinstyle" v="bevel"/>
-<prop k="offset" v="0,0"/>
-<prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-<prop k="offset_unit" v="MM"/>
-<prop k="outline_color" v="0,0,0,255"/>
-<prop k="outline_style" v="solid"/>
-<prop k="outline_width" v="0.1"/>
-<prop k="outline_width_unit" v="MM"/>
-<prop k="style" v="solid"/>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" value="" name="name"/>
-<Option type="Map" name="properties">
-<Option type="Map" name="fillColor">
-<Option type="bool" value="true" name="active"/>
-<Option type="QString" value="project_color('marrom-escuro202-21_212-187-201_#D4BBC9')" name="expression"/>
-<Option type="int" value="3" name="type"/>
-</Option>
-<Option type="Map" name="outlineColor">
-<Option type="bool" value="true" name="active"/>
-<Option type="QString" value="project_color('preto-75_75-75-75_#4B4B4B')" name="expression"/>
-<Option type="int" value="3" name="type"/>
-</Option>
-</Option>
-<Option type="QString" value="collection" name="type"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-<symbol type="fill" alpha="1" force_rhr="0" clip_to_extent="1" name="2">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" value="" name="name"/>
-<Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
-</Option>
-</data_defined_properties>
-<layer class="SimpleFill" locked="0" enabled="1" pass="0">
-<Option type="Map">
-<Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-<Option type="QString" value="255,1,73,255" name="color"/>
-<Option type="QString" value="bevel" name="joinstyle"/>
-<Option type="QString" value="0,0" name="offset"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
-<Option type="QString" value="MM" name="offset_unit"/>
-<Option type="QString" value="35,35,35,255" name="outline_color"/>
-<Option type="QString" value="solid" name="outline_style"/>
-<Option type="QString" value="0.26" name="outline_width"/>
-<Option type="QString" value="MM" name="outline_width_unit"/>
-<Option type="QString" value="solid" name="style"/>
-</Option>
-<prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-<prop k="color" v="255,1,73,255"/>
+<prop k="color" v="232,113,141,255"/>
 <prop k="joinstyle" v="bevel"/>
 <prop k="offset" v="0,0"/>
 <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -160,15 +48,16 @@
 <prop k="style" v="solid"/>
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
 </layer>
 </symbol>
 </symbols>
-</renderer-v2>
+<rotation/>
+<sizescale/>
 </renderer-v2>
 <customproperties>
 <Option/>
@@ -177,81 +66,90 @@
 <featureBlendMode>0</featureBlendMode>
 <layerOpacity>1</layerOpacity>
 <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
-<activeChecks/>
+<activeChecks type="StringList">
+<Option type="QString" value=""/>
+</activeChecks>
 <checkConfiguration/>
 </geometryOptions>
-<legend type="default-vector" showLabelLegend="0"/>
+<legend showLabelLegend="0" type="default-vector"/>
 <referencedLayers/>
 <fieldConfiguration>
-<field name="id" configurationFlags="None">
+<field configurationFlags="None" name="id">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="nome" configurationFlags="None">
+<field configurationFlags="None" name="nome">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="densamente_edificada" configurationFlags="None">
+<field configurationFlags="None" name="densamente_edificada">
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" value="9999" name="A SER PREENCHIDO (9999)"/>
-<Option type="QString" value="2" name="Não (2)"/>
-<Option type="QString" value="1" name="Sim (1)"/>
+<Option name="map" type="Map">
+<Option name="A SER PREENCHIDO (9999)" type="QString" value="9999"/>
+<Option name="Não (2)" type="QString" value="2"/>
+<Option name="Sim (1)" type="QString" value="1"/>
 </Option>
 </Option>
 </config>
 </editWidget>
 </field>
-<field name="assentamento_precario" configurationFlags="None">
+<field configurationFlags="None" name="assentamento_precario">
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" value="9999" name="A SER PREENCHIDO (9999)"/>
-<Option type="QString" value="2" name="Não (2)"/>
-<Option type="QString" value="1" name="Sim (1)"/>
+<Option name="map" type="Map">
+<Option name="A SER PREENCHIDO (9999)" type="QString" value="9999"/>
+<Option name="Não (2)" type="QString" value="2"/>
+<Option name="Sim (1)" type="QString" value="1"/>
 </Option>
 </Option>
 </config>
 </editWidget>
 </field>
-<field name="observacao" configurationFlags="None">
+<field configurationFlags="None" name="observacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="operador_criacao" configurationFlags="None">
+<field configurationFlags="None" name="operador_criacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="data_criacao" configurationFlags="None">
+<field configurationFlags="None" name="data_criacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="operador_atualizacao" configurationFlags="None">
+<field configurationFlags="None" name="operador_atualizacao">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="data_atualizacao" configurationFlags="None">
+<field configurationFlags="None" name="data_atualizacao">
+<editWidget type="">
+<config>
+<Option/>
+</config>
+</editWidget>
+</field>
+<field configurationFlags="None" name="area_otf">
 <editWidget type="">
 <config>
 <Option/>
@@ -260,52 +158,58 @@
 </field>
 </fieldConfiguration>
 <aliases>
-<alias field="id" name="" index="0"/>
-<alias field="nome" name="" index="1"/>
-<alias field="densamente_edificada" name="" index="2"/>
-<alias field="assentamento_precario" name="" index="3"/>
-<alias field="observacao" name="" index="4"/>
-<alias field="operador_criacao" name="" index="5"/>
-<alias field="data_criacao" name="" index="6"/>
-<alias field="operador_atualizacao" name="" index="7"/>
-<alias field="data_atualizacao" name="" index="8"/>
+<alias name="" field="id" index="0"/>
+<alias name="" field="nome" index="1"/>
+<alias name="" field="densamente_edificada" index="2"/>
+<alias name="" field="assentamento_precario" index="3"/>
+<alias name="" field="observacao" index="4"/>
+<alias name="" field="operador_criacao" index="5"/>
+<alias name="" field="data_criacao" index="6"/>
+<alias name="" field="operador_atualizacao" index="7"/>
+<alias name="" field="data_atualizacao" index="8"/>
+<alias name="" field="area_otf" index="9"/>
 </aliases>
 <defaults>
-<default field="id" expression="" applyOnUpdate="0"/>
-<default field="nome" expression="" applyOnUpdate="0"/>
-<default field="densamente_edificada" expression="" applyOnUpdate="0"/>
-<default field="assentamento_precario" expression="" applyOnUpdate="0"/>
-<default field="observacao" expression="" applyOnUpdate="0"/>
-<default field="operador_criacao" expression="" applyOnUpdate="0"/>
-<default field="data_criacao" expression="" applyOnUpdate="0"/>
-<default field="operador_atualizacao" expression="" applyOnUpdate="0"/>
-<default field="data_atualizacao" expression="" applyOnUpdate="0"/>
+<default expression="" applyOnUpdate="0" field="id"/>
+<default expression="" applyOnUpdate="0" field="nome"/>
+<default expression="" applyOnUpdate="0" field="densamente_edificada"/>
+<default expression="" applyOnUpdate="0" field="assentamento_precario"/>
+<default expression="" applyOnUpdate="0" field="observacao"/>
+<default expression="" applyOnUpdate="0" field="operador_criacao"/>
+<default expression="" applyOnUpdate="0" field="data_criacao"/>
+<default expression="" applyOnUpdate="0" field="operador_atualizacao"/>
+<default expression="" applyOnUpdate="0" field="data_atualizacao"/>
+<default expression="" applyOnUpdate="0" field="area_otf"/>
 </defaults>
 <constraints>
-<constraint notnull_strength="1" field="id" constraints="3" unique_strength="1" exp_strength="0"/>
-<constraint notnull_strength="0" field="nome" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="1" field="densamente_edificada" constraints="1" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="1" field="assentamento_precario" constraints="1" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="observacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="operador_criacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="data_criacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="operador_atualizacao" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="data_atualizacao" constraints="0" unique_strength="0" exp_strength="0"/>
+<constraint constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1" field="id"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="nome"/>
+<constraint constraints="1" exp_strength="0" notnull_strength="1" unique_strength="0" field="densamente_edificada"/>
+<constraint constraints="1" exp_strength="0" notnull_strength="1" unique_strength="0" field="assentamento_precario"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="observacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="operador_criacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="data_criacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="operador_atualizacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="data_atualizacao"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="area_otf"/>
 </constraints>
 <constraintExpressions>
-<constraint field="id" exp="" desc=""/>
-<constraint field="nome" exp="" desc=""/>
-<constraint field="densamente_edificada" exp="" desc=""/>
-<constraint field="assentamento_precario" exp="" desc=""/>
-<constraint field="observacao" exp="" desc=""/>
-<constraint field="operador_criacao" exp="" desc=""/>
-<constraint field="data_criacao" exp="" desc=""/>
-<constraint field="operador_atualizacao" exp="" desc=""/>
-<constraint field="data_atualizacao" exp="" desc=""/>
+<constraint exp="" desc="" field="id"/>
+<constraint exp="" desc="" field="nome"/>
+<constraint exp="" desc="" field="densamente_edificada"/>
+<constraint exp="" desc="" field="assentamento_precario"/>
+<constraint exp="" desc="" field="observacao"/>
+<constraint exp="" desc="" field="operador_criacao"/>
+<constraint exp="" desc="" field="data_criacao"/>
+<constraint exp="" desc="" field="operador_atualizacao"/>
+<constraint exp="" desc="" field="data_atualizacao"/>
+<constraint exp="" desc="" field="area_otf"/>
 </constraintExpressions>
-<expressionfields/>
+<expressionfields>
+<field subType="0" name="area_otf" comment="" expression="$area" type="6" length="0" precision="0" typeName=""/>
+</expressionfields>
 <attributeactions/>
-<attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+<attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
 <columns/>
 </attributetableconfig>
 <conditionalstyles>

@@ -1,42 +1,42 @@
-<qgis simplifyAlgorithm="0" version="3.24.3-Tisler" styleCategories="AllStyleCategories" simplifyDrawingHints="0" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="100000000" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" simplifyLocal="1" maxScale="0" simplifyMaxScale="1">
+<qgis hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" version="3.24.3-Tisler" simplifyDrawingTol="1" readOnly="0" simplifyAlgorithm="0" labelsEnabled="0" minScale="100000000" symbologyReferenceScale="-1" maxScale="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyLocal="1">
 <flags>
 <Identifiable>1</Identifiable>
 <Removable>1</Removable>
 <Searchable>1</Searchable>
 <Private>0</Private>
 </flags>
-<temporal startField="" startExpression="" endExpression="" mode="0" enabled="0" durationUnit="min" endField="" limitMode="0" durationField="" fixedDuration="0" accumulate="0">
+<temporal startExpression="" enabled="0" mode="0" durationUnit="min" startField="" durationField="" limitMode="0" fixedDuration="0" endExpression="" endField="" accumulate="0">
 <fixedRange>
 <start></start>
 <end></end>
 </fixedRange>
 </temporal>
-<renderer-v2 type="singleSymbol" referencescale="-1" symbollevels="0" forceraster="0" enableorderby="0">
+<renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0" referencescale="-1">
 <symbols>
-<symbol type="fill" alpha="1" force_rhr="0" clip_to_extent="1" name="0">
+<symbol alpha="1" clip_to_extent="1" name="0" force_rhr="0" type="fill">
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
-<layer class="SimpleFill" locked="0" enabled="1" pass="0">
+<layer enabled="1" class="SimpleFill" pass="0" locked="0">
 <Option type="Map">
-<Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-<Option type="QString" value="125,139,143,255" name="color"/>
-<Option type="QString" value="bevel" name="joinstyle"/>
-<Option type="QString" value="0,0" name="offset"/>
-<Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
-<Option type="QString" value="MM" name="offset_unit"/>
-<Option type="QString" value="35,35,35,255" name="outline_color"/>
-<Option type="QString" value="solid" name="outline_style"/>
-<Option type="QString" value="0.26" name="outline_width"/>
-<Option type="QString" value="MM" name="outline_width_unit"/>
-<Option type="QString" value="solid" name="style"/>
+<Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="color" type="QString" value="229,182,54,255"/>
+<Option name="joinstyle" type="QString" value="bevel"/>
+<Option name="offset" type="QString" value="0,0"/>
+<Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+<Option name="offset_unit" type="QString" value="MM"/>
+<Option name="outline_color" type="QString" value="35,35,35,255"/>
+<Option name="outline_style" type="QString" value="solid"/>
+<Option name="outline_width" type="QString" value="0.26"/>
+<Option name="outline_width_unit" type="QString" value="MM"/>
+<Option name="style" type="QString" value="solid"/>
 </Option>
 <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-<prop k="color" v="125,139,143,255"/>
+<prop k="color" v="229,182,54,255"/>
 <prop k="joinstyle" v="bevel"/>
 <prop k="offset" v="0,0"/>
 <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -48,9 +48,9 @@
 <prop k="style" v="solid"/>
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" value="" name="name"/>
+<Option name="name" type="QString" value=""/>
 <Option name="properties"/>
-<Option type="QString" value="collection" name="type"/>
+<Option name="type" type="QString" value="collection"/>
 </Option>
 </data_defined_properties>
 </layer>
@@ -71,38 +71,38 @@
 </activeChecks>
 <checkConfiguration/>
 </geometryOptions>
-<legend type="default-vector" showLabelLegend="0"/>
+<legend showLabelLegend="0" type="default-vector"/>
 <referencedLayers/>
 <fieldConfiguration>
-<field name="id" configurationFlags="None">
+<field configurationFlags="None" name="id">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="rank" configurationFlags="None">
+<field configurationFlags="None" name="rank">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="visited" configurationFlags="None">
+<field configurationFlags="None" name="visited">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="atividade_id" configurationFlags="None">
+<field configurationFlags="None" name="atividade_id">
 <editWidget type="">
 <config>
 <Option/>
 </config>
 </editWidget>
 </field>
-<field name="area_otf" configurationFlags="None">
+<field configurationFlags="None" name="area_otf">
 <editWidget type="">
 <config>
 <Option/>
@@ -111,38 +111,38 @@
 </field>
 </fieldConfiguration>
 <aliases>
-<alias field="id" name="" index="0"/>
-<alias field="rank" name="" index="1"/>
-<alias field="visited" name="" index="2"/>
-<alias field="atividade_id" name="" index="3"/>
-<alias field="area_otf" name="" index="4"/>
+<alias name="" field="id" index="0"/>
+<alias name="" field="rank" index="1"/>
+<alias name="" field="visited" index="2"/>
+<alias name="" field="atividade_id" index="3"/>
+<alias name="" field="area_otf" index="4"/>
 </aliases>
 <defaults>
-<default field="id" expression="" applyOnUpdate="0"/>
-<default field="rank" expression="" applyOnUpdate="0"/>
-<default field="visited" expression="" applyOnUpdate="0"/>
-<default field="atividade_id" expression="" applyOnUpdate="0"/>
-<default field="area_otf" expression="" applyOnUpdate="0"/>
+<default expression="" applyOnUpdate="0" field="id"/>
+<default expression="" applyOnUpdate="0" field="rank"/>
+<default expression="" applyOnUpdate="0" field="visited"/>
+<default expression="" applyOnUpdate="0" field="atividade_id"/>
+<default expression="" applyOnUpdate="0" field="area_otf"/>
 </defaults>
 <constraints>
-<constraint notnull_strength="1" field="id" constraints="3" unique_strength="1" exp_strength="0"/>
-<constraint notnull_strength="0" field="rank" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="visited" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="atividade_id" constraints="0" unique_strength="0" exp_strength="0"/>
-<constraint notnull_strength="0" field="area_otf" constraints="0" unique_strength="0" exp_strength="0"/>
+<constraint constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1" field="id"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="rank"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="visited"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="atividade_id"/>
+<constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="area_otf"/>
 </constraints>
 <constraintExpressions>
-<constraint field="id" exp="" desc=""/>
-<constraint field="rank" exp="" desc=""/>
-<constraint field="visited" exp="" desc=""/>
-<constraint field="atividade_id" exp="" desc=""/>
-<constraint field="area_otf" exp="" desc=""/>
+<constraint exp="" desc="" field="id"/>
+<constraint exp="" desc="" field="rank"/>
+<constraint exp="" desc="" field="visited"/>
+<constraint exp="" desc="" field="atividade_id"/>
+<constraint exp="" desc="" field="area_otf"/>
 </constraintExpressions>
 <expressionfields>
-<field precision="0" type="6" comment="" typeName="" length="0" expression="$area" name="area_otf" subType="0"/>
+<field subType="0" name="area_otf" comment="" expression="$area" type="6" length="0" precision="0" typeName=""/>
 </expressionfields>
 <attributeactions/>
-<attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+<attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
 <columns/>
 </attributetableconfig>
 <conditionalstyles>
