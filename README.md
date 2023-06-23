@@ -8,4 +8,3 @@ Aqui estão disponibilizados as seguintes configurações:
 * Regras
 * Modelos
 * Workflows
-
