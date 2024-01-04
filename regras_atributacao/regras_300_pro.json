@@ -991,7 +991,7 @@
         {
             "atributo": "nr_pistas",
             "descricao": "nr_pistas - Relacionamento incorreto com nr_faixas (R85_V)",
-            "regra": "nr_pistas > nr_faixas",
+            "regra": "to_int(nr_pistas) > to_int(nr_faixas)",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.*"
