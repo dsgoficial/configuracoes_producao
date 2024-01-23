@@ -164,20 +164,22 @@ dictsubfasedisseminacao = {
         "Disseminação": []
         }
 
-nome = "Conjunto de dados geoespaciais vetoriais para EDGV Pro 1.4"
+nome = "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Pro 1.4"
 descricao = "Linha de produção padrão para vetores da EDGV"
-nome_abrev = "cdgv_edgv_3"
+versao = "1.0.0"
+nome_abrev = "cdgv_edgv_30pro14"
 tipo_produto_id = 7 #Baseado em dominio.sql
 planilha = 'EDGV - Classes.csv'
 
 lp = {
     "nome": nome,
     "descricao": descricao,
+    "versão": versao,
     "nome_abrev": nome_abrev,
     "tipo_produto_id": tipo_produto_id,
     "fases": constroi_fases(dictsubfasepreparo, dictsubfaseextracao, dictsubfasevalidacao, dictsubfasedisseminacao),
     "propriedades_camadas": constroi_propriedades(planilha, dictsubfaseextracao, dictsubfasevalidacao)
 }
 
-with open('lp_edgv_pro_v14.json', 'w', encoding='utf-8') as f:
+with open('lp_cdgv_edgv_30pro14.json', 'w', encoding='utf-8') as f:
     json.dump(lp, f, ensure_ascii=False, indent=4)
