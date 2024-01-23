@@ -1,0 +1,67 @@
+Nome da Camada,Ponto,Linha,Área,Subfase,Área gerada por centroide
+delimitador_area_construida,Não,Sim,Não,Extração de Área Edificada,Não
+centroide_area_construida,Sim,Não,Não,Extração de Área Edificada,Não
+delimitador_vegetacao,Não,Sim,Não,Extração de Vegetação,Não
+centroide_vegetacao,Sim,Não,Não,Extração de Vegetação,Não
+delimitador_elemento_hidrografico,Não,Sim,Não,Extração de Elemento Hidrográfico,Não
+centroide_elemento_hidrografico,Sim,Não,Não,Extração de Elemento Hidrográfico,Não
+delimitador_massa_dagua,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+centroide_massa_dagua,Sim,Não,Não,Extração da Hidrografia e Altimetria,Não
+centroide_ilha,Sim,Não,Não,Extração de Elemento Hidrográfico,Não
+delimitador_limite_especial,Não,Sim,Não,Extração de Limites,Não
+centroide_limite_especial,Sim,Não,Não,Extração de Limites,Não
+delimitador_area_sem_dados,Não,Sim,Não,Extração de Limites,Não
+centroide_area_sem_dados,Sim,Não,Não,Extração de Limites,Não
+edicao_area_sem_dados,Não,Não,Sim,Edição,Não
+aux_revisao,Sim,Sim,Sim,Todas,Não
+aux_validacao,Sim,Sim,Sim,Todas,Não
+cobter_massa_dagua,Não,Não,Sim,Validação Nível Produto,Sim
+constr_extracao_mineral,Sim,Não,Sim,Extração de Planimetria,Não
+edicao_identificador_trecho_rod,Sim,Não,Não,Edição,Não
+edicao_simb_cota_mestra,Sim,Não,Não,Edição,Não
+edicao_simb_direcao_corrente,Sim,Não,Não,Edição,Não
+edicao_simb_torre_energia,Sim,Não,Não,Edição,Não
+edicao_texto_generico,Sim,Sim,Não,Edição,Não
+elemnat_curva_nivel,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+elemnat_elemento_hidrografico,Sim,Sim,Sim,Extração de Elemento Hidrográfico,Sim
+elemnat_ilha,Não,Sim,Sim,Extração de Elemento Hidrográfico,Sim
+elemnat_ponto_cotado,Sim,Não,Não,Verificação Final,Não
+elemnat_terreno_sujeito_inundacao,Não,Não,Sim,Validação Nível Produto,Sim
+elemnat_toponimo_fisiografico_natural,Sim,Sim,Não,Extração de Topônimos,Não
+elemnat_trecho_drenagem,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+infra_barragem,Não,Sim,Sim,Extração da Hidrografia e Altimetria,Não
+infra_elemento_energia,Sim,Sim,Sim,Extração de Planimetria,Não
+infra_ferrovia,Não,Sim,Não,Extração de Ferrovias,Não
+infra_obstaculo_vertical,Sim,Não,Não,Extração de Planimetria,Não
+infra_pista_pouso,Sim,Sim,Sim,Extração de Planimetria,Não
+infra_via_deslocamento,Não,Sim,Não,Extração de Vias de Deslocamento,Não
+edicao_limite_legal,Não,Sim,Não,Edição,Não
+llp_localidade,Sim,Não,Não,Extração de Topônimos,Não
+edicao_simb_vegetacao,Sim,Não,Não,Edição,Não
+aux_insumo_externo,Sim,Sim,Sim,Todas,Não
+aux_reambulacao,Sim,Sim,Sim,Todas,Não
+cobter_area_construida,Não,Não,Sim,Validação Nível Produto,Sim
+cobter_vegetacao,Não,Não,Sim,Validação Nível Produto,Sim
+constr_deposito,Sim,Não,Sim,Extração de Edificação,Não
+constr_edificacao,Sim,Não,Sim,Extração de Edificação,Não
+constr_ocupacao_solo,Sim,Sim,Sim,Extração de Planimetria,Não
+elemnat_elemento_fisiografico,Sim,Sim,Sim,Extração de Planimetria,Não
+elemnat_sumidouro_vertedouro,Sim,Não,Não,Extração da Hidrografia e Altimetria,Não
+edicao_simb_area,Sim,Não,Não,Edição,Não
+infra_alteracao_fisiografica_antropica,Não,Sim,Não,Extração de Planimetria,Não
+infra_elemento_infraestrutura,Sim,Sim,Sim,Extração de Planimetria,Não
+infra_elemento_viario,Sim,Sim,Não,Extração de Interseção de Hidrografia e Transporte,Não
+infra_mobilidade_urbana,Não,Sim,Não,Extração de Vias de Deslocamento,Não
+infra_trecho_duto,Não,Sim,Não,Extração de Planimetria,Não
+infra_travessia_hidroviaria,Não,Sim,Não,Extração de Vias de Deslocamento,Não
+infra_vala,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+llp_delimitacao_fisica,Não,Sim,Não,Extração de Vegetação,Não
+llp_limite_especial,Não,Não,Sim,Validação Nível Produto,Sim
+edicao_limite_especial,Não,Sim,Não,Edição,Não
+llp_ponto_controle,Sim,Não,Não,Extração de Limites,Não
+edicao_borda_elemento_hidrografico,Não,Sim,Não,Edição,Não
+constr_area_uso_especifico,Não,Não,Sim,Extração de Planimetria,Não
+edicao_grid_edicao,Não,Sim,Não,Edição,Não
+edicao_ponto_mudanca,Sim,Não,Não,Edição,Não
+llp_pais,Não,Não,Sim,Validação Nível Produto,Não
+llp_unidade_federacao,Não,Não,Sim,Validação Nível Produto,Não
