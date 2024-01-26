@@ -1712,67 +1712,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Verificação Final",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Limites",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Vegetação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Área Edificada",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Área sem Dados",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "subfase": "Validação da Ligação",
             "camada_apontamento": false
         },
         {
@@ -1844,67 +1790,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "elemnat_ilha_a",
-            "subfase": "Verificação Final",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Limites",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Vegetação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Área Edificada",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Área sem Dados",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "subfase": "Validação da Ligação",
             "camada_apontamento": false
         },
         {

@@ -2,14 +2,14 @@ import csv, json
 
 def constroi_nomes(row):
     nomes=[]
-    nome_base = row[0]
-    if row[1]=="Sim":
+    nome_base = row[2]
+    if row[3]=="Sim":
         nome=nome_base+"_p"
         nomes.append(nome)
-    if row[2]=="Sim":
+    if row[4]=="Sim":
         nome=nome_base+"_l"
         nomes.append(nome)
-    if row[3]=="Sim":
+    if row[5]=="Sim":
         nome=nome_base+"_a"
         nomes.append(nome)
     return nomes
@@ -102,13 +102,11 @@ def constroi_propriedades(csvfile, dictsubfaseextracao, dictsubfasevalidacao, vf
         dictExtVal = dictsubfaseextracao | dictsubfasevalidacao
         dictExtVal[vf] = [val]
         for row in sheet:
-            if row[4]=="Edição":
-                continue
             nomes = constroi_nomes(row)
             AGPC = False
-            if row[5]:
+            if row[8]=="Sim":
                 AGPC = True
-            subfases = constroi_subfases(row[4],dictExtVal)
+            subfases = constroi_subfases(row[6],dictExtVal)
             apontamento = False
             for nome in nomes:
                 if nome[:3]=="aux":
@@ -117,16 +115,25 @@ def constroi_propriedades(csvfile, dictsubfaseextracao, dictsubfasevalidacao, vf
                     subfases_AGPC = constroi_subfases(val, dictsubfasevalidacao)
                     for subfase1 in subfases_AGPC:
                         propriedade = {
-                            "schema":"edgv",
+                            "schema":"mgcp",
                             "camada": nome,
                             "subfase": subfase1,
+                            "camada_apontamento": apontamento
+                        }
+                        propriedades_camadas.append(propriedade)
+                    nome = "centroide_"+nome[:-2]+"_p"
+                    for subfase in subfases:
+                        propriedade = {
+                            "schema":"mgcp",
+                            "camada": nome,
+                            "subfase": subfase,
                             "camada_apontamento": apontamento
                         }
                         propriedades_camadas.append(propriedade)
                 else:
                     for subfase in subfases:
                         propriedade = {
-                            "schema":"edgv",
+                            "schema":"mgcp",
                             "camada": nome,
                             "subfase": subfase,
                             "camada_apontamento": apontamento
@@ -141,32 +148,37 @@ dictsubfasepreparo = {
         }
 
 dictsubfaseextracao = {
-        "Extração de Ferrovia": ["Extração de Vias de Deslocamento"],
-        "Extração da Hidrografia e Altimetria": ["Extração de Área sem Dados"],
-        "Extração de Planimetria": ["Verificação Final"],
-        "Extração de Topônimos": ["Verificação Final"],
-        "Extração de Vias de Deslocamento": ["Extração de Área sem Dados"],
-        "Extração de Área sem Dados": ["Extração de Limites"], 
-        "Extração de Limites":["Verificação Final"],
+        "Extração da Hidrografia": ["Extração de Elemento Hidrográfico"], 
+        "Extração de Topônimos": ["Extração a partir de Insumos da NGA"],
+        "Extração de Vias de Deslocamento": ["Extração de Área sem Dados", "Extração de Interseção de Hidrografia e Transporte"],
+        "Extração de Elemento Hidrográfico": ["Extração de Área sem Dados", "Extração de Interseção de Hidrografia e Transporte"], 
+        "Extração de Área sem Dados": ["Extração de Área Edificada"],
+        "Extração de Interseção de Hidrografia e Transporte": ["Extração a partir de Insumos da NGA"],
+        "Extração de Área Edificada": ["Extração de Edificação", "Extração de Vegetação"],
+        "Extração de Edificação":["Extração de Planimetria"],
+        "Extração de Vegetação": ["Extração a partir de Insumos da NGA"],
+        "Extração de Planimetria": ["Extração a partir de Insumos da NGA"],
+        "Extração a partir de Insumos da NGA": ["Verificação Final"],
         "Verificação Final": []
         }
 
 dictsubfasevalidacao = {
         "Validação Nível Produto": ["Validação da Ligação"],
-        "Validação da Ligação": []
+        "Validação da Ligação": ["Validação no GAIT"],
+        "Validação no GAIT": []
         }
 
 dictsubfasedisseminacao = {
         "Disseminação": []
         }
 
-nome = "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 2.4"
-descricao = "Linha de produção padrão para vetores de carta ortoimagem"
+nome = "Conjunto de dados geoespaciais vetoriais para MGCP TRD 4.6"
+descricao = "Linha de produção padrão para vetores do MGCP"
 versao = "1.0.0"
-nome_abrev = "cdgv_edgv_30orto24"
-tipo_produto_id = 22 #Baseado em dominio.sql
-planilha = 'EDGV Orto - Classes.csv'
-nome_json = 'lp_cdgv_edgv_30orto24.json'
+nome_abrev = "cdgv_mgcp_trd46"
+tipo_produto_id = 8 #Baseado em dominio.sql
+planilha = 'MGCP - Classes.csv'
+nome_json = 'lp_cdgv_mgcp_trd46.json'
 
 lp = {
     "nome": nome,

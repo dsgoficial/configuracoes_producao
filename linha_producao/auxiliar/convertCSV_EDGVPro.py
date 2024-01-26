@@ -106,8 +106,8 @@ def constroi_propriedades(csvfile, dictsubfaseextracao, dictsubfasevalidacao, vf
                 continue
             nomes = constroi_nomes(row)
             AGPC = False
-            if row[5]:
-                AGCP = True
+            if row[5]=="Sim":
+                AGPC = True
             subfases = constroi_subfases(row[4],dictExtVal)
             apontamento = False
             for nome in nomes:
