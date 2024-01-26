@@ -142,15 +142,10 @@ dictsubfasepreparo = {
 
 dictsubfaseextracao = {
         "Extração de Ferrovia": ["Extração de Vias de Deslocamento"],
-        "Extração da Hidrografia e Altimetria": ["Extração de Elemento Hidrográfico"], 
+        "Extração da Hidrografia e Altimetria": ["Extração de Topônimos", "Extração de Planimetria", "Extração de Limites"], 
         "Extração de Topônimos": ["Verificação Final"],
-        "Extração de Vias de Deslocamento": ["Extração de Limites", "Extração de Interseção de Hidrografia e Transporte"],
-        "Extração de Elemento Hidrográfico": ["Extração de Limites", "Extração de Interseção de Hidrografia e Transporte"],  
-        "Extração de Limites":["Extração de Área Edificada"],
-        "Extração de Interseção de Hidrografia e Transporte": ["Verificação Final"],
-        "Extração de Área Edificada": ["Extração de Edificação", "Extração de Vegetação"],
-        "Extração de Edificação":["Extração de Planimetria"],
-        "Extração de Vegetação": ["Verificação Final"],
+        "Extração de Vias de Deslocamento": ["Extração de Planimetria", "Extração de Limites"],
+        "Extração de Limites":["Verificação Final"],
         "Extração de Planimetria": ["Verificação Final"],
         "Verificação Final": []
         }
@@ -164,12 +159,12 @@ dictsubfasedisseminacao = {
         "Disseminação": []
         }
 
-nome = "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Pro 1.4"
-descricao = "Linha de produção padrão para vetores da EDGV"
+nome = "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 2.4"
+descricao = "Linha de produção padrão para vetores de carta ortoimagem"
 versao = "1.0.0"
-nome_abrev = "cdgv_edgv_30pro14"
-tipo_produto_id = 7 #Baseado em dominio.sql
-planilha = 'EDGV - Classes.csv'
+nome_abrev = "cdgv_edgv_30orto24"
+tipo_produto_id = 22 #Baseado em dominio.sql
+planilha = 'EDGV Orto - Classes.csv'
 nome_json = 'lp_cdgv_edgv_30orto24.json'
 
 lp = {

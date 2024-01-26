@@ -1,0 +1,48 @@
+Nome da Camada,Ponto,Linha,Área,Subfase,Área gerada por centroide
+cobter_massa_dagua,Não,Não,Sim,Validação Nível Produto,Sim
+constr_extracao_mineral,Sim,Não,Sim,Extração de Planimetria,Não
+elemnat_curva_nivel,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+elemnat_elemento_hidrografico,Sim,Sim,Sim,Extração da Hidrografia e Altimetria,Não
+elemnat_ilha,Sim,Não,Sim,Extração da Hidrografia e Altimetria,Sim
+elemnat_ponto_cotado,Sim,Não,Não,Verificação Final,Não
+elemnat_terreno_sujeito_inundacao,Não,Não,Sim,Extração da Hidrografia e Altimetria,Não
+elemnat_toponimo_fisiografico_natural,Sim,Sim,Não,Extração de Topônimos,Não
+elemnat_trecho_drenagem,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+infra_barragem,Não,Sim,Sim,Extração da Hidrografia e Altimetria,Não
+infra_elemento_energia,Sim,Sim,Sim,Extração de Planimetria,Não
+infra_elemento_infraestrutura,Sim,Sim,Sim,Extração de Planimetria,Não
+infra_ferrovia,Não,Sim,Não,Extração de Ferrovias,Não
+infra_pista_pouso,Sim,Sim,Sim,Extração de Planimetria,Não
+infra_via_deslocamento,Não,Sim,Não,Extração de Planimetria,Não
+llp_aglomerado_rural,Sim,Não,Não,Extração de Topônimos,Não
+llp_area_pub_militar,Não,Não,Sim,Validação Nível Produto,Sim
+llp_localidade,Sim,Não,Não,Extração de Topônimos,Não
+llp_nome_local,Sim,Não,Não,Extração de Topônimos,Não
+llp_terra_indigena,Não,Não,Sim,Validação Nível Produto,Sim
+llp_unidade_conservacao,Não,Não,Sim,Validação Nível Produto,Sim
+llp_unidade_federacao,Não,Não,Sim,Validação Nível Produto,Sim
+edicao_area_pub_militar,Não,Não,Sim,Edição,Não
+edicao_terra_indigena,Não,Sim,Não,Edição,Não
+edicao_unidade_conservacao,Não,Sim,Não,Edição,Não
+edicao_limite_legal,Não,Sim,Não,Extração de Limites,Não
+edicao_grid_edicao,Não,Sim,Não,Edição,Não
+edicao_articulacao_imagem,Não,Não,Sim,Edição,Não
+edicao_area_sem_dados,Não,Não,Sim,Edição,Não
+delimitador_area_sem_dados,Não,Sim,Não,Extração de Limites,Não
+aux_validacao,Sim,Sim,Sim,Todas,Não
+aux_revisao,Sim,Sim,Sim,Todas,Não
+aux_moldura_area_continua,Não,Não,Sim,Todas,Não
+delimitador_massa_dagua,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+delimitador_elemento_hidrografico,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
+centroide_massa_dagua,Sim,Não,Não,Extração da Hidrografia e Altimetria,Não
+centroide_ilha,Sim,Não,Não,Extração da Hidrografia e Altimetria,Não
+centroide_elemento_hidrografico,Sim,Não,Não,Extração da Hidrografia e Altimetria,Não
+edicao_identificador_trecho_rod,Sim,Não,Não,Edição,Não
+edicao_simb_torre_energia,Sim,Não,Não,Edição,Não
+edicao_simb_cota_mestra,Não,Sim,Não,Edição,Não
+edicao_texto_generico,Sim,Sim,Não,Edição,Não
+delimitador_limite_especial,Não,Sim,Não,Extração de Limites,Não
+centroide_area_sem_dados,Sim,Não,Não,Extração de Limites,Não
+centroide_limite_especial,Sim,Não,Não,Extração de Limites,Não
+aux_insumo_externo,Sim,Sim,Sim,Todas,Não
+edicao_ponto_mudanca,Sim,Não,Não,Edição,Não
