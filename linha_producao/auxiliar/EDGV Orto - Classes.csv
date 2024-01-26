@@ -13,7 +13,7 @@ infra_elemento_energia,Sim,Sim,Sim,Extração de Planimetria,Não
 infra_elemento_infraestrutura,Sim,Sim,Sim,Extração de Planimetria,Não
 infra_ferrovia,Não,Sim,Não,Extração de Ferrovias,Não
 infra_pista_pouso,Sim,Sim,Sim,Extração de Planimetria,Não
-infra_via_deslocamento,Não,Sim,Não,Extração de Planimetria,Não
+infra_via_deslocamento,Não,Sim,Não,Extração de Vias de Deslocamento,Não
 llp_aglomerado_rural,Sim,Não,Não,Extração de Topônimos,Não
 llp_area_pub_militar,Não,Não,Sim,Validação Nível Produto,Sim
 llp_localidade,Sim,Não,Não,Extração de Topônimos,Não
@@ -27,8 +27,8 @@ edicao_unidade_conservacao,Não,Sim,Não,Edição,Não
 edicao_limite_legal,Não,Sim,Não,Extração de Limites,Não
 edicao_grid_edicao,Não,Sim,Não,Edição,Não
 edicao_articulacao_imagem,Não,Não,Sim,Edição,Não
-edicao_area_sem_dados,Não,Não,Sim,Edição,Não
-delimitador_area_sem_dados,Não,Sim,Não,Extração de Limites,Não
+edicao_area_sem_dados,Não,Não,Sim,Validação Nível Produto,Sim
+delimitador_area_sem_dados,Não,Sim,Não,Extração de Área sem Dados,Não
 aux_validacao,Sim,Sim,Sim,Todas,Não
 aux_revisao,Sim,Sim,Sim,Todas,Não
 aux_moldura_area_continua,Não,Não,Sim,Todas,Não
@@ -42,7 +42,7 @@ edicao_simb_torre_energia,Sim,Não,Não,Edição,Não
 edicao_simb_cota_mestra,Não,Sim,Não,Edição,Não
 edicao_texto_generico,Sim,Sim,Não,Edição,Não
 delimitador_limite_especial,Não,Sim,Não,Extração de Limites,Não
-centroide_area_sem_dados,Sim,Não,Não,Extração de Limites,Não
+centroide_area_sem_dados,Sim,Não,Não,Extração de Área sem Dados,Não
 centroide_limite_especial,Sim,Não,Não,Extração de Limites,Não
 aux_insumo_externo,Sim,Sim,Sim,Todas,Não
 edicao_ponto_mudanca,Sim,Não,Não,Edição,Não

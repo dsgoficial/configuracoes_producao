@@ -10,9 +10,9 @@ centroide_massa_dagua,Sim,Não,Não,Extração da Hidrografia e Altimetria,Não
 centroide_ilha,Sim,Não,Não,Extração de Elemento Hidrográfico,Não
 delimitador_limite_especial,Não,Sim,Não,Extração de Limites,Não
 centroide_limite_especial,Sim,Não,Não,Extração de Limites,Não
-delimitador_area_sem_dados,Não,Sim,Não,Extração de Limites,Não
-centroide_area_sem_dados,Sim,Não,Não,Extração de Limites,Não
-edicao_area_sem_dados,Não,Não,Sim,Edição,Não
+delimitador_area_sem_dados,Não,Sim,Não,Extração de Área sem Dados,Não
+centroide_area_sem_dados,Sim,Não,Não,Extração de Área sem Dados,Não
+edicao_area_sem_dados,Não,Não,Sim,Validação Nível Produto,Sim
 aux_revisao,Sim,Sim,Sim,Todas,Não
 aux_validacao,Sim,Sim,Sim,Todas,Não
 cobter_massa_dagua,Não,Não,Sim,Validação Nível Produto,Sim
@@ -24,7 +24,7 @@ edicao_simb_torre_energia,Sim,Não,Não,Edição,Não
 edicao_texto_generico,Sim,Sim,Não,Edição,Não
 elemnat_curva_nivel,Não,Sim,Não,Extração da Hidrografia e Altimetria,Não
 elemnat_elemento_hidrografico,Sim,Sim,Sim,Extração de Elemento Hidrográfico,Sim
-elemnat_ilha,Não,Sim,Sim,Extração de Elemento Hidrográfico,Sim
+elemnat_ilha,Sim,Não,Sim,Extração de Elemento Hidrográfico,Sim
 elemnat_ponto_cotado,Sim,Não,Não,Verificação Final,Não
 elemnat_terreno_sujeito_inundacao,Não,Não,Sim,Validação Nível Produto,Sim
 elemnat_toponimo_fisiografico_natural,Sim,Sim,Não,Extração de Topônimos,Não
@@ -35,7 +35,7 @@ infra_ferrovia,Não,Sim,Não,Extração de Ferrovias,Não
 infra_obstaculo_vertical,Sim,Não,Não,Extração de Planimetria,Não
 infra_pista_pouso,Sim,Sim,Sim,Extração de Planimetria,Não
 infra_via_deslocamento,Não,Sim,Não,Extração de Vias de Deslocamento,Não
-edicao_limite_legal,Não,Sim,Não,Edição,Não
+edicao_limite_legal,Não,Sim,Não,Extração de Limites,Não
 llp_localidade,Sim,Não,Não,Extração de Topônimos,Não
 edicao_simb_vegetacao,Sim,Não,Não,Edição,Não
 aux_insumo_externo,Sim,Sim,Sim,Todas,Não
@@ -50,7 +50,7 @@ elemnat_sumidouro_vertedouro,Sim,Não,Não,Extração da Hidrografia e Altimetri
 edicao_simb_area,Sim,Não,Não,Edição,Não
 infra_alteracao_fisiografica_antropica,Não,Sim,Não,Extração de Planimetria,Não
 infra_elemento_infraestrutura,Sim,Sim,Sim,Extração de Planimetria,Não
-infra_elemento_viario,Sim,Sim,Não,Extração de Interseção de Hidrografia e Transporte,Não
+infra_elemento_viario,Sim,Sim,Não,Validação Nível Produto,Não
 infra_mobilidade_urbana,Não,Sim,Não,Extração de Vias de Deslocamento,Não
 infra_trecho_duto,Não,Sim,Não,Extração de Planimetria,Não
 infra_travessia_hidroviaria,Não,Sim,Não,Extração de Vias de Deslocamento,Não

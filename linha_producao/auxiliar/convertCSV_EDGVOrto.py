@@ -142,11 +142,12 @@ dictsubfasepreparo = {
 
 dictsubfaseextracao = {
         "Extração de Ferrovia": ["Extração de Vias de Deslocamento"],
-        "Extração da Hidrografia e Altimetria": ["Extração de Topônimos", "Extração de Planimetria", "Extração de Limites"], 
-        "Extração de Topônimos": ["Verificação Final"],
-        "Extração de Vias de Deslocamento": ["Extração de Planimetria", "Extração de Limites"],
-        "Extração de Limites":["Verificação Final"],
+        "Extração da Hidrografia e Altimetria": ["Extração de Área sem Dados"],
         "Extração de Planimetria": ["Verificação Final"],
+        "Extração de Topônimos": ["Verificação Final"],
+        "Extração de Vias de Deslocamento": ["Extração de Área sem Dados"],
+        "Extração de Área sem Dados": ["Extração de Limites"], 
+        "Extração de Limites":["Verificação Final"],
         "Verificação Final": []
         }
 

@@ -37,24 +37,28 @@
                     "ordem": 2
                 },
                 {
-                    "nome": "Extração de Topônimos",
+                    "nome": "Extração de Planimetria",
                     "ordem": 3
                 },
                 {
-                    "nome": "Extração de Vias de Deslocamento",
+                    "nome": "Extração de Topônimos",
                     "ordem": 4
                 },
                 {
-                    "nome": "Extração de Limites",
+                    "nome": "Extração de Vias de Deslocamento",
                     "ordem": 5
                 },
                 {
-                    "nome": "Extração de Planimetria",
+                    "nome": "Extração de Área sem Dados",
                     "ordem": 6
                 },
                 {
-                    "nome": "Verificação Final",
+                    "nome": "Extração de Limites",
                     "ordem": 7
+                },
+                {
+                    "nome": "Verificação Final",
+                    "ordem": 8
                 }
             ],
             "pre_requisito_subfase": [
@@ -70,17 +74,7 @@
                 },
                 {
                     "subfase_anterior": "Extração da Hidrografia e Altimetria",
-                    "subfase_posterior": "Extração de Topônimos",
-                    "tipo_pre_requisito_id": 1
-                },
-                {
-                    "subfase_anterior": "Extração da Hidrografia e Altimetria",
-                    "subfase_posterior": "Extração de Planimetria",
-                    "tipo_pre_requisito_id": 1
-                },
-                {
-                    "subfase_anterior": "Extração da Hidrografia e Altimetria",
-                    "subfase_posterior": "Extração de Limites",
+                    "subfase_posterior": "Extração de Área sem Dados",
                     "tipo_pre_requisito_id": 1
                 },
                 {
@@ -89,6 +83,16 @@
                     "tipo_pre_requisito_id": 2
                 },
                 {
+                    "subfase_anterior": "Extração de Planimetria",
+                    "subfase_posterior": "Verificação Final",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Planimetria",
+                    "subfase_posterior": "Extração de Planimetria",
+                    "tipo_pre_requisito_id": 2
+                },
+                {
                     "subfase_anterior": "Extração de Topônimos",
                     "subfase_posterior": "Verificação Final",
                     "tipo_pre_requisito_id": 1
@@ -100,12 +104,7 @@
                 },
                 {
                     "subfase_anterior": "Extração de Vias de Deslocamento",
-                    "subfase_posterior": "Extração de Planimetria",
-                    "tipo_pre_requisito_id": 1
-                },
-                {
-                    "subfase_anterior": "Extração de Vias de Deslocamento",
-                    "subfase_posterior": "Extração de Limites",
+                    "subfase_posterior": "Extração de Área sem Dados",
                     "tipo_pre_requisito_id": 1
                 },
                 {
@@ -114,6 +113,16 @@
                     "tipo_pre_requisito_id": 2
                 },
                 {
+                    "subfase_anterior": "Extração de Área sem Dados",
+                    "subfase_posterior": "Extração de Limites",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Área sem Dados",
+                    "subfase_posterior": "Extração de Área sem Dados",
+                    "tipo_pre_requisito_id": 2
+                },
+                {
                     "subfase_anterior": "Extração de Limites",
                     "subfase_posterior": "Verificação Final",
                     "tipo_pre_requisito_id": 1
@@ -121,16 +130,6 @@
                 {
                     "subfase_anterior": "Extração de Limites",
                     "subfase_posterior": "Extração de Limites",
-                    "tipo_pre_requisito_id": 2
-                },
-                {
-                    "subfase_anterior": "Extração de Planimetria",
-                    "subfase_posterior": "Verificação Final",
-                    "tipo_pre_requisito_id": 1
-                },
-                {
-                    "subfase_anterior": "Extração de Planimetria",
-                    "subfase_posterior": "Extração de Planimetria",
                     "tipo_pre_requisito_id": 2
                 },
                 {
@@ -261,19 +260,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_curva_nivel_l",
-            "subfase": "Extração de Topônimos",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "elemnat_curva_nivel_l",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_curva_nivel_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -303,19 +296,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_p",
-            "subfase": "Extração de Topônimos",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_p",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -345,19 +332,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_l",
-            "subfase": "Extração de Topônimos",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_l",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -387,19 +368,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_elemento_hidrografico_a",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -429,19 +404,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_ilha_p",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_p",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_p",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -471,19 +440,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_ilha_a",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -531,19 +494,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_terreno_sujeito_inundacao_a",
-            "subfase": "Extração de Topônimos",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "elemnat_terreno_sujeito_inundacao_a",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_terreno_sujeito_inundacao_a",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -621,19 +578,13 @@
         {
             "schema": "edgv",
             "camada": "elemnat_trecho_drenagem_l",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_trecho_drenagem_l",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "elemnat_trecho_drenagem_l",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_trecho_drenagem_l",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -663,19 +614,13 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_l",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_barragem_l",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_barragem_l",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_barragem_l",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -705,19 +650,13 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_a",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_barragem_a",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_barragem_a",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_barragem_a",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -945,7 +884,7 @@
         {
             "schema": "edgv",
             "camada": "infra_via_deslocamento_l",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": false
         },
         {
@@ -964,6 +903,18 @@
             "schema": "edgv",
             "camada": "infra_via_deslocamento_l",
             "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1112,19 +1063,31 @@
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_sem_dados_l",
-            "subfase": "Extração de Limites",
+            "camada": "edicao_area_sem_dados_a",
+            "subfase": "Validação Nível Produto",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_sem_dados_l",
+            "camada": "edicao_area_sem_dados_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_area_sem_dados_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false
         },
@@ -1136,6 +1099,12 @@
         },
         {
             "schema": "edgv",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "aux_validacao_p",
             "subfase": "Extração de Ferrovia",
             "camada_apontamento": true
@@ -1144,6 +1113,12 @@
             "schema": "edgv",
             "camada": "aux_validacao_p",
             "subfase": "Extração da Hidrografia e Altimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_validacao_p",
+            "subfase": "Extração de Planimetria",
             "camada_apontamento": true
         },
         {
@@ -1161,13 +1136,13 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_validacao_p",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1203,6 +1178,12 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_validacao_l",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1215,13 +1196,13 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_validacao_l",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1257,6 +1238,12 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_validacao_a",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1269,13 +1256,13 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_a",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_validacao_a",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1311,6 +1298,12 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_p",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1323,13 +1316,13 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_revisao_p",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1365,6 +1358,12 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_l",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1377,13 +1376,13 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_revisao_l",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1419,6 +1418,12 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_a",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1431,13 +1436,13 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_a",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_revisao_a",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1473,6 +1478,12 @@
         {
             "schema": "edgv",
             "camada": "aux_moldura_area_continua_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_moldura_area_continua_a",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1485,13 +1496,13 @@
         {
             "schema": "edgv",
             "camada": "aux_moldura_area_continua_a",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_moldura_area_continua_a",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1539,19 +1550,13 @@
         {
             "schema": "edgv",
             "camada": "delimitador_massa_dagua_l",
-            "subfase": "Extração de Topônimos",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "delimitador_massa_dagua_l",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "delimitador_massa_dagua_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1581,19 +1586,13 @@
         {
             "schema": "edgv",
             "camada": "delimitador_elemento_hidrografico_l",
-            "subfase": "Extração de Topônimos",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "delimitador_elemento_hidrografico_l",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "delimitador_elemento_hidrografico_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1623,19 +1622,13 @@
         {
             "schema": "edgv",
             "camada": "centroide_massa_dagua_p",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_massa_dagua_p",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_massa_dagua_p",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_massa_dagua_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1665,19 +1658,13 @@
         {
             "schema": "edgv",
             "camada": "centroide_ilha_p",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_ilha_p",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_ilha_p",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1707,19 +1694,13 @@
         {
             "schema": "edgv",
             "camada": "centroide_elemento_hidrografico_p",
-            "subfase": "Extração de Topônimos",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_elemento_hidrografico_p",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_elemento_hidrografico_p",
             "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1749,7 +1730,7 @@
         {
             "schema": "edgv",
             "camada": "centroide_area_sem_dados_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1768,6 +1749,12 @@
             "schema": "edgv",
             "camada": "centroide_area_sem_dados_p",
             "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_area_sem_dados_p",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
@@ -1809,6 +1796,12 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_insumo_externo_p",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1821,13 +1814,13 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_p",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1863,6 +1856,12 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_insumo_externo_l",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1875,13 +1874,13 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_l",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {
@@ -1917,6 +1916,12 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_insumo_externo_a",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": true
         },
@@ -1929,13 +1934,13 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_a",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_a",
-            "subfase": "Extração de Planimetria",
+            "subfase": "Extração de Limites",
             "camada_apontamento": true
         },
         {

@@ -144,9 +144,10 @@ dictsubfaseextracao = {
         "Extração de Ferrovia": ["Extração de Vias de Deslocamento"],
         "Extração da Hidrografia e Altimetria": ["Extração de Elemento Hidrográfico"], 
         "Extração de Topônimos": ["Verificação Final"],
-        "Extração de Vias de Deslocamento": ["Extração de Limites", "Extração de Interseção de Hidrografia e Transporte"],
-        "Extração de Elemento Hidrográfico": ["Extração de Limites", "Extração de Interseção de Hidrografia e Transporte"],  
-        "Extração de Limites":["Extração de Área Edificada"],
+        "Extração de Vias de Deslocamento": ["Extração de Área sem Dados", "Extração de Interseção de Hidrografia e Transporte"],
+        "Extração de Elemento Hidrográfico": ["Extração de Área sem Dados", "Extração de Interseção de Hidrografia e Transporte"], 
+        "Extração de Área sem Dados": ["Extração de Limites", "Extração de Área Edificada"],
+        "Extração de Limites":["Verificação Final"],
         "Extração de Interseção de Hidrografia e Transporte": ["Verificação Final"],
         "Extração de Área Edificada": ["Extração de Edificação", "Extração de Vegetação"],
         "Extração de Edificação":["Extração de Planimetria"],
@@ -169,8 +170,8 @@ descricao = "Linha de produção padrão para vetores da EDGV"
 versao = "1.0.0"
 nome_abrev = "cdgv_edgv_30pro14"
 tipo_produto_id = 7 #Baseado em dominio.sql
-planilha = 'EDGV - Classes.csv'
-nome_json = 'lp_cdgv_edgv_30orto24.json'
+planilha = 'EDGV Pro - Classes.csv'
+nome_json = 'lp_cdgv_edgv_30pro14.json'
 
 lp = {
     "nome": nome,

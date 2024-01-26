@@ -1,7 +1,7 @@
 {
     "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Pro 1.4",
     "descricao": "Linha de produção padrão para vetores da EDGV",
-    "versao": "1.0.0",
+    "versão": "1.0.0",
     "nome_abrev": "cdgv_edgv_30pro14",
     "tipo_produto_id": 7,
     "fases": [
@@ -10,15 +10,15 @@
             "ordem": 1,
             "subfases": [
                 {
-                    "nome": "Coleta de Insumo Externo",
+                    "nome": "Coleta de Insumos Externos",
                     "ordem": 1
                 },
                 {
-                    "nome": "Preparo das imagens",
+                    "nome": "Preparo das Imagens",
                     "ordem": 2
                 },
                 {
-                    "nome": "Preparo da altimetria",
+                    "nome": "Preparo da Altimetria",
                     "ordem": 3
                 }
             ],
@@ -41,46 +41,50 @@
                     "ordem": 3
                 },
                 {
-                    "nome": "Extração de Via de Deslocamento",
+                    "nome": "Extração de Vias de Deslocamento",
                     "ordem": 4
                 },
                 {
-                    "nome": "Extração da Elemento Hidrográfico",
+                    "nome": "Extração de Elemento Hidrográfico",
                     "ordem": 5
                 },
                 {
-                    "nome": "Extração de Limites",
+                    "nome": "Extração de Área sem Dados",
                     "ordem": 6
                 },
                 {
-                    "nome": "Extração de Interseção de Hidrografia e Transporte",
+                    "nome": "Extração de Limites",
                     "ordem": 7
                 },
                 {
-                    "nome": "Extração de Área Edificada",
+                    "nome": "Extração de Interseção de Hidrografia e Transporte",
                     "ordem": 8
                 },
                 {
-                    "nome": "Extração de Edificação",
+                    "nome": "Extração de Área Edificada",
                     "ordem": 9
                 },
                 {
-                    "nome": "Extração de Vegetação",
+                    "nome": "Extração de Edificação",
                     "ordem": 10
                 },
                 {
-                    "nome": "Extração de Planimetria",
+                    "nome": "Extração de Vegetação",
                     "ordem": 11
                 },
                 {
-                    "nome": "Verificação Final",
+                    "nome": "Extração de Planimetria",
                     "ordem": 12
+                },
+                {
+                    "nome": "Verificação Final",
+                    "ordem": 13
                 }
             ],
             "pre_requisito_subfase": [
                 {
                     "subfase_anterior": "Extração de Ferrovia",
-                    "subfase_posterior": "Extração de Via de Deslocamento",
+                    "subfase_posterior": "Extração de Vias de Deslocamento",
                     "tipo_pre_requisito_id": 1
                 },
                 {
@@ -90,7 +94,7 @@
                 },
                 {
                     "subfase_anterior": "Extração da Hidrografia e Altimetria",
-                    "subfase_posterior": "Extração da Elemento Hidrográfico",
+                    "subfase_posterior": "Extração de Elemento Hidrográfico",
                     "tipo_pre_requisito_id": 1
                 },
                 {
@@ -109,38 +113,53 @@
                     "tipo_pre_requisito_id": 2
                 },
                 {
-                    "subfase_anterior": "Extração de Via de Deslocamento",
-                    "subfase_posterior": "Extração de Limites",
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
+                    "subfase_posterior": "Extração de Área sem Dados",
                     "tipo_pre_requisito_id": 1
                 },
                 {
-                    "subfase_anterior": "Extração de Via de Deslocamento",
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
                     "subfase_posterior": "Extração de Interseção de Hidrografia e Transporte",
                     "tipo_pre_requisito_id": 1
                 },
                 {
-                    "subfase_anterior": "Extração de Via de Deslocamento",
-                    "subfase_posterior": "Extração de Via de Deslocamento",
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
+                    "subfase_posterior": "Extração de Vias de Deslocamento",
                     "tipo_pre_requisito_id": 2
                 },
                 {
-                    "subfase_anterior": "Extração da Elemento Hidrográfico",
-                    "subfase_posterior": "Extração de Limites",
+                    "subfase_anterior": "Extração de Elemento Hidrográfico",
+                    "subfase_posterior": "Extração de Área sem Dados",
                     "tipo_pre_requisito_id": 1
                 },
                 {
-                    "subfase_anterior": "Extração da Elemento Hidrográfico",
+                    "subfase_anterior": "Extração de Elemento Hidrográfico",
                     "subfase_posterior": "Extração de Interseção de Hidrografia e Transporte",
                     "tipo_pre_requisito_id": 1
                 },
                 {
-                    "subfase_anterior": "Extração da Elemento Hidrográfico",
-                    "subfase_posterior": "Extração da Elemento Hidrográfico",
+                    "subfase_anterior": "Extração de Elemento Hidrográfico",
+                    "subfase_posterior": "Extração de Elemento Hidrográfico",
+                    "tipo_pre_requisito_id": 2
+                },
+                {
+                    "subfase_anterior": "Extração de Área sem Dados",
+                    "subfase_posterior": "Extração de Limites",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Área sem Dados",
+                    "subfase_posterior": "Extração de Área Edificada",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Área sem Dados",
+                    "subfase_posterior": "Extração de Área sem Dados",
                     "tipo_pre_requisito_id": 2
                 },
                 {
                     "subfase_anterior": "Extração de Limites",
-                    "subfase_posterior": "Extração de Área Edificada",
+                    "subfase_posterior": "Verificação Final",
                     "tipo_pre_requisito_id": 1
                 },
                 {
@@ -384,12 +403,132 @@
         },
         {
             "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "centroide_elemento_hidrografico_p",
             "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "delimitador_massa_dagua_l",
             "subfase": "Extração da Hidrografia e Altimetria",
             "camada_apontamento": false
@@ -410,6 +549,12 @@
             "schema": "edgv",
             "camada": "delimitador_massa_dagua_l",
             "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_massa_dagua_l",
+            "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
@@ -439,7 +584,7 @@
         {
             "schema": "edgv",
             "camada": "delimitador_massa_dagua_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -451,7 +596,7 @@
         {
             "schema": "edgv",
             "camada": "delimitador_massa_dagua_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -481,6 +626,12 @@
         {
             "schema": "edgv",
             "camada": "centroide_massa_dagua_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_massa_dagua_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -505,7 +656,7 @@
         {
             "schema": "edgv",
             "camada": "centroide_massa_dagua_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -517,7 +668,7 @@
         {
             "schema": "edgv",
             "camada": "centroide_massa_dagua_p",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -528,6 +679,66 @@
         },
         {
             "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "delimitador_limite_especial_l",
             "subfase": "Extração de Limites",
             "camada_apontamento": false
@@ -552,30 +763,6 @@
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_limite_especial_l",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "delimitador_limite_especial_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "delimitador_limite_especial_l",
-            "subfase": "Extração de Vegetação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "delimitador_limite_especial_l",
-            "subfase": "Extração de Área Edificada",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
             "camada": "centroide_limite_especial_p",
             "subfase": "Extração de Limites",
             "camada_apontamento": false
@@ -600,32 +787,8 @@
         },
         {
             "schema": "edgv",
-            "camada": "centroide_limite_especial_p",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_limite_especial_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_limite_especial_p",
-            "subfase": "Extração de Vegetação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "centroide_limite_especial_p",
-            "subfase": "Extração de Área Edificada",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
             "camada": "delimitador_area_sem_dados_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -649,6 +812,12 @@
         {
             "schema": "edgv",
             "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_area_sem_dados_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -673,7 +842,7 @@
         {
             "schema": "edgv",
             "camada": "centroide_area_sem_dados_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -697,6 +866,12 @@
         {
             "schema": "edgv",
             "camada": "centroide_area_sem_dados_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_area_sem_dados_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -716,6 +891,18 @@
             "schema": "edgv",
             "camada": "centroide_area_sem_dados_p",
             "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_area_sem_dados_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_area_sem_dados_a",
+            "subfase": "Validação da Ligação",
             "camada_apontamento": false
         },
         {
@@ -739,13 +926,19 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_p",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_revisao_p",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -823,13 +1016,19 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_l",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_revisao_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_l",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -907,13 +1106,19 @@
         {
             "schema": "edgv",
             "camada": "aux_revisao_a",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_revisao_a",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_a",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -991,13 +1196,19 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_p",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_validacao_p",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_validacao_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -1075,13 +1286,19 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_l",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_validacao_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_validacao_l",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -1159,13 +1376,19 @@
         {
             "schema": "edgv",
             "camada": "aux_validacao_a",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_validacao_a",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_validacao_a",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -1309,6 +1532,12 @@
         {
             "schema": "edgv",
             "camada": "elemnat_curva_nivel_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_curva_nivel_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -1333,7 +1562,7 @@
         {
             "schema": "edgv",
             "camada": "elemnat_curva_nivel_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1345,7 +1574,7 @@
         {
             "schema": "edgv",
             "camada": "elemnat_curva_nivel_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -1356,8 +1585,128 @@
         },
         {
             "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_l",
             "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
             "camada_apontamento": false
         },
         {
@@ -1368,8 +1717,128 @@
         },
         {
             "schema": "edgv",
-            "camada": "elemnat_ilha_l",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
             "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
             "camada_apontamento": false
         },
         {
@@ -1380,6 +1849,66 @@
         },
         {
             "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "elemnat_ponto_cotado_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false
@@ -1483,6 +2012,12 @@
         {
             "schema": "edgv",
             "camada": "elemnat_trecho_drenagem_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_trecho_drenagem_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -1507,7 +2042,7 @@
         {
             "schema": "edgv",
             "camada": "elemnat_trecho_drenagem_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1519,7 +2054,7 @@
         {
             "schema": "edgv",
             "camada": "elemnat_trecho_drenagem_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -1549,6 +2084,12 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_barragem_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -1573,7 +2114,7 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1585,7 +2126,7 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -1615,6 +2156,12 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_a",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_barragem_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -1639,7 +2186,7 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_a",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -1651,7 +2198,7 @@
         {
             "schema": "edgv",
             "camada": "infra_barragem_a",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -1836,6 +2383,90 @@
         },
         {
             "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_limite_legal_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_limite_legal_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_limite_legal_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_limite_legal_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "llp_localidade_p",
             "subfase": "Extração de Topônimos",
             "camada_apontamento": false
@@ -1879,13 +2510,19 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_p",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_p",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_insumo_externo_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -1963,13 +2600,19 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_l",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_insumo_externo_l",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -2047,13 +2690,19 @@
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_a",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_insumo_externo_a",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_insumo_externo_a",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -2131,13 +2780,19 @@
         {
             "schema": "edgv",
             "camada": "aux_reambulacao_p",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_reambulacao_p",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_reambulacao_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -2215,13 +2870,19 @@
         {
             "schema": "edgv",
             "camada": "aux_reambulacao_l",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_reambulacao_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_reambulacao_l",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -2299,13 +2960,19 @@
         {
             "schema": "edgv",
             "camada": "aux_reambulacao_a",
-            "subfase": "Extração de Via de Deslocamento",
+            "subfase": "Extração de Vias de Deslocamento",
             "camada_apontamento": true
         },
         {
             "schema": "edgv",
             "camada": "aux_reambulacao_a",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": true
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_reambulacao_a",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": true
         },
         {
@@ -2677,6 +3344,12 @@
         {
             "schema": "edgv",
             "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -2701,7 +3374,7 @@
         {
             "schema": "edgv",
             "camada": "elemnat_sumidouro_vertedouro_p",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -2713,7 +3386,7 @@
         {
             "schema": "edgv",
             "camada": "elemnat_sumidouro_vertedouro_p",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -2815,36 +3488,12 @@
         {
             "schema": "edgv",
             "camada": "infra_elemento_viario_p",
-            "subfase": "Extração de Interseção de Hidrografia e Transporte",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_elemento_viario_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_elemento_viario_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "infra_elemento_viario_p",
-            "subfase": "Verificação Final",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_elemento_viario_l",
-            "subfase": "Extração de Interseção de Hidrografia e Transporte",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_elemento_viario_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false
         },
@@ -2857,13 +3506,73 @@
         {
             "schema": "edgv",
             "camada": "infra_elemento_viario_l",
-            "subfase": "Verificação Final",
+            "subfase": "Validação da Ligação",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
             "camada": "infra_mobilidade_urbana_l",
             "subfase": "Extração de Vias de Deslocamento",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_mobilidade_urbana_l",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
             "camada_apontamento": false
         },
         {
@@ -2898,6 +3607,66 @@
         },
         {
             "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Extração de Edificação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Extração de Vegetação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_travessia_hidroviaria_l",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "infra_vala_l",
             "subfase": "Extração da Hidrografia e Altimetria",
             "camada_apontamento": false
@@ -2923,6 +3692,12 @@
         {
             "schema": "edgv",
             "camada": "infra_vala_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_vala_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false
         },
@@ -2947,7 +3722,7 @@
         {
             "schema": "edgv",
             "camada": "infra_vala_l",
-            "subfase": "Extração de Limites",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false
         },
         {
@@ -2959,7 +3734,7 @@
         {
             "schema": "edgv",
             "camada": "infra_vala_l",
-            "subfase": "Extração da Elemento Hidrográfico",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false
         },
         {
@@ -3020,30 +3795,6 @@
             "schema": "edgv",
             "camada": "llp_ponto_controle_p",
             "subfase": "Verificação Final",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_ponto_controle_p",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_ponto_controle_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_ponto_controle_p",
-            "subfase": "Extração de Vegetação",
-            "camada_apontamento": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_ponto_controle_p",
-            "subfase": "Extração de Área Edificada",
             "camada_apontamento": false
         },
         {
