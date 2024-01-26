@@ -1,0 +1,201 @@
+Classe,Código,Nome da Camada,Ponto,Linha,Área,Subfase,Frequencia,Área gerada por centroide,É delimitador,LAF
+Delimitador de massa d'água,-,delimitador_massa_dagua,Não,Sim,Não,Extração da Hidrografia,Comum,Não,Massa d'água (LAF),Não
+Delimitador de vegetação,-,delimitador_cobertura_do_solo,Não,Sim,Não,Extração de Cobertura do Solo,Comum,Não,Cobertura do Solo (LAF),Não
+Delimitador de area construida,-,delimitador_area_construida,Não,Sim,Não,Extração de Área Edificada,Comum,Não,Área Edificada (LAF),Não
+Delimitador de elemento hidrografico,-,delimitador_elemento_hidrografico,Não,Sim,Não,Extração da Hidrografia,Comum,Não,Elemento hidrográfico,Não
+Extraction Mine,AA010,aa010,Sim,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Quarry,AA012,aa012,Sim,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Rig,AA040,aa040,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Well,AA050,aa050,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Hydrocarbons Field,AA052,aa052,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Disposal Site,AB000,ab000,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Recycling Site,AB010,ab010,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Processing Facility,AC000,ac000,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Catalytic Cracker,AC020,ac020,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Settling Pond,AC030,ac030,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Electric Power Station,AD010,ad010,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Solar Panel,AD020,ad020,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Power Substation,AD030,ad030,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Heating Facility,AD050,ad050,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Smokestack,AF010,af010,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Conveyor,AF020,af020,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Crane,AF040,af040,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Flare Pipe,AF070,af070,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Engineered Earthwork,AH025,ah025,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Fortification,AH050,ah050,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Checkpoint,AH070,ah070,Sim,Não,Não,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Camp,AI030,ai030,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Circular Irrigation System,AJ010,aj010,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Holding Pen,AJ030,aj030,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Windmill,AJ050,aj050,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Wind Turbine,AJ051,aj051,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Greenhouse,AJ110,aj110,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Amusement Park,AK030,ak030,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Sports Ground,AK040,ak040,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Camp-site,AK060,ak060,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Fairground,AK090,ak090,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Golf Course,AK100,ak100,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Park,AK120,ak120,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Racetrack,AK130,ak130,Não,Sim,Não,Extração de Planimetria,Comum,Não,Não,Não
+Ski-jump,AK150,ak150,Sim,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Stadium,AK160,ak160,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Swimming Pool,AK170,ak170,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Zoo,AK180,ak180,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Recreational Pier,AK190,ak190,Não,Sim,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Facility,AL010,al010,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Archeological Site,AL012,al012,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+General Building,AL015,al015,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Shed,AL019,al019,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Built-Up Area,AL020,al020,Sim,Não,Sim,Extração de Área Edificada,Comum,Sim,Não,Sim
+Cairn,AL025,al025,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Cemetery,AL030,al030,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Dragon's Teeth,AL060,al060,Não,Sim,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Fence,AL070,al070,Não,Sim,Não,Extração de Planimetria,Comum,Não,Não,Não
+Hut,AL099,al099,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Settlement,AL105,al105,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Memorial Monument,AL130,al130,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Particle Accelerator,AL140,al140,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Public Square,AL170,al170,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Ruins,AL200,al200,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Shanty Town,AL208,al208,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Protection Shed,AL210,al210,Sim,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Tower,AL241,al241,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Wall,AL260,al260,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Storage Depot,AM010,am010,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Grain Storage Structure,AM020,am020,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Grain Elevator,AM030,am030,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Mineral Pile,AM040,am040,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Surface Bunker,AM060,am060,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Storage Tank,AM070,am070,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Railway,AN010,an010,Não,Sim,Não,Extração de Vias de Deslocamento,Comum,Não,Cobertura do Solo (LAF),Não
+Railway Sidetrack,AN050,an050,Não,Sim,Não,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Railway Yard,AN060,an060,Não,Não,Sim,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Railway Turntable,AN075,an075,Sim,Não,Não,Extração de Vias de Deslocamento,Incomum,Não,Não,Não
+Roundhouse,AN076,an076,Sim,Não,Sim,Extração de Vias de Deslocamento,Incomum,Não,Não,Não
+Cart Track,AP010,ap010,Não,Sim,Não,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Road,AP030,ap030,Não,Sim,Não,Extração de Vias de Deslocamento,Comum,Não,Cobertura do Solo (LAF),Não
+Trail,AP050,ap050,Não,Sim,Não,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Bridge,AQ040,aq040,Não,Sim,Sim,Extração de Interseção de Hidrografia e Transporte,Comum,Não,Não,Não
+Causeway Structure,AQ063,aq063,Não,Sim,Não,Extração da Hidrografia,Comum,Não,Não,Não
+Culvert,AQ065,aq065,Sim,Não,Não,Extração de Interseção de Hidrografia e Transporte,Comum,Não,Não,Não
+Ferry Crossing,AQ070,aq070,Sim,Sim,Não,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Ice Route,AQ075,aq075,Não,Sim,Não,Extração de Vias de Deslocamento,Incomum,Não,Não,Não
+Entrance and/or Exit,AQ090,aq090,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Mooring Mast,AQ110,aq110,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Pipeline,AQ113,aq113,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Pumping Station,AQ116,aq116,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Transportation Station,AQ125,aq125,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Tunnel,AQ130,aq130,Não,Sim,Sim,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Roadside Rest Area,AQ135,aq135,Não,Não,Sim,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Vehicle Lot,AQ140,aq140,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Dish Aerial,AT010,at010,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Power Line,AT030,at030,Não,Sim,Não,Extração de Planimetria,Comum,Não,Não,Não
+Cableway,AT041,at041,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Pylon,AT042,at042,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Radar Station,AT045,at045,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Communication Station,AT050,at050,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Communication Line,AT060,at060,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Land Water Boundary,BA010,ba010,Não,Sim,Não,Extração da Hidrografia,Comum,Não,Massa d'água (LAF),Não
+Island,BA030,ba030,Não,Não,Sim,Extração da Hidrografia,Comum,Sim,Não,Não
+Tidal Water,BA040,ba040,Não,Não,Sim,Extração da Hidrografia,Comum,Sim,Não,Sim
+Beach,BA050,ba050,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Harbour,BB005,bb005,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Breakwater,BB041,bb041,Não,Sim,Sim,Extração da Hidrografia,Comum,Não,Não,Não
+Groin,BB043,bb043,Não,Sim,Sim,Extração da Hidrografia,Comum,Não,Não,Não
+Dry Dock,BB090,bb090,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Training Wall,BB140,bb140,Não,Sim,Sim,Extração da Hidrografia,Incomum,Não,Não,Não
+Maritime Signal Station,BB155,bb155,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Berthing Structure,BB190,bb190,Não,Sim,Sim,Extração da Hidrografia,Comum,Não,Não,Não
+Seawall,BB230,bb230,Não,Sim,Não,Extração da Hidrografia,Comum,Não,Não,Não
+Slipway,BB240,bb240,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Structural Pile,BD100,bd100,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Offshore Platform,BD110,bd110,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Reef,BD120,bd120,Não,Sim,Sim,Extração da Hidrografia,Incomum,Não,Não,Não
+Hazardous Rock,BD130,bd130,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Wreck,BD180,bd180,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Aqueduct,BH010,bh010,Sim,Sim,Sim,Extração da Hidrografia,Incomum,Sim,Não,Sim
+Bog,BH015,bh015,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Canal,BH020,bh020,Não,Sim,Sim,Extração da Hidrografia,Comum,Sim,Massa d'água (LAF),Sim
+Ditch,BH030,bh030,Não,Sim,Sim,Extração da Hidrografia,Comum,Sim,Massa d'água (LAF),Sim
+Water Tratment Bed,BH040,bh040,Não,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Maniculture Site,BH050,bh050,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Fish Farm Facility,BH051,bh051,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Flume,BH060,bh060,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Ford,BH070,bh070,Sim,Sim,Não,Extração de Interseção de Hidrografia e Transporte,Comum,Não,Não,Não
+Lake,BH080,bh080,Não,Não,Sim,Extração da Hidrografia,Comum,Sim,Não,Sim
+Land Subject to Inundation,BH090,bh090,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Não
+Penstock,BH110,bh110,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Rapids,BH120,bh120,Sim,Sim,Sim,Extração da Hidrografia,Comum,Sim,Não,Não
+Reservoir,BH130,bh130,Não,Não,Sim,Extração da Hidrografia,Comum,Sim,Não,Sim
+Rice Field,BH135,bh135,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+River,BH140,bh140,Não,Sim,Sim,Extração da Hidrografia,Comum,Sim,Massa d'água (LAF),Sim
+Vanishing Point,BH145,bh145,Sim,Não,Não,Extração da Hidrografia,Comum,Não,Não,Não
+Salt Flat,BH150,bh150,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Salt Evaporator,BH155,bh155,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Sabkha,BH160,bh160,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Spillway,BH165,bh165,Não,Sim,Sim,Extração da Hidrografia,Incomum,Não,Não,Não
+Natural Pool,BH170,bh170,Sim,Não,Não,Extração da Hidrografia,Comum,Não,Não,Não
+Waterfall,BH180,bh180,Sim,Sim,Não,Extração da Hidrografia,Comum,Não,Não,Não
+Cistern,BI010,bi010,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Dam,BI020,bi020,Sim,Sim,Sim,Extração da Hidrografia,Comum,Não,Massa d'água (LAF),Não
+Lock,BI030,bi030,Sim,Sim,Sim,Extração da Hidrografia,Incomum,Não,Não,Não
+Sluice Gate,BI040,bi040,Sim,Sim,Não,Extração da Hidrografia,Incomum,Não,Não,Não
+Water Gate,BI041,bi041,Sim,Sim,Não,Extração de Planimetria,Comum,Não,Não,Não
+Water Intake Tower,BI050,bi050,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Moraine,BJ020,bj020,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Glacier,BJ030,bj030,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Crevasse,BJ031,bj031,Não,Sim,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Ice Cliff,BJ040,bj040,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Ice Peak,BJ060,bj060,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Snow Field and/or Ice-field,BJ100,bj100,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Tundra,BJ110,bj110,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Soil Surface Region,DA010,da010,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Steep Terrain Face,DB010,db010,Não,Sim,Não,Extração de Planimetria,Comum,Não,Não,Não
+Cave Mouth,DB029,db029,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Crevice,DB061,db061,Não,Sim,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Cut,DB070,db070,Não,Sim,Não,Extração de Vias de Deslocamento,Incomum,Não,Não,Não
+Cut Line,DB071,db071,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Embankment,DB090,db090,Não,Sim,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Esker,DB100,db100,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Geologic Fault,DB110,db110,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Geothermal Outlet,DB115,db115,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Mountain Pass,DB150,db150,Sim,Não,Não,Extração de Vias de Deslocamento,Comum,Não,Não,Não
+Rock Formation,DB160,db160,Sim,Sim,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Sand Dunes,DB170,db170,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Volcano,DB180,db180,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Gully,DB200,db200,Não,Sim,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Crop Land,EA010,ea010,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Hedgerow,EA020,ea020,Não,Sim,Não,Extração de Cobertura do Solo,Comum,Não,Não,Não
+Orchard,EA040,ea040,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Vineyard,EA050,ea050,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Hop Field,EA055,ea055,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Grassland,EB010,eb010,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Thicket,EB020,eb020,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Cane,EC010,ec010,Não,Não,Sim,Extração de Cobertura do Solo,Incomum,Sim,Não,Sim
+Oasis,EC020,ec020,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Wood,EC030,ec030,Sim,Sim,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Cleared Way,EC040,ec040,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Forest Clearing,EC060,ec060,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Marsh,ED010,ed010,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Swamp,ED020,ed020,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Mangrove Swamp,ED030,ed030,Não,Não,Sim,Extração de Cobertura do Solo,Comum,Sim,Não,Sim
+Firing Range,FA015,fa015,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Geophysical Prospecting Grid,FA090,fa090,Não,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Test Site,FA100,fa100,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Aeronautical Radio Navigation Service,GA034,ga034,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Land Aerodrome,GB005,gb005,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Apron,GB015,gb015,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Helipad,GB030,gb030,Sim,Não,Não,Extração de Planimetria,Comum,Não,Não,Não
+Heliport,GB035,gb035,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Launch Pad,GB040,gb040,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Stopway,GB045,gb045,Não,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Aircraft Revetment,GB050,gb050,Sim,Sim,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Runway,GB055,gb055,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Water Aerodrome,GB065,gb065,Sim,Não,Sim,Extração de Planimetria,Incomum,Não,Não,Não
+Taxiway,GB075,gb075,Não,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Aeronautical Obstacle,GB220,gb220,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Aircraft Hangar,GB230,gb230,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Approach Lighting System,GB485,gb485,Sim,Não,Não,Extração de Planimetria,Incomum,Não,Não,Não
+Military Installation,SU001,su001,Sim,Não,Sim,Extração de Planimetria,Comum,Não,Não,Não
+Named Location,ZD040,zd040,Sim,Não,Não,Extração de Topônimos,Comum,Não,Não,Não
+Void Collection Area,ZD020,zd020,Não,Não,Sim,Extração de Área Edificada,Comum,Sim,Não,Sim
