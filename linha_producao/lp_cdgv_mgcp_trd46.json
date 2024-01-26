@@ -16,10 +16,6 @@
                 {
                     "nome": "Preparo das Imagens",
                     "ordem": 2
-                },
-                {
-                    "nome": "Preparo da Altimetria",
-                    "ordem": 3
                 }
             ],
             "pre_requisito_subfase": []

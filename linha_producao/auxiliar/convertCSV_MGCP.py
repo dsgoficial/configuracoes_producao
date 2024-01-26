@@ -143,8 +143,7 @@ def constroi_propriedades(csvfile, dictsubfaseextracao, dictsubfasevalidacao, vf
 
 dictsubfasepreparo = {
         "Coleta de Insumos Externos": [],
-        "Preparo das Imagens": [], 
-        "Preparo da Altimetria": []
+        "Preparo das Imagens": []
         }
 
 dictsubfaseextracao = {
