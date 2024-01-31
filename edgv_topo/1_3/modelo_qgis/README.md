@@ -15,7 +15,7 @@ Modelos construídos para a produção EDGV 3.0 Pro versão 1.3, na linha de pro
 ### Expressão para capturar todas as geometrias carregadas
 
 ```
-array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))
+array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))
 ```
 
 ## Ordem dos processos
@@ -26,7 +26,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 4. Identificar linhas entrelaçadas;
 5. Limpeza topológica (1e-6) / Remover elementos pequenos (1m);
 6. Identificar Geometrias duplicadas (overlap de linha quebrado pós clean) / Identificar Geometrias inválidas (com correção automática);
-7. Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas;
+7. Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
 8. Identificar Geometrias inválidas (com correção automática);
 9. Snap Hierárquico;
 10. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;

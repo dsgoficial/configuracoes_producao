@@ -35,7 +35,7 @@
         </Option>
         <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
-            <Option type="QString" name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))"/>
+            <Option type="QString" name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))"/>
             <Option type="int" name="source" value="3"/>
           </Option>
         </Option>

@@ -35,7 +35,7 @@
         </Option>
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))" name="expression" type="QString"/>
+            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))" name="expression" type="QString"/>
             <Option value="3" name="source" type="int"/>
           </Option>
         </Option>
@@ -93,7 +93,7 @@
         </Option>
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura)'))), layer_property (@element,'geometry_type') in ('Polygon','Line')), layer_property (@element,'name')))" name="expression" type="QString"/>
+            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line')), layer_property (@element,'name')))" name="expression" type="QString"/>
             <Option value="3" name="source" type="int"/>
           </Option>
         </Option>
