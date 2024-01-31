@@ -22,82 +22,62 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 1. Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
 2. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos;
-3. Ajustar conectividade das linhas (1m de raio);
-4. Identificar Geometrias inválidas (com correção automática);
-5. Adicionar vértices não compartilhados nas intersecções;
-6. Identificar Geometrias inválidas (com correção automática);
-7. Adicionar vértices não compartilhados em segmentos compartilhados;
+3. Unir linhas de mesmo conjunto de atributos;
+4. Identificar linhas entrelaçadas;
+5. Limpeza topológica (1e-6) / Remover elementos pequenos (1m);
+6. Identificar Geometrias duplicadas (overlap de linha quebrado pós clean) / Identificar Geometrias inválidas (com correção automática);
+7. Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas;
 8. Identificar Geometrias inválidas (com correção automática);
-9.  Snap Hierárquico;
-10. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas / Identificar linhas entrelaçadas;
-11. Limpeza topológica;
-12. Remover linhas menores que 1 metro;
-13. Ajustar conectividade das linhas (1m de raio);
-14. Remover feições duplicadas / Identificar geometrias duplicadas;
-15. Unir linhas de mesmo conjunto de atributos;
-16. Identificar Geometrias inválidas (com correção automática);
-17. Identificar overlaps dentro da mesma camada;
-18. Suavização de Douglas-Peucker;
-19. Identificar Geometrias inválidas (com correção automática);
-20. Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
-21. Identificar geometrias com densidade incorreta de vértices;
-22. Identificar undershoot com moldura e conexão de linhas;
-23. Identificar Z;
-24. Identificar linhas segmentadas com mesmo conjunto de atributos;
-25. Identificar elementos pequenos na rede;
-26. Identificar erros na construção das redes de rodoviárias e ferroviárias;
-27. Linha para multilinha;
-28. Identificar erros de ortografia nos atributos;
-29. Identificar erros de atributação;
+9. Snap Hierárquico;
+10. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+11. Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
+12. Identificar geometrias duplicadas / Identificar Geometrias inválidas (com correção automática) / Identificar overlaps dentro da mesma camada;
+13. Suavização de Douglas-Peucker;
+14. Identificar Geometrias inválidas (com correção automática);
+15. Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+16. Identificar geometrias com densidade incorreta de vértices;
+17. Identificar undershoot com moldura e conexão de linhas;
+18. Identificar Z;
+19. Identificar linhas segmentadas com mesmo conjunto de atributos;
+20. Identificar elementos pequenos na rede;
+21. Identificar erros na construção das redes de rodoviárias e ferroviárias;
+22. Linha para multilinha;
+23. Identificar erros de ortografia nos atributos;
+24. Identificar erros de atributação;
 
 ## Detalhamento dos processos
 
-### 1. Remover geometrias nulas
+### 1. Manipulação preliminar de geometrias
 
-- arquivo: remove_geometrias_nulas
+- arquivo: /configuracoes_producao/legado/modelo_qgis/manipulacao_preliminar_geometria.model3
+- camadas: todas as camadas carregadas;
+- processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
 ### 2. Identificar geometrias inválidas
 
-- arquivo: identifica_geometrias_invalidas_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- arquivo: /configuracoes_producao/legado/modelo_qgis/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus);
+- camadas: todas as camadas carregadas;
 - nome camada flags: geometrias_invalidas
+- admite falsos positivos? Não.
+- para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 2. Identificar geometrias com mais de uma parte
+### 3. Unir linhas com mesmo conjunto de atributos
 
-- arquivo: identifica_multipart_transportes_carta_orto.model3
-- camadas ponto: nenhuma
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- camadas poligono: nenhuma
-- nome camada flags: geometrias_multipart_l
+- arquivo: /configuracoes_producao/legado/modelo_qgis/unir_linhas_com_mesmo_conjunto_de_atributos.model3
+- processos utilizados: Unir linhas com mesmo conjunto de atributos
+- camada: todas as camadas do tipo linha carregadas;
+- nome camada flags: não aponta flags;
+- admite falsos positivos? Não é o caso;
+- para após a execução? Não.
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+- Texto para tooltip: O algoritmo une linhas com mesmo conjunto de atributos.
+  
+### 4. Identificar linhas entrelaçadas
 
-### 3. Identificar feições duplicadas
 
-- arquivo: identifica_feicoes_duplicadas_transportes_carta_orto.model3
-- camadas ponto: nenhuma
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- camadas poligono: nenhuma
-- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
-- nome camada flags: feicoes_duplicadas_l
-
-### 4. Rotinas validade geométrica
-
-- arquivo: rotinas_validade_geometrica_transportes.model3
-- descrição: rotina que consolida as rotinas 1 a 3. Serve para rodar fora do workflow ou encapsular em alguns casos do workflow.
-- nome camada flags: flags_validade_geometrica_p,flags_validade_geometrica_l,flags_validade_geometrica_a
-
-### 5. Identificar vérfice não compartilhado nas intersecções
-
-- arquivo: identifica_vertice_nao_compartilhado_nas_interseccoes_transportes_carta_orto.model3
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- camadas poligono: nenhuma
-- nome camada flags: flag_vertice_nao_compartilhado
-
-### 6. Identificar vérfice não compartilhado nos segmentos compartilhados
-
-- arquivo: identifica_vertice_nao_compartilhado_nos_segmentos_compartilhados_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- tol: 0.00001 grau
-- nome camada flags: flag_vertice_nao_compartilhado_em_seg_compartilhado
 
 ### 7. Identificar vérfice próximo de aresta
 
