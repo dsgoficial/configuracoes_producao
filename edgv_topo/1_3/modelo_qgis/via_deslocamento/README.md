@@ -147,7 +147,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome da camada de saída: saida_clean
 - para após a execução? Sim
 - Texto para tooltip: 
-
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
 
 ### xx. Identificar Z
