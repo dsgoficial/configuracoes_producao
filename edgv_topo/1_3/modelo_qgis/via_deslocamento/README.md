@@ -87,11 +87,12 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 ### 5. Limpeza Suave das Linhas
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/limpeza_suave_linhas.model3
-- processos utilizados: Topological Clean (1e-6) / Remove small lines (1e-5);
+- processos utilizados: Clean geometries (1e-6) / Remove small lines (1e-5);
 - camada: todas as linhas;
 - nome camada flags: não há;
 - admite falsos positivos? Não é o caso;
-- para após a execução?
+- nome da camada de saída: saida_clean_flags
+- para após a execução? Sim
 - Texto para tooltip: 
   
 ### 6. Identifica problemas de construção entre geometrias
@@ -143,7 +144,8 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as linhas;
 - nome camada flags: não há;
 - admite falsos positivos? Não é o caso;
-- para após a execução?
+- nome da camada de saída: saida_clean
+- para após a execução? Sim
 - Texto para tooltip: 
 
 
