@@ -125,6 +125,28 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.model3
 - processos utilizados: Snap Hierárquico
 - configuração do snap hierárquico: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.json
+  
+### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas
+
+- arquivo: /configuracoes_producao/legado/modelo_qgis/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
+- camadas: todas as camadas carregadas;
+- nome camada flags: flags_geometrias_invalidas
+- admite falsos positivos? Não.
+- para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
+
+### 11. Limpeza completa das linhas
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/limpeza_completa_linhas.model3
+- processos utilizados: Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
+- camada: todas as linhas;
+- nome camada flags: não há;
+- admite falsos positivos? Não é o caso;
+- para após a execução?
+- Texto para tooltip: 
+
+
 
 ### xx. Identificar Z
 
