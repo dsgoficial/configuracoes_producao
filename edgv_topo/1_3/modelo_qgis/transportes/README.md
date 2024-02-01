@@ -157,27 +157,54 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as camadas;
 - nome camada flags: flags_p, flags_l, flags_a
 
+### 13. Suavização de Douglas-Peucker
 
-### xx. Identificar Z
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/simplificacao_linhas.model3
+- processos utilizados: Topological Douglas/Unir linhas;
+- camada: todas as linhas;
+- nome camada flags: não há;
+- admite falsos positivos? Não é o caso;
+- nome da camada de saída: flags_suavizacao
+- para após a execução? Sim
+- Texto para tooltip: 
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
-- arquivo: identifica_z_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+### 14: Identifica problemas de compartilhamento de vértices
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_compartilhamento_vertices.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+- nome camada flags: flag_geometrias_invalidas,flag_vertices_proximo_arestas,flag_vertices_nao_compartilhados_interseccoes,flag_vertice_nao_compartilhado_em_seg_compartilhado, flag_linha_nao_seccionada_na_interseccao
+- Texto para tooltip: Todas as feições devem compartilhar vértices, logo, onde for apontado erro, deve-se adicionar o vértice nas linhas que possuem intersecção ponto ou linha.
+
+### 15: Identificar geometrias com densidade incorreta de vértices
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_geometrias_com_densidade_incorreta_de_vertices.model3
+- camadas: todas as camadas carregadas;
+- tol: 0.00001 grau
+- nome camada flags: flag_densidade_incorreta_vertices
+
+### 16. Identificar undershoot com moldura e conexão de linhas
+
+- arquivo: identifica_undershoot_moldura_conexao_linhas.model3
+- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- camadas poligono: nenhuma
+- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
+- nome camada flags: flags_undershoot_l
+- pode admitir falso positivo? sim
+
+### 17. Identificar Z
+
+- arquivo: identifica_z.model3
+- camadas: todas carregadas
 - nome camada flags: flag_z
 
 
 ### xx. Identificar overlaps dentro da mesma camada
 
 - arquivo: identifica_overlaps_linhas_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- camadas: todas
 - nome camada flags: flags_overlaps_l
 
-### xx. Identificar undershoot com moldura e conexão de linhas
-
-- arquivo: identifica_undershoot_moldura_conexao_linhas_transportes.model3
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- camadas poligono: nenhuma
-- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
-- nome camada flags: flags_undershoot_l
 
 ### xx. Identificar linhas segmentadas com mesmo conjunto de atributos
 
