@@ -32,7 +32,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 10. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
 11. Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
 12. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
-13. Suavização de Douglas-Peucker;
+13. Suavização de Douglas-Peucker / Unir linhas;
 14. Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
 15. Identificar geometrias com densidade incorreta de vértices;
 16. Identificar undershoot com moldura e conexão de linhas;
@@ -48,14 +48,14 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 1. Manipulação preliminar de geometrias
 
-- arquivo: /configuracoes_producao/legado/modelo_qgis/manipulacao_preliminar_geometria.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/manipulacao_preliminar_geometria.model3
 - camadas: todas as camadas carregadas;
 - processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
 ### 2. Identificar geometrias inválidas
 
-- arquivo: /configuracoes_producao/legado/modelo_qgis/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus);
 - camadas: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -65,7 +65,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 3. Unir linhas com mesmo conjunto de atributos
 
-- arquivo: /configuracoes_producao/legado/modelo_qgis/unir_linhas_com_mesmo_conjunto_de_atributos.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/unir_linhas_com_mesmo_conjunto_de_atributos.model3
 - processos utilizados: Unir linhas com mesmo conjunto de atributos
 - camada: todas as camadas do tipo linha carregadas;
 - nome camada flags: não aponta flags;
@@ -76,7 +76,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 4. Identificar linhas entrelaçadas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/identifica_rodovias_entrelacadas.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identifica_rodovias_entrelacadas.model3
 - processos utilizados: Identify Intertwined Lines;
 - camada: infra_via_deslocamento_l;
 - nome camada flags: linhas_entrelacadas;
@@ -86,7 +86,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
   
 ### 5. Limpeza Suave das Linhas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/limpeza_suave_linhas.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/limpeza_suave_linhas.model3
 - processos utilizados: Clean geometries (1e-6) / Remove small lines (1e-5);
 - camada: todas as linhas;
 - nome camada flags: não há;
@@ -97,7 +97,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
   
 ### 6. Identifica problemas de construção entre geometrias
 
-- arquivo: /configuracoes_producao/legado/modelo_qgis/identifica_problemas_construcao_entre_geometrias.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
 - processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
 - obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
 - camada: todas as camadas;
@@ -105,7 +105,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
   
 ### 7. Corrige compartilhamento de vértices entre camadas
 
-- arquivo: /configuracoes_producao/legado/modelo_qgis/corrige_compartilhamento_de_vertices.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/corrige_compartilhamento_de_vertices.model3
 - processos utilizados: Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias
 - obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
 - camada: todas as camadas;
@@ -113,7 +113,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas
 
-- arquivo: /configuracoes_producao/legado/modelo_qgis/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
 - camadas: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -123,13 +123,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 9. Snap Hierárquico
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/snap_hierarquico_via_deslocamento.model3
 - processos utilizados: Snap Hierárquico
 - configuração do snap hierárquico: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.json
   
 ### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas
 
-- arquivo: /configuracoes_producao/legado/modelo_qgis/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
 - camadas: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -139,7 +139,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 11. Limpeza completa das linhas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/limpeza_completa_linhas.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/limpeza_completa_linhas.model3
 - processos utilizados: Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
 - camada: todas as linhas;
 - nome camada flags: não há;
@@ -148,6 +148,14 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Sim
 - Texto para tooltip: 
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+
+### 12: Identifica problemas de construção entre geometrias
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
+- processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
+- obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
+- camada: todas as camadas;
+- nome camada flags: flags_p, flags_l, flags_a
 
 
 ### xx. Identificar Z
