@@ -199,14 +199,14 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flag_z
 
 
-### xx. Identificar overlaps dentro da mesma camada
+### 18. Identificar overlaps dentro da mesma camada
 
-- arquivo: identifica_overlaps_linhas_transportes_carta_orto.model3
+- arquivo: identifica_overlaps_linhas.model3
 - camadas: todas
 - nome camada flags: flags_overlaps_l
 
 
-### xx. Identificar linhas segmentadas com mesmo conjunto de atributos
+### 19. Identificar linhas segmentadas com mesmo conjunto de atributos
 
 - arquivo: identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
 - camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
