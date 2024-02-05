@@ -45,6 +45,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 23. Linha para multilinha;
 24. Identificar erros de ortografia nos atributos;
 25. Identificar erros de atributação;
+26. Identificar erros de relacionamentos espaciais;
 
 ## Detalhamento dos processos
 
@@ -230,9 +231,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - tamanho: 5 m (0.00005 grau)
 - nome camada flags: flags_pontas_soltas_pequenas
 
-### xx. Identificar erros na construção das redes de rodoviárias e ferroviárias
+### 22. Identificar erros na construção das redes de rodoviárias e ferroviárias
 
-- arquivo: identificar_erros_rede_drenagem.model3
+- arquivo: identificar_erros_rede_transporte.model3
 - camadas: infra_via_deslocamento_l, infra_ferrovia_l
 - camadas filtro linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]

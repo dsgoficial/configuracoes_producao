@@ -593,8 +593,8 @@
   <Option name="help"/>
   <Option name="internal_version" type="QString" value="Version1"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" type="QString" value="EDGV 3.0 Orto - Transportes"/>
-  <Option name="model_name" type="QString" value="18-Identificar erros na construção das redes de transportes (rodoviário e ferroviário)"/>
+  <Option name="model_group" type="QString" value="CDGV_EDGV_Topo"/>
+  <Option name="model_name" type="QString" value="Identifica erros na construção das redes de transportes (rodoviário e ferroviário)"/>
   <Option name="outputGroup" type="QString" value=""/>
   <Option name="outputOrder"/>
   <Option name="parameterDefinitions" type="Map">
