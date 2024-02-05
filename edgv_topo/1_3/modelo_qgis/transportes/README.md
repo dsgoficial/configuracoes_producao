@@ -37,12 +37,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 15. Identificar geometrias com densidade incorreta de vértices;
 16. Identificar undershoot com moldura e conexão de linhas;
 17. Identificar Z;
-18. Identificar linhas segmentadas com mesmo conjunto de atributos;
-19. Identificar elementos pequenos na rede;
-20. Identificar erros na construção das redes de rodoviárias e ferroviárias;
-21. Linha para multilinha;
-22. Identificar erros de ortografia nos atributos;
-23. Identificar erros de atributação;
+18. Identificar overlaps;
+19. Identificar linhas segmentadas com mesmo conjunto de atributos;
+20. Identificar elementos pequenos na rede;
+21. Identificar erros na construção das redes de rodoviárias e ferroviárias;
+22. Linha para multilinha;
+23. Identificar erros de ortografia nos atributos;
+24. Identificar erros de atributação;
 
 ## Detalhamento dos processos
 
