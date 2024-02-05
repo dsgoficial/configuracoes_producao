@@ -39,11 +39,12 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 17. Identificar Z;
 18. Identificar overlaps;
 19. Identificar linhas segmentadas com mesmo conjunto de atributos;
-20. Identificar elementos pequenos na rede;
-21. Identificar erros na construção das redes de rodoviárias e ferroviárias;
-22. Linha para multilinha;
-23. Identificar erros de ortografia nos atributos;
-24. Identificar erros de atributação;
+20. Identificar linhas não segmentadas nas intersecções;
+21. Identificar pontas soltas pequenas nas linhas;
+22. Identificar erros na construção das redes de rodoviárias e ferroviárias;
+23. Linha para multilinha;
+24. Identificar erros de ortografia nos atributos;
+25. Identificar erros de atributação;
 
 ## Detalhamento dos processos
 
@@ -215,19 +216,19 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
 - nome camada flags: flags_linhas_nao_unidas
 
-### xx. Identificar linhas não segmentadas nas intersecções
+### 20. Identificar linhas não segmentadas nas intersecções
 
 - arquivo: identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
 - camadas: infra_ferrovia_l,infra_via_deslocamento_l
 - nome camada flags: flags_elem_rede_nao_segmentados
 
-### xx. Identificar elementos pequenos na rede
+### 21. Identificar pontas soltas pequenas nas linhas
 
-- arquivo: identificar_elementos_pequenos_na_rede.model3
+- arquivo: identificar_pontas_soltas_pequenas_nas_linhas.model3
 - camadas do pontas livre de primeira ordem: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - raio de busca: 1000 m (0.01 grau)
 - tamanho: 5 m (0.00005 grau)
-- nome camada flags: flags_linhas_pequenas
+- nome camada flags: flags_pontas_soltas_pequenas
 
 ### xx. Identificar erros na construção das redes de rodoviárias e ferroviárias
 
