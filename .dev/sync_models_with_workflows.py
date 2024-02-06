@@ -59,14 +59,15 @@ def replace_newer_models(file_path):
             continue
         write_output = True
         wf_dict["models"][model_name]["source"]["data"] = model_na_pasta
+        print(f"atualizando o modelo {model_name}")
     if not write_output:
         return
-    print(f"atualizando o modelo {wf_dict}")
     wf_dict["metadata"]["lastModified"] = now()
     write_workflow(file_path=file_path, data=wf_dict)
 
 if __name__ == "__main__":
-    replace_newer_models(Path('/Users/philipeborba/teste.workflow'))
+    replace_newer_models(Path(
+        '/Users/philipeborba/github_repos/configuracoes_producao/edgv_topo/1_3/workflow/via_deslocamento.workflow'))
 
     # folder_to_consider = Path(os.path.join(os.path.dirname(__file__))) / Path('../edgv_topo/1_3/workflow')
 

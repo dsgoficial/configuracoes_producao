@@ -104,7 +104,7 @@
       <Option name="dependencies"/>
       <Option type="QString" name="id" value="native:extractbylocation_1"/>
       <Option type="Map" name="outputs">
-        <Option type="Map" name="linhas_entrelacadas">
+        <Option type="Map" name="flags_linhas_entrelacadas">
           <Option type="QString" name="child_id" value="native:extractbylocation_1"/>
           <Option type="QString" name="color" value=""/>
           <Option type="Map" name="comment">
@@ -117,14 +117,14 @@
             <Option type="bool" name="outputs_collapsed" value="true"/>
             <Option type="bool" name="parameters_collapsed" value="true"/>
           </Option>
-          <Option type="QString" name="component_description" value="linhas_entrelacadas"/>
+          <Option type="QString" name="component_description" value="flags_linhas_entrelacadas"/>
           <Option type="double" name="component_height" value="30"/>
           <Option type="double" name="component_pos_x" value="411.8248175182482"/>
           <Option type="double" name="component_pos_y" value="451.3406326034063"/>
           <Option type="double" name="component_width" value="200"/>
           <Option type="invalid" name="default_value"/>
           <Option type="bool" name="mandatory" value="false"/>
-          <Option type="QString" name="name" value="linhas_entrelacadas"/>
+          <Option type="QString" name="name" value="flags_linhas_entrelacadas"/>
           <Option type="QString" name="output_name" value="OUTPUT"/>
           <Option type="bool" name="outputs_collapsed" value="true"/>
           <Option type="bool" name="parameters_collapsed" value="true"/>
@@ -181,20 +181,20 @@
   <Option type="QString" name="outputGroup" value=""/>
   <Option name="outputOrder"/>
   <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="linhas_entrelacadas">
+    <Option type="Map" name="flags_linhas_entrelacadas">
       <Option type="bool" name="create_by_default" value="true"/>
       <Option type="int" name="data_type" value="-1"/>
       <Option type="invalid" name="default"/>
       <Option type="invalid" name="defaultGui"/>
-      <Option type="QString" name="description" value="linhas_entrelacadas"/>
+      <Option type="QString" name="description" value="flags_linhas_entrelacadas"/>
       <Option type="int" name="flags" value="0"/>
       <Option type="QString" name="help" value=""/>
       <Option type="Map" name="metadata">
         <Option type="QString" name="_modelChildId" value="native:extractbylocation_1"/>
-        <Option type="QString" name="_modelChildOutputName" value="linhas_entrelacadas"/>
+        <Option type="QString" name="_modelChildOutputName" value="flags_linhas_entrelacadas"/>
         <Option type="QString" name="_modelChildProvider" value="native"/>
       </Option>
-      <Option type="QString" name="name" value="linhas_entrelacadas"/>
+      <Option type="QString" name="name" value="flags_linhas_entrelacadas"/>
       <Option type="QString" name="parameter_type" value="sink"/>
       <Option type="bool" name="supports_append" value="false"/>
       <Option type="bool" name="supports_non_file_outputs" value="true"/>

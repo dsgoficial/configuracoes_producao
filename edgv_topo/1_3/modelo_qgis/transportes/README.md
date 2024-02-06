@@ -1,4 +1,4 @@
-# EDGV 3.0 Pro 1.3: Models QGIS Transportes
+# EDGV 3.0 Pro 1.3: Models QGIS Via Deslocamento
 
 ------------------------------------
 
@@ -55,8 +55,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camadas: todas as camadas carregadas;
 - processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+- nome camadas flags: flags_unicode_invalido_ponto,flags_unicode_invalido_linha,flags_unicode_invalido_poligono
 
-### 2. Identificar geometrias inválidas
+### 2. Identifica geometrias inválidas (com correção) e ângulos pequenos
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus);
@@ -82,7 +83,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identifica_rodovias_entrelacadas.model3
 - processos utilizados: Identify Intertwined Lines;
 - camada: infra_via_deslocamento_l;
-- nome camada flags: linhas_entrelacadas;
+- nome camada flags: flags_linhas_entrelacadas;
 - admite falsos positivos? Não;
 - para após a execução? Somente se tiver flags;
 - Texto para tooltip: O operador deve corrigir manualmente linhas que se entrelaçam. Normalmente, tais problemas são de digitalização.
@@ -90,7 +91,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 ### 5. Limpeza Suave das Linhas
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/limpeza_suave_linhas.model3
-- processos utilizados: Clean geometries (1e-6) / Remove small lines (1e-5);
+- processos utilizados: Clean geometries (1e-6) / Remove small lines (1e-5) / Remove Duplicated Features;
 - camada: todas as linhas;
 - nome camada flags: não há;
 - admite falsos positivos? Não é o caso;
@@ -114,7 +115,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as camadas;
 - nome camada flags: não é o caso
 
-### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas
+### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
@@ -130,7 +131,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - processos utilizados: Snap Hierárquico
 - configuração do snap hierárquico: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.json
   
-### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas
+### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas pós snap
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
@@ -151,8 +152,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Sim
 - Texto para tooltip: 
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+- para após a execução? Sim
 
-### 12: Identifica problemas de construção entre geometrias
+### 12: Identifica problemas de construção entre geometrias pós limpeza completa
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
 - processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
@@ -160,7 +162,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as camadas;
 - nome camada flags: flags_p, flags_l, flags_a
 
-### 13. Suavização de Douglas-Peucker
+### 13. Simplificação de Douglas-Peucker
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/simplificacao_linhas.model3
 - processos utilizados: Topological Douglas/Unir linhas;
@@ -188,7 +190,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 16. Identificar undershoot com moldura e conexão de linhas
 
-- arquivo: identifica_undershoot_moldura_conexao_linhas.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_undershoot_moldura_conexao_linhas.model3
 - camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - camadas poligono: nenhuma
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
@@ -197,21 +199,21 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 17. Identificar Z
 
-- arquivo: identifica_z.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_z.model3
 - camadas: todas carregadas
 - nome camada flags: flag_z
 
 
 ### 18. Identificar overlaps dentro da mesma camada
 
-- arquivo: identifica_overlaps_linhas.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_overlaps_linhas.model3
 - camadas: todas
 - nome camada flags: flags_overlaps_l
 
 
 ### 19. Identificar linhas segmentadas com mesmo conjunto de atributos
 
-- arquivo: identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
 - camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
@@ -219,13 +221,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 20. Identificar linhas não segmentadas nas intersecções
 
-- arquivo: identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
 - camadas: infra_ferrovia_l,infra_via_deslocamento_l
 - nome camada flags: flags_elem_rede_nao_segmentados
 
 ### 21. Identificar pontas soltas pequenas nas linhas
 
-- arquivo: identificar_pontas_soltas_pequenas_nas_linhas.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identificar_pontas_soltas_pequenas_transportes.model3
 - camadas do pontas livre de primeira ordem: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - raio de busca: 1000 m (0.01 grau)
 - tamanho: 5 m (0.00005 grau)
@@ -233,8 +235,36 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 22. Identificar erros na construção das redes de rodoviárias e ferroviárias
 
-- arquivo: identificar_erros_rede_transporte.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identificar_erros_rede_transporte.model3
 - camadas: infra_via_deslocamento_l, infra_ferrovia_l
 - camadas filtro linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
 - nome camada flags: flags_redes_transporte
+
+### 23. Linha para multilinha
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/linha_para_multilinha_rodovia.model3;
+- camadas: infra_via_deslocamento_l
+- nome saida: multilinha
+- para após a execução? Sim
+
+### 24. Identificar erros de ortografia no atributo nome
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3;
+- camadas: todas;
+- para após a execução? Sim
+- nome camada de saída: saida_verifica_ortografia_nome
+
+### 25. Identificar erros de atributação
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erros_atributacao.model3
+- camadas: todas;
+- para após a execução? Sim
+- nome camada de flags: flags_erros_atributos
+- nome camada de saída: atributos_incomuns
+
+### 26. Identificar erros de relacionamentos espaciais
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identifica_erros_relacionamentos_espaciais_transportes.model3
+- camadas: todas;
+- nome camada de flags: flags_ponto,flags_linha
