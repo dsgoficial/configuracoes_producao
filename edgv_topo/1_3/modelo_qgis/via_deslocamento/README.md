@@ -80,7 +80,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 4. Identificar linhas entrelaçadas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identifica_rodovias_entrelacadas.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_rodovias_entrelacadas.model3
 - processos utilizados: Identify Intertwined Lines;
 - camada: infra_via_deslocamento_l;
 - nome camada flags: flags_linhas_entrelacadas;
@@ -127,7 +127,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 9. Snap Hierárquico
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/snap_hierarquico_via_deslocamento.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/snap_hierarquico_via_deslocamento.model3
 - processos utilizados: Snap Hierárquico
 - configuração do snap hierárquico: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.json
   
@@ -213,7 +213,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 19. Identificar linhas segmentadas com mesmo conjunto de atributos
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
 - camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
@@ -221,13 +221,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 20. Identificar linhas não segmentadas nas intersecções
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
 - camadas: infra_ferrovia_l,infra_via_deslocamento_l
 - nome camada flags: flags_elem_rede_nao_segmentados
 
 ### 21. Identificar pontas soltas pequenas nas linhas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identificar_pontas_soltas_pequenas_transportes.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identificar_pontas_soltas_pequenas_transportes.model3
 - camadas do pontas livre de primeira ordem: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - raio de busca: 1000 m (0.01 grau)
 - tamanho: 5 m (0.00005 grau)
@@ -235,7 +235,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 22. Identificar erros na construção das redes de rodoviárias e ferroviárias
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identificar_erros_rede_transporte.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identificar_erros_rede_transporte.model3
 - camadas: infra_via_deslocamento_l, infra_ferrovia_l
 - camadas filtro linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
@@ -243,7 +243,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 23. Linha para multilinha
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/linha_para_multilinha_rodovia.model3;
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/linha_para_multilinha_rodovia.model3;
 - camadas: infra_via_deslocamento_l
 - nome saida: multilinha
 - para após a execução? Sim
@@ -265,6 +265,6 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 26. Identificar erros de relacionamentos espaciais
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/transportes/identifica_erros_relacionamentos_espaciais_transportes.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_erros_relacionamentos_espaciais_transportes.model3
 - camadas: todas;
 - nome camada de flags: flags_ponto,flags_linha
