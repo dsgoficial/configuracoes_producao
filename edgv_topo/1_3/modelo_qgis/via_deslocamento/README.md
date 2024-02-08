@@ -219,7 +219,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
 - nome camada flags: flags_linhas_nao_unidas
 
-### 20. Identificar linhas não segmentadas nas intersecções
+### 20. Identificar pontas soltas e linhas não segmentadas transportes
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
 - camadas: infra_ferrovia_l,infra_via_deslocamento_l
