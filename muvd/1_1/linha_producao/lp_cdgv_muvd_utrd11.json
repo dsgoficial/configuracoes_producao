@@ -487,28 +487,28 @@
             "camada": "aa010_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aa010_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aa010_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aa010_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -711,28 +711,28 @@
             "camada": "ad020_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ad020_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ad020_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ad020_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -753,28 +753,28 @@
             "camada": "ad030_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ad030_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ad030_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ad030_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -879,42 +879,42 @@
             "camada": "af040_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "af040_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "af040_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "af040_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "af040_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "af040_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1117,98 +1117,98 @@
             "camada": "ah070_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_p",
             "subfase": "Extração de Via de Deslocamento",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_p",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_p",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_p",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_a",
             "subfase": "Extração de Via de Deslocamento",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_a",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_a",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_a",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ah070_a",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1257,14 +1257,14 @@
             "camada": "aj030_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aj030_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1341,14 +1341,14 @@
             "camada": "aj110_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aj110_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1425,14 +1425,14 @@
             "camada": "ak040_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ak040_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1551,28 +1551,28 @@
             "camada": "ak130_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ak130_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ak130_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ak130_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1621,14 +1621,14 @@
             "camada": "ak170_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ak170_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1726,42 +1726,42 @@
             "camada": "al014_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al014_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al014_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al014_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al014_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al014_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1824,7 +1824,7 @@
             "camada": "al022_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1873,28 +1873,28 @@
             "camada": "al036_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al036_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al036_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al036_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -1929,14 +1929,14 @@
             "camada": "al050_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al050_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -2041,28 +2041,28 @@
             "camada": "al110_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al110_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al110_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al110_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -2097,42 +2097,42 @@
             "camada": "al131_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al131_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al131_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al131_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al131_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "al131_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -3056,14 +3056,14 @@
             "camada": "aq060_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq060_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -3469,63 +3469,63 @@
             "camada": "aq135_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq135_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq135_a",
             "subfase": "Extração de Via de Deslocamento",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq135_a",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq135_a",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq135_a",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq135_a",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq140_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq140_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -3602,28 +3602,28 @@
             "camada": "aq170_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq170_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq180_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "aq180_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -3658,42 +3658,42 @@
             "camada": "at005_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at005_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at010_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at010_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at010_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at010_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -3756,28 +3756,28 @@
             "camada": "at042_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at042_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at042_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "at042_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -3924,14 +3924,14 @@
             "camada": "bb009_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bb009_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -3966,28 +3966,28 @@
             "camada": "bb081_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bb081_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bb081_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bb081_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -4470,49 +4470,49 @@
             "camada": "bh010_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh010_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh010_l",
             "subfase": "Extração de Hidrografia",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh010_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh010_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh010_l",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh010_l",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -4533,98 +4533,98 @@
             "camada": "bh020_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh020_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh020_l",
             "subfase": "Extração de Hidrografia",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh020_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh020_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh020_l",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh020_l",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh030_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh030_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh030_l",
             "subfase": "Extração de Hidrografia",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh030_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh030_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh030_l",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh030_l",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -4729,28 +4729,28 @@
             "camada": "bh075_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh075_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh075_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh075_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -4799,147 +4799,147 @@
             "camada": "bh120_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh120_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh120_l",
             "subfase": "Extração de Hidrografia",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh120_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh120_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh120_l",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh120_l",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh140_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh140_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh140_l",
             "subfase": "Extração de Hidrografia",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh140_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh140_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh140_l",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh140_l",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh145_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh145_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh145_p",
             "subfase": "Extração de Hidrografia",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh145_p",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh145_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh145_p",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bh145_p",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -5289,77 +5289,77 @@
             "camada": "bi010_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi010_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi010_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi010_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi020_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi020_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi020_a",
             "subfase": "Extração de Hidrografia",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi020_a",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi020_a",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi020_a",
             "subfase": "Extração de Cerca e Muro",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "bi020_a",
             "subfase": "Extração de Interseção entre Hidrografia e Transporte",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -5842,28 +5842,28 @@
             "camada": "db090_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "db090_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "db090_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "db090_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -5982,21 +5982,21 @@
             "camada": "ea020_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ea020_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "ea020_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -6164,14 +6164,14 @@
             "camada": "fa015_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "fa015_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -6346,14 +6346,14 @@
             "camada": "gb015_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb015_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -6388,42 +6388,42 @@
             "camada": "gb030_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb030_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb030_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb030_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb035_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb035_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -6472,14 +6472,14 @@
             "camada": "gb055_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb055_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -6514,14 +6514,14 @@
             "camada": "gb075_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "gb075_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
@@ -6584,14 +6584,14 @@
             "camada": "su001_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
             "camada": "su001_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "muvd",
