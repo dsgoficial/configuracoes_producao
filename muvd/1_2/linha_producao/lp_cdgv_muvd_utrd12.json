@@ -1,8 +1,8 @@
 {
-        "nome": "Conjunto de dados geoespaciais vetoriais para MUVD UTRD 1.1",
+        "nome": "Conjunto de dados geoespaciais vetoriais para MUVD UTRD 1.2",
         "descricao": "Linha de produção padrão para vetores do MUVD",
         "versao": "1.0.0",
-        "nome_abrev": "cdgv_muvd_utrd11",
+        "nome_abrev": "cdgv_muvd_utrd12",
         "tipo_produto_id": 20,
         "fases": [
                 {
