@@ -1,7 +1,7 @@
 {
     "nome": "Conjunto de dados geoespaciais vetoriais para MGCP TRD 4.6",
     "descricao": "Linha de produção padrão para vetores do MGCP",
-    "versão": "1.0.0",
+    "versao": "1.0.0",
     "nome_abrev": "cdgv_mgcp_trd46",
     "tipo_produto_id": 8,
     "fases": [
@@ -57,7 +57,7 @@
                     "ordem": 8
                 },
                 {
-                    "nome": "Extração de Vegetação",
+                    "nome": "Extração de Cobertura do Solo",
                     "ordem": 9
                 },
                 {
@@ -151,7 +151,7 @@
                 },
                 {
                     "subfase_anterior": "Extração de Área Edificada",
-                    "subfase_posterior": "Extração de Vegetação",
+                    "subfase_posterior": "Extração de Cobertura do Solo",
                     "tipo_pre_requisito_id": 1
                 },
                 {
@@ -170,13 +170,13 @@
                     "tipo_pre_requisito_id": 2
                 },
                 {
-                    "subfase_anterior": "Extração de Vegetação",
+                    "subfase_anterior": "Extração de Cobertura do Solo",
                     "subfase_posterior": "Extração a partir de Insumos da NGA",
                     "tipo_pre_requisito_id": 1
                 },
                 {
-                    "subfase_anterior": "Extração de Vegetação",
-                    "subfase_posterior": "Extração de Vegetação",
+                    "subfase_anterior": "Extração de Cobertura do Solo",
+                    "subfase_posterior": "Extração de Cobertura do Solo",
                     "tipo_pre_requisito_id": 2
                 },
                 {
@@ -308,7 +308,7 @@
         {
             "schema": "mgcp",
             "camada": "delimitador_massa_dagua_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -406,7 +406,7 @@
         {
             "schema": "mgcp",
             "camada": "delimitador_area_construida_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -469,7 +469,7 @@
         {
             "schema": "mgcp",
             "camada": "delimitador_elemento_hidrografico_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -1638,7 +1638,7 @@
         {
             "schema": "mgcp",
             "camada": "ah070_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -3066,7 +3066,7 @@
         {
             "schema": "mgcp",
             "camada": "al020_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -3150,7 +3150,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_al020_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -4431,7 +4431,7 @@
         {
             "schema": "mgcp",
             "camada": "an010_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -4515,7 +4515,7 @@
         {
             "schema": "mgcp",
             "camada": "an050_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -4599,7 +4599,7 @@
         {
             "schema": "mgcp",
             "camada": "an060_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -4683,7 +4683,7 @@
         {
             "schema": "mgcp",
             "camada": "an075_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -4767,7 +4767,7 @@
         {
             "schema": "mgcp",
             "camada": "an076_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -4851,7 +4851,7 @@
         {
             "schema": "mgcp",
             "camada": "an076_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -4935,7 +4935,7 @@
         {
             "schema": "mgcp",
             "camada": "ap010_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5019,7 +5019,7 @@
         {
             "schema": "mgcp",
             "camada": "ap030_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5103,7 +5103,7 @@
         {
             "schema": "mgcp",
             "camada": "ap050_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5271,7 +5271,7 @@
         {
             "schema": "mgcp",
             "camada": "aq063_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5404,7 +5404,7 @@
         {
             "schema": "mgcp",
             "camada": "aq070_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5488,7 +5488,7 @@
         {
             "schema": "mgcp",
             "camada": "aq070_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5572,7 +5572,7 @@
         {
             "schema": "mgcp",
             "camada": "aq075_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -5950,7 +5950,7 @@
         {
             "schema": "mgcp",
             "camada": "aq130_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6034,7 +6034,7 @@
         {
             "schema": "mgcp",
             "camada": "aq130_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6118,7 +6118,7 @@
         {
             "schema": "mgcp",
             "camada": "aq135_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6538,7 +6538,7 @@
         {
             "schema": "mgcp",
             "camada": "ba010_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6650,7 +6650,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_ba030_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6762,7 +6762,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_ba040_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6979,7 +6979,7 @@
         {
             "schema": "mgcp",
             "camada": "bb041_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7070,7 +7070,7 @@
         {
             "schema": "mgcp",
             "camada": "bb041_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7161,7 +7161,7 @@
         {
             "schema": "mgcp",
             "camada": "bb043_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7252,7 +7252,7 @@
         {
             "schema": "mgcp",
             "camada": "bb043_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7385,7 +7385,7 @@
         {
             "schema": "mgcp",
             "camada": "bb140_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -7476,7 +7476,7 @@
         {
             "schema": "mgcp",
             "camada": "bb140_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -7609,7 +7609,7 @@
         {
             "schema": "mgcp",
             "camada": "bb190_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7700,7 +7700,7 @@
         {
             "schema": "mgcp",
             "camada": "bb190_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7791,7 +7791,7 @@
         {
             "schema": "mgcp",
             "camada": "bb230_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -8050,7 +8050,7 @@
         {
             "schema": "mgcp",
             "camada": "bd120_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8141,7 +8141,7 @@
         {
             "schema": "mgcp",
             "camada": "bd120_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8316,7 +8316,7 @@
         {
             "schema": "mgcp",
             "camada": "bh010_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8407,7 +8407,7 @@
         {
             "schema": "mgcp",
             "camada": "bh010_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8519,7 +8519,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh010_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8638,7 +8638,7 @@
         {
             "schema": "mgcp",
             "camada": "bh020_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -8750,7 +8750,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh020_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -8841,7 +8841,7 @@
         {
             "schema": "mgcp",
             "camada": "bh030_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -8953,7 +8953,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh030_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9275,7 +9275,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh080_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9436,7 +9436,7 @@
         {
             "schema": "mgcp",
             "camada": "bh120_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9527,7 +9527,7 @@
         {
             "schema": "mgcp",
             "camada": "bh120_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9639,7 +9639,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh120_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9751,7 +9751,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh130_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9870,7 +9870,7 @@
         {
             "schema": "mgcp",
             "camada": "bh140_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9982,7 +9982,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh140_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10073,7 +10073,7 @@
         {
             "schema": "mgcp",
             "camada": "bh145_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10262,7 +10262,7 @@
         {
             "schema": "mgcp",
             "camada": "bh165_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -10353,7 +10353,7 @@
         {
             "schema": "mgcp",
             "camada": "bh165_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -10444,7 +10444,7 @@
         {
             "schema": "mgcp",
             "camada": "bh170_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10535,7 +10535,7 @@
         {
             "schema": "mgcp",
             "camada": "bh180_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10626,7 +10626,7 @@
         {
             "schema": "mgcp",
             "camada": "bh180_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10759,7 +10759,7 @@
         {
             "schema": "mgcp",
             "camada": "bi020_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10850,7 +10850,7 @@
         {
             "schema": "mgcp",
             "camada": "bi020_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10941,7 +10941,7 @@
         {
             "schema": "mgcp",
             "camada": "bi020_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -11032,7 +11032,7 @@
         {
             "schema": "mgcp",
             "camada": "bi030_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11123,7 +11123,7 @@
         {
             "schema": "mgcp",
             "camada": "bi030_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11214,7 +11214,7 @@
         {
             "schema": "mgcp",
             "camada": "bi030_a",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11305,7 +11305,7 @@
         {
             "schema": "mgcp",
             "camada": "bi040_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11396,7 +11396,7 @@
         {
             "schema": "mgcp",
             "camada": "bi040_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -12089,7 +12089,7 @@
         {
             "schema": "mgcp",
             "camada": "db070_l",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -12467,7 +12467,7 @@
         {
             "schema": "mgcp",
             "camada": "db150_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -14301,7 +14301,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_zd020_p",
-            "subfase": "Extração de Vegetação",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         }

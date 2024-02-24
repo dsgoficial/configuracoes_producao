@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Linha de Produção",
+    "description": "Schema da Linha de Produção do SAP",
+    "type": "object",
+    "properties": {
+      "nome": {
+        "type": "string"
+      },
+      "descricao": {
+        "type": "string"
+      },
+      "versao": {
+        "type": "string"
+      },
+      "nome_abrev": {
+        "type": "string"
+      },
+      "tipo_produto_id": {
+        "type": "integer"
+      },
+      "fases": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tipo_fase_id": {"type": "integer"},
+            "ordem": {"type": "integer"},
+            "subfases": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "nome": {"type": "string"},
+                  "ordem": {"type": "integer"}
+                },
+                "required": ["nome", "ordem"]
+              }
+            },
+            "pre_requisito_subfase": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                    "subfase_anterior": {"type": "string"},
+                    "subfase_posterior": {"type": "string"},
+                    "tipo_pre_requisito_id": {"type": "integer"}
+                },
+                "required": ["subfase_anterior", "subfase_posterior", "tipo_pre_requisito_id"]
+                }
+            }
+          },
+          "required": ["tipo_fase_id", "ordem", "subfases"]
+        }
+      },
+      "propriedades_camadas": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "schema": {"type": "string"},
+            "camada": {"type": "string"},
+            "subfase": {"type": "string"},
+            "camada_apontamento": {"type": "boolean"},
+            "camada_incomum": {"type": "boolean"},
+            "atributo_filtro_subfase": {"type": "string"},
+            "atributo_situacao_correcao": {"type": "string"},
+            "atributo_justificativa_apontamento": {"type": "string"}
+          },
+          "required": ["schema", "camada", "subfase", "camada_apontamento", "camada_incomum"]
+        }
+      }
+    },
+    "required": ["nome", "descricao", "versao", "nome_abrev", "tipo_produto_id", "fases", "propriedades_camadas"]
+  }
