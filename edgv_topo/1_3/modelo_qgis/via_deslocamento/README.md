@@ -1,8 +1,8 @@
-# EDGV 3.0 Pro 1.3: Models QGIS Via Deslocamento
+# EDGV 3.0 Topo 1.3: Models QGIS Via Deslocamento
 
 ------------------------------------
 
-Modelos construídos para a produção EDGV 3.0 Pro versão 1.3, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
+Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
 
 ## Classes utilizadas
 
