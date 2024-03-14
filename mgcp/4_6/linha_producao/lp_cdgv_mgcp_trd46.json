@@ -130,6 +130,16 @@
                     "tipo_pre_requisito_id": 1
                 },
                 {
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
+                    "subfase_posterior": "Extração de Área Edificada",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Elemento Hidrográfico",
+                    "subfase_posterior": "Extração de Área Edificada",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
                     "subfase_anterior": "Extração de Área sem Dados",
                     "subfase_posterior": "Extração de Área sem Dados",
                     "tipo_pre_requisito_id": 2
