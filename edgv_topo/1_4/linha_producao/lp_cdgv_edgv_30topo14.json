@@ -265,98 +265,126 @@
     "propriedades_camadas": [
         {
             "schema": "edgv",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_construida_l",
+            "camada": "infra_trecho_hidroviario_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },        
+        {
+            "schema": "edgv",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_construida_l",
+            "camada": "infra_trecho_hidroviario_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração de Vegetação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "centroide_area_construida_p",
+            "camada": "centroide_area_edificada_p",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "centroide_area_construida_p",
+            "camada": "centroide_area_edificada_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "centroide_area_construida_p",
+            "camada": "infra_trecho_hidroviario_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_area_edificada_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "centroide_area_construida_p",
+            "camada": "infra_trecho_hidroviario_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_area_edificada_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "centroide_area_construida_p",
+            "camada": "centroide_area_edificada_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "centroide_area_construida_p",
+            "camada": "centroide_area_edificada_p",
             "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "centroide_area_construida_p",
+            "camada": "centroide_area_edificada_p",
             "subfase": "Extração de Vegetação",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -1000,14 +1028,14 @@
         },
         {
             "schema": "edgv",
-            "camada": "edicao_area_sem_dados_a",
+            "camada": "llp_area_sem_dados_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_area_sem_dados_a",
+            "camada": "llp_area_sem_dados_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -2680,28 +2708,28 @@
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Extração de Limites",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -3366,14 +3394,14 @@
         },
         {
             "schema": "edgv",
-            "camada": "cobter_area_construida_a",
+            "camada": "cobter_area_edificada_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "edgv",
-            "camada": "cobter_area_construida_a",
+            "camada": "cobter_area_edificada_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -4187,34 +4215,6 @@
             "schema": "edgv",
             "camada": "infra_vala_l",
             "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_delimitacao_fisica_l",
-            "subfase": "Extração de Vegetação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_delimitacao_fisica_l",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_delimitacao_fisica_l",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "llp_delimitacao_fisica_l",
-            "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
         },
