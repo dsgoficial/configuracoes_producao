@@ -1,8 +1,8 @@
 {
-    "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 2.4",
+    "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 2.5",
     "descricao": "Linha de produção padrão para vetores de carta ortoimagem",
     "versão": "1.0.0",
-    "nome_abrev": "cdgv_edgv_30orto24",
+    "nome_abrev": "cdgv_edgv_30orto25",
     "tipo_produto_id": 22,
     "fases": [
         {
@@ -114,6 +114,16 @@
                 },
                 {
                     "subfase_anterior": "Extração de Área sem Dados",
+                    "subfase_posterior": "Extração de Limites",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração da Hidrografia e Altimetria",
+                    "subfase_posterior": "Extração de Limites",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
                     "subfase_posterior": "Extração de Limites",
                     "tipo_pre_requisito_id": 1
                 },
@@ -895,39 +905,53 @@
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Extração de Limites",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_limite_legal_l",
+            "camada": "llp_limite_legal_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_area_sem_dados_a",
+            "camada": "llp_area_sem_dados_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false
         },
         {
             "schema": "edgv",
-            "camada": "edicao_area_sem_dados_a",
+            "camada": "llp_area_sem_dados_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_pais_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_pais_a",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
         },
         {
             "schema": "edgv",
