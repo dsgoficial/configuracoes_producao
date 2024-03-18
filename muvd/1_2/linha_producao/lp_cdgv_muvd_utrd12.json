@@ -1727,8 +1727,15 @@
             },
             {
                 "schema": "muvd",
-                "camada": "pop_al022_a",
+                "camada": "centroide_al022_p",
                 "subfase": "Verificação Final",
+                "camada_apontamento": false,
+                "camada_incomum": false
+            },
+            {
+                "schema": "muvd",
+                "camada": "centroide_al022_p",
+                "subfase": "Extração de Área Edificada",
                 "camada_apontamento": false,
                 "camada_incomum": false
             },
