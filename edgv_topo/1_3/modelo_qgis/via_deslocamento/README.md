@@ -12,7 +12,7 @@ Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de pr
 - infra_mobilidade_urbana_l;
 - infra_travessia_hidroviaria_l;
 
-### Expressão para capturar todas as geometrias carregadass
+### Expressão para capturar todas as geometrias carregadas
 
 ```
 array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))
