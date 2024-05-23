@@ -5,6 +5,11 @@
 Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
 
 ## Classes utilizadas
+infra_ferrovia_l,infra_via_deslocamento_l,infra_mobilidade_urbana_l,elemnat_trecho_drenagem_l,infra_elemento_viario_l
+infra_travessia_hidroviaria_l,
+aux_moldura_a,moldura,aux_moldura_area_continua_a
+elemnat_trecho_drenagem_l
+
 
 - moldura;
 - infra_via_deslocamento_l;
