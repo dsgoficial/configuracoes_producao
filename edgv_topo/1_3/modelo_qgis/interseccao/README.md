@@ -13,10 +13,11 @@ Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de pr
 - elemnat_trecho_drenagem_l;
 - infra_elemento_viario_l;
 - infra_travessia_hidroviaria_l;
+- infra_barragem_l
+- elemnat_trecho_drenagem_l.
 - aux_moldura_a;
 - moldura;
 - aux_moldura_area_continua_a;
-- elemnat_trecho_drenagem_l.
 
 
 ### Expressão para capturar todas as geometrias carregadas
