@@ -45,8 +45,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 15. Identificar geometrias com densidade incorreta de vértices;
 16. Identificar overlaps;
 17. Identificar erros de ortografia nos atributos;
-18. Identificar erros de atributação;
-19. Identificar erros de relacionamentos espaciais;
+18. Identificar erros de atributação.
 
 ## Detalhamento dos processos
 
@@ -212,9 +211,3 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Sim
 - nome camada de flags: flags_erros_atributos
 - nome camada de saída: atributos_incomuns
-
-### 19. Identificar erros de relacionamentos espaciais
-
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_erros_relacionamentos_espaciais_transportes.model3
-- camadas: todas;
-- nome camada de flags: flags_ponto,flags_linha

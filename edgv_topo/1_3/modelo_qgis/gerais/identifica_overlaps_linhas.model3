@@ -48,7 +48,7 @@
         <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="FLAGS"/>
+            <Option name="static_value" type="QString" value=""/>
           </Option>
         </Option>
         <Option name="PARAMETER_DICT" type="List">
