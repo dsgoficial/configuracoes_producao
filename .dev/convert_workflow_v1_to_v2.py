@@ -48,8 +48,11 @@ def convert_workflow(file_path, output_file_path):
         displayName=wf_dict["displayName"],
         metadata=wf_dict["metadata"],
     )
+    write_workflow(output_file_path, new_workflow.as_dict())
 
 
 if __name__ == "__main__":
-    replace_newer_models(Path(
-        '/Users/philipeborba/github_repos/configuracoes_producao/edgv_topo/1_3/workflow/via_deslocamento.workflow'))
+    convert_workflow(Path(
+        'C:\\Users\\borba.1CGEO\\Downloads\\intersec.workflow'),
+        'C:\\Users\\borba.1CGEO\\Downloads\\intersec_new.workflow'
+    )
