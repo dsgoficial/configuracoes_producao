@@ -1,855 +1,855 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option type="Map" name="children">
-    <Option type="Map" name="dsgtools:batchrunalgorithm_1">
-      <Option value="true" type="bool" name="active"/>
+  <Option name="children" type="Map">
+    <Option name="dsgtools:batchrunalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="609.3333333333333" type="double" name="component_pos_x"/>
-        <Option value="398.6666666666667" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="609.3333333333333" type="double"/>
+        <Option name="component_pos_y" value="398.6666666666667" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Pontos Duplicados" type="QString" name="component_description"/>
-      <Option value="46.000000000000014" type="double" name="component_height"/>
-      <Option value="127.99999999999997" type="double" name="component_pos_x"/>
-      <Option value="181.66666666666666" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Pontos Duplicados" type="QString"/>
+      <Option name="component_height" value="46.000000000000014" type="double"/>
+      <Option name="component_pos_x" value="127.99999999999997" type="double"/>
+      <Option name="component_pos_y" value="181.66666666666666" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:batchrunalgorithm_1" type="QString" name="id"/>
+      <Option name="id" value="dsgtools:batchrunalgorithm_1" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="dsgtools:identifyduplicatedgeometries" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyduplicatedgeometries" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Point')), layer_property (@element,'name')))" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Point')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="INPUT" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="FLAGS" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="FLAGS" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="dsgtools:batchrunalgorithm_2">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="dsgtools:batchrunalgorithm_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="858.6666666666666" type="double" name="component_pos_x"/>
-        <Option value="460" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="858.6666666666666" type="double"/>
+        <Option name="component_pos_y" value="460" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Linhas Duplicadas" type="QString" name="component_description"/>
-      <Option value="46.000000000000014" type="double" name="component_height"/>
-      <Option value="396.00000000000006" type="double" name="component_pos_x"/>
-      <Option value="182.99999999999997" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Linhas Duplicadas" type="QString"/>
+      <Option name="component_height" value="46.000000000000014" type="double"/>
+      <Option name="component_pos_x" value="396.00000000000006" type="double"/>
+      <Option name="component_pos_y" value="182.99999999999997" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:batchrunalgorithm_2" type="QString" name="id"/>
+      <Option name="id" value="dsgtools:batchrunalgorithm_2" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="dsgtools:identifyduplicatedgeometries" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyduplicatedgeometries" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="INPUT" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="FLAGS" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="dsgtools:batchrunalgorithm_3">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="dsgtools:batchrunalgorithm_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="930.6666666666665" type="double" name="component_pos_x"/>
-        <Option value="484" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="930.6666666666665" type="double"/>
+        <Option name="component_pos_y" value="484" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Poligonos Duplicados" type="QString" name="component_description"/>
-      <Option value="46.000000000000014" type="double" name="component_height"/>
-      <Option value="676" type="double" name="component_pos_x"/>
-      <Option value="165.66666666666669" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Poligonos Duplicados" type="QString"/>
+      <Option name="component_height" value="46.000000000000014" type="double"/>
+      <Option name="component_pos_x" value="676" type="double"/>
+      <Option name="component_pos_y" value="165.66666666666669" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:batchrunalgorithm_3" type="QString" name="id"/>
+      <Option name="id" value="dsgtools:batchrunalgorithm_3" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="dsgtools:identifyduplicatedgeometries" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyduplicatedgeometries" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon')), layer_property (@element,'name')))" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="INPUT" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="FLAGS" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="{&quot;SELECTED&quot;:false,&quot;FLAGS&quot;:&quot;memory:&quot;}" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&quot;SELECTED&quot;:false,&quot;FLAGS&quot;:&quot;memory:&quot;}" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="dsgtools:batchrunalgorithm_4">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="dsgtools:batchrunalgorithm_4" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1105.3333333333333" type="double" name="component_pos_x"/>
-        <Option value="658.6666666666666" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1105.3333333333333" type="double"/>
+        <Option name="component_pos_y" value="658.6666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Linhas Sobrepostas" type="QString" name="component_description"/>
-      <Option value="46.000000000000014" type="double" name="component_height"/>
-      <Option value="396" type="double" name="component_pos_x"/>
-      <Option value="312.33333333333326" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Linhas Sobrepostas" type="QString"/>
+      <Option name="component_height" value="46.000000000000014" type="double"/>
+      <Option name="component_pos_x" value="396" type="double"/>
+      <Option name="component_pos_y" value="312.33333333333326" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:batchrunalgorithm_4" type="QString" name="id"/>
+      <Option name="id" value="dsgtools:batchrunalgorithm_4" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="dsgtools:identifyoverlaps" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyoverlaps" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="INPUT" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="FLAGS" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="dsgtools:batchrunalgorithm_5">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="dsgtools:batchrunalgorithm_5" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1368" type="double" name="component_pos_x"/>
-        <Option value="617.3333333333334" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1368" type="double"/>
+        <Option name="component_pos_y" value="617.3333333333334" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Poligonos Sobrepostos" type="QString" name="component_description"/>
-      <Option value="46.000000000000014" type="double" name="component_height"/>
-      <Option value="666.6666666666666" type="double" name="component_pos_x"/>
-      <Option value="308.33333333333337" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Poligonos Sobrepostos" type="QString"/>
+      <Option name="component_height" value="46.000000000000014" type="double"/>
+      <Option name="component_pos_x" value="666.6666666666666" type="double"/>
+      <Option name="component_pos_y" value="308.33333333333337" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:batchrunalgorithm_5" type="QString" name="id"/>
+      <Option name="id" value="dsgtools:batchrunalgorithm_5" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="dsgtools:identifyoverlaps" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyoverlaps" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon')), layer_property (@element,'name')))" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="INPUT" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="FLAGS" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;:&quot;memory:&quot;&#xa;}" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="dsgtools:batchrunalgorithm_6">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="dsgtools:batchrunalgorithm_6" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="30" type="double" name="component_height"/>
-        <Option value="466.23123409332425" type="double" name="component_pos_x"/>
-        <Option value="494.9818049767161" type="double" name="component_pos_y"/>
-        <Option value="200" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="30" type="double"/>
+        <Option name="component_pos_x" value="466.23123409332425" type="double"/>
+        <Option name="component_pos_y" value="494.9818049767161" type="double"/>
+        <Option name="component_width" value="200" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Identifica geometrias invalidas" type="QString" name="component_description"/>
-      <Option value="51" type="double" name="component_height"/>
-      <Option value="265.33333333333337" type="double" name="component_pos_x"/>
-      <Option value="420.1666666666667" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Identifica geometrias invalidas" type="QString"/>
+      <Option name="component_height" value="51" type="double"/>
+      <Option name="component_pos_x" value="265.33333333333337" type="double"/>
+      <Option name="component_pos_y" value="420.1666666666667" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:batchrunalgorithm_6" type="QString" name="id"/>
+      <Option name="id" value="dsgtools:batchrunalgorithm_6" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="ALG_NAME">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="dsgtools:identifyandfixinvalidgeometries" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyandfixinvalidgeometries" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUTLAYERS">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="INPUT" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="FLAGS" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="PARAMETER_DICT">
+        <Option name="PARAMETER_DICT" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="{&quot;SELECTED&quot;:false,&quot;TYPE&quot;:true,&quot;IGNORE_CLOSED&quot;: false, &quot;FLAGS&quot;:&quot;memory:&quot;}" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&quot;SELECTED&quot;:false,&quot;TYPE&quot;:true,&quot;IGNORE_CLOSED&quot;: false, &quot;FLAGS&quot;:&quot;memory:&quot;}" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1313.9958202380865" type="double" name="component_pos_x"/>
-        <Option value="568.7297827240063" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1313.9958202380865" type="double"/>
+        <Option name="component_pos_y" value="568.7297827240063" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="moldura" type="QString" name="component_description"/>
-      <Option value="41.99999999999994" type="double" name="component_height"/>
-      <Option value="123.19810201660732" type="double" name="component_pos_x"/>
-      <Option value="304.32147093712933" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="moldura" type="QString"/>
+      <Option name="component_height" value="41.99999999999994" type="double"/>
+      <Option name="component_pos_x" value="123.19810201660732" type="double"/>
+      <Option name="component_pos_y" value="304.32147093712933" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="id"/>
+      <Option name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUTLAYERS">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="moldura,aux_moldura_a,aux_moldura_area_continua_a" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="moldura,aux_moldura_a,aux_moldura_area_continua_a" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:extractbylocation_1">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:extractbylocation_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:extractbylocation" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="790.6666666666666" type="double" name="component_pos_x"/>
-        <Option value="512" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="790.6666666666666" type="double"/>
+        <Option name="component_pos_y" value="512" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Extract by location" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="179.99999999999997" type="double" name="component_pos_x"/>
-      <Option value="675.6666666666665" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Extract by location" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="179.99999999999997" type="double"/>
+      <Option name="component_pos_y" value="675.6666666666665" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:extractbylocation_1" type="QString" name="id"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="flags_p">
-          <Option value="native:extractbylocation_1" type="QString" name="child_id"/>
-          <Option value="" type="QString" name="color"/>
-          <Option type="Map" name="comment">
-            <Option value="" type="QString" name="color"/>
-            <Option value="" type="QString" name="component_description"/>
-            <Option value="60" type="double" name="component_height"/>
-            <Option value="0" type="double" name="component_pos_x"/>
-            <Option value="0" type="double" name="component_pos_y"/>
-            <Option value="100" type="double" name="component_width"/>
-            <Option value="true" type="bool" name="outputs_collapsed"/>
-            <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="id" value="native:extractbylocation_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_p" type="Map">
+          <Option name="child_id" value="native:extractbylocation_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
           </Option>
-          <Option value="flags_p" type="QString" name="component_description"/>
-          <Option value="30" type="double" name="component_height"/>
-          <Option value="312" type="double" name="component_pos_x"/>
-          <Option value="749.9999999999998" type="double" name="component_pos_y"/>
-          <Option value="200" type="double" name="component_width"/>
-          <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="flags_p" type="QString" name="name"/>
-          <Option value="OUTPUT" type="QString" name="output_name"/>
-          <Option value="true" type="bool" name="outputs_collapsed"/>
-          <Option value="true" type="bool" name="parameters_collapsed"/>
+          <Option name="component_description" value="flags_p" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="312" type="double"/>
+          <Option name="component_pos_y" value="749.9999999999998" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="flags_p" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
         </Option>
       </Option>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:mergevectorlayers_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="native:mergevectorlayers_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INTERSECT">
+        <Option name="INTERSECT" type="List">
           <Option type="Map">
-            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="PREDICATE">
+        <Option name="PREDICATE" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option type="List" name="static_value">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
               <Option value="0" type="int"/>
             </Option>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:extractbylocation_2">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:extractbylocation_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:extractbylocation" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1182.6666666666665" type="double" name="component_pos_x"/>
-        <Option value="475.3333333333335" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1182.6666666666665" type="double"/>
+        <Option name="component_pos_y" value="475.3333333333335" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Extract by location" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="572" type="double" name="component_pos_x"/>
-      <Option value="639" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Extract by location" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="572" type="double"/>
+      <Option name="component_pos_y" value="639" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:extractbylocation_2" type="QString" name="id"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="flags_l">
-          <Option value="native:extractbylocation_2" type="QString" name="child_id"/>
-          <Option value="" type="QString" name="color"/>
-          <Option type="Map" name="comment">
-            <Option value="" type="QString" name="color"/>
-            <Option value="" type="QString" name="component_description"/>
-            <Option value="60" type="double" name="component_height"/>
-            <Option value="0" type="double" name="component_pos_x"/>
-            <Option value="0" type="double" name="component_pos_y"/>
-            <Option value="100" type="double" name="component_width"/>
-            <Option value="true" type="bool" name="outputs_collapsed"/>
-            <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="id" value="native:extractbylocation_2" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_l" type="Map">
+          <Option name="child_id" value="native:extractbylocation_2" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
           </Option>
-          <Option value="flags_l" type="QString" name="component_description"/>
-          <Option value="30" type="double" name="component_height"/>
-          <Option value="681.3333333333334" type="double" name="component_pos_x"/>
-          <Option value="748" type="double" name="component_pos_y"/>
-          <Option value="200" type="double" name="component_width"/>
-          <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="flags_l" type="QString" name="name"/>
-          <Option value="OUTPUT" type="QString" name="output_name"/>
-          <Option value="true" type="bool" name="outputs_collapsed"/>
-          <Option value="true" type="bool" name="parameters_collapsed"/>
+          <Option name="component_description" value="flags_l" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="681.3333333333334" type="double"/>
+          <Option name="component_pos_y" value="748" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="flags_l" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
         </Option>
       </Option>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:mergevectorlayers_2" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="native:mergevectorlayers_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INTERSECT">
+        <Option name="INTERSECT" type="List">
           <Option type="Map">
-            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="PREDICATE">
+        <Option name="PREDICATE" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option type="List" name="static_value">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
               <Option value="0" type="int"/>
             </Option>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:extractbylocation_3">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:extractbylocation_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:extractbylocation" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1389.333333333333" type="double" name="component_pos_x"/>
-        <Option value="502.0000000000001" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1389.333333333333" type="double"/>
+        <Option name="component_pos_y" value="502.0000000000001" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Extract by location" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="865.3333333333333" type="double" name="component_pos_x"/>
-      <Option value="635" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="Extract by location" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="865.3333333333333" type="double"/>
+      <Option name="component_pos_y" value="635" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:extractbylocation_3" type="QString" name="id"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="flags_a">
-          <Option value="native:extractbylocation_3" type="QString" name="child_id"/>
-          <Option value="" type="QString" name="color"/>
-          <Option type="Map" name="comment">
-            <Option value="" type="QString" name="color"/>
-            <Option value="" type="QString" name="component_description"/>
-            <Option value="60" type="double" name="component_height"/>
-            <Option value="0" type="double" name="component_pos_x"/>
-            <Option value="0" type="double" name="component_pos_y"/>
-            <Option value="100" type="double" name="component_width"/>
-            <Option value="true" type="bool" name="outputs_collapsed"/>
-            <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="id" value="native:extractbylocation_3" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_a" type="Map">
+          <Option name="child_id" value="native:extractbylocation_3" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
           </Option>
-          <Option value="flags_a" type="QString" name="component_description"/>
-          <Option value="30" type="double" name="component_height"/>
-          <Option value="0" type="double" name="component_pos_x"/>
-          <Option value="0" type="double" name="component_pos_y"/>
-          <Option value="200" type="double" name="component_width"/>
-          <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="flags_a" type="QString" name="name"/>
-          <Option value="OUTPUT" type="QString" name="output_name"/>
-          <Option value="true" type="bool" name="outputs_collapsed"/>
-          <Option value="true" type="bool" name="parameters_collapsed"/>
+          <Option name="component_description" value="flags_a" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="0" type="double"/>
+          <Option name="component_pos_y" value="0" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="flags_a" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
         </Option>
       </Option>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:mergevectorlayers_3" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="native:mergevectorlayers_3" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="INTERSECT">
+        <Option name="INTERSECT" type="List">
           <Option type="Map">
-            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="PREDICATE">
+        <Option name="PREDICATE" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option type="List" name="static_value">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
               <Option value="0" type="int"/>
             </Option>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:mergevectorlayers_1">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:mergevectorlayers_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:mergevectorlayers" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1086.6666666666665" type="double" name="component_pos_x"/>
-        <Option value="730.6666666666665" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1086.6666666666665" type="double"/>
+        <Option name="component_pos_y" value="730.6666666666665" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="pontos_unidos" type="QString" name="component_description"/>
-      <Option value="51.33333333333324" type="double" name="component_height"/>
-      <Option value="246.41518386714117" type="double" name="component_pos_x"/>
-      <Option value="571.6927639383155" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="pontos_unidos" type="QString"/>
+      <Option name="component_height" value="51.33333333333324" type="double"/>
+      <Option name="component_pos_x" value="246.41518386714117" type="double"/>
+      <Option name="component_pos_y" value="571.6927639383155" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:mergevectorlayers_1" type="QString" name="id"/>
+      <Option name="id" value="native:mergevectorlayers_1" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="CRS">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option type="invalid" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
-        <Option type="List" name="LAYERS">
+        <Option name="LAYERS" type="List">
           <Option type="Map">
-            <Option value="dsgtools:batchrunalgorithm_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:batchrunalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
           <Option type="Map">
-            <Option value="dsgtools:batchrunalgorithm_6" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:batchrunalgorithm_6" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:mergevectorlayers_2">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:mergevectorlayers_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:mergevectorlayers" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1217.333333333333" type="double" name="component_pos_x"/>
-        <Option value="751.9999999999999" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1217.333333333333" type="double"/>
+        <Option name="component_pos_y" value="751.9999999999999" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="linhas_unidas" type="QString" name="component_description"/>
-      <Option value="51.33333333333324" type="double" name="component_height"/>
-      <Option value="548" type="double" name="component_pos_x"/>
-      <Option value="533.6666666666665" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="linhas_unidas" type="QString"/>
+      <Option name="component_height" value="51.33333333333324" type="double"/>
+      <Option name="component_pos_x" value="548" type="double"/>
+      <Option name="component_pos_y" value="533.6666666666665" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:mergevectorlayers_2" type="QString" name="id"/>
+      <Option name="id" value="native:mergevectorlayers_2" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="CRS">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option type="invalid" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
-        <Option type="List" name="LAYERS">
+        <Option name="LAYERS" type="List">
           <Option type="Map">
-            <Option value="dsgtools:batchrunalgorithm_2" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:batchrunalgorithm_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
           <Option type="Map">
-            <Option value="dsgtools:batchrunalgorithm_4" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:batchrunalgorithm_4" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:mergevectorlayers_3">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:mergevectorlayers_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:mergevectorlayers" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="1351.9999999999995" type="double" name="component_pos_x"/>
-        <Option value="778.6666666666666" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1351.9999999999995" type="double"/>
+        <Option name="component_pos_y" value="778.6666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="poligonos_unidos" type="QString" name="component_description"/>
-      <Option value="51.33333333333324" type="double" name="component_height"/>
-      <Option value="806.6666666666666" type="double" name="component_pos_x"/>
-      <Option value="498.99999999999994" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="poligonos_unidos" type="QString"/>
+      <Option name="component_height" value="51.33333333333324" type="double"/>
+      <Option name="component_pos_x" value="806.6666666666666" type="double"/>
+      <Option name="component_pos_y" value="498.99999999999994" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:mergevectorlayers_3" type="QString" name="id"/>
+      <Option name="id" value="native:mergevectorlayers_3" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="CRS">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option type="invalid" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
-        <Option type="List" name="LAYERS">
+        <Option name="LAYERS" type="List">
           <Option type="Map">
-            <Option value="dsgtools:batchrunalgorithm_3" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:batchrunalgorithm_3" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
           <Option type="Map">
-            <Option value="dsgtools:batchrunalgorithm_5" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="dsgtools:batchrunalgorithm_5" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
-  <Option type="Map" name="designerParameterValues">
-    <Option type="QgsProcessingOutputLayerDefinition" name="flags_a">
+  <Option name="designerParameterValues" type="Map">
+    <Option name="flags_a" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
-        <Option type="Map" name="create_options">
-          <Option value="System" type="QString" name="fileEncoding"/>
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="System" type="QString"/>
         </Option>
-        <Option type="Map" name="sink">
-          <Option value="true" type="bool" name="active"/>
-          <Option value="1" type="int" name="type"/>
-          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
         </Option>
       </Option>
     </Option>
-    <Option type="QgsProcessingOutputLayerDefinition" name="flags_l">
+    <Option name="flags_l" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
-        <Option type="Map" name="create_options">
-          <Option value="System" type="QString" name="fileEncoding"/>
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="System" type="QString"/>
         </Option>
-        <Option type="Map" name="sink">
-          <Option value="true" type="bool" name="active"/>
-          <Option value="1" type="int" name="type"/>
-          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
         </Option>
       </Option>
     </Option>
-    <Option type="QgsProcessingOutputLayerDefinition" name="flags_p">
+    <Option name="flags_p" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
-        <Option type="Map" name="create_options">
-          <Option value="System" type="QString" name="fileEncoding"/>
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="System" type="QString"/>
         </Option>
-        <Option type="Map" name="sink">
-          <Option value="true" type="bool" name="active"/>
-          <Option value="1" type="int" name="type"/>
-          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
-  <Option value="Version2" type="QString" name="internal_version"/>
+  <Option name="internal_version" value="Version2" type="QString"/>
   <Option name="modelVariables"/>
-  <Option value="CDGV_EDGV_Topo" type="QString" name="model_group"/>
-  <Option value="Identifica problemas de construção entre geometrias" type="QString" name="model_name"/>
-  <Option value="" type="QString" name="outputGroup"/>
+  <Option name="model_group" value="CDGV_EDGV_Topo" type="QString"/>
+  <Option name="model_name" value="Identifica problemas de construção entre geometrias" type="QString"/>
+  <Option name="outputGroup" value="" type="QString"/>
   <Option name="outputOrder"/>
-  <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="flags_a">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
-      <Option type="invalid" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option value="flags_a" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="" type="QString" name="help"/>
-      <Option type="Map" name="metadata">
-        <Option value="native:extractbylocation_3" type="QString" name="_modelChildId"/>
-        <Option value="flags_a" type="QString" name="_modelChildOutputName"/>
-        <Option value="native" type="QString" name="_modelChildProvider"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="flags_a" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="flags_a" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" value="native:extractbylocation_3" type="QString"/>
+        <Option name="_modelChildOutputName" value="flags_a" type="QString"/>
+        <Option name="_modelChildProvider" value="native" type="QString"/>
       </Option>
-      <Option value="flags_a" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="false" type="bool" name="supports_append"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+      <Option name="name" value="flags_a" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
-    <Option type="Map" name="flags_l">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
-      <Option type="invalid" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option value="flags_l" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="" type="QString" name="help"/>
-      <Option type="Map" name="metadata">
-        <Option value="native:extractbylocation_2" type="QString" name="_modelChildId"/>
-        <Option value="flags_l" type="QString" name="_modelChildOutputName"/>
-        <Option value="native" type="QString" name="_modelChildProvider"/>
+    <Option name="flags_l" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="flags_l" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" value="native:extractbylocation_2" type="QString"/>
+        <Option name="_modelChildOutputName" value="flags_l" type="QString"/>
+        <Option name="_modelChildProvider" value="native" type="QString"/>
       </Option>
-      <Option value="flags_l" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="false" type="bool" name="supports_append"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+      <Option name="name" value="flags_l" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
-    <Option type="Map" name="flags_p">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
-      <Option type="invalid" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option value="flags_p" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="" type="QString" name="help"/>
-      <Option type="Map" name="metadata">
-        <Option value="native:extractbylocation_1" type="QString" name="_modelChildId"/>
-        <Option value="flags_p" type="QString" name="_modelChildOutputName"/>
-        <Option value="native" type="QString" name="_modelChildProvider"/>
+    <Option name="flags_p" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="flags_p" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" value="native:extractbylocation_1" type="QString"/>
+        <Option name="_modelChildOutputName" value="flags_p" type="QString"/>
+        <Option name="_modelChildProvider" value="native" type="QString"/>
       </Option>
-      <Option value="flags_p" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="false" type="bool" name="supports_append"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+      <Option name="name" value="flags_p" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
