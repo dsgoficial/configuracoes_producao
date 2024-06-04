@@ -1,177 +1,56 @@
-<qgis simplifyDrawingTol="1" simplifyMaxScale="1" version="3.30.3-'s-Hertogenbosch" labelsEnabled="0" symbologyReferenceScale="-1" styleCategories="AllStyleCategories" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyAlgorithm="0" maxScale="0" minScale="100000000" simplifyLocal="1">
+<qgis minScale="100000000" simplifyAlgorithm="0" version="3.24.3-Tisler" simplifyDrawingHints="0" simplifyDrawingTol="1" readOnly="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" labelsEnabled="0" simplifyMaxScale="1" symbologyReferenceScale="-1" maxScale="0">
 <flags>
 <Identifiable>1</Identifiable>
 <Removable>1</Removable>
 <Searchable>1</Searchable>
 <Private>0</Private>
 </flags>
-<temporal limitMode="0" accumulate="0" mode="0" startExpression="" durationField="" endExpression="" fixedDuration="0" endField="" durationUnit="min" startField="" enabled="0">
+<temporal startExpression="" startField="" accumulate="0" fixedDuration="0" endExpression="" durationField="" endField="" durationUnit="min" mode="0" enabled="0" limitMode="0">
 <fixedRange>
 <start></start>
 <end></end>
 </fixedRange>
 </temporal>
-<elevation binding="Centroid" type="IndividualFeatures" symbology="Line" zoffset="0" extrusion="0" respectLayerSymbol="1" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" clamping="Terrain" zscale="1">
-<data-defined-properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data-defined-properties>
-<profileLineSymbol>
-<symbol type="line" is_animated="0" name="" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-<layer id="{78ce4845-7120-48ff-bf48-f9c24cc551a6}" pass="0" class="SimpleLine" locked="0" enabled="1">
-<Option type="Map">
-<Option type="QString" name="align_dash_pattern" value="0"/>
-<Option type="QString" name="capstyle" value="square"/>
-<Option type="QString" name="customdash" value="5;2"/>
-<Option type="QString" name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="customdash_unit" value="MM"/>
-<Option type="QString" name="dash_pattern_offset" value="0"/>
-<Option type="QString" name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="dash_pattern_offset_unit" value="MM"/>
-<Option type="QString" name="draw_inside_polygon" value="0"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="line_color" value="164,113,88,255"/>
-<Option type="QString" name="line_style" value="solid"/>
-<Option type="QString" name="line_width" value="0.6"/>
-<Option type="QString" name="line_width_unit" value="MM"/>
-<Option type="QString" name="offset" value="0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="ring_filter" value="0"/>
-<Option type="QString" name="trim_distance_end" value="0"/>
-<Option type="QString" name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="trim_distance_end_unit" value="MM"/>
-<Option type="QString" name="trim_distance_start" value="0"/>
-<Option type="QString" name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="trim_distance_start_unit" value="MM"/>
-<Option type="QString" name="tweak_dash_pattern_on_corners" value="0"/>
-<Option type="QString" name="use_custom_dash" value="0"/>
-<Option type="QString" name="width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-</Option>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-</profileLineSymbol>
-<profileFillSymbol>
-<symbol type="fill" is_animated="0" name="" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-<layer id="{6bfdd14f-9ca3-4b13-9923-7d741c5a7118}" pass="0" class="SimpleFill" locked="0" enabled="1">
-<Option type="Map">
-<Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="color" value="164,113,88,255"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="offset" value="0,0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="outline_color" value="117,81,63,255"/>
-<Option type="QString" name="outline_style" value="solid"/>
-<Option type="QString" name="outline_width" value="0.2"/>
-<Option type="QString" name="outline_width_unit" value="MM"/>
-<Option type="QString" name="style" value="solid"/>
-</Option>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-</profileFillSymbol>
-<profileMarkerSymbol>
-<symbol type="marker" is_animated="0" name="" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-<layer id="{0333417d-06db-4269-b081-6b8aa6eb27e7}" pass="0" class="SimpleMarker" locked="0" enabled="1">
-<Option type="Map">
-<Option type="QString" name="angle" value="0"/>
-<Option type="QString" name="cap_style" value="square"/>
-<Option type="QString" name="color" value="164,113,88,255"/>
-<Option type="QString" name="horizontal_anchor_point" value="1"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="name" value="diamond"/>
-<Option type="QString" name="offset" value="0,0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="outline_color" value="117,81,63,255"/>
-<Option type="QString" name="outline_style" value="solid"/>
-<Option type="QString" name="outline_width" value="0.2"/>
-<Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="outline_width_unit" value="MM"/>
-<Option type="QString" name="scale_method" value="diameter"/>
-<Option type="QString" name="size" value="3"/>
-<Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="size_unit" value="MM"/>
-<Option type="QString" name="vertical_anchor_point" value="1"/>
-</Option>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-</profileMarkerSymbol>
-</elevation>
-<renderer-v2 type="singleSymbol" referencescale="-1" enableorderby="0" symbollevels="0" forceraster="0">
+<renderer-v2 enableorderby="0" referencescale="-1" symbollevels="0" type="singleSymbol" forceraster="0">
 <symbols>
-<symbol type="fill" is_animated="0" name="0" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
+<symbol clip_to_extent="1" alpha="1" force_rhr="0" name="0" type="fill">
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" name="name" value=""/>
+<Option value="" name="name" type="QString"/>
 <Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
+<Option value="collection" name="type" type="QString"/>
 </Option>
 </data_defined_properties>
-<layer id="{25431a6c-a7c8-4295-a9d5-38140ef8f259}" pass="0" class="SimpleFill" locked="0" enabled="1">
+<layer locked="0" enabled="1" pass="0" class="SimpleFill">
 <Option type="Map">
-<Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="color" value="133,182,111,255"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="offset" value="0,0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="outline_color" value="35,35,35,255"/>
-<Option type="QString" name="outline_style" value="solid"/>
-<Option type="QString" name="outline_width" value="0.26"/>
-<Option type="QString" name="outline_width_unit" value="MM"/>
-<Option type="QString" name="style" value="solid"/>
+<Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
+<Option value="133,182,111,255" name="color" type="QString"/>
+<Option value="bevel" name="joinstyle" type="QString"/>
+<Option value="0,0" name="offset" type="QString"/>
+<Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+<Option value="MM" name="offset_unit" type="QString"/>
+<Option value="35,35,35,255" name="outline_color" type="QString"/>
+<Option value="solid" name="outline_style" type="QString"/>
+<Option value="0.26" name="outline_width" type="QString"/>
+<Option value="MM" name="outline_width_unit" type="QString"/>
+<Option value="solid" name="style" type="QString"/>
 </Option>
+<prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+<prop v="133,182,111,255" k="color"/>
+<prop v="bevel" k="joinstyle"/>
+<prop v="0,0" k="offset"/>
+<prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+<prop v="MM" k="offset_unit"/>
+<prop v="35,35,35,255" k="outline_color"/>
+<prop v="solid" k="outline_style"/>
+<prop v="0.26" k="outline_width"/>
+<prop v="MM" k="outline_width_unit"/>
+<prop v="solid" k="style"/>
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" name="name" value=""/>
+<Option value="" name="name" type="QString"/>
 <Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
+<Option value="collection" name="type" type="QString"/>
 </Option>
 </data_defined_properties>
 </layer>
@@ -186,9 +65,9 @@
 <blendMode>0</blendMode>
 <featureBlendMode>0</featureBlendMode>
 <layerOpacity>1</layerOpacity>
-<geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+<geometryOptions removeDuplicateNodes="1" geometryPrecision="0">
 <activeChecks type="StringList">
-<Option type="QString" value=""/>
+<Option value="" type="QString"/>
 </activeChecks>
 <checkConfiguration/>
 </geometryOptions>
@@ -213,10 +92,10 @@
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" name="A SER PREENCHIDO (9999)" value="9999"/>
-<Option type="QString" name="Não (2)" value="2"/>
-<Option type="QString" name="Sim (1)" value="1"/>
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="2" name="Não (2)" type="int"/>
+<Option value="1" name="Sim (1)" type="int"/>
 </Option>
 </Option>
 </config>
@@ -254,11 +133,24 @@
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" name="A SER PREENCHIDO (9999)" value="9999"/>
-<Option type="QString" name="Centro (2)" value="2"/>
-<Option type="QString" name="Direita (3)" value="3"/>
-<Option type="QString" name="Esquerda (1)" value="1"/>
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="2" name="Centro (2)" type="int"/>
+<Option value="3" name="Direita (3)" type="int"/>
+<Option value="1" name="Esquerda (1)" type="int"/>
+</Option>
+</Option>
+</config>
+</editWidget>
+</field>
+<field name="visivel" configurationFlags="None">
+<editWidget type="ValueMap">
+<config>
+<Option type="Map">
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="2" name="Não (2)" type="int"/>
+<Option value="1" name="Sim (1)" type="int"/>
 </Option>
 </Option>
 </config>
@@ -306,97 +198,113 @@
 </config>
 </editWidget>
 </field>
+<field name="attribute_error_description" configurationFlags="None">
+<editWidget type="">
+<config>
+<Option/>
+</config>
+</editWidget>
+</field>
 </fieldConfiguration>
 <aliases>
-<alias name="" index="0" field="id"/>
-<alias name="" index="1" field="nome"/>
-<alias name="" index="2" field="geometria_aproximada"/>
-<alias name="" index="3" field="texto_edicao"/>
-<alias name="" index="4" field="label_x"/>
-<alias name="" index="5" field="label_y"/>
-<alias name="" index="6" field="tamanho_txt"/>
-<alias name="" index="7" field="justificativa_txt"/>
-<alias name="" index="8" field="observacao"/>
-<alias name="" index="9" field="operador_criacao"/>
-<alias name="" index="10" field="data_criacao"/>
-<alias name="" index="11" field="operador_atualizacao"/>
-<alias name="" index="12" field="data_atualizacao"/>
-<alias name="" index="13" field="area_otf"/>
+<alias field="id" name="" index="0"/>
+<alias field="nome" name="" index="1"/>
+<alias field="geometria_aproximada" name="" index="2"/>
+<alias field="texto_edicao" name="" index="3"/>
+<alias field="label_x" name="" index="4"/>
+<alias field="label_y" name="" index="5"/>
+<alias field="tamanho_txt" name="" index="6"/>
+<alias field="justificativa_txt" name="" index="7"/>
+<alias field="visivel" name="" index="8"/>
+<alias field="observacao" name="" index="9"/>
+<alias field="operador_criacao" name="" index="10"/>
+<alias field="data_criacao" name="" index="11"/>
+<alias field="operador_atualizacao" name="" index="12"/>
+<alias field="data_atualizacao" name="" index="13"/>
+<alias field="area_otf" name="" index="14"/>
+<alias field="attribute_error_description" name="" index="15"/>
 </aliases>
-<splitPolicies>
-<policy policy="Duplicate" field="id"/>
-<policy policy="Duplicate" field="nome"/>
-<policy policy="Duplicate" field="geometria_aproximada"/>
-<policy policy="Duplicate" field="texto_edicao"/>
-<policy policy="Duplicate" field="label_x"/>
-<policy policy="Duplicate" field="label_y"/>
-<policy policy="Duplicate" field="tamanho_txt"/>
-<policy policy="Duplicate" field="justificativa_txt"/>
-<policy policy="Duplicate" field="observacao"/>
-<policy policy="Duplicate" field="operador_criacao"/>
-<policy policy="Duplicate" field="data_criacao"/>
-<policy policy="Duplicate" field="operador_atualizacao"/>
-<policy policy="Duplicate" field="data_atualizacao"/>
-<policy policy="Duplicate" field="area_otf"/>
-</splitPolicies>
 <defaults>
-<default expression="" field="id" applyOnUpdate="0"/>
-<default expression="" field="nome" applyOnUpdate="0"/>
-<default expression="" field="geometria_aproximada" applyOnUpdate="0"/>
-<default expression="" field="texto_edicao" applyOnUpdate="0"/>
-<default expression="" field="label_x" applyOnUpdate="0"/>
-<default expression="" field="label_y" applyOnUpdate="0"/>
-<default expression="" field="tamanho_txt" applyOnUpdate="0"/>
-<default expression="" field="justificativa_txt" applyOnUpdate="0"/>
-<default expression="" field="observacao" applyOnUpdate="0"/>
-<default expression="" field="operador_criacao" applyOnUpdate="0"/>
-<default expression="" field="data_criacao" applyOnUpdate="0"/>
-<default expression="" field="operador_atualizacao" applyOnUpdate="0"/>
-<default expression="" field="data_atualizacao" applyOnUpdate="0"/>
-<default expression="" field="area_otf" applyOnUpdate="0"/>
+<default field="id" expression="" applyOnUpdate="0"/>
+<default field="nome" expression="" applyOnUpdate="0"/>
+<default field="geometria_aproximada" expression="" applyOnUpdate="0"/>
+<default field="texto_edicao" expression="" applyOnUpdate="0"/>
+<default field="label_x" expression="" applyOnUpdate="0"/>
+<default field="label_y" expression="" applyOnUpdate="0"/>
+<default field="tamanho_txt" expression="" applyOnUpdate="0"/>
+<default field="justificativa_txt" expression="" applyOnUpdate="0"/>
+<default field="visivel" expression="" applyOnUpdate="0"/>
+<default field="observacao" expression="" applyOnUpdate="0"/>
+<default field="operador_criacao" expression="" applyOnUpdate="0"/>
+<default field="data_criacao" expression="" applyOnUpdate="0"/>
+<default field="operador_atualizacao" expression="" applyOnUpdate="0"/>
+<default field="data_atualizacao" expression="" applyOnUpdate="0"/>
+<default field="area_otf" expression="" applyOnUpdate="0"/>
+<default field="attribute_error_description" expression="" applyOnUpdate="0"/>
 </defaults>
 <constraints>
-<constraint notnull_strength="1" exp_strength="0" field="id" constraints="3" unique_strength="1"/>
-<constraint notnull_strength="0" exp_strength="0" field="nome" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="1" exp_strength="0" field="geometria_aproximada" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="texto_edicao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="label_x" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="label_y" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="tamanho_txt" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="1" exp_strength="0" field="justificativa_txt" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="observacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="operador_criacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="data_criacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="operador_atualizacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="data_atualizacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="area_otf" constraints="0" unique_strength="0"/>
+<constraint field="id" notnull_strength="1" exp_strength="0" constraints="3" unique_strength="1"/>
+<constraint field="nome" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="geometria_aproximada" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="texto_edicao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="label_x" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="label_y" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="tamanho_txt" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="justificativa_txt" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="visivel" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="observacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="operador_criacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="data_criacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="operador_atualizacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="data_atualizacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="area_otf" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="attribute_error_description" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
 </constraints>
 <constraintExpressions>
-<constraint field="id" exp="" desc=""/>
-<constraint field="nome" exp="" desc=""/>
-<constraint field="geometria_aproximada" exp="" desc=""/>
-<constraint field="texto_edicao" exp="" desc=""/>
-<constraint field="label_x" exp="" desc=""/>
-<constraint field="label_y" exp="" desc=""/>
-<constraint field="tamanho_txt" exp="" desc=""/>
-<constraint field="justificativa_txt" exp="" desc=""/>
-<constraint field="observacao" exp="" desc=""/>
-<constraint field="operador_criacao" exp="" desc=""/>
-<constraint field="data_criacao" exp="" desc=""/>
-<constraint field="operador_atualizacao" exp="" desc=""/>
-<constraint field="data_atualizacao" exp="" desc=""/>
-<constraint field="area_otf" exp="" desc=""/>
+<constraint field="id" desc="" exp=""/>
+<constraint field="nome" desc="" exp=""/>
+<constraint field="geometria_aproximada" desc="" exp=""/>
+<constraint field="texto_edicao" desc="" exp=""/>
+<constraint field="label_x" desc="" exp=""/>
+<constraint field="label_y" desc="" exp=""/>
+<constraint field="tamanho_txt" desc="" exp=""/>
+<constraint field="justificativa_txt" desc="" exp=""/>
+<constraint field="visivel" desc="" exp=""/>
+<constraint field="observacao" desc="" exp=""/>
+<constraint field="operador_criacao" desc="" exp=""/>
+<constraint field="data_criacao" desc="" exp=""/>
+<constraint field="operador_atualizacao" desc="" exp=""/>
+<constraint field="data_atualizacao" desc="" exp=""/>
+<constraint field="area_otf" desc="" exp=""/>
+<constraint field="attribute_error_description" desc="" exp=""/>
 </constraintExpressions>
 <expressionfields>
-<field expression="$area" comment="" type="6" name="area_otf" typeName="" precision="0" subType="0" length="0"/>
+<field typeName="" length="0" expression="$area" comment="" subType="0" name="area_otf" precision="0" type="6"/>
+<field typeName="" length="0" expression="CASE&#xa;WHEN (regexp_match ( nome , '^ ' ) or regexp_match ( nome , '  ' ) or regexp_match ( nome , ' $' ) or regexp_match ( nome , '^[a-z]' )) THEN 'nome - Nome deve iniciar com letra maiuscula e não deve ter espaços desnecessários (R1_V)'&#xa;WHEN nome is not null and length( nome)&lt;2 THEN 'nome - string vazia, setar atributo para null (R2_V)'&#xa;WHEN geometria_aproximada in (9999) THEN 'geometria_aproximada - Preencher atributo'&#xa;ELSE ''&#xa;END" comment="" subType="0" name="attribute_error_description" precision="0" type="10"/>
 </expressionfields>
-<attributeactions/>
-<attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+<attributeactions>
+<defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+</attributeactions>
+<attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
 <columns/>
 </attributetableconfig>
 <conditionalstyles>
 <rowstyles/>
-<fieldstyles/>
+<fieldstyles>
+<fieldstyle fieldname="nome">
+<style background_color="#ff7f7f" background_color_alpha="255" rule="(regexp_match ( nome , '^ ' ) or regexp_match ( nome , '  ' ) or regexp_match ( nome , ' $' ) or regexp_match ( nome , '^[a-z]' ))" name="nome - Nome deve iniciar com letra maiuscula e não deve ter espaços desnecessários (R1_V)">
+<font style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+</style>
+<style background_color="#ff7f7f" background_color_alpha="255" rule="nome is not null and length( nome)&lt;2" name="nome - string vazia, setar atributo para null (R2_V)">
+<font style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+</style>
+</fieldstyle>
+<fieldstyle fieldname="geometria_aproximada">
+<style background_color="#ffbd7f" background_color_alpha="255" rule="geometria_aproximada in (9999)" name="geometria_aproximada - Preencher atributo">
+<font style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+</style>
+</fieldstyle>
+</fieldstyles>
 </conditionalstyles>
 <storedexpressions/>
 <editform tolerant="1"></editform>
@@ -406,7 +314,9 @@
 <editforminitcode><![CDATA[]]></editforminitcode>
 <featformsuppress>0</featformsuppress>
 <editorlayout>generatedlayout</editorlayout>
-<editable/>
+<editable>
+<field editable="0" name="id"/>
+</editable>
 <labelOnTop/>
 <reuseLastValue/>
 <dataDefinedFieldProperties/>

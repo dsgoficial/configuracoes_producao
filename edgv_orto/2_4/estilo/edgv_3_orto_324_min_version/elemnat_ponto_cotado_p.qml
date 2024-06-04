@@ -1,185 +1,72 @@
-<qgis simplifyDrawingTol="1" simplifyMaxScale="1" version="3.30.3-'s-Hertogenbosch" labelsEnabled="0" symbologyReferenceScale="-1" styleCategories="AllStyleCategories" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyAlgorithm="0" maxScale="0" minScale="100000000" simplifyLocal="1">
+<qgis minScale="100000000" simplifyAlgorithm="0" version="3.24.3-Tisler" simplifyDrawingHints="0" simplifyDrawingTol="1" readOnly="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" labelsEnabled="0" simplifyMaxScale="1" symbologyReferenceScale="-1" maxScale="0">
 <flags>
 <Identifiable>1</Identifiable>
 <Removable>1</Removable>
 <Searchable>1</Searchable>
 <Private>0</Private>
 </flags>
-<temporal limitMode="0" accumulate="0" mode="0" startExpression="" durationField="" endExpression="" fixedDuration="0" endField="" durationUnit="min" startField="" enabled="0">
+<temporal startExpression="" startField="" accumulate="0" fixedDuration="0" endExpression="" durationField="" endField="" durationUnit="min" mode="0" enabled="0" limitMode="0">
 <fixedRange>
 <start></start>
 <end></end>
 </fixedRange>
 </temporal>
-<elevation binding="Centroid" type="IndividualFeatures" symbology="Line" zoffset="0" extrusion="0" respectLayerSymbol="1" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" clamping="Terrain" zscale="1">
-<data-defined-properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data-defined-properties>
-<profileLineSymbol>
-<symbol type="line" is_animated="0" name="" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-<layer id="{3e8c44bc-59cd-4a5b-ad20-8e93ce421da8}" pass="0" class="SimpleLine" locked="0" enabled="1">
-<Option type="Map">
-<Option type="QString" name="align_dash_pattern" value="0"/>
-<Option type="QString" name="capstyle" value="square"/>
-<Option type="QString" name="customdash" value="5;2"/>
-<Option type="QString" name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="customdash_unit" value="MM"/>
-<Option type="QString" name="dash_pattern_offset" value="0"/>
-<Option type="QString" name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="dash_pattern_offset_unit" value="MM"/>
-<Option type="QString" name="draw_inside_polygon" value="0"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="line_color" value="152,125,183,255"/>
-<Option type="QString" name="line_style" value="solid"/>
-<Option type="QString" name="line_width" value="0.6"/>
-<Option type="QString" name="line_width_unit" value="MM"/>
-<Option type="QString" name="offset" value="0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="ring_filter" value="0"/>
-<Option type="QString" name="trim_distance_end" value="0"/>
-<Option type="QString" name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="trim_distance_end_unit" value="MM"/>
-<Option type="QString" name="trim_distance_start" value="0"/>
-<Option type="QString" name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="trim_distance_start_unit" value="MM"/>
-<Option type="QString" name="tweak_dash_pattern_on_corners" value="0"/>
-<Option type="QString" name="use_custom_dash" value="0"/>
-<Option type="QString" name="width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-</Option>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-</profileLineSymbol>
-<profileFillSymbol>
-<symbol type="fill" is_animated="0" name="" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-<layer id="{d216dbbd-a188-4b64-b252-9603574e63aa}" pass="0" class="SimpleFill" locked="0" enabled="1">
-<Option type="Map">
-<Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="color" value="152,125,183,255"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="offset" value="0,0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="outline_color" value="109,89,131,255"/>
-<Option type="QString" name="outline_style" value="solid"/>
-<Option type="QString" name="outline_width" value="0.2"/>
-<Option type="QString" name="outline_width_unit" value="MM"/>
-<Option type="QString" name="style" value="solid"/>
-</Option>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-</profileFillSymbol>
-<profileMarkerSymbol>
-<symbol type="marker" is_animated="0" name="" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-<layer id="{887d3370-944d-4046-893d-4179e9036cb7}" pass="0" class="SimpleMarker" locked="0" enabled="1">
-<Option type="Map">
-<Option type="QString" name="angle" value="0"/>
-<Option type="QString" name="cap_style" value="square"/>
-<Option type="QString" name="color" value="152,125,183,255"/>
-<Option type="QString" name="horizontal_anchor_point" value="1"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="name" value="diamond"/>
-<Option type="QString" name="offset" value="0,0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="outline_color" value="109,89,131,255"/>
-<Option type="QString" name="outline_style" value="solid"/>
-<Option type="QString" name="outline_width" value="0.2"/>
-<Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="outline_width_unit" value="MM"/>
-<Option type="QString" name="scale_method" value="diameter"/>
-<Option type="QString" name="size" value="3"/>
-<Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="size_unit" value="MM"/>
-<Option type="QString" name="vertical_anchor_point" value="1"/>
-</Option>
-<data_defined_properties>
-<Option type="Map">
-<Option type="QString" name="name" value=""/>
-<Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
-</Option>
-</data_defined_properties>
-</layer>
-</symbol>
-</profileMarkerSymbol>
-</elevation>
-<renderer-v2 type="singleSymbol" referencescale="-1" enableorderby="0" symbollevels="0" forceraster="0">
+<renderer-v2 enableorderby="0" referencescale="-1" symbollevels="0" type="singleSymbol" forceraster="0">
 <symbols>
-<symbol type="marker" is_animated="0" name="0" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0">
+<symbol clip_to_extent="1" alpha="1" force_rhr="0" name="0" type="marker">
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" name="name" value=""/>
+<Option value="" name="name" type="QString"/>
 <Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
+<Option value="collection" name="type" type="QString"/>
 </Option>
 </data_defined_properties>
-<layer id="{08a86a86-f9bf-45d2-9e11-84d9c9ba78b9}" pass="0" class="SimpleMarker" locked="0" enabled="1">
+<layer locked="0" enabled="1" pass="0" class="SimpleMarker">
 <Option type="Map">
-<Option type="QString" name="angle" value="0"/>
-<Option type="QString" name="cap_style" value="square"/>
-<Option type="QString" name="color" value="190,207,80,255"/>
-<Option type="QString" name="horizontal_anchor_point" value="1"/>
-<Option type="QString" name="joinstyle" value="bevel"/>
-<Option type="QString" name="name" value="circle"/>
-<Option type="QString" name="offset" value="0,0"/>
-<Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="offset_unit" value="MM"/>
-<Option type="QString" name="outline_color" value="35,35,35,255"/>
-<Option type="QString" name="outline_style" value="solid"/>
-<Option type="QString" name="outline_width" value="0"/>
-<Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="outline_width_unit" value="MM"/>
-<Option type="QString" name="scale_method" value="diameter"/>
-<Option type="QString" name="size" value="2"/>
-<Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
-<Option type="QString" name="size_unit" value="MM"/>
-<Option type="QString" name="vertical_anchor_point" value="1"/>
+<Option value="0" name="angle" type="QString"/>
+<Option value="square" name="cap_style" type="QString"/>
+<Option value="190,207,80,255" name="color" type="QString"/>
+<Option value="1" name="horizontal_anchor_point" type="QString"/>
+<Option value="bevel" name="joinstyle" type="QString"/>
+<Option value="circle" name="name" type="QString"/>
+<Option value="0,0" name="offset" type="QString"/>
+<Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+<Option value="MM" name="offset_unit" type="QString"/>
+<Option value="35,35,35,255" name="outline_color" type="QString"/>
+<Option value="solid" name="outline_style" type="QString"/>
+<Option value="0" name="outline_width" type="QString"/>
+<Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
+<Option value="MM" name="outline_width_unit" type="QString"/>
+<Option value="diameter" name="scale_method" type="QString"/>
+<Option value="2" name="size" type="QString"/>
+<Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
+<Option value="MM" name="size_unit" type="QString"/>
+<Option value="1" name="vertical_anchor_point" type="QString"/>
 </Option>
+<prop v="0" k="angle"/>
+<prop v="square" k="cap_style"/>
+<prop v="190,207,80,255" k="color"/>
+<prop v="1" k="horizontal_anchor_point"/>
+<prop v="bevel" k="joinstyle"/>
+<prop v="circle" k="name"/>
+<prop v="0,0" k="offset"/>
+<prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+<prop v="MM" k="offset_unit"/>
+<prop v="35,35,35,255" k="outline_color"/>
+<prop v="solid" k="outline_style"/>
+<prop v="0" k="outline_width"/>
+<prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+<prop v="MM" k="outline_width_unit"/>
+<prop v="diameter" k="scale_method"/>
+<prop v="2" k="size"/>
+<prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+<prop v="MM" k="size_unit"/>
+<prop v="1" k="vertical_anchor_point"/>
 <data_defined_properties>
 <Option type="Map">
-<Option type="QString" name="name" value=""/>
+<Option value="" name="name" type="QString"/>
 <Option name="properties"/>
-<Option type="QString" name="type" value="collection"/>
+<Option value="collection" name="type" type="QString"/>
 </Option>
 </data_defined_properties>
 </layer>
@@ -194,9 +81,9 @@
 <blendMode>0</blendMode>
 <featureBlendMode>0</featureBlendMode>
 <layerOpacity>1</layerOpacity>
-<geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+<geometryOptions removeDuplicateNodes="1" geometryPrecision="0">
 <activeChecks type="StringList">
-<Option type="QString" value=""/>
+<Option value="" type="QString"/>
 </activeChecks>
 <checkConfiguration/>
 </geometryOptions>
@@ -221,10 +108,10 @@
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" name="A SER PREENCHIDO (9999)" value="9999"/>
-<Option type="QString" name="Não (2)" value="2"/>
-<Option type="QString" name="Sim (1)" value="1"/>
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="2" name="Não (2)" type="int"/>
+<Option value="1" name="Sim (1)" type="int"/>
 </Option>
 </Option>
 </config>
@@ -234,10 +121,10 @@
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" name="A SER PREENCHIDO (9999)" value="9999"/>
-<Option type="QString" name="Não (2)" value="2"/>
-<Option type="QString" name="Sim (1)" value="1"/>
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="2" name="Não (2)" type="int"/>
+<Option value="1" name="Sim (1)" type="int"/>
 </Option>
 </Option>
 </config>
@@ -261,10 +148,10 @@
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" name="A SER PREENCHIDO (9999)" value="9999"/>
-<Option type="QString" name="Não (2)" value="2"/>
-<Option type="QString" name="Sim (1)" value="1"/>
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="2" name="Não (2)" type="int"/>
+<Option value="1" name="Sim (1)" type="int"/>
 </Option>
 </Option>
 </config>
@@ -274,11 +161,11 @@
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" name="A SER PREENCHIDO (9999)" value="9999"/>
-<Option type="QString" name="Centro (2)" value="2"/>
-<Option type="QString" name="Direita (3)" value="3"/>
-<Option type="QString" name="Esquerda (1)" value="1"/>
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="2" name="Centro (2)" type="int"/>
+<Option value="3" name="Direita (3)" type="int"/>
+<Option value="1" name="Esquerda (1)" type="int"/>
 </Option>
 </Option>
 </config>
@@ -288,11 +175,11 @@
 <editWidget type="ValueMap">
 <config>
 <Option type="Map">
-<Option type="Map" name="map">
-<Option type="QString" name="A SER PREENCHIDO (9999)" value="9999"/>
-<Option type="QString" name="Inferior (1)" value="1"/>
-<Option type="QString" name="Meio (2)" value="2"/>
-<Option type="QString" name="Superior (3)" value="3"/>
+<Option name="map" type="Map">
+<Option value="9999" name="A SER PREENCHIDO (9999)" type="int"/>
+<Option value="1" name="Inferior (1)" type="int"/>
+<Option value="2" name="Meio (2)" type="int"/>
+<Option value="3" name="Superior (3)" type="int"/>
 </Option>
 </Option>
 </config>
@@ -333,97 +220,108 @@
 </config>
 </editWidget>
 </field>
+<field name="attribute_error_description" configurationFlags="None">
+<editWidget type="">
+<config>
+<Option/>
+</config>
+</editWidget>
+</field>
 </fieldConfiguration>
 <aliases>
-<alias name="" index="0" field="id"/>
-<alias name="" index="1" field="cota"/>
-<alias name="" index="2" field="cota_comprovada"/>
-<alias name="" index="3" field="cota_mais_alta"/>
-<alias name="" index="4" field="label_x"/>
-<alias name="" index="5" field="label_y"/>
-<alias name="" index="6" field="visivel"/>
-<alias name="" index="7" field="ancora_horizontal"/>
-<alias name="" index="8" field="ancora_vertical"/>
-<alias name="" index="9" field="observacao"/>
-<alias name="" index="10" field="operador_criacao"/>
-<alias name="" index="11" field="data_criacao"/>
-<alias name="" index="12" field="operador_atualizacao"/>
-<alias name="" index="13" field="data_atualizacao"/>
+<alias field="id" name="" index="0"/>
+<alias field="cota" name="" index="1"/>
+<alias field="cota_comprovada" name="" index="2"/>
+<alias field="cota_mais_alta" name="" index="3"/>
+<alias field="label_x" name="" index="4"/>
+<alias field="label_y" name="" index="5"/>
+<alias field="visivel" name="" index="6"/>
+<alias field="ancora_horizontal" name="" index="7"/>
+<alias field="ancora_vertical" name="" index="8"/>
+<alias field="observacao" name="" index="9"/>
+<alias field="operador_criacao" name="" index="10"/>
+<alias field="data_criacao" name="" index="11"/>
+<alias field="operador_atualizacao" name="" index="12"/>
+<alias field="data_atualizacao" name="" index="13"/>
+<alias field="attribute_error_description" name="" index="14"/>
 </aliases>
-<splitPolicies>
-<policy policy="Duplicate" field="id"/>
-<policy policy="Duplicate" field="cota"/>
-<policy policy="Duplicate" field="cota_comprovada"/>
-<policy policy="Duplicate" field="cota_mais_alta"/>
-<policy policy="Duplicate" field="label_x"/>
-<policy policy="Duplicate" field="label_y"/>
-<policy policy="Duplicate" field="visivel"/>
-<policy policy="Duplicate" field="ancora_horizontal"/>
-<policy policy="Duplicate" field="ancora_vertical"/>
-<policy policy="Duplicate" field="observacao"/>
-<policy policy="Duplicate" field="operador_criacao"/>
-<policy policy="Duplicate" field="data_criacao"/>
-<policy policy="Duplicate" field="operador_atualizacao"/>
-<policy policy="Duplicate" field="data_atualizacao"/>
-</splitPolicies>
 <defaults>
-<default expression="" field="id" applyOnUpdate="0"/>
-<default expression="" field="cota" applyOnUpdate="0"/>
-<default expression="" field="cota_comprovada" applyOnUpdate="0"/>
-<default expression="" field="cota_mais_alta" applyOnUpdate="0"/>
-<default expression="" field="label_x" applyOnUpdate="0"/>
-<default expression="" field="label_y" applyOnUpdate="0"/>
-<default expression="" field="visivel" applyOnUpdate="0"/>
-<default expression="" field="ancora_horizontal" applyOnUpdate="0"/>
-<default expression="" field="ancora_vertical" applyOnUpdate="0"/>
-<default expression="" field="observacao" applyOnUpdate="0"/>
-<default expression="" field="operador_criacao" applyOnUpdate="0"/>
-<default expression="" field="data_criacao" applyOnUpdate="0"/>
-<default expression="" field="operador_atualizacao" applyOnUpdate="0"/>
-<default expression="" field="data_atualizacao" applyOnUpdate="0"/>
+<default field="id" expression="" applyOnUpdate="0"/>
+<default field="cota" expression="" applyOnUpdate="0"/>
+<default field="cota_comprovada" expression="" applyOnUpdate="0"/>
+<default field="cota_mais_alta" expression="" applyOnUpdate="0"/>
+<default field="label_x" expression="" applyOnUpdate="0"/>
+<default field="label_y" expression="" applyOnUpdate="0"/>
+<default field="visivel" expression="" applyOnUpdate="0"/>
+<default field="ancora_horizontal" expression="" applyOnUpdate="0"/>
+<default field="ancora_vertical" expression="" applyOnUpdate="0"/>
+<default field="observacao" expression="" applyOnUpdate="0"/>
+<default field="operador_criacao" expression="" applyOnUpdate="0"/>
+<default field="data_criacao" expression="" applyOnUpdate="0"/>
+<default field="operador_atualizacao" expression="" applyOnUpdate="0"/>
+<default field="data_atualizacao" expression="" applyOnUpdate="0"/>
+<default field="attribute_error_description" expression="" applyOnUpdate="0"/>
 </defaults>
 <constraints>
-<constraint notnull_strength="1" exp_strength="0" field="id" constraints="3" unique_strength="1"/>
-<constraint notnull_strength="1" exp_strength="0" field="cota" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="1" exp_strength="0" field="cota_comprovada" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="1" exp_strength="0" field="cota_mais_alta" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="label_x" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="label_y" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="1" exp_strength="0" field="visivel" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="1" exp_strength="0" field="ancora_horizontal" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="1" exp_strength="0" field="ancora_vertical" constraints="1" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="observacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="operador_criacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="data_criacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="operador_atualizacao" constraints="0" unique_strength="0"/>
-<constraint notnull_strength="0" exp_strength="0" field="data_atualizacao" constraints="0" unique_strength="0"/>
+<constraint field="id" notnull_strength="1" exp_strength="0" constraints="3" unique_strength="1"/>
+<constraint field="cota" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="cota_comprovada" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="cota_mais_alta" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="label_x" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="label_y" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="visivel" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="ancora_horizontal" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="ancora_vertical" notnull_strength="1" exp_strength="0" constraints="1" unique_strength="0"/>
+<constraint field="observacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="operador_criacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="data_criacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="operador_atualizacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="data_atualizacao" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
+<constraint field="attribute_error_description" notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0"/>
 </constraints>
 <constraintExpressions>
-<constraint field="id" exp="" desc=""/>
-<constraint field="cota" exp="" desc=""/>
-<constraint field="cota_comprovada" exp="" desc=""/>
-<constraint field="cota_mais_alta" exp="" desc=""/>
-<constraint field="label_x" exp="" desc=""/>
-<constraint field="label_y" exp="" desc=""/>
-<constraint field="visivel" exp="" desc=""/>
-<constraint field="ancora_horizontal" exp="" desc=""/>
-<constraint field="ancora_vertical" exp="" desc=""/>
-<constraint field="observacao" exp="" desc=""/>
-<constraint field="operador_criacao" exp="" desc=""/>
-<constraint field="data_criacao" exp="" desc=""/>
-<constraint field="operador_atualizacao" exp="" desc=""/>
-<constraint field="data_atualizacao" exp="" desc=""/>
+<constraint field="id" desc="" exp=""/>
+<constraint field="cota" desc="" exp=""/>
+<constraint field="cota_comprovada" desc="" exp=""/>
+<constraint field="cota_mais_alta" desc="" exp=""/>
+<constraint field="label_x" desc="" exp=""/>
+<constraint field="label_y" desc="" exp=""/>
+<constraint field="visivel" desc="" exp=""/>
+<constraint field="ancora_horizontal" desc="" exp=""/>
+<constraint field="ancora_vertical" desc="" exp=""/>
+<constraint field="observacao" desc="" exp=""/>
+<constraint field="operador_criacao" desc="" exp=""/>
+<constraint field="data_criacao" desc="" exp=""/>
+<constraint field="operador_atualizacao" desc="" exp=""/>
+<constraint field="data_atualizacao" desc="" exp=""/>
+<constraint field="attribute_error_description" desc="" exp=""/>
 </constraintExpressions>
-<expressionfields/>
+<expressionfields>
+<field typeName="" length="0" expression="CASE&#xa;WHEN cota_comprovada in (1) THEN 'cota_comprovada - Incomum, confirmar atributação (R68_A)'&#xa;WHEN cota_comprovada in (9999) THEN 'cota_comprovada - Preencher atributo'&#xa;WHEN cota_mais_alta in (9999) THEN 'cota_mais_alta - Preencher atributo'&#xa;ELSE ''&#xa;END" comment="" subType="0" name="attribute_error_description" precision="0" type="10"/>
+</expressionfields>
 <attributeactions>
-<defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+<defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
 </attributeactions>
-<attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+<attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
 <columns/>
 </attributetableconfig>
 <conditionalstyles>
 <rowstyles/>
-<fieldstyles/>
+<fieldstyles>
+<fieldstyle fieldname="cota_mais_alta">
+<style background_color="#ffbd7f" background_color_alpha="255" rule="cota_mais_alta in (9999)" name="cota_mais_alta - Preencher atributo">
+<font style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+</style>
+</fieldstyle>
+<fieldstyle fieldname="cota_comprovada">
+<style background_color="#ffff7f" background_color_alpha="255" rule="cota_comprovada in (1)" name="cota_comprovada - Incomum, confirmar atributação (R68_A)">
+<font style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+</style>
+<style background_color="#ffbd7f" background_color_alpha="255" rule="cota_comprovada in (9999)" name="cota_comprovada - Preencher atributo">
+<font style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+</style>
+</fieldstyle>
+</fieldstyles>
 </conditionalstyles>
 <storedexpressions/>
 <editform tolerant="1"></editform>
@@ -433,7 +331,9 @@
 <editforminitcode><![CDATA[]]></editforminitcode>
 <featformsuppress>0</featformsuppress>
 <editorlayout>generatedlayout</editorlayout>
-<editable/>
+<editable>
+<field editable="0" name="id"/>
+</editable>
 <labelOnTop/>
 <reuseLastValue/>
 <dataDefinedFieldProperties/>
