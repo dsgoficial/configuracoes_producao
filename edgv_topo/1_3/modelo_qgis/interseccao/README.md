@@ -36,16 +36,19 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 6. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
 7. Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
 8. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
-9. Identificar vértices não compartilhados nas intersecções
-10. Identificar vértices não compartilhados nos segmentos compartilhados
-11. Verificar elementos viários
-12. Verificar intersecções
-13. Suavização de Douglas-Peucker / Unir linhas;
-14. Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
-15. Identificar geometrias com densidade incorreta de vértices;
-16. Identificar overlaps;
-17. Identificar erros de ortografia nos atributos;
-18. Identificar erros de atributação.
+9. Snap Hierárquico;
+10. Identificar vértices não compartilhados nas intersecções
+11. Identificar vértices não compartilhados nos segmentos compartilhados
+12. Verificar elementos viários
+13. Verificar intersecções
+14. Suavização de Douglas-Peucker / Unir linhas;
+15. Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+16. Identificar geometrias com densidade incorreta de vértices;
+17. Identificar Z;
+18. Identificar overlaps;
+19. Identificar erros de ortografia nos atributos;
+20. Identificar erros de atributação.
+21. Identificar erros de relacionamentos espaciais;
 
 ## Detalhamento dos processos
 
@@ -125,7 +128,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 9. Identificar vértices não compartilhados nas intersecções
+### 9. Snap Hierárquico
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/snap_hierarquico_via_deslocamento.model3
+- processos utilizados: Snap Hierárquico
+- configuração do snap hierárquico: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.json
+
+### 10. Identificar vértices não compartilhados nas intersecções
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/identifica_vertice_nao_compartilhado_nas_interseccoes.model3
 - processos utilizados: Identify Unshared Vertex on Intersections / Extract by location;
@@ -135,7 +144,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: Identifica as interseções entre as feições que não possuem um vértice compartilhado nas camadas selecionadas. O operador deve corrigir manualmente os apontamentos desse processo.
   
-### 10. Identificar vértices não compartilhados nos segmentos compartilhados
+### 11. Identificar vértices não compartilhados nos segmentos compartilhados
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/identifica_vertice_nao_compartilhado_nos_segmentos_compartilhados_interseccoes.model3
 - processos utilizados: Interseção de linhas / Identify Unshared Vertex on Shared Edges / Extract by location;
@@ -145,7 +154,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: Identifica as feições que não possuem vértices compartilhado nas sobreposições das camadas selecionadas. O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 11. Verificar elementos viários
+### 12. Verificar elementos viários
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/verifica_elementos_viarios.model3
 - processos utilizados: Interseção de linhas / Extract by location;
@@ -155,7 +164,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags. 
 - Texto para tooltip: Identifica os elementos viários do tipo ponto que não se encontram nas intersecções de drenagem e via deslocamento. O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 12: Verificar intersecções
+### 13: Verificar intersecções
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/verifica_interseccoes.model3
 - processos utilizados: Interseção de linhas / Extract by location;
@@ -165,7 +174,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags. 
 - Texto para tooltip: Identifica as intersecções de drenagem permanente com via_deslocamento que não possuem elemento viário. O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 13. Simplificação de Douglas-Peucker
+### 14. Simplificação de Douglas-Peucker
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/simplificacao_linhas.model3
 - processos utilizados: Topological Douglas/Unir linhas;
@@ -177,37 +186,49 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - Texto para tooltip: 
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
-### 14: Identifica problemas de compartilhamento de vértices
+### 15: Identifica problemas de compartilhamento de vértices
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_compartilhamento_vertices.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vértice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
 - nome camada flags: flag_geometrias_invalidas,flag_vertices_proximo_arestas,flag_vertices_nao_compartilhados_interseccoes,flag_vertice_nao_compartilhado_em_seg_compartilhado, flag_linha_nao_seccionada_na_interseccao
 - Texto para tooltip: Todas as feições devem compartilhar vértices, logo, onde for apontado erro, deve-se adicionar o vértice nas linhas que possuem intersecção ponto ou linha.
 
-### 15: Identificar geometrias com densidade incorreta de vértices
+### 16: Identificar geometrias com densidade incorreta de vértices
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_geometrias_com_densidade_incorreta_de_vertices.model3
 - camadas: todas as camadas carregadas;
 - tol: 0.00001 grau
 - nome camada flags: flag_densidade_incorreta_vertices
 
-### 16. Identificar overlaps dentro da mesma camada
+### 17. Identificar Z
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_z.model3
+- camadas: todas carregadas
+- nome camada flags: flag_z
+
+### 18. Identificar overlaps dentro da mesma camada
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_overlaps_linhas.model3
 - camadas: todas
 - nome camada flags: flags_overlaps_l
 
-### 17. Identificar erros de ortografia no atributo nome
+### 19. Identificar erros de ortografia no atributo nome
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3;
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
-### 18. Identificar erros de atributação
+### 20. Identificar erros de atributação
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erros_atributacao.model3
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de flags: flags_erros_atributos
 - nome camada de saída: atributos_incomuns
+
+### 21. Identificar erros de relacionamentos espaciais
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_erros_relacionamentos_espaciais_transportes.model3
+- camadas: todas;
+- nome camada de flags: flags_ponto,flags_linha
