@@ -175,6 +175,11 @@
                     "tipo_pre_requisito_id": 1
                 },
                 {
+                    "subfase_anterior": "Extração de Área Edificada",
+                    "subfase_posterior": "Extração de Planimetria",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
                     "subfase_anterior": "Extração de Edificação",
                     "subfase_posterior": "Extração de Edificação",
                     "tipo_pre_requisito_id": 2
