@@ -1,7 +1,7 @@
 {
     "nome": "Conjunto de dados geoespaciais vetoriais para MGCP TRD 4.6",
     "descricao": "Linha de produção padrão para vetores do MGCP",
-    "versao": "1.0.1",
+    "versão": "1.1.0",
     "nome_abrev": "cdgv_mgcp_trd46",
     "tipo_produto_id": 8,
     "fases": [
@@ -53,24 +53,20 @@
                     "ordem": 7
                 },
                 {
-                    "nome": "Extração de Edificação",
+                    "nome": "Extração de Cobertura do Solo",
                     "ordem": 8
                 },
                 {
-                    "nome": "Extração de Cobertura do Solo",
+                    "nome": "Extração de Planimetria",
                     "ordem": 9
                 },
                 {
-                    "nome": "Extração de Planimetria",
+                    "nome": "Extração a partir de Insumos da NGA",
                     "ordem": 10
                 },
                 {
-                    "nome": "Extração a partir de Insumos da NGA",
-                    "ordem": 11
-                },
-                {
                     "nome": "Verificação Final",
-                    "ordem": 12
+                    "ordem": 11
                 }
             ],
             "pre_requisito_subfase": [
@@ -106,6 +102,11 @@
                 },
                 {
                     "subfase_anterior": "Extração de Vias de Deslocamento",
+                    "subfase_posterior": "Extração de Área Edificada",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
                     "subfase_posterior": "Extração de Vias de Deslocamento",
                     "tipo_pre_requisito_id": 2
                 },
@@ -121,21 +122,16 @@
                 },
                 {
                     "subfase_anterior": "Extração de Elemento Hidrográfico",
-                    "subfase_posterior": "Extração de Elemento Hidrográfico",
-                    "tipo_pre_requisito_id": 2
-                },
-                {
-                    "subfase_anterior": "Extração de Área sem Dados",
-                    "subfase_posterior": "Extração de Área Edificada",
-                    "tipo_pre_requisito_id": 1
-                },
-                {
-                    "subfase_anterior": "Extração de Vias de Deslocamento",
                     "subfase_posterior": "Extração de Área Edificada",
                     "tipo_pre_requisito_id": 1
                 },
                 {
                     "subfase_anterior": "Extração de Elemento Hidrográfico",
+                    "subfase_posterior": "Extração de Elemento Hidrográfico",
+                    "tipo_pre_requisito_id": 2
+                },
+                {
+                    "subfase_anterior": "Extração de Área sem Dados",
                     "subfase_posterior": "Extração de Área Edificada",
                     "tipo_pre_requisito_id": 1
                 },
@@ -156,7 +152,7 @@
                 },
                 {
                     "subfase_anterior": "Extração de Área Edificada",
-                    "subfase_posterior": "Extração de Edificação",
+                    "subfase_posterior": "Extração de Planimetria",
                     "tipo_pre_requisito_id": 1
                 },
                 {
@@ -167,21 +163,6 @@
                 {
                     "subfase_anterior": "Extração de Área Edificada",
                     "subfase_posterior": "Extração de Área Edificada",
-                    "tipo_pre_requisito_id": 2
-                },
-                {
-                    "subfase_anterior": "Extração de Edificação",
-                    "subfase_posterior": "Extração de Planimetria",
-                    "tipo_pre_requisito_id": 1
-                },
-                {
-                    "subfase_anterior": "Extração de Área Edificada",
-                    "subfase_posterior": "Extração de Planimetria",
-                    "tipo_pre_requisito_id": 1
-                },
-                {
-                    "subfase_anterior": "Extração de Edificação",
-                    "subfase_posterior": "Extração de Edificação",
                     "tipo_pre_requisito_id": 2
                 },
                 {
@@ -316,13 +297,6 @@
         {
             "schema": "mgcp",
             "camada": "delimitador_massa_dagua_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "delimitador_massa_dagua_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -364,6 +338,41 @@
         },
         {
             "schema": "mgcp",
+            "camada": "delimitador_cobertura_do_solo_l",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_cobertura_do_solo_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_cobertura_do_solo_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_cobertura_do_solo_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_cobertura_do_solo_l",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "delimitador_area_construida_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
@@ -414,13 +423,6 @@
         {
             "schema": "mgcp",
             "camada": "delimitador_area_construida_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -428,7 +430,7 @@
         {
             "schema": "mgcp",
             "camada": "delimitador_elemento_hidrografico_l",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -471,13 +473,6 @@
             "schema": "mgcp",
             "camada": "delimitador_elemento_hidrografico_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "delimitador_elemento_hidrografico_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -511,15 +506,43 @@
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_elemento_hidrografico_l",
-            "subfase": "Extração de Elemento Hidrográfico",
+            "camada": "aa010_p",
+            "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
             "camada": "aa010_p",
-            "subfase": "Extração de Cobertura do Solo",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa010_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa010_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa010_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -553,8 +576,57 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_aa010_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_aa010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "aa012_p",
             "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa012_p",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa012_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa012_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa012_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aa012_p",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -588,6 +660,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_aa012_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_aa012_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "aa040_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -598,21 +684,21 @@
             "camada": "aa040_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aa040_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aa040_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -640,21 +726,21 @@
             "camada": "aa050_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aa050_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aa050_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -682,21 +768,21 @@
             "camada": "aa052_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aa052_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aa052_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -892,21 +978,21 @@
             "camada": "ac020_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ac020_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ac020_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -934,21 +1020,21 @@
             "camada": "ac030_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ac030_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ac030_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -976,21 +1062,21 @@
             "camada": "ac030_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ac030_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ac030_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1354,21 +1440,21 @@
             "camada": "af020_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "af020_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "af020_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1396,21 +1482,21 @@
             "camada": "af040_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "af040_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "af040_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1438,21 +1524,21 @@
             "camada": "af070_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "af070_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "af070_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1480,21 +1566,21 @@
             "camada": "ah025_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ah025_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ah025_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1522,21 +1608,21 @@
             "camada": "ah050_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ah050_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ah050_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1564,21 +1650,21 @@
             "camada": "ah050_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ah050_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ah050_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1646,13 +1732,6 @@
         {
             "schema": "mgcp",
             "camada": "ah070_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "ah070_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -1690,21 +1769,21 @@
             "camada": "ai030_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ai030_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ai030_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -1900,21 +1979,21 @@
             "camada": "aj051_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aj051_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aj051_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2026,21 +2105,21 @@
             "camada": "ak030_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak030_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak030_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2152,21 +2231,21 @@
             "camada": "ak060_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak060_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak060_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2194,21 +2273,21 @@
             "camada": "ak090_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak090_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak090_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2236,21 +2315,21 @@
             "camada": "ak100_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak100_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak100_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2362,21 +2441,21 @@
             "camada": "ak150_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak150_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak150_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2404,21 +2483,21 @@
             "camada": "ak150_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak150_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak150_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2614,21 +2693,21 @@
             "camada": "ak180_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak180_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak180_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2656,21 +2735,21 @@
             "camada": "ak190_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak190_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak190_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2698,21 +2777,21 @@
             "camada": "ak190_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak190_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ak190_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2782,21 +2861,21 @@
             "camada": "al012_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al012_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al012_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -2824,21 +2903,21 @@
             "camada": "al012_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al012_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al012_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3068,13 +3147,6 @@
             "schema": "mgcp",
             "camada": "al020_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "al020_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -3116,27 +3188,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_al020_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_al020_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_al020_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_al020_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -3152,13 +3203,6 @@
             "schema": "mgcp",
             "camada": "centroide_al020_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_al020_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -3181,21 +3225,21 @@
             "camada": "al025_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al025_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al025_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3307,21 +3351,21 @@
             "camada": "al060_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al060_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al060_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3349,21 +3393,21 @@
             "camada": "al060_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al060_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al060_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3559,32 +3603,32 @@
             "camada": "al130_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al130_p",
             "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "al130_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "al130_p",
-            "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al130_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "al130_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "al130_p",
             "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
@@ -3601,21 +3645,21 @@
             "camada": "al140_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al140_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al140_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3685,21 +3729,21 @@
             "camada": "al200_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al200_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al200_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3727,21 +3771,21 @@
             "camada": "al208_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al208_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al208_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3769,21 +3813,21 @@
             "camada": "al210_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al210_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al210_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3811,21 +3855,21 @@
             "camada": "al210_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al210_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al210_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -3895,21 +3939,21 @@
             "camada": "al260_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al260_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "al260_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -4063,32 +4107,32 @@
             "camada": "am030_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am030_p",
             "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "am030_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "am030_p",
-            "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am030_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "am030_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "am030_p",
             "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
@@ -4105,21 +4149,21 @@
             "camada": "am030_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am030_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am030_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -4231,21 +4275,21 @@
             "camada": "am060_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am060_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am060_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -4273,21 +4317,21 @@
             "camada": "am060_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am060_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "am060_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -4439,13 +4483,6 @@
         {
             "schema": "mgcp",
             "camada": "an010_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "an010_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -4523,13 +4560,6 @@
         {
             "schema": "mgcp",
             "camada": "an050_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "an050_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -4607,13 +4637,6 @@
         {
             "schema": "mgcp",
             "camada": "an060_a",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "an060_a",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -4651,21 +4674,21 @@
             "camada": "an075_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "an075_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "an075_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -4685,13 +4708,6 @@
             "schema": "mgcp",
             "camada": "an075_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "an075_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -4735,21 +4751,21 @@
             "camada": "an076_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "an076_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "an076_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -4769,13 +4785,6 @@
             "schema": "mgcp",
             "camada": "an076_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "an076_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -4819,21 +4828,21 @@
             "camada": "an076_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "an076_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "an076_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -4853,13 +4862,6 @@
             "schema": "mgcp",
             "camada": "an076_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "an076_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -4943,13 +4945,6 @@
         {
             "schema": "mgcp",
             "camada": "ap010_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "ap010_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -5027,13 +5022,6 @@
         {
             "schema": "mgcp",
             "camada": "ap030_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "ap030_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -5105,13 +5093,6 @@
             "schema": "mgcp",
             "camada": "ap050_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "ap050_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5273,13 +5254,6 @@
             "schema": "mgcp",
             "camada": "aq063_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aq063_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -5412,13 +5386,6 @@
         {
             "schema": "mgcp",
             "camada": "aq070_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aq070_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -5496,13 +5463,6 @@
         {
             "schema": "mgcp",
             "camada": "aq070_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aq070_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -5540,21 +5500,21 @@
             "camada": "aq075_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq075_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq075_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -5574,13 +5534,6 @@
             "schema": "mgcp",
             "camada": "aq075_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aq075_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -5624,21 +5577,21 @@
             "camada": "aq090_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq090_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq090_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -5666,21 +5619,21 @@
             "camada": "aq110_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq110_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq110_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -5708,21 +5661,21 @@
             "camada": "aq113_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq113_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq113_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -5750,21 +5703,21 @@
             "camada": "aq116_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq116_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq116_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -5792,21 +5745,21 @@
             "camada": "aq116_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq116_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "aq116_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -5958,13 +5911,6 @@
         {
             "schema": "mgcp",
             "camada": "aq130_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aq130_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -6036,13 +5982,6 @@
             "schema": "mgcp",
             "camada": "aq130_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aq130_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6126,13 +6065,6 @@
         {
             "schema": "mgcp",
             "camada": "aq135_a",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aq135_a",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -6212,21 +6144,21 @@
             "camada": "at010_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at010_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at010_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -6296,21 +6228,21 @@
             "camada": "at041_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at041_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at041_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -6380,21 +6312,21 @@
             "camada": "at045_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at045_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at045_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -6422,21 +6354,21 @@
             "camada": "at050_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at050_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at050_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -6464,21 +6396,21 @@
             "camada": "at060_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at060_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "at060_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -6540,13 +6472,6 @@
             "schema": "mgcp",
             "camada": "ba010_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "ba010_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6609,28 +6534,7 @@
         {
             "schema": "mgcp",
             "camada": "centroide_ba030_p",
-            "subfase": "Extração da Hidrografia",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba030_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba030_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba030_p",
-            "subfase": "Validação Nível Produto",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6652,13 +6556,6 @@
             "schema": "mgcp",
             "camada": "centroide_ba030_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba030_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6687,13 +6584,6 @@
             "schema": "mgcp",
             "camada": "centroide_ba030_p",
             "subfase": "Extração de Interseção de Hidrografia e Transporte",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba030_p",
-            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6728,27 +6618,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_ba040_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba040_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba040_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba040_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -6764,13 +6633,6 @@
             "schema": "mgcp",
             "camada": "centroide_ba040_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_ba040_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -6905,32 +6767,32 @@
             "camada": "bb005_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb005_a",
             "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb005_a",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb005_a",
-            "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb005_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bb005_a",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bb005_a",
             "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
@@ -6981,13 +6843,6 @@
             "schema": "mgcp",
             "camada": "bb041_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb041_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7078,13 +6933,6 @@
         {
             "schema": "mgcp",
             "camada": "bb041_a",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb041_a",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -7120,7 +6968,7 @@
         {
             "schema": "mgcp",
             "camada": "bb043_l",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7163,13 +7011,6 @@
             "schema": "mgcp",
             "camada": "bb043_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb043_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7203,15 +7044,8 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bb043_l",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
             "camada": "bb043_a",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7254,13 +7088,6 @@
             "schema": "mgcp",
             "camada": "bb043_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb043_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7294,13 +7121,6 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bb043_a",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
             "camada": "bb090_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -7311,21 +7131,21 @@
             "camada": "bb090_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb090_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb090_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -7353,21 +7173,21 @@
             "camada": "bb140_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb140_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb140_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -7387,13 +7207,6 @@
             "schema": "mgcp",
             "camada": "bb140_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb140_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -7444,21 +7257,21 @@
             "camada": "bb140_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb140_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb140_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -7478,13 +7291,6 @@
             "schema": "mgcp",
             "camada": "bb140_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb140_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -7535,32 +7341,32 @@
             "camada": "bb155_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb155_p",
             "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb155_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb155_p",
-            "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb155_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bb155_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bb155_p",
             "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
@@ -7568,7 +7374,7 @@
         {
             "schema": "mgcp",
             "camada": "bb190_l",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7611,13 +7417,6 @@
             "schema": "mgcp",
             "camada": "bb190_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb190_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7651,15 +7450,8 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bb190_l",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
             "camada": "bb190_a",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7702,13 +7494,6 @@
             "schema": "mgcp",
             "camada": "bb190_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb190_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7742,13 +7527,6 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bb190_a",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
             "camada": "bb230_l",
             "subfase": "Extração da Hidrografia",
             "camada_apontamento": false,
@@ -7793,13 +7571,6 @@
             "schema": "mgcp",
             "camada": "bb230_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bb230_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -7850,21 +7621,21 @@
             "camada": "bb240_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb240_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bb240_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -7892,21 +7663,21 @@
             "camada": "bd100_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd100_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd100_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -7934,21 +7705,21 @@
             "camada": "bd100_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd100_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd100_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -7976,21 +7747,21 @@
             "camada": "bd110_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd110_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd110_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8009,7 +7780,7 @@
         {
             "schema": "mgcp",
             "camada": "bd120_l",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8018,21 +7789,21 @@
             "camada": "bd120_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd120_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd120_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8052,13 +7823,6 @@
             "schema": "mgcp",
             "camada": "bd120_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bd120_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8092,15 +7856,8 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bd120_l",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
             "camada": "bd120_a",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8109,21 +7866,21 @@
             "camada": "bd120_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd120_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd120_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8143,13 +7900,6 @@
             "schema": "mgcp",
             "camada": "bd120_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bd120_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8183,13 +7933,6 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bd120_a",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
             "camada": "bd130_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -8200,21 +7943,21 @@
             "camada": "bd130_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd130_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd130_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8242,21 +7985,21 @@
             "camada": "bd180_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd180_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bd180_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8284,21 +8027,21 @@
             "camada": "bh010_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh010_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh010_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8318,13 +8061,6 @@
             "schema": "mgcp",
             "camada": "bh010_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh010_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8375,21 +8111,21 @@
             "camada": "bh010_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh010_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh010_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8409,13 +8145,6 @@
             "schema": "mgcp",
             "camada": "bh010_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh010_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8459,21 +8188,21 @@
             "camada": "bh010_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh010_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh010_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8481,27 +8210,6 @@
             "subfase": "Extração da Hidrografia",
             "camada_apontamento": false,
             "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh010_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh010_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh010_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
         },
         {
             "schema": "mgcp",
@@ -8521,13 +8229,6 @@
             "schema": "mgcp",
             "camada": "centroide_bh010_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh010_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -8571,21 +8272,21 @@
             "camada": "bh015_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh015_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh015_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -8596,6 +8297,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bh015_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bh015_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
             "camada": "bh020_l",
             "subfase": "Extração da Hidrografia",
             "camada_apontamento": false,
@@ -8640,13 +8355,6 @@
             "schema": "mgcp",
             "camada": "bh020_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh020_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -8716,27 +8424,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh020_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh020_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh020_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh020_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -8752,13 +8439,6 @@
             "schema": "mgcp",
             "camada": "centroide_bh020_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh020_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -8849,13 +8529,6 @@
         {
             "schema": "mgcp",
             "camada": "bh030_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh030_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -8919,27 +8592,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh030_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh030_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh030_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh030_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -8955,13 +8607,6 @@
             "schema": "mgcp",
             "camada": "centroide_bh030_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh030_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9002,52 +8647,10 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bh050_a",
-            "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh050_a",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh050_a",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh050_a",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh050_a",
-            "subfase": "Verificação Final",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh050_a",
-            "subfase": "Extração a partir de Insumos da NGA",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
             "camada": "bh040_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "mgcp",
@@ -9075,11 +8678,53 @@
             "camada": "bh040_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
-            "camada_incomum": true
+            "camada_incomum": false
         },
         {
             "schema": "mgcp",
             "camada": "bh040_a",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh050_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh050_a",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh050_a",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh050_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh050_a",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh050_a",
             "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
@@ -9096,21 +8741,21 @@
             "camada": "bh051_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh051_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh051_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -9138,21 +8783,21 @@
             "camada": "bh060_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh060_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh060_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -9283,27 +8928,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh080_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh080_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh080_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh080_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -9319,13 +8943,6 @@
             "schema": "mgcp",
             "camada": "centroide_bh080_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh080_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9394,6 +9011,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bh090_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bh090_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "bh110_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -9404,21 +9035,21 @@
             "camada": "bh110_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh110_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh110_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -9437,7 +9068,7 @@
         {
             "schema": "mgcp",
             "camada": "bh120_p",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9480,13 +9111,6 @@
             "schema": "mgcp",
             "camada": "bh120_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh120_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9520,15 +9144,8 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bh120_p",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
             "camada": "bh120_l",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9577,13 +9194,6 @@
         {
             "schema": "mgcp",
             "camada": "bh120_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh120_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -9611,57 +9221,29 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bh120_l",
+            "camada": "bh120_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh120_a",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bh120_a",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bh120_p",
             "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh120_a",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh120_a",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh120_a",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh120_p",
-            "subfase": "Extração da Hidrografia",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh120_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh120_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh120_p",
-            "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9689,13 +9271,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh120_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh120_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -9718,13 +9293,6 @@
             "schema": "mgcp",
             "camada": "centroide_bh120_p",
             "subfase": "Extração de Interseção de Hidrografia e Transporte",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh120_p",
-            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9759,27 +9327,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh130_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh130_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh130_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh130_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -9795,13 +9342,6 @@
             "schema": "mgcp",
             "camada": "centroide_bh130_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh130_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9870,6 +9410,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bh135_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bh135_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "bh140_l",
             "subfase": "Extração da Hidrografia",
             "camada_apontamento": false,
@@ -9914,13 +9468,6 @@
             "schema": "mgcp",
             "camada": "bh140_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh140_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -9990,27 +9537,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_bh140_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh140_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh140_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh140_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -10026,13 +9552,6 @@
             "schema": "mgcp",
             "camada": "centroide_bh140_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_bh140_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10123,13 +9642,6 @@
         {
             "schema": "mgcp",
             "camada": "bh145_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh145_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -10167,21 +9679,21 @@
             "camada": "bh150_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh150_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh150_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -10192,6 +9704,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bh150_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bh150_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
             "camada": "bh155_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -10202,21 +9728,21 @@
             "camada": "bh155_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh155_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh155_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -10237,21 +9763,21 @@
             "camada": "bh160_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh160_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh160_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -10262,6 +9788,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bh160_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bh160_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
             "camada": "bh165_l",
             "subfase": "Extração da Hidrografia",
             "camada_apontamento": false,
@@ -10272,21 +9812,21 @@
             "camada": "bh165_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh165_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh165_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -10306,13 +9846,6 @@
             "schema": "mgcp",
             "camada": "bh165_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh165_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -10363,21 +9896,21 @@
             "camada": "bh165_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh165_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bh165_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -10397,13 +9930,6 @@
             "schema": "mgcp",
             "camada": "bh165_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh165_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -10494,13 +10020,6 @@
         {
             "schema": "mgcp",
             "camada": "bh170_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh170_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -10536,7 +10055,7 @@
         {
             "schema": "mgcp",
             "camada": "bh180_p",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10585,13 +10104,6 @@
         {
             "schema": "mgcp",
             "camada": "bh180_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh180_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -10619,15 +10131,8 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bh180_p",
-            "subfase": "Extração de Elemento Hidrográfico",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
             "camada": "bh180_l",
-            "subfase": "Extração da Hidrografia",
+            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10676,13 +10181,6 @@
         {
             "schema": "mgcp",
             "camada": "bh180_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh180_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -10705,13 +10203,6 @@
             "schema": "mgcp",
             "camada": "bh180_l",
             "subfase": "Extração de Interseção de Hidrografia e Transporte",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bh180_l",
-            "subfase": "Extração de Elemento Hidrográfico",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -10809,13 +10300,6 @@
         {
             "schema": "mgcp",
             "camada": "bi020_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi020_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -10900,13 +10384,6 @@
         {
             "schema": "mgcp",
             "camada": "bi020_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi020_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -10991,13 +10468,6 @@
         {
             "schema": "mgcp",
             "camada": "bi020_a",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi020_a",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -11042,21 +10512,21 @@
             "camada": "bi030_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi030_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi030_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11076,13 +10546,6 @@
             "schema": "mgcp",
             "camada": "bi030_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi030_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11133,21 +10596,21 @@
             "camada": "bi030_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi030_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi030_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11167,13 +10630,6 @@
             "schema": "mgcp",
             "camada": "bi030_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi030_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11224,21 +10680,21 @@
             "camada": "bi030_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi030_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi030_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11258,13 +10714,6 @@
             "schema": "mgcp",
             "camada": "bi030_a",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi030_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11315,21 +10764,21 @@
             "camada": "bi040_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi040_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi040_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11349,13 +10798,6 @@
             "schema": "mgcp",
             "camada": "bi040_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi040_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11406,21 +10848,21 @@
             "camada": "bi040_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi040_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi040_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11440,13 +10882,6 @@
             "schema": "mgcp",
             "camada": "bi040_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "bi040_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11581,21 +11016,21 @@
             "camada": "bi050_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi050_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bi050_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11616,21 +11051,21 @@
             "camada": "bj020_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj020_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj020_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11641,24 +11076,38 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bj020_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bj020_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
             "camada": "bj030_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj030_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj030_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11669,6 +11118,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bj030_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bj030_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
             "camada": "bj031_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -11679,21 +11142,21 @@
             "camada": "bj031_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj031_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj031_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11721,21 +11184,21 @@
             "camada": "bj031_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj031_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj031_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11763,21 +11226,21 @@
             "camada": "bj040_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj040_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj040_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11805,21 +11268,21 @@
             "camada": "bj060_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj060_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj060_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11840,21 +11303,21 @@
             "camada": "bj100_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj100_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj100_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -11865,29 +11328,57 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_bj100_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bj100_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
             "camada": "bj110_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj110_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "bj110_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "centroide_bj110_p",
             "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bj110_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_bj110_p",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -11921,6 +11412,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_da010_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_da010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "db010_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -11973,21 +11478,21 @@
             "camada": "db029_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db029_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db029_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12015,21 +11520,21 @@
             "camada": "db061_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db061_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db061_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12057,21 +11562,21 @@
             "camada": "db061_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db061_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db061_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12099,21 +11604,21 @@
             "camada": "db070_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db070_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db070_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12133,13 +11638,6 @@
             "schema": "mgcp",
             "camada": "db070_l",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": true
-        },
-        {
-            "schema": "mgcp",
-            "camada": "db070_l",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -12183,21 +11681,21 @@
             "camada": "db071_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db071_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db071_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12225,21 +11723,21 @@
             "camada": "db090_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db090_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db090_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12267,21 +11765,21 @@
             "camada": "db090_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db090_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db090_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12309,21 +11807,21 @@
             "camada": "db100_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db100_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db100_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12351,21 +11849,21 @@
             "camada": "db110_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db110_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db110_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12393,21 +11891,21 @@
             "camada": "db115_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db115_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db115_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12435,21 +11933,21 @@
             "camada": "db115_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db115_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db115_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12517,13 +12015,6 @@
         {
             "schema": "mgcp",
             "camada": "db150_p",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "db150_p",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -12561,21 +12052,21 @@
             "camada": "db160_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db160_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db160_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12603,21 +12094,21 @@
             "camada": "db160_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db160_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db160_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12645,21 +12136,21 @@
             "camada": "db160_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db160_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db160_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12705,6 +12196,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_db170_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_db170_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "db180_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -12715,21 +12220,21 @@
             "camada": "db180_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db180_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db180_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12757,21 +12262,21 @@
             "camada": "db180_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db180_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db180_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12799,21 +12304,21 @@
             "camada": "db200_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db200_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db200_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12841,21 +12346,21 @@
             "camada": "db200_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db200_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "db200_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12901,8 +12406,57 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_ea010_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ea010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "ea020_l",
             "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ea020_l",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ea020_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ea020_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ea020_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ea020_l",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -12936,24 +12490,38 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_ea040_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ea040_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "ea050_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ea050_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ea050_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -12964,29 +12532,57 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_ea050_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ea050_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
             "camada": "ea055_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ea055_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ea055_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "centroide_ea055_p",
             "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ea055_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ea055_p",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -13020,6 +12616,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_eb010_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_eb010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "eb020_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
@@ -13048,29 +12658,57 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_eb020_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_eb020_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "ec010_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ec010_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ec010_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "centroide_ec010_p",
             "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ec010_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": true
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ec010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": true
         },
@@ -13086,21 +12724,21 @@
             "camada": "ec020_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ec020_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ec020_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13125,8 +12763,78 @@
         },
         {
             "schema": "mgcp",
+            "camada": "ec030_p",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "ec030_l",
             "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_l",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "ec030_l",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -13160,6 +12868,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_ec030_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ec030_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "ec040_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
@@ -13188,6 +12910,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_ec040_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ec040_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "ec060_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -13198,21 +12934,21 @@
             "camada": "ec060_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ec060_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "ec060_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13258,6 +12994,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_ed010_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ed010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "ed020_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
@@ -13281,6 +13031,20 @@
             "schema": "mgcp",
             "camada": "centroide_ed020_p",
             "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ed020_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ed020_p",
+            "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -13314,6 +13078,20 @@
         },
         {
             "schema": "mgcp",
+            "camada": "centroide_ed030_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_ed030_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "fa015_a",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
@@ -13324,21 +13102,21 @@
             "camada": "fa015_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "fa015_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "fa015_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13366,21 +13144,21 @@
             "camada": "fa090_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "fa090_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "fa090_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13408,21 +13186,21 @@
             "camada": "fa100_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "fa100_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "fa100_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13660,21 +13438,21 @@
             "camada": "gb040_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb040_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb040_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13702,21 +13480,21 @@
             "camada": "gb045_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb045_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb045_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13744,21 +13522,21 @@
             "camada": "gb050_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb050_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb050_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13786,21 +13564,21 @@
             "camada": "gb050_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb050_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb050_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13870,21 +13648,21 @@
             "camada": "gb065_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb065_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb065_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13912,21 +13690,21 @@
             "camada": "gb065_a",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb065_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb065_a",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -13996,21 +13774,21 @@
             "camada": "gb220_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb220_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb220_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -14122,21 +13900,21 @@
             "camada": "gb485_p",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb485_p",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
             "camada": "gb485_p",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
-            "camada_incomum": false
+            "camada_incomum": true
         },
         {
             "schema": "mgcp",
@@ -14309,27 +14087,6 @@
         {
             "schema": "mgcp",
             "camada": "centroide_zd020_p",
-            "subfase": "Validação no GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_zd020_p",
-            "subfase": "Validação da Ligação",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_zd020_p",
-            "subfase": "Validação Nível Produto",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_zd020_p",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -14345,13 +14102,6 @@
             "schema": "mgcp",
             "camada": "centroide_zd020_p",
             "subfase": "Extração de Planimetria",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
-            "camada": "centroide_zd020_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -14426,16 +14176,6 @@
             "schema": "mgcp",
             "camada": "aux_revisao_a",
             "subfase": "Extração de Área Edificada",
-            "camada_apontamento": true,
-            "camada_incomum": false,
-            "atributo_filtro_subfase": "subfase_id",
-            "atributo_situacao_correcao": "corrigido",
-            "atributo_justificativa_apontamento": "justificativa"
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aux_revisao_a",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": true,
             "camada_incomum": false,
             "atributo_filtro_subfase": "subfase_id",
@@ -14555,16 +14295,6 @@
         {
             "schema": "mgcp",
             "camada": "aux_revisao_l",
-            "subfase": "Extração de Edificação",
-            "camada_apontamento": true,
-            "camada_incomum": false,
-            "atributo_filtro_subfase": "subfase_id",
-            "atributo_situacao_correcao": "corrigido",
-            "atributo_justificativa_apontamento": "justificativa"
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aux_revisao_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": true,
             "camada_incomum": false,
@@ -14666,16 +14396,6 @@
             "schema": "mgcp",
             "camada": "aux_revisao_p",
             "subfase": "Extração de Área Edificada",
-            "camada_apontamento": true,
-            "camada_incomum": false,
-            "atributo_filtro_subfase": "subfase_id",
-            "atributo_situacao_correcao": "corrigido",
-            "atributo_justificativa_apontamento": "justificativa"
-        },
-        {
-            "schema": "mgcp",
-            "camada": "aux_revisao_p",
-            "subfase": "Extração de Edificação",
             "camada_apontamento": true,
             "camada_incomum": false,
             "atributo_filtro_subfase": "subfase_id",
