@@ -132,7 +132,7 @@
         <Option type="List" name="INPUT">
           <Option type="Map">
             <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="infra_elemento_viario_p"/>
+            <Option type="QString" name="static_value" value="infra_elemento_viario_l"/>
           </Option>
         </Option>
         <Option type="List" name="INTERSECT">
@@ -340,6 +340,8 @@
             <Option type="int" name="source" value="2"/>
             <Option type="List" name="static_value">
               <Option type="Map">
+                <Option type="QString" name="alias" value=""/>
+                <Option type="QString" name="comment" value=""/>
                 <Option type="QString" name="expression" value="'elemento viario fora da interseccao'"/>
                 <Option type="int" name="length" value="150"/>
                 <Option type="QString" name="name" value="reason"/>
@@ -382,13 +384,15 @@
     <Option type="QString" name="ALG_HELP_CREATOR" value="3°SGT Willyam "/>
     <Option type="QString" name="ALG_VERSION" value="1.1&#xa;&lt;br>&#xa;&lt;br>&#xa;&lt;h3 style=&quot;text-align: right;&quot;>Para mais informações utilize o botão Help&lt;/h3>"/>
     <Option type="QString" name="HELP_URL" value="https://github.com/GustavoPereira75/Gustavo-Pereira/blob/main/Fluxo_transportes.pdf"/>
-    <Option type="QString" name="SHORT_DESCRIPTION" value=""/>
+    <Option type="invalid" name="SHORT_DESCRIPTION"/>
     <Option type="QString" name="native:extractbylocation_1:flag_vertice_nao_compartilhado" value=" "/>
   </Option>
   <Option type="QString" name="internal_version" value="Version1"/>
   <Option name="modelVariables"/>
   <Option type="QString" name="model_group" value="EDGV 3.0 Orto - Intersecções"/>
   <Option type="QString" name="model_name" value="03-Verifica Elementos Viários"/>
+  <Option type="QString" name="outputGroup" value=""/>
+  <Option name="outputOrder"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="native:refactorfields_1:flag_elemento_viario">
       <Option type="bool" name="create_by_default" value="true"/>

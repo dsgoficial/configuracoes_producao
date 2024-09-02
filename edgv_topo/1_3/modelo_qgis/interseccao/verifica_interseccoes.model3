@@ -103,72 +103,6 @@
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:extractbylocation_1">
-      <Option type="bool" name="active" value="true"/>
-      <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="native:extractbylocation"/>
-      <Option type="QString" name="color" value=""/>
-      <Option type="Map" name="comment">
-        <Option type="QString" name="color" value=""/>
-        <Option type="QString" name="component_description" value=""/>
-        <Option type="double" name="component_height" value="60"/>
-        <Option type="double" name="component_pos_x" value="824"/>
-        <Option type="double" name="component_pos_y" value="473"/>
-        <Option type="double" name="component_width" value="100"/>
-        <Option type="bool" name="outputs_collapsed" value="true"/>
-        <Option type="bool" name="parameters_collapsed" value="true"/>
-      </Option>
-      <Option type="QString" name="component_description" value="Extract by location 1"/>
-      <Option type="double" name="component_height" value="30"/>
-      <Option type="double" name="component_pos_x" value="491"/>
-      <Option type="double" name="component_pos_y" value="344"/>
-      <Option type="double" name="component_width" value="200"/>
-      <Option name="dependencies"/>
-      <Option type="QString" name="id" value="native:extractbylocation_1"/>
-      <Option name="outputs"/>
-      <Option type="bool" name="outputs_collapsed" value="true"/>
-      <Option type="bool" name="parameters_collapsed" value="true"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
-          <Option type="Map">
-            <Option type="QString" name="child_id" value="native:lineintersections_1"/>
-            <Option type="QString" name="output_name" value="OUTPUT"/>
-            <Option type="int" name="source" value="1"/>
-          </Option>
-        </Option>
-        <Option type="List" name="INTERSECT">
-          <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="infra_elemento_viario_p"/>
-          </Option>
-        </Option>
-        <Option type="List" name="OUTPUT">
-          <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QgsProcessingOutputLayerDefinition" name="static_value">
-              <Option type="Map">
-                <Option type="Map" name="create_options">
-                  <Option type="QString" name="fileEncoding" value="System"/>
-                </Option>
-                <Option type="Map" name="sink">
-                  <Option type="bool" name="active" value="true"/>
-                  <Option type="int" name="type" value="1"/>
-                  <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
-                </Option>
-              </Option>
-            </Option>
-          </Option>
-        </Option>
-        <Option type="List" name="PREDICATE">
-          <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="List" name="static_value">
-              <Option type="int" value="2"/>
-            </Option>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
     <Option type="Map" name="native:extractbylocation_2">
       <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
@@ -197,7 +131,7 @@
       <Option type="Map" name="params">
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="native:extractbylocation_1"/>
+            <Option type="QString" name="child_id" value="native:lineintersections_1"/>
             <Option type="QString" name="output_name" value="OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -351,49 +285,6 @@
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:filter_1">
-      <Option type="bool" name="active" value="true"/>
-      <Option type="Map" name="alg_config">
-        <Option type="List" name="outputs">
-          <Option type="Map">
-            <Option type="QString" name="expression" value="regime=1"/>
-            <Option type="bool" name="isModelOutput" value="false"/>
-            <Option type="QString" name="name" value="Permanente"/>
-          </Option>
-        </Option>
-      </Option>
-      <Option type="QString" name="alg_id" value="native:filter"/>
-      <Option type="QString" name="color" value=""/>
-      <Option type="Map" name="comment">
-        <Option type="QString" name="color" value=""/>
-        <Option type="QString" name="component_description" value=""/>
-        <Option type="double" name="component_height" value="60"/>
-        <Option type="double" name="component_pos_x" value="992"/>
-        <Option type="double" name="component_pos_y" value="572"/>
-        <Option type="double" name="component_width" value="100"/>
-        <Option type="bool" name="outputs_collapsed" value="true"/>
-        <Option type="bool" name="parameters_collapsed" value="true"/>
-      </Option>
-      <Option type="QString" name="component_description" value="Filtro de Feições"/>
-      <Option type="double" name="component_height" value="30"/>
-      <Option type="double" name="component_pos_x" value="385"/>
-      <Option type="double" name="component_pos_y" value="143"/>
-      <Option type="double" name="component_width" value="200"/>
-      <Option name="dependencies"/>
-      <Option type="QString" name="id" value="native:filter_1"/>
-      <Option name="outputs"/>
-      <Option type="bool" name="outputs_collapsed" value="true"/>
-      <Option type="bool" name="parameters_collapsed" value="true"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
-          <Option type="Map">
-            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
-            <Option type="QString" name="output_name" value="OUTPUT"/>
-            <Option type="int" name="source" value="1"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
     <Option type="Map" name="native:lineintersections_1">
       <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
@@ -422,8 +313,8 @@
       <Option type="Map" name="params">
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="native:filter_1"/>
-            <Option type="QString" name="output_name" value="OUTPUT_Permanente"/>
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
@@ -453,7 +344,7 @@
         <Option type="List" name="INTERSECT_FIELDS_PREFIX">
           <Option type="Map">
             <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value=""/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
       </Option>
@@ -515,6 +406,8 @@
             <Option type="int" name="source" value="2"/>
             <Option type="List" name="static_value">
               <Option type="Map">
+                <Option type="invalid" name="alias"/>
+                <Option type="invalid" name="comment"/>
                 <Option type="QString" name="expression" value="'interseccao de drenagem permanente com via_deslocamento nao possui elemento viario'"/>
                 <Option type="int" name="length" value="150"/>
                 <Option type="QString" name="name" value="reason"/>
@@ -557,13 +450,15 @@
     <Option type="QString" name="ALG_HELP_CREATOR" value="3°SGT Willyam "/>
     <Option type="QString" name="ALG_VERSION" value="1.1&#xa;&lt;br>&#xa;&lt;br>&#xa;&lt;h3 style=&quot;text-align: right;&quot;>Para mais informações utilize o botão Help&lt;/h3>"/>
     <Option type="QString" name="HELP_URL" value="https://github.com/GustavoPereira75/Gustavo-Pereira/blob/main/Fluxo_transportes.pdf"/>
-    <Option type="QString" name="SHORT_DESCRIPTION" value=""/>
+    <Option type="invalid" name="SHORT_DESCRIPTION"/>
     <Option type="QString" name="native:extractbylocation_1:flag_vertice_nao_compartilhado" value=" "/>
   </Option>
   <Option type="QString" name="internal_version" value="Version1"/>
   <Option name="modelVariables"/>
   <Option type="QString" name="model_group" value="EDGV 3.0 Orto - Intersecções"/>
   <Option type="QString" name="model_name" value="04-Verifica Intersecções"/>
+  <Option type="QString" name="outputGroup" value=""/>
+  <Option name="outputOrder"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="native:refactorfields_1:flag_intersecção">
       <Option type="bool" name="create_by_default" value="true"/>
