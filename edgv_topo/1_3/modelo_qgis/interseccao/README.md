@@ -6,11 +6,12 @@ Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de pr
 
 ## Classes utilizadas
 
+- elemnat_trecho_drenagem_l;
+- delimitador_massa_dagua_l
 - infra_elemento_viario_l;
 - infra_ferrovia_l;
 - infra_via_deslocamento_l;
 - infra_mobilidade_urbana_l;
-- elemnat_trecho_drenagem_l;
 - infra_travessia_hidroviaria_l;
 - infra_barragem_l
 - aux_moldura_a;
