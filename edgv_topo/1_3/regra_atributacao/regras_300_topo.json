@@ -1,8 +1,8 @@
 {
     "metadados":{
-        "modelo": "EDGV 3.0 Topo",
-        "versao_modelo": "1.2.15",
-        "versao_regras":"0.4"
+        "modelo": "EDGV 3.0 Pro",
+        "versao_modelo": "1.2",
+        "versao_regras":"0.1"
     },
     "grupo_estilo": [
         {
@@ -752,7 +752,7 @@
         {
             "atributo": "material_construcao",
             "descricao": "material_construcao - Atributo incorreto para este tipo (R79_V)",
-            "regra": "((tipo - tipo %100)/100) in (1,2,5,6) and not (material_construcao in (0,1,2,3,4,5))",
+            "regra": "((tipo - tipo %100)/100) in (1,2,5,6,7) and not (material_construcao in (0,1,2,3,4,5))",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.infra_elemento_viario_*"
@@ -919,7 +919,7 @@
         {
             "atributo": "nr_faixas",
             "descricao": "nr_faixas - Atributo incorreto para este tipo (R83_V)",
-            "regra": "((tipo - tipo %100)/100) in (4) and not (nr_faixas =0) and ((modal_uso in (4,8) and not (nr_faixas >=1)) or (modal_uso not in (4,8) and not(nr_faixas =0)))",
+            "regra": "(modal_uso in (4,8) and not (nr_faixas >=1)) or (modal_uso not in (4,8) and not(nr_faixas =0))",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.infra_elemento_viario_*"
@@ -982,7 +982,7 @@
         {
             "atributo": "nr_pistas",
             "descricao": "nr_pistas - Atributo incorreto para este tipo (R84_V)",
-            "regra": "((tipo - tipo %100)/100) in (4) and not (nr_pistas =0) and((modal_uso in (4,8) and not (nr_pistas >=1)) or (modal_uso not in (4,8) and not(nr_pistas =0)))",
+            "regra": "(modal_uso in (4,8) and not (nr_pistas >=1)) or (modal_uso not in (4,8) and not(nr_pistas =0))",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.infra_elemento_viario_*"
@@ -991,7 +991,7 @@
         {
             "atributo": "nr_pistas",
             "descricao": "nr_pistas - Relacionamento incorreto com nr_faixas (R85_V)",
-            "regra": "to_int(nr_pistas) > to_int(nr_faixas)",
+            "regra": "nr_pistas > nr_faixas",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.*"
@@ -1072,7 +1072,7 @@
         {
             "atributo": "posicao_pista",
             "descricao": "posicao_pista - Atributo incorreto para este tipo (R88_V)",
-            "regra": "((nr_pistas <= 1) and posicao_pista not in (97)) or ((nr_pistas > 1) and posicao_pista not in (12,13)) or (modal_uso in (5,6,97) and posicao_pista not in (97))",
+            "regra": "((nr_pistas <= 1) and posicao_pista not in (97)) or ((nr_pistas > 1) and posicao_pista not in (12,13)) or (modal_uso in (3,5,6,97) and posicao_pista not in (97))",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.infra_elemento_viario_*"
@@ -1208,7 +1208,7 @@
         {
             "atributo": "revestimento",
             "descricao": "revestimento - Incomum, confirmar atributação (R111_A)",
-            "regra": "revestimento in (1)",
+            "regra": "revestimento in (1) and (observacao is NULL or observacao = '')",
             "tipo_estilo": "Atributo incomum",
             "camadas": [
                 "edgv.infra_pista_pouso_*"
@@ -1500,7 +1500,7 @@
         {
             "atributo": "tipo",
             "descricao": "tipo - Incomum, confirmar atributação (R110_A)",
-            "regra": "tipo in (10, 12)",
+            "regra": "tipo in (10, 12) and (observacao is NULL or observacao = '')",
             "tipo_estilo": "Atributo incomum",
             "camadas": [
                 "edgv.infra_pista_pouso_*"
