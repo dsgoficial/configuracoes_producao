@@ -269,6 +269,42 @@
         },
         {
             "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Extração da Hidrografia e Altimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
             "camada": "elemnat_elemento_hidrografico_p",
             "subfase": "Extração da Hidrografia e Altimetria",
             "camada_apontamento": false
@@ -559,6 +595,30 @@
             "schema": "edgv",
             "camada": "infra_barragem_a",
             "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_obstaculo_vertical_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_obstaculo_vertical_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_obstaculo_vertical_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_obstaculo_vertical_p",
+            "subfase": "Verificação Final",
             "camada_apontamento": false
         },
         {
