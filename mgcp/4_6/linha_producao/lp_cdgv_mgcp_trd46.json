@@ -10328,6 +10328,55 @@
         {
             "schema": "mgcp",
             "camada": "bi010_p",
+            "subfase": "Extração da Hidrografia",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bi010_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bi010_p",
+            "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bi010_p",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bi010_p",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bi010_p",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bi010_p",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "bi010_p",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
             "camada_incomum": false
