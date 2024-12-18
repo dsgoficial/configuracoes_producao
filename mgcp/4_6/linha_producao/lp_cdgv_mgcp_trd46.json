@@ -1,8 +1,8 @@
 {
     "nome": "Conjunto de dados geoespaciais vetoriais para MGCP TRD 4.6 versão 1.2.0",
     "descricao": "Linha de produção padrão para vetores do MGCP",
-    "versão": "1.2.0",
-    "nome_abrev": "cdgv_mgcp_trd46_v1.2.0",
+    "versão": "1.2.1",
+    "nome_abrev": "cdgv_mgcp_trd46_v1.2.1",
     "tipo_produto_id": 8,
     "fases": [
         {
@@ -164,6 +164,26 @@
                     "subfase_anterior": "Extração de Área Edificada",
                     "subfase_posterior": "Extração de Área Edificada",
                     "tipo_pre_requisito_id": 2
+                },
+                {
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
+                    "subfase_posterior": "Extração de Cobertura do Solo",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Elemento Hidrográfico",
+                    "subfase_posterior": "Extração de Cobertura do Solo",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Vias de Deslocamento",
+                    "subfase_posterior": "Extração de Planimetria",
+                    "tipo_pre_requisito_id": 1
+                },
+                {
+                    "subfase_anterior": "Extração de Elemento Hidrográfico",
+                    "subfase_posterior": "Extração de Planimetria",
+                    "tipo_pre_requisito_id": 1
                 },
                 {
                     "subfase_anterior": "Extração de Cobertura do Solo",
@@ -14742,6 +14762,321 @@
             "atributo_filtro_subfase": "subfase_id",
             "atributo_situacao_correcao": "corrigido",
             "atributo_justificativa_apontamento": "justificativa"
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_validacao_p",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_validacao_l",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_validacao_a",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração da Hidrografia",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Topônimos",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Vias de Deslocamento",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração da Hidrografia",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Topônimos",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Vias de Deslocamento",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração da Hidrografia",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Topônimos",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Vias de Deslocamento",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Elemento Hidrográfico",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Interseção de Hidrografia e Transporte",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Validação no GAIT",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "aux_observacao_a",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
         }
     ]
 }
