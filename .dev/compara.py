@@ -2,11 +2,11 @@
 import json
 
 # Load the first JSON file (muvd_masterfile)
-with open(r"c:/Diniz/mgcp/master_file_mgcp_trd44.json", 'r', encoding='utf-8') as file:
+with open(r"c:/Diniz/modelagens/edgv_300_topo/1_4/master_file_300_topo_14.json", 'r', encoding='utf-8') as file:
     muvd_masterfile = json.load(file)
 
 # Load the second JSON file (lp_cdgv_muvd_utrd12)
-with open(r'c:/Diniz/configuracoes_producao/mgcp/4_6/linha_producao/lp_cdgv_mgcp_trd46.json', 'r', encoding='utf-8') as file:
+with open(r'c:/Diniz/configuracoes_producao/edgv_topo/1_4/linha_producao/lp_cdgv_edgv_30topo14.json', 'r', encoding='utf-8') as file:
     lp_cdgv_muvd_utrd12 = json.load(file)
 
 # Extracting class names from the first file (muvd_masterfile)
@@ -154,3 +154,70 @@ def print_subfases_order_with_new_classes(json_data):
                     print("    * Nenhuma camada associada")
 
 print_subfases_order_with_new_classes(lp_cdgv_muvd_utrd12)
+
+def validate_subfase_dependencies(json_data):
+    """
+    Validates if class allocations respect the dependencies between subfases.
+    Each posterior subfase must include all classes from its anterior subfase.
+    
+    Args:
+        json_data (dict): The JSON data containing fases, subfases and propriedades_camadas
+    
+    Returns:
+        list: List of validation errors found
+    """
+    validation_errors = []
+    
+    # Create a mapping of subfase to its classes
+    subfase_to_classes = {}
+    for prop in json_data['propriedades_camadas']:
+        subfase = prop['subfase']
+        camada = prop['camada'].lower()
+        if subfase not in subfase_to_classes:
+            subfase_to_classes[subfase] = set()
+        subfase_to_classes[subfase].add(camada)
+    
+    # Check each fase and its dependencies
+    for fase in json_data['fases']:
+        if not fase.get('pre_requisito_subfase'):
+            continue
+            
+        for pre_req in fase['pre_requisito_subfase']:
+            if pre_req['tipo_pre_requisito_id'] != 1:  # Skip other prerequisite types
+                continue
+                
+            subfase_anterior = pre_req['subfase_anterior']
+            subfase_posterior = pre_req['subfase_posterior']
+            
+            # Get classes for each subfase
+            classes_anterior = subfase_to_classes.get(subfase_anterior, set())
+            classes_posterior = subfase_to_classes.get(subfase_posterior, set())
+            
+            # Check if all classes from anterior subfase are in posterior subfase
+            missing_classes = classes_anterior - classes_posterior
+            
+            if missing_classes:
+                error = {
+                    'fase_id': fase['tipo_fase_id'],
+                    'subfase_anterior': subfase_anterior,
+                    'subfase_posterior': subfase_posterior,
+                    'missing_classes': sorted(list(missing_classes))
+                }
+                validation_errors.append(error)
+    
+    # Print validation results
+    if validation_errors:
+        print("\nValidation Errors Found:")
+        for error in validation_errors:
+            print(f"\nFase {error['fase_id']}")
+            print(f"Dependency: '{error['subfase_anterior']}' -> '{error['subfase_posterior']}'")
+            print("Classes missing in posterior subfase:")
+            for classe in error['missing_classes']:
+                print(f"- {classe}")
+    else:
+        print("\nNo validation errors found. All subfase dependencies are correctly maintained.")
+    
+    print(validation_errors)
+
+
+validate_subfase_dependencies(lp_cdgv_muvd_utrd12)
