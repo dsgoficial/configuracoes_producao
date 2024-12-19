@@ -2,7 +2,7 @@
     "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Topo 1.4",
     "descricao": "Linha de produção padrão para vetores da EDGV",
     "versao": "1.0.0",
-    "nome_abrev": "cdgv_edgv_3topo14",
+    "nome_abrev": "cdgv_edgv_3topo14_v1.0.0",
     "tipo_produto_id": 7,
     "fases": [
         {

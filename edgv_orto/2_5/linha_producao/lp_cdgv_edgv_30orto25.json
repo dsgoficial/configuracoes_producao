@@ -2,7 +2,7 @@
     "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 2.5",
     "descricao": "Linha de produção padrão para vetores de carta ortoimagem",
     "versão": "1.0.0",
-    "nome_abrev": "cdgv_edgv_30orto25",
+    "nome_abrev": "cdgv_edgv_3orto25_v1.0.0",
     "tipo_produto_id": 22,
     "fases": [
         {
