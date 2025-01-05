@@ -1,0 +1,109 @@
+{
+    "metadados":{
+        "modelo": "EDGV 3.0 Orto",
+        "versao_modelo": "2.2.6",
+        "versao_regras":"0.1"
+    },
+    "grupo_estilo": [
+        {
+            "tipo_estilo": "Atributo incorreto",
+            "cor_rgb": "255,127,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum - atributo extra",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo",
+            "cor_rgb": "255,189,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo - atributo extra",
+            "cor_rgb": "255,189,127"
+        }
+    ],
+    "regras": [
+        {
+            "atributo": "nome",
+            "descricao": "nome - Nome deve iniciar com letra maiuscula e não deve ter espaços desnecessários",
+            "regra": "(regexp_match ( nome , '^ ' ) or regexp_match ( nome , '  ' ) or regexp_match ( nome , ' $' ) or regexp_match ( nome , '^[a-z]' ))",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "edgv.elemnat_toponimo_fisiografico_natural_p",
+                "edgv.llp_nome_local_p",
+                "edgv.llp_localidade_p",
+                "edgv.llp_aglomerado_rural_p",
+                "edgv.elemnat_toponimo_fisiografico_natural_l"
+            ]
+        },
+        {
+            "atributo": "nome",
+            "descricao": "nome - string vazia, setar atributo para NULL",
+            "regra": "nome is not null and length(nome)<2",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "edgv.elemnat_toponimo_fisiografico_natural_p",
+                "edgv.llp_nome_local_p",
+                "edgv.llp_localidade_p",
+                "edgv.llp_aglomerado_rural_p",
+                "edgv.elemnat_toponimo_fisiografico_natural_l"
+            ]
+        },
+        {
+            "atributo": "nome",
+            "descricao": "nome - todas feições dessa classe necessitam de nome",
+            "regra": "nome is null",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "edgv.elemnat_toponimo_fisiografico_natural_p",
+                "edgv.llp_nome_local_p",
+                "edgv.llp_localidade_p",
+                "edgv.llp_aglomerado_rural_p",
+                "edgv.elemnat_toponimo_fisiografico_natural_l"
+            ]
+        },
+        {
+            "atributo": "populacao",
+            "descricao": "população - Atributo incorreto",
+            "regra": "(tipo in (1,2,3) and (populacao is NULL)) or (not(tipo in (1,2,3)) and (not(populacao is NULL)))",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "edgv.llp_localidade_p"
+            ]
+        },
+        {
+            "atributo": "tipo",
+            "descricao": "tipo - Preencher atributo",
+            "regra": "tipo in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.elemnat_toponimo_fisiografico_natural_p",
+                "edgv.llp_localidade_p",
+                "edgv.llp_aglomerado_rural_p",
+                "edgv.elemnat_toponimo_fisiografico_natural_l"
+            ]
+        },
+        {
+            "atributo": "tipo",
+            "descricao": "tipo - Incomum, confirmar atributação",
+            "regra": "tipo in (4,5,6,7,9,10,11)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "edgv.elemnat_toponimo_fisiografico_natural_p"
+            ]
+        },
+        {
+            "atributo": "tipo",
+            "descricao": "tipo - Incomum, confirmar atributação",
+            "regra": "tipo in (5)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "edgv.llp_aglomerado_rural_p"
+            ]
+        }
+    ]
+}
