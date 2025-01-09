@@ -10431,13 +10431,6 @@
         },
         {
             "schema": "mgcp",
-            "camada": "bi010_p",
-            "subfase": "Extração a partir de Insumos da NGA",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "mgcp",
             "camada": "bi020_p",
             "subfase": "Extração da Hidrografia",
             "camada_apontamento": false,
