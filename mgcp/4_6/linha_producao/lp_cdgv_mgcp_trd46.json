@@ -1,8 +1,8 @@
 {
-    "nome": "Conjunto de dados geoespaciais vetoriais para MGCP TRD 4.6 v1.2.1",
+    "nome": "Conjunto de dados geoespaciais vetoriais para MGCP TRD 4.6 v1.2.2",
     "descricao": "Linha de produção padrão para vetores do MGCP",
-    "versão": "1.2.1",
-    "nome_abrev": "cdgv_mgcp_trd46_v1.2.1",
+    "versão": "1.2.2",
+    "nome_abrev": "cdgv_mgcp_trd46_v1.2.2",
     "tipo_produto_id": 8,
     "fases": [
         {
@@ -14393,6 +14393,48 @@
         },
         {
             "schema": "mgcp",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração de Área Edificada",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração a partir de Insumos da NGA",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração de Planimetria",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Extração de Cobertura do Solo",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
             "camada": "centroide_zd020_p",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
@@ -14402,6 +14444,13 @@
             "schema": "mgcp",
             "camada": "centroide_zd020_p",
             "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "mgcp",
+            "camada": "centroide_zd020_p",
+            "subfase": "Extração de Área sem Dados",
             "camada_apontamento": false,
             "camada_incomum": false
         },

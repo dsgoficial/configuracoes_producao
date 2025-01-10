@@ -2,11 +2,11 @@
 import json
 
 # Load the first JSON file (muvd_masterfile)
-with open(r"c:/Diniz/modelagens/edgv_300_topo/1_4/master_file_300_topo_14.json", 'r', encoding='utf-8') as file:
+with open(r"c:/Diniz/mgcp/master_file_mgcp_trd44.json", 'r', encoding='utf-8') as file:
     muvd_masterfile = json.load(file)
 
 # Load the second JSON file (lp_cdgv_muvd_utrd12)
-with open(r'c:/Diniz/configuracoes_producao/edgv_topo/1_4/linha_producao/lp_cdgv_edgv_30topo14.json', 'r', encoding='utf-8') as file:
+with open(r'c:/Diniz/configuracoes_producao/mgcp/4_6/linha_producao/lp_cdgv_mgcp_trd46.json', 'r', encoding='utf-8') as file:
     lp_cdgv_muvd_utrd12 = json.load(file)
 
 # Extracting class names from the first file (muvd_masterfile)
