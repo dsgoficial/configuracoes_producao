@@ -393,56 +393,56 @@
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração de Área Edificada",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Validação no GAIT",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Validação Nível Produto",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração a partir de Insumos da NGA",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração de Planimetria",
             "camada_apontamento": false,
             "camada_incomum": false
         },
         {
             "schema": "mgcp",
-            "camada": "delimitador_area_construida_l",
+            "camada": "delimitador_area_edificada_l",
             "subfase": "Extração de Cobertura do Solo",
             "camada_apontamento": false,
             "camada_incomum": false
