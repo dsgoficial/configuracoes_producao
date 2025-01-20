@@ -1,0 +1,515 @@
+{
+    "nome": "Carta Ortoimagem EDGV 3.0 Orto 2.5 v1.0.0",
+    "descricao": "Linha de produção padrão para cartas ortoimagem",
+    "versão": "1.0.0",
+    "nome_abrev": "co_edgv_3orto25_v1.0.0",
+    "tipo_produto_id": 3,
+    "fases": [
+        {
+            "tipo_fase_id": 16,
+            "ordem": 1,
+            "subfases": [
+                {
+                    "nome": "Preparo para Edição",
+                    "ordem": 1
+                }
+            ],
+            "pre_requisito_subfase": []
+        },
+        {
+            "tipo_fase_id": 4,
+            "ordem": 2,
+            "subfases": [
+                {
+                    "nome": "Edição",
+                    "ordem": 1
+                }
+            ],
+            "pre_requisito_subfase": []
+        },
+        {
+            "tipo_fase_id": 5,
+            "ordem": 3,
+            "subfases": [
+                {
+                    "nome": "Disseminação",
+                    "ordem": 1
+                }
+            ],
+            "pre_requisito_subfase": []
+        }
+    ],
+    "propriedades_camadas": [
+        {
+            "schema": "edgv",
+            "camada": "cobter_massa_dagua_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "constr_extracao_mineral_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "constr_extracao_mineral_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_curva_nivel_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_sumidouro_vertedouro_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_elemento_hidrografico_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ilha_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_ponto_cotado_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_terreno_sujeito_inundacao_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_toponimo_fisiografico_natural_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_toponimo_fisiografico_natural_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_trecho_drenagem_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_barragem_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_barragem_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_obstaculo_vertical_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_elemento_energia_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_elemento_energia_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_elemento_energia_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_elemento_infraestrutura_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_elemento_infraestrutura_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_elemento_infraestrutura_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_ferrovia_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_pista_pouso_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_pista_pouso_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_pista_pouso_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "infra_via_deslocamento_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_aglomerado_rural_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_area_pub_militar_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_localidade_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_nome_local_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_terra_indigena_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_unidade_conservacao_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_unidade_federacao_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_limite_legal_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_area_sem_dados_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "llp_pais_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_area_sem_dados_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_observacao_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_observacao_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_observacao_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_p",
+            "subfase": "Edição",
+            "camada_apontamento": true,
+            "camada_incomum": false,
+            "atributo_filtro_subfase": "subfase_id",
+            "atributo_situacao_correcao": "corrigido",
+            "atributo_justificativa_apontamento": "justificativa"
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_l",
+            "subfase": "Edição",
+            "camada_apontamento": true,
+            "camada_incomum": false,
+            "atributo_filtro_subfase": "subfase_id",
+            "atributo_situacao_correcao": "corrigido",
+            "atributo_justificativa_apontamento": "justificativa"
+        },
+        {
+            "schema": "edgv",
+            "camada": "aux_revisao_a",
+            "subfase": "Edição",
+            "camada_apontamento": true,
+            "camada_incomum": false,
+            "atributo_filtro_subfase": "subfase_id",
+            "atributo_situacao_correcao": "corrigido",
+            "atributo_justificativa_apontamento": "justificativa"
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_massa_dagua_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_elemento_hidrografico_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_massa_dagua_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_ilha_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_elemento_hidrografico_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_limite_especial_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_area_sem_dados_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_limite_especial_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_grid_numerico_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_identificador_trecho_rod_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_texto_generico_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_simb_torre_energia_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_area_pub_militar_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_unidade_conservacao_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_simb_area_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_texto_generico_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_terra_indigena_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_simb_cota_mestra_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_articulacao_imagem_a",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "edicao_grid_edicao_l",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        }
+    ]
+}
