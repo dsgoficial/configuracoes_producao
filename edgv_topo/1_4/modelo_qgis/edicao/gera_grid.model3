@@ -1,0 +1,352 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="dsgtools:appendfeaturestolayeralgorithm_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:appendfeaturestolayeralgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1045"/>
+        <Option type="double" name="component_pos_y" value="489"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Append Features to Layer edicao_grid_edicao_l"/>
+      <Option type="double" name="component_height" value="50"/>
+      <Option type="double" name="component_pos_x" value="949"/>
+      <Option type="double" name="component_pos_y" value="111"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option type="QString" name="child_id" value="native:condition_1"/>
+          <Option type="QString" name="conditional_branch" value="Camada Vazia"/>
+        </Option>
+      </Option>
+      <Option type="QString" name="id" value="dsgtools:appendfeaturestolayeralgorithm_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DESTINATION_LAYER">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="LAYER_WITH_FEATURES_TO_APPEND">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="ferramentasedicao:makegrid_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:appendfeaturestolayeralgorithm_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:appendfeaturestolayeralgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1207"/>
+        <Option type="double" name="component_pos_y" value="535"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Append Features to Layer edicao_grid_numerico_p"/>
+      <Option type="double" name="component_height" value="50"/>
+      <Option type="double" name="component_pos_x" value="860"/>
+      <Option type="double" name="component_pos_y" value="391"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option type="QString" name="child_id" value="native:condition_2"/>
+          <Option type="QString" name="conditional_branch" value="Camada Vazia"/>
+        </Option>
+      </Option>
+      <Option type="QString" name="id" value="dsgtools:appendfeaturestolayeralgorithm_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DESTINATION_LAYER">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="LAYER_WITH_FEATURES_TO_APPEND">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="ferramentasedicao:makegrid_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT_GRID_NUMBERS"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="320"/>
+        <Option type="double" name="component_pos_y" value="115"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="moldura"/>
+      <Option type="double" name="component_height" value="32"/>
+      <Option type="double" name="component_pos_x" value="139"/>
+      <Option type="double" name="component_pos_y" value="261"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="moldura,aux_moldura_a,aux_moldura_area_continua_a"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="992"/>
+        <Option type="double" name="component_pos_y" value="672"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="edicao_grid_edicao_l"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="155"/>
+      <Option type="double" name="component_pos_y" value="45"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="edicao_grid_edicao_l"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1196"/>
+        <Option type="double" name="component_pos_y" value="765"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="edicao_grid_numerico_p"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="425"/>
+      <Option type="double" name="component_pos_y" value="457"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="edicao_grid_numerico_p"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="ferramentasedicao:makegrid_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="ferramentasedicao:makegrid"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="647"/>
+        <Option type="double" name="component_pos_y" value="349"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Gera Vetor de Grade"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="189"/>
+      <Option type="double" name="component_pos_y" value="364"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="ferramentasedicao:makegrid_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="GENERATE_GRID_NUMBERS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GENERATE_LAT_LON_TICKS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_FRAME">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_SCALE">
+          <Option type="Map">
+            <Option type="QString" name="expression" value="if(@productiontools_scale =5000, 1, if(@productiontools_scale =10000, 2, if(@productiontools_scale =25000, 3, if(@productiontools_scale =50000, 4, if(@productiontools_scale =100000, 5, if(@productiontools_scale =250000, 6, 7))))))"/>
+            <Option type="int" name="source" value="3"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:condition_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option type="Map" name="alg_config">
+        <Option type="List" name="conditions">
+          <Option type="Map">
+            <Option type="QString" name="expression" value=" layer_property(@edicao_grid_edicao_l_OUTPUT, 'feature_count')=0"/>
+            <Option type="QString" name="name" value="Camada Vazia"/>
+          </Option>
+          <Option type="Map">
+            <Option type="QString" name="expression" value=" layer_property(@edicao_grid_edicao_l_OUTPUT, 'feature_count')!=0"/>
+            <Option type="QString" name="name" value="Camada Não-Vazia"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="QString" name="alg_id" value="native:condition"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="992"/>
+        <Option type="double" name="component_pos_y" value="609"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Camada Vazia edicao_grid_edicao_l"/>
+      <Option type="double" name="component_height" value="56.999999999999986"/>
+      <Option type="double" name="component_pos_x" value="332"/>
+      <Option type="double" name="component_pos_y" value="149.5"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
+          <Option type="QString" name="conditional_branch" value=""/>
+        </Option>
+      </Option>
+      <Option type="QString" name="id" value="native:condition_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option name="params"/>
+    </Option>
+    <Option type="Map" name="native:condition_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option type="Map" name="alg_config">
+        <Option type="List" name="conditions">
+          <Option type="Map">
+            <Option type="QString" name="expression" value=" layer_property(@edicao_grid_numerico_p_OUTPUT, 'feature_count')=0"/>
+            <Option type="QString" name="name" value="Camada Vazia"/>
+          </Option>
+          <Option type="Map">
+            <Option type="QString" name="expression" value=" layer_property(@edicao_grid_numerico_p_OUTPUT, 'feature_count')!=0"/>
+            <Option type="QString" name="name" value="Camada Não-Vazia"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="QString" name="alg_id" value="native:condition"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1265"/>
+        <Option type="double" name="component_pos_y" value="671"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Camada Vazia edicao_grid_numerico_p"/>
+      <Option type="double" name="component_height" value="56.999999999999986"/>
+      <Option type="double" name="component_pos_x" value="624"/>
+      <Option type="double" name="component_pos_y" value="560.5"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3"/>
+          <Option type="QString" name="conditional_branch" value=""/>
+        </Option>
+      </Option>
+      <Option type="QString" name="id" value="native:condition_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="false"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option name="params"/>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option type="QString" name="internal_version" value="Version1"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" name="model_group" value=""/>
+  <Option type="QString" name="model_name" value="gera_grid"/>
+  <Option type="QString" name="outputGroup" value=""/>
+  <Option name="outputOrder"/>
+  <Option name="parameterDefinitions"/>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>
