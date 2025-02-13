@@ -33,16 +33,15 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 4. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
 5. Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados;
 6. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
-7. Snap Hierárquico;
-8. Identificar vértices não compartilhados nas intersecções;
-9. Identificar vértices não compartilhados nos segmentos compartilhados;
-10. Verificar elementos viários;
-11. Verificar intersecções;
-12. Identificar geometrias com densidade incorreta de vértices;
-13. Identificar Z;
-14. Identificar overlaps;
-15. Identificar erros de ortografia nos atributos;
-16. Identificar erros de atributação.
+7. Identificar vértices não compartilhados nas intersecções;
+8. Identificar vértices não compartilhados nos segmentos compartilhados;
+9. Verificar elementos viários;
+10. Verificar intersecções;
+11. Identificar geometrias com densidade incorreta de vértices;
+12. Identificar Z;
+13. Identificar overlaps;
+14. Identificar erros de ortografia nos atributos;
+15. Identificar erros de atributação.
 
 ## Detalhamento dos processos
 
@@ -100,13 +99,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 7. Snap Hierárquico
-
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/snap_hierarquico_intersec.model3
-- processos utilizados: Snap Hierárquico
-- configuração do snap hierárquico: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/snap_hierarquico_intersec.json
-
-### 8. Identificar vértices não compartilhados nas intersecções
+### 7. Identificar vértices não compartilhados nas intersecções
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/identifica_vertice_nao_compartilhado_nas_interseccoes.model3
 - processos utilizados: Identify Unshared Vertex on Intersections / Extract by location;
@@ -116,7 +109,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: Identifica as interseções entre as feições que não possuem um vértice compartilhado nas camadas selecionadas. O operador deve corrigir manualmente os apontamentos desse processo.
   
-### 9. Identificar vértices não compartilhados nos segmentos compartilhados
+### 8. Identificar vértices não compartilhados nos segmentos compartilhados
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/identifica_vertice_nao_compartilhado_nos_segmentos_compartilhados_interseccoes.model3
 - processos utilizados: Interseção de linhas / Identify Unshared Vertex on Shared Edges / Extract by location;
@@ -126,7 +119,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: Identifica as feições que não possuem vértices compartilhado nas sobreposições das camadas selecionadas. O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 10. Verificar elementos viários
+### 9. Verificar elementos viários
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/verifica_elementos_viarios.model3
 - processos utilizados: Interseção de linhas / Extract by location;
@@ -136,7 +129,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags. 
 - Texto para tooltip: Identifica os elementos viários do tipo ponto que não se encontram nas intersecções de drenagem e via deslocamento. O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 11: Verificar intersecções
+### 10: Verificar intersecções
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/verifica_interseccoes.model3
 - processos utilizados: Interseção de linhas / Extract by location;
@@ -146,33 +139,33 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags. 
 - Texto para tooltip: Identifica as intersecções de drenagem permanente com via_deslocamento que não possuem elemento viário. O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 12: Identificar geometrias com densidade incorreta de vértices
+### 11: Identificar geometrias com densidade incorreta de vértices
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_geometrias_com_densidade_incorreta_de_vertices.model3
 - camadas: todas as camadas carregadas;
 - tol: 0.00001 grau
 - nome camada flags: flag_densidade_incorreta_vertices
 
-### 13. Identificar Z
+### 12. Identificar Z
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_z.model3
 - camadas: todas carregadas
 - nome camada flags: flag_z
 
-### 14. Identificar overlaps dentro da mesma camada
+### 13. Identificar overlaps dentro da mesma camada
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_overlaps_linhas.model3
 - camadas: todas
 - nome camada flags: flags_overlaps_l
 
-### 15. Identificar erros de ortografia no atributo nome
+### 14. Identificar erros de ortografia no atributo nome
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3;
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
-### 16. Identificar erros de atributação
+### 15. Identificar erros de atributação
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erros_atributacao.model3
 - camadas: todas;
