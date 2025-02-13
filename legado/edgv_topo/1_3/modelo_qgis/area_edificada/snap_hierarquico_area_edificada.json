@@ -1,0 +1,60 @@
+{
+    "metadata": {
+        "lastModified": "27/05/2024 10:57:08"
+    },
+    "0": {
+        "0": "delimitador_massa_dagua_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "1": {
+        "0": "delimitador_area_construida_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "2": {
+        "0": "infra_via_deslocamento_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "3": {
+        "0": "infra_ferrovia_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "4": {
+        "0": "infra_mobilidade_urbana_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "5": {
+        "0": "elemnat_trecho_drenagem_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "6": {
+        "0": "infra_barragem_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "7": {
+        "0": "infra_mobilidade_urbana_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "8": {
+        "0": "infra_vala_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "9": {
+        "0": "infra_elemento_viario_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "10": {
+        "0": "infra_elemento_viario_p",
+        "1": 1e-06,
+        "2": 0
+    }
+}
