@@ -33,11 +33,11 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 4. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
 5. Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados;
 6. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
-7. Snap Hierárquico;***
-8. Identificar vértices não compartilhados nas intersecções
-9. Identificar vértices não compartilhados nos segmentos compartilhados
-10. Verificar elementos viários
-11. Verificar intersecções
+7. Snap Hierárquico;
+8. Identificar vértices não compartilhados nas intersecções;
+9. Identificar vértices não compartilhados nos segmentos compartilhados;
+10. Verificar elementos viários;
+11. Verificar intersecções;
 12. Identificar geometrias com densidade incorreta de vértices;
 13. Identificar Z;
 14. Identificar overlaps;
