@@ -129,6 +129,8 @@ Nesta subfase somente o `delimitador_area_sem_dados_l` é produzido e deve ser f
 
 Nesta subfase somente o `delimitador_limite_especial_l` é produzido e deve ser feito um snap sequencial de cada classe linear da hidrografia e transporte para atrair elementos da classe `delimitador_limite_especial_l`. Para tal, deve-se utilizar o BatchRunAlgorithm para o algoritmo de snap.
 
+Em adição, a classe `llp_limite_legal_l` deve ser atraída para as camadas previstas na classe com o BatchRunAlgorithm.
+
 ## 5. Observações Importantes
 
 - A tolerância uniforme de 1e-06 é mantida para todos os elementos
