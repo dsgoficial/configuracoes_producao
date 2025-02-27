@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "lastModified": "27/02/2025 10:00:00"
+    },
+    "0": {
+        "0": "elemnat_trecho_drenagem_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "1": {
+        "0": "elemnat_elemento_hidrografico_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "2": {
+        "0": "delimitador_massa_dagua_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "3": {
+        "0": "delimitador_elemento_hidrografico_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "4": {
+        "0": "infra_ferrovia_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "5": {
+        "0": "infra_via_deslocamento_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "6": {
+        "0": "infra_barragem_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "7": {
+        "0": "infra_barragem_a",
+        "1": 1e-06,
+        "2": 0
+    },
+    "8": {
+        "0": "delimitador_area_sem_dados_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "9": {
+        "0": "delimitador_limite_especial_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "10": {
+        "0": "elemnat_elemento_hidrografico_p",
+        "1": 1e-06,
+        "2": 3
+    },
+    "11": {
+        "0": "elemnat_sumidouro_vertedouro_p",
+        "1": 1e-06,
+        "2": 3
+    }
+}
