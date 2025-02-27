@@ -1,0 +1,1356 @@
+{
+    "metadados":{
+        "modelo": "MGCP TRD4.6",
+        "versao_modelo": "1.0",
+        "versao_regras":"0.1"
+    },
+    "grupo_estilo": [
+        {
+            "tipo_estilo": "Atributo incorreto",
+            "cor_rgb": "255,127,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo",
+            "cor_rgb": "255,189,127"
+        }
+    ],
+    "regras": [
+        {
+            "atributo": "acc",
+            "descricao": "acc - Preencher atributo",
+            "regra": "acc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "acc",
+            "descricao": "acc - Atributo incomum",
+            "regra": "acc in (2)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "srt",
+            "descricao": "srt - Preencher atributo",
+            "regra": "srt in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "srt",
+            "descricao": "srt - Atributo incorreto",
+            "regra": "srt not in (110,112,114)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "fun",
+            "descricao": "fun - Preencher atributo",
+            "regra": "fun in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "fun",
+            "descricao": "fun - Atributo incomum",
+            "regra": "fun not in (6)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "cda",
+            "descricao": "cda - Preencher atributo",
+            "regra": "cda in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l"
+            ]
+        },
+        {
+            "atributo": "cda",
+            "descricao": "cda - Atributo incomum",
+            "regra": "cda not in (1000)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l"
+            ]
+        },
+        {
+            "atributo": "hyp",
+            "descricao": "hyp - Preencher atributo",
+            "regra": "hyp in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l",
+                "mgcp.centroide_bh080_p",
+                "mgcp.centroide_bh130_p",
+                "mgcp.bh170_p"
+            ]
+        },
+        {
+            "atributo": "tid",
+            "descricao": "tid - Preencher atributo",
+            "regra": "tid in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l",
+                "centroide_ed010_p",
+                "centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "tid",
+            "descricao": "tid - Atributo incomum",
+            "regra": "tid in (1001)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l",
+                "centroide_ed010_p",
+                "centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "wst",
+            "descricao": "wst - Preencher atributo",
+            "regra": "wst in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l",
+                "mgcp.bh145_p"                
+            ]
+        },
+          {
+            "atributo": "wst",
+            "descricao": "wst - Atributo incomum",
+            "regra": "wst not in (998)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l"               
+            ]
+        },
+        {
+            "atributo": "wst",
+            "descricao": "wst - Atributo incomum",
+            "regra": "wst in (0)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.bh145_p"               
+            ]
+        },
+        {
+            "atributo": "wcc",
+            "descricao": "wcc - Preencher atributo",
+            "regra": "wcc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l"                
+            ]
+        },
+        {
+            "atributo": "wcc",
+            "descricao": "wcc - Atributo incomum",
+            "regra": "wcc not in (7)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_bh140_p",
+                "mgcp.bh140_l"                
+            ]
+        },
+        {
+            "atributo": "wid",
+            "descricao": "wid - Preencher atributo",
+            "regra": "wid is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.bh140_l",
+                "mgcp.bi020_l",
+                "mgcp.aq130_l",
+                "mgcp.aq040_l",
+                "mgcp.aq065_a",
+                "mgcp.aq040_a",
+                "mgcp.aq040_l",
+                "mgcp.aq065_p"
+            ]
+        },
+        {
+            "atributo": "scc",
+            "descricao": "scc - Preencher atributo",
+            "regra": "scc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "centroide_bh080_p"
+            ]
+        },
+        {
+            "atributo": "scc",
+            "descricao": "scc - Atributo incomum",
+            "regra": "scc not in (11)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "centroide_bh080_p"
+            ]
+        },
+        {
+            "atributo": "mcc",
+            "descricao": "mcc - Preencher atributo",
+            "regra": "mcc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.bi020_a",
+                "mgcp.bi020_l",
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "mcc",
+            "descricao": "mcc - Atributo incomum",
+            "regra": "mcc not in (104,21)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.bi020_a",
+                "mgcp.bi020_l",
+                "mgcp.bi020_p"
+            ]
+        },
+        {
+            "atributo": "mcc",
+            "descricao": "mcc - Atributo incomum",
+            "regra": "mcc not in (21)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "trs",
+            "descricao": "trs - Preencher atributo",
+            "regra": "trs in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.bi020_a",
+                "mgcp.bi020_l",
+                "mgcp.bi020_p",
+                "mgcp.aq130_a",
+                "mgcp.aq130_l",
+                "mgcp.aq130_l",
+                "mgcp.aq125_a",
+                "mgcp.aq125_p",
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "trs",
+            "descricao": "trs - Atributo incomum",
+            "regra": "trs not in (998,13)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.bi020_a",
+                "mgcp.bi020_l",
+                "mgcp.bi020_p"
+            ]
+        },
+        {
+            "atributo": "trs",
+            "descricao": "trs - Atributo incomum",
+            "regra": "trs not in (13)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.aq130_a",
+                "mgcp.aq130_l",
+                "mgcp.aq125_a",
+                "mgcp.aq125_p",
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "swt",
+            "descricao": "swt - Preencher atributo",
+            "regra": "swt in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.bh070_p"
+            ]
+        },
+        {
+            "atributo": "swt",
+            "descricao": "swt - Atributo incomum",
+            "regra": "swt not in (4)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.bh070_p"
+            ]
+        },
+        {
+            "atributo": "con",
+            "descricao": "con - Preencher atributo",
+            "regra": "con in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "con",
+            "descricao": "con - Atributo incomum",
+            "regra": "con in (35)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "sep",
+            "descricao": "sep - Preencher atributo",
+            "regra": "sep in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "sep",
+            "descricao": "sep - Atributo incomum",
+            "regra": "sep in (1001)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "hct",
+            "descricao": "hct - Preencher atributo",
+            "regra": "hct in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "loc",
+            "descricao": "loc - Preencher atributo",
+            "regra": "loc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ap030_l",
+                "mgcp.an010_l",
+                "mgcp.am070_a",
+                "mgcp.am070_p"
+            ]
+        },
+        {
+            "atributo": "loc",
+            "descricao": "loc - Atributo incomum",
+            "regra": "sep not in (44)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ap030_l",
+                "mgcp.an010_l",
+                "mgcp.am070_a",
+                "mgcp.am070_p"
+            ]
+        },
+        {
+            "atributo": "mes",
+            "descricao": "mes - Preencher atributo",
+            "regra": "mes in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "mes",
+            "descricao": "mes - Atributo incomum",
+            "regra": "mes in (1001)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "rst",
+            "descricao": "rst - Preencher atributo",
+            "regra": "rst in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ap030_l",
+                "mgcp.gb055_a",
+                "mgcp.gb045_a",
+                "mgcp.gb075_a",
+                "mgcp.gb030_p",
+                "mgcp.gb030_a",
+                "mgcp.bh070_l",
+                "mgcp.bh070_p"
+            ]
+        },
+        {
+            "atributo": "rst",
+            "descricao": "rst - Atributo incomum",
+            "regra": "rst in (8)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ap030_l"
+            ]
+        },
+        {
+            "atributo": "rst",
+            "descricao": "rst - Atributo incomum",
+            "regra": "rst not in (1)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.gb055_a",
+                "mgcp.gb045_a",
+                "mgcp.gb075_a",
+                "mgcp.gb030_p",
+                "mgcp.gb030_a"
+            ]
+        },
+        {
+            "atributo": "wtc",
+            "descricao": "wtc - Preencher atributo",
+            "regra": "wtc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ap030_l",
+                "mgcp.ap010_l",
+                "mgcp.ap050_l"
+            ]
+        },
+        {
+            "atributo": "wtc",
+            "descricao": "wtc - Atributo incomum",
+            "regra": "wtc not in (1)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ap030_l"               
+            ]            
+        },
+        {
+            "atributo": "wtc",
+            "descricao": "wtc - Atributo incomum",
+            "regra": "wtc not in (2)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ap010_l",
+                "mgcp.ap050_l"
+            ]            
+        },
+        {
+            "atributo": "gaw",
+            "descricao": "gaw - Preencher atributo",
+            "regra": "gaw is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "ltn",
+            "descricao": "ltn - Preencher atributo",
+            "regra": "ltn is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]            
+        },
+        {
+            "atributo": "rgc",
+            "descricao": "rgc - Preencher atributo",
+            "regra": "rgc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rgc",
+            "descricao": "rgc - Atributo incomum",
+            "regra": "rgc not in (3)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rir",
+            "descricao": "rir - Preencher atributo",
+            "regra": "rir in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rir",
+            "descricao": "rir - Atributo incomum",
+            "regra": "rir not in (1000)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rra",
+            "descricao": "rra - Preencher atributo",
+            "regra": "rra in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rra",
+            "descricao": "rra - Atributo incomum",
+            "regra": "rra not in (4)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rrc",
+            "descricao": "rrc - Preencher atributo",
+            "regra": "rrc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rrc",
+            "descricao": "rrc - Atributo incomum",
+            "regra": "rrc not in (33)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rta",
+            "descricao": "rta - Preencher atributo",
+            "regra": "rta in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rta",
+            "descricao": "rta - Atributo incomum",
+            "regra": "rta not in (1)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rwc",
+            "descricao": "rwc - Preencher atributo",
+            "regra": "rwc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "rwc",
+            "descricao": "rwc - Atributo incomum",
+            "regra": "rwc not in (2)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.an010_l"
+            ]
+        },
+        {
+            "atributo": "bac",
+            "descricao": "bac - Preencher atributo",
+            "regra": "bac in (0,9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_al020_p"
+            ]
+        },
+        {
+            "atributo": "fuc",
+            "descricao": "fuc - Preencher atributo",
+            "regra": "fuc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_al020_p"
+            ]
+        },
+        {
+            "atributo": "fuc",
+            "descricao": "fuc - Atributo incomum",
+            "regra": "fuc not in (19)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_al020_p"
+            ]
+        },
+        {
+            "atributo": "ord",
+            "descricao": "ord - Preencher atributo",
+            "regra": "ord in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_al020_p"
+            ]
+        },
+        {
+            "atributo": "azc",
+            "descricao": "azc - Preencher atributo",
+            "regra": "azc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh090_p"
+            ]
+        },
+        {
+            "atributo": "azc",
+            "descricao": "azc - Atributo incomum",
+            "regra": "azc not in (1000)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_bh090_p"
+            ]
+        },
+        {
+            "atributo": "cns",
+            "descricao": "cns - Preencher atributo",
+            "regra": "cns in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh090_p"
+            ]
+        },
+        {
+            "atributo": "cns",
+            "descricao": "cns - Atributo incomum",
+            "regra": "cns not in (1000)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_bh090_p"
+            ]
+        },
+        {
+            "atributo": "dmt",
+            "descricao": "dmt - Preencher atributo",
+            "regra": "dmt is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_ec030_p",
+                "mgcp.centroide_ea010_p",
+                "mgcp.centroide_ea040_p",
+                "mgcp.centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "dmt",
+            "descricao": "dmt - Atributo incorreto",
+            "regra": "dmt not in (25,51)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.centroide_ec030_p",
+                "mgcp.centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "dmt",
+            "descricao": "dmt - Atributo incorreto",
+            "regra": "dmt not in (24)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.centroide_ea010_p",
+                "mgcp.centroide_ea040_p"
+            ]
+        },
+        {
+            "atributo": "tre",
+            "descricao": "tre - Preencher atributo",
+            "regra": "tre in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_ec030_p",
+                "mgcp.centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "tre",
+            "descricao": "tre - Atributo incomum",
+            "regra": "tre not in (2)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_ec030_p",
+                "mgcp.centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "vsp",
+            "descricao": "vsp - Preencher atributo",
+            "regra": "vsp in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_ec030_p",
+                "mgcp.centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "vsp",
+            "descricao": "vsp - Atributo incomum",
+            "regra": "vsp not in (0)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_ec030_p"
+            ]
+        },
+        {
+            "atributo": "vsp",
+            "descricao": "vsp - Atributo incomum",
+            "regra": "vsp not in (8)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "veg",
+            "descricao": "veg - Preencher atributo",
+            "regra": "veg in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_eb010_p",
+                "mgcp.centroide_ed020_p"
+            ]
+        },
+        {
+            "atributo": "veg",
+            "descricao": "veg - Atributo incomum",
+            "regra": "veg not in (8,9)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_eb010_p"
+            ]
+        },
+        {
+            "atributo": "veg",
+            "descricao": "veg - Atributo incomum",
+            "regra": "veg not in (50)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_ed020_p"
+            ]
+        },        
+        {
+            "atributo": "dmb",
+            "descricao": "dmb - Preencher atributo",
+            "regra": "dmb in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_eb020_p"
+            ]
+        },
+        {
+            "atributo": "dmb",
+            "descricao": "dmb - Atributo incorreto",
+            "regra": "dmb not in (25,51)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.centroide_eb020_p"
+            ]
+        },
+        {
+            "atributo": "csp",
+            "descricao": "csp - Preencher atributo",
+            "regra": "csp in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_ea010_p",
+                "mgcp.centroide_ea040_p"
+            ]
+        },
+        {
+            "atributo": "csp",
+            "descricao": "csp - Atributo incomum",
+            "regra": "csp not in (0)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_ea010_p",
+                "mgcp.centroide_ea040_p"
+            ]
+        },
+        {
+            "atributo": "ffp",
+            "descricao": "ffp - Preencher atributo",
+            "regra": "ffp in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_ea010_p"
+            ]
+        },
+        {
+            "atributo": "ffp",
+            "descricao": "ffp - Atributo incomum",
+            "regra": "ffp not in (2)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_ea010_p"
+            ]
+        },
+        {
+            "atributo": "ffm",
+            "descricao": "ffm - Preencher atributo",
+            "regra": "ffm in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_ea010_p"
+            ]
+        },
+        {
+            "atributo": "ffm",
+            "descricao": "ffm - Atributo incomum",
+            "regra": "ffm not in (3)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_ea010_p"
+            ]
+        },
+        {
+            "atributo": "boc",
+            "descricao": "boc - Preencher atributo",
+            "regra": "boc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_bh015_p"
+            ]
+        },
+        {
+            "atributo": "boc",
+            "descricao": "boc - Atributo incomum",
+            "regra": "boc not in (14)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_bh015_p"
+            ]
+        },
+        {
+            "atributo": "smc",
+            "descricao": "smc - Preencher atributo",
+            "regra": "smc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.centroide_da010_p",
+                "mgcp.ak040_a",
+                "mgcp.ak040_p"
+            ]
+        },
+        {
+            "atributo": "smc",
+            "descricao": "smc - Atributo incomum",
+            "regra": "smc not in (104)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.centroide_da010_p"
+            ]
+        },
+        {
+            "atributo": "hgt",
+            "descricao": "hgt - Preencher atributo",
+            "regra": "hgt is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ab000_a",
+                "mgcp.ak160_a",
+                "mgcp.ak160_p",
+                "mgcp.al015_a",
+                "mgcp.al015_p",
+                "mgcp.al015_a",
+                "mgcp.al015_p",
+                "mgcp.at030_l"
+            ]
+        },
+        {
+            "atributo": "hgt",
+            "descricao": "hgt - Atributo incorreto",
+            "regra": "hgt != -32767",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.ab000_a",
+                "mgcp.ak160_a",
+                "mgcp.ak160_p",
+                "mgcp.al015_a",
+                "mgcp.al015_p",
+                "mgcp.al015_a",
+                "mgcp.al015_p",
+                "mgcp.at030_l"
+            ]
+        },
+        {
+            "atributo": "pby",
+            "descricao": "pby - Preencher atributo",
+            "regra": "pby in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ab000_a"
+            ]
+        },
+        {
+            "atributo": "pby",
+            "descricao": "pby - Atributo incomum",
+            "regra": "pby not in (0)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.ab000_a"
+            ]
+        },
+        {
+            "atributo": "voi",
+            "descricao": "voi - Preencher atributo",
+            "regra": "voi is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "voi",
+            "descricao": "voi - Atributo incorreto",
+            "regra": "hgt not in (UNK)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.*"
+            ]
+        },
+        {
+            "atributo": "rel",
+            "descricao": "rel - Preencher atributo",
+            "regra": "rel in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.al030_a",
+                "mgcp.al030_p"
+            ]
+        },
+        {
+            "atributo": "cct",
+            "descricao": "cct - Preencher atributo",
+            "regra": "cct in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.ak160_a",
+                "mgcp.ak160_p"
+            ]
+        },
+        {
+            "atributo": "ffn",
+            "descricao": "ffn - Preencher atributo",
+            "regra": "ffn in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.al015_a",
+                "mgcp.al015_p",
+                "mgcp.al010_a"
+            ]
+        },
+        {
+            "atributo": "ffn",
+            "descricao": "ffn - Atributo incomum",
+            "regra": "ffn not in (0)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.al015_a",
+                "mgcp.al015_p"
+            ]
+        },
+        {
+            "atributo": "ffn",
+            "descricao": "ffn - Atributo incorreto",
+            "regra": "ffn in (0,999)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.al010_a"
+            ]
+        },
+        {
+            "atributo": "tuc",
+            "descricao": "tuc - Preencher atributo",
+            "regra": "tuc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aq125_a",
+                "mgcp.aq125_p"
+            ]
+        },
+        {
+            "atributo": "tuc",
+            "descricao": "tuc - Atributo incomum",
+            "regra": "tuc not in (26)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.aq125_a",
+                "mgcp.aq125_p"
+            ]
+        },
+        {
+            "atributo": "mzn",
+            "descricao": "mzn - Preencher atributo",
+            "regra": "mzn in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aa010_a",
+                "mgcp.aa010_p"
+            ]
+        },
+        {
+            "atributo": "mzn",
+            "descricao": "mzn - Atributo incomum",
+            "regra": "mzn not in (6)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.aa010_a",
+                "mgcp.aa010_p"
+            ]
+        },
+        {
+            "atributo": "ppo",
+            "descricao": "ppo - Preencher atributo",
+            "regra": "ppo in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aa010_a",
+                "mgcp.aa010_p",
+                "mgcp.am070_a",
+                "mgcp.am070_p",
+                "mgcp.ac030_a",
+                "mgcp.ac030_p"
+            ]
+        },
+        {
+            "atributo": "ssc",
+            "descricao": "ssc - Preencher atributo",
+            "regra": "ssc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.am070_a",
+                "mgcp.am070_p"
+            ]
+        },
+        {
+            "atributo": "ttc",
+            "descricao": "ttc - Preencher atributo",
+            "regra": "ttc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.al241_p"
+            ]
+        },
+        {
+            "atributo": "cab",
+            "descricao": "cab - Preencher atributo",
+            "regra": "cab in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.at042_l"
+            ]
+        },
+        {
+            "atributo": "tos",
+            "descricao": "tos - Preencher atributo",
+            "regra": "tos in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.at042_l"
+            ]
+        },
+        {
+            "atributo": "tos",
+            "descricao": "tos - Atributo incomum",
+            "regra": "tos not in (1)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.at042_l"
+            ]
+        },
+        {
+            "atributo": "caa",
+            "descricao": "caa - Preencher atributo",
+            "regra": "caa in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb005_a"
+            ]
+        },
+        {
+            "atributo": "caa",
+            "descricao": "caa - Atributo incomum",
+            "regra": "caa not in (16)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.gb005_a"
+            ]
+        },
+        {
+            "atributo": "cod",
+            "descricao": "cod - Preencher atributo",
+            "regra": "cod in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb005_a"
+            ]
+        },
+        {
+            "atributo": "fpt",
+            "descricao": "fpt - Preencher atributo",
+            "regra": "fpt in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb005_a"
+            ]
+        },
+        {
+            "atributo": "iko",
+            "descricao": "iko - Preencher atributo",
+            "regra": "iko is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb005_a"
+            ]
+        },
+        {
+            "atributo": "iko",
+            "descricao": "iko - Atributo incorreto",
+            "regra": "iko != N_A",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.gb005_a"
+            ]
+        },
+        {
+            "atributo": "zva",
+            "descricao": "zva - Preencher atributo",
+            "regra": "zva is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb005_a",
+                "mgcp.gb055_a",
+                "mgcp.gb030_a"
+            ]
+        },
+        {
+            "atributo": "zva",
+            "descricao": "zva - Atributo incomum",
+            "regra": "zva != -32767",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.gb005_a",
+                "mgcp.gb055_a",
+                "mgcp.gb030_a"
+            ]
+        },
+        {
+            "atributo": "aoo",
+            "descricao": "aoo - Preencher atributo",
+            "regra": "aoo is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb055_a",
+                "mgcp.aq065_p"
+            ]
+        },
+        {
+            "atributo": "len",
+            "descricao": "len - Preencher atributo",
+            "regra": "len is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb055_a"
+            ]
+        },
+        {
+            "atributo": "prm",
+            "descricao": "prm - Preencher atributo",
+            "regra": "prm in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb055_a"
+            ]
+        },
+        {
+            "atributo": "prm",
+            "descricao": "prm - Atributo incomum",
+            "regra": "prm in (1000)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.gb055_a"
+            ]
+        },
+        {
+            "atributo": "sfs",
+            "descricao": "sfs - Preencher atributo",
+            "regra": "sfs in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb055_a",
+                "mgcp.gb045_a",
+                "mgcp.gb075_a"
+            ]
+        },
+        {
+            "atributo": "sfs",
+            "descricao": "sfs - Atributo incomum",
+            "regra": "sfs not in (3)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.gb055_a",
+                "mgcp.gb045_a",
+                "mgcp.gb075_a"
+            ]
+        },
+        {
+            "atributo": "haf",
+            "descricao": "haf - Preencher atributo",
+            "regra": "haf in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.gb030_a"
+            ]
+        },
+        {
+            "atributo": "bot",
+            "descricao": "bot - Preencher atributo",
+            "regra": "bot in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "bot",
+            "descricao": "bot - Atributo incomum",
+            "regra": "bot not in (17)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "bsc",
+            "descricao": "bsc - Preencher atributo",
+            "regra": "bsc in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "bsc",
+            "descricao": "bsc - Atributo incomum",
+            "regra": "bsc not in (15)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "nos",
+            "descricao": "nos - Preencher atributo",
+            "regra": "nos is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "nos",
+            "descricao": "nos - Atributo incorreto",
+            "regra": "nos != -32767",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "ohb",
+            "descricao": "ohb - Preencher atributo",
+            "regra": "ohb is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "ohb",
+            "descricao": "ohb - Atributo incorreto",
+            "regra": "ohb != -32767",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "wd1",
+            "descricao": "wd1 não pode ser valor NULL",
+            "regra": "wd1 is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "mgcp.aq040_a",
+                "mgcp.aq040_l"
+            ]
+        },
+        {
+            "atributo": "wd1",
+            "descricao": "wd1 maior que wid",
+            "regra": "wd1 > wid",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.aq040_l",
+                "mgcp.aq040_a"
+            ]
+        },
+        {
+            "atributo": "txt",
+            "descricao": "txt incorreto",
+            "regra": "txt != 'Sovereign Territory'",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "mgcp.zd020_a"
+            ]
+        }
+    ]
+}
