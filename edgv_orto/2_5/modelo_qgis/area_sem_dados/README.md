@@ -1,10 +1,10 @@
-# EDGV 3.0 Topo 1.3: Models QGIS Via Deslocamento
+# EDGV 3.0 Orto: Models QGIS Area Sem Dados
 
 ------------------------------------
 
-Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
+Modelos construídos para a produção EDGV 3.0 Orto versão 2.5, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
 
-## Classes utilizadas
+## Classes recebidas via SAP/ Classes utilizadas****
 - moldura;
 - centroide_area_sem_dados_p
 - centroide_elemento_hidrografico_p
@@ -14,17 +14,68 @@ Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de pr
 - elemnat_ilha_p
 - elemnat_sumidouro_vertedouro_p
 - delimitador_area_sem_dados_l
-- delimitador_elemento_hidrografico_l
-- delimitador_massa_dagua_l
+- delimitador_elemento_hidrografico_l - snap
+- delimitador_massa_dagua_l - snap
 - elemnat_curva_nivel_l
-- elemnat_elemento_hidrografico_l
-- elemnat_trecho_drenagem_l
-- infra_barragem_l
-- infra_ferrovia_l *
-- infra_via_deslocamento_l *
+- elemnat_elemento_hidrografico_l - snap
+- elemnat_trecho_drenagem_l - snap
+- infra_barragem_l - snap
+- infra_ferrovia_l - snap
+- infra_via_deslocamento_l - snap
 - elemnat_terreno_sujeito_inundacao_a 
 - infra_barragem_a
 
+## Classes Area sem Dados
+- centroide_area_sem_dados_p --> sem atributos
+- delimitador_area_sem_dados_l --> sem atributos
+- *** llp_area_sem_dados_a --> gerado temporariamente 
+
+## Consideracoes
+--> subfases anteriores
+    --> ferrovia
+        --> "infra_ferrovia_l" nao pode cruzar "delimitador_area_sem_dados_l"
+        --> "infra_ferrovia_l" pode sobrepor "delimitador_area_sem_dados_l" (vertices compativeis)?
+    --> via deslocamento
+        --> "infra_via_deslocamento_l" nao pode cruzar "delimitador_area_sem_dados_l"
+        --> "infra_via_deslocamento_l" pode sobrepor "delimitador_area_sem_dados_l" (vertices compativeis) ? 
+    --> hidrografia
+        --> tipo ponto 
+            --> centroides diferentes de "centroide_area_sem_dados" nao podem estar dentro de area_sem_dados (poligono de area sem dados construido temporariamente p verificacao)
+            --> somente 1 centroide "centroide_area_sem_dados_p" dentro de area sem dados
+        --> tipo linha
+            --> elementos tipo linha nao podem cruzar "delimitador_area_sem_dados_l"
+    --> curva de nivel
+        --> "elemnat_curva_nivel_l" nao pode cruzar area sem dados
+
+--> Processings para area sem dados
+    --> 1 Manipulação preliminar de geometrias ☑
+    --> 2 Identificar geometrias invalidas e angulos pequenos ☑
+    --> 3 Unir linhas com mesmo conjunto de atributos ☑
+    --> 4 Identificar linhas entrelaçadas ☑
+    --> 5 Limpeza suave das linhas ☑
+    --> 6 Identifica problemas de construção entre geometrias ☑
+    --> 7 Corrige compartilhamento de vértices entre camadas ☑
+    --> 8 Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices ☑
+    --> 9 Snap Hierárquico --> ☑
+    ["delimitador_elemento_hidrografico_l", "delimitador_massa_dagua_l", "elemnat_elemento_hidrografico_l", "elemnat_trecho_drenagem_l", 
+    "infra_ferrovia_l", "infra_via_deslocamento_l", ]
+    --> 10 Identificar geometrias inválidas e angulos pequenos entre camadas pós snap --> verificar
+    --> 11 Limpeza completa das linhas ☑
+    --> 12 Identifica problemas de construção entre geometrias pós limpeza completa ☑
+    --> 13 Simplificação de Douglas-Peucker ☑
+    --> 14 Identifica problemas de compartilhamento de vértices ☑
+    --> 15 Identificar geometrias com densidade incorreta de vértices ☑
+    --> 16 Identificar undershoot com moldura e conexao de linhas ☑
+    --> 17 Identificar Z ☑
+    --> 18 Identificar overlaps dentro da mesma camada ☑
+    --> 19 Identificar linhas segmentadas com mesmo conjunto de atributos ☑
+    --> 20 Identificar pontas soltas e linhas nao segmentadas transportes ☑
+    --> 21 Identificar pontas soltas pequenas nas linhas ☑
+    --> 22 Identificar erros na construção das redes rodoviárias e ferroviárias
+    --> 23 Linha para multilinha ☒
+    --> 24 Identificar erros de ortografia no atributo nome ☒
+    --> 25 Identificar erros de atributação ☒
+    --> 26 Identificar erros de relacionamentos espaciais ☑ - consideracoes das subfases
 
 ### Expressão para capturar todas as geometrias carregadas
 
