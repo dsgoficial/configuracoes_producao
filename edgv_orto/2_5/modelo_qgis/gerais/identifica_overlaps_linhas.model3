@@ -188,7 +188,7 @@
   <Option name="help"/>
   <Option name="internal_version" type="QString" value="Version1"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" type="QString" value="CDGV_EDGV_Topo"/>
+  <Option name="model_group" type="QString" value="CDGV_EDGV_Orto"/>
   <Option name="model_name" type="QString" value="Identificar overlaps dentro da mesma camada"/>
   <Option name="outputGroup" type="QString" value=""/>
   <Option name="outputOrder"/>

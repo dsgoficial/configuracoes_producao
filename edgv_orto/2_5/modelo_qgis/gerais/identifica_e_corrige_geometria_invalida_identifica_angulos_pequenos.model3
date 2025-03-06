@@ -316,7 +316,7 @@
   <Option name="help"/>
   <Option value="Version1" name="internal_version" type="QString"/>
   <Option name="modelVariables"/>
-  <Option value="CDGV_EDGV_Topo" name="model_group" type="QString"/>
+  <Option value="CDGV_EDGV_Orto" name="model_group" type="QString"/>
   <Option value="Identifica e corrige geometria inválida / Identifica ângulos pequenos / Identifica ângulos pequenos entre camadas" name="model_name" type="QString"/>
   <Option value="" name="outputGroup" type="QString"/>
   <Option name="outputOrder"/>

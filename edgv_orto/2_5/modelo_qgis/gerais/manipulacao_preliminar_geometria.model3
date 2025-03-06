@@ -334,7 +334,7 @@
   <Option name="help"/>
   <Option value="Version2" name="internal_version" type="QString"/>
   <Option name="modelVariables"/>
-  <Option value="CDGV_EDGV_Topo" name="model_group" type="QString"/>
+  <Option value="CDGV_EDGV_Orto" name="model_group" type="QString"/>
   <Option value="manipulacao_preliminar_geometria" name="model_name" type="QString"/>
   <Option value="" name="outputGroup" type="QString"/>
   <Option name="outputOrder"/>
