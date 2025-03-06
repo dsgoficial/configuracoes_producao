@@ -64,7 +64,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 1. Manipulação preliminar de geometrias
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/manipulacao_preliminar_geometria.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/manipulacao_preliminar_geometria.model3
 - camadas: todas as camadas carregadas;
 - processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
@@ -72,7 +72,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 2. Identifica geometrias inválidas (com correção) e ângulos pequenos
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus);
 - camadas: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -82,7 +82,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 3. Unir linhas com mesmo conjunto de atributos
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/unir_linhas_com_mesmo_conjunto_de_atributos.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/unir_linhas_com_mesmo_conjunto_de_atributos.model3
 - processos utilizados: Unir linhas com mesmo conjunto de atributos
 - camada: todas as camadas do tipo linha carregadas;
 - nome camada flags: não aponta flags;
@@ -93,28 +93,27 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 4. Identificar linhas entrelaçadas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_rodovias_entrelacadas.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identifica_limites_entrelacados.model3
 - processos utilizados: Identify Intertwined Lines;
-- camada: infra_via_deslocamento_l;
-- nome camada flags: flags_linhas_entrelacadas;
+- camada: delimitador_limite_especial_l, llp_limite_legal_l;
+- nome camada flags: flags_linhas_entrelacadas_limite_especial, flags_linhas_entrelacadas_limite_legal;
 - admite falsos positivos? Não;
 - para após a execução? Somente se tiver flags;
 - Texto para tooltip: O operador deve corrigir manualmente linhas que se entrelaçam. Normalmente, tais problemas são de digitalização.
   
 ### 5. Limpeza Suave das Linhas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/limpeza_suave_linhas.model3
-- processos utilizados: Clean geometries (1e-6) / Remove small lines (1e-5) / Remove Duplicated Features;
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/limpeza_suave_linhas.model3
+- processos utilizados: Clean geometries (1e-6) / Remove small lines (1e-5)
 - camada: todas as linhas;
 - nome camada flags: não há;
 - admite falsos positivos? Não é o caso;
 - nome da camada de saída: saida_clean_flags
 - para após a execução? Sim
-- Texto para tooltip: 
   
 ### 6. Identifica problemas de construção entre geometrias
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
 - processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
 - obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
 - camada: todas as camadas;

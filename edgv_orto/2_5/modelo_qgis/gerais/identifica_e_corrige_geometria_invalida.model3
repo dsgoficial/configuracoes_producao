@@ -181,7 +181,7 @@
   </Option>
   <Option type="QString" name="internal_version" value="Version1"/>
   <Option name="modelVariables"/>
-  <Option type="QString" name="model_group" value="CDGV_EDGV_Topo"/>
+  <Option type="QString" name="model_group" value="CDGV_EDGV_Orto"/>
   <Option type="QString" name="model_name" value="Identifica e corrige geometria inválida"/>
   <Option type="QString" name="outputGroup" value=""/>
   <Option name="outputOrder"/>

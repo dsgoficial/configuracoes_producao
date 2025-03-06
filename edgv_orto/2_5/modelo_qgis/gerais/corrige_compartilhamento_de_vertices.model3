@@ -305,7 +305,7 @@
   <Option name="help"/>
   <Option type="QString" value="Version2" name="internal_version"/>
   <Option name="modelVariables"/>
-  <Option type="QString" value="CDGV_EDGV_Topo" name="model_group"/>
+  <Option type="QString" value="CDGV_EDGV_Orto" name="model_group"/>
   <Option type="QString" value="Corrige compartilhamento de vértices entre camadas" name="model_name"/>
   <Option type="QString" value="" name="outputGroup"/>
   <Option name="outputOrder"/>

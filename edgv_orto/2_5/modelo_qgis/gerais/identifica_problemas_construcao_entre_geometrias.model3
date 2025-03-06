@@ -539,8 +539,8 @@
       </Option>
       <Option value="moldura" name="component_description" type="QString"/>
       <Option value="41.99999999999994" name="component_height" type="double"/>
-      <Option value="116.19810201660732" name="component_pos_x" type="double"/>
-      <Option value="497.32147093712933" name="component_pos_y" type="double"/>
+      <Option value="153.19810201660732" name="component_pos_x" type="double"/>
+      <Option value="550.3214709371293" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" name="id" type="QString"/>
