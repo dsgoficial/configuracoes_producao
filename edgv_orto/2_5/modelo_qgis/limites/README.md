@@ -121,13 +121,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
   
 ### 7. Corrige compartilhamento de vértices entre camadas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/corrige_compartilhamento_de_vertices.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/corrige_compartilhamento_de_vertices.model3
 - processos utilizados: Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias
 - obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
 - camada: todas as camadas;
 - nome camada flags: não é o caso
 
-### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
+### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices*****************
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
