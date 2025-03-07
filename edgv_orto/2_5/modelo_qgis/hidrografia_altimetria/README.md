@@ -30,7 +30,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 1. Manipulação preliminar de geometrias: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / Identificar feições com unicode inválido;
 2. Identificação e correção de geometrias inválidas e ângulos pequenos: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos;
 3. União de linhas com mesmo conjunto de atributos: Unir linhas de mesmo conjunto de atributos;
-4. Identificação de drenagens entrelaçadas: Identificar drenagens entrelaçadas;
+4. Identificação de linhas entrelaçadas (Todas);
 5. Limpeza suave das linhas: Limpeza topológica suave (1e-6) / Remover elementos pequenos (1e-5 - 1m);
 6. Identificação de problemas de construção entre geometrias: Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
 7. Correção de compartilhamento de vértices entre camadas: Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
@@ -40,28 +40,32 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 11. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós snap: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
 12. Limpeza completa das linhas: Limpeza topológica completa (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
 13. Identificação de problemas de construção entre geometrias pós limpeza completa: Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
-14. Simplificação de Douglas-Peucker: Suavização de Douglas-Peucker / Unir linhas;
+14. Simplificação de Douglas-Peucker: Suavização de Douglas-Peucker;
 15. Identificação de problemas de compartilhamento de vértices: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
 16. Identificar geometrias com densidade incorreta de vértices;
 17. Identificar undershoot com moldura e conexão de linhas;
 18. Identificar Z;
 19. Identificar overlaps;
-20. Identificar linhas segmentadas com mesmo conjunto de atributos;
-21. Identificar linhas não segmentadas nas intersecções;
-22. Identificar elementos pequenos na rede de drenagem;
-23. Identificar erros na construção da rede de drenagem;
-24. Identificar erros na construção das curvas de nível;
-25. Identificar erros de validação do terreno;
-26. Identificar pontas soltas em delimitadores de corpos d'água;
-27. Fechar Polígonos de Massa D'água;
-28. Identificar pontas soltas em delimitadores de elementos hidrográficos;
-29. Fechar polígonos de elementos hidrográficos e construir ilhas;
-30. Realizar o direcionamento da rede de drenagem;
-31. Identificar intersecções inválidas entre curvas de nível e drenagens;
-32. Identificar inconsistências entre curvas de nível e drenagens;
-33. Identificar erros de ortografia nos atributos;
-34. Identificar erros de atributação;
-35. Identificar erros de relacionamentos espaciais.
+20. Identificar linhas não segmentadas nas intersecções;
+21. Unir delimitadores / barragem / elemento_hidrografico_l / curva_nivel;
+22. Identificar pontas soltas em delimitadores de corpos d'água;
+23. Fechar Polígonos de Massa D'água;
+24. Identificar pontas soltas em delimitadores de elementos hidrográficos;
+25. Fechar polígonos de elementos hidrográficos e construir ilhas;
+26. Corrigir atributação dentro_de_poligono nas drenagens;
+27. Unir drenagens;
+28. Identificar elementos pequenos na rede de drenagem;
+29. Identificar erros na construção da rede de drenagem;
+30. Identificar linhas segmentadas com mesmo conjunto de atributos;
+31. Realizar o direcionamento da rede de drenagem;
+32. Identificar erros de fluxo de drenagem com outros elementos da rede hidrográfica;
+33. Identificar erros na construção das curvas de nível;
+34. Identificar erros de validação do terreno;
+35. Identificar intersecções inválidas entre curvas de nível e drenagens;
+36. Identificar inconsistências entre curvas de nível e drenagens;
+37. Identificar erros de ortografia nos atributos;
+38. Identificar erros de atributação;
+39. Identificar erros de relacionamentos espaciais.
 
 ## Detalhamento dos processos
 
@@ -275,10 +279,10 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 ### 24. Identificação de erros na construção das curvas de nível
 
 - arquivos:
-    - /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_na_construcao_das_curvas_de_nivel_100k.model3
+  - /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_na_construcao_das_curvas_de_nivel_100k.model3
 - camadas: elemnat_curva_nivel_l
 - equidistancias:
-    - 100k: 40
+  - 100k: 40
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
 - nome camada flags: flags_modelo_p, flags_modelo_l, flags_modelo_a
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
