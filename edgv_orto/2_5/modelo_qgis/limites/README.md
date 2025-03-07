@@ -55,10 +55,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 19. Identificar linhas segmentadas com mesmo conjunto de atributos;
 20. Identificar linhas não segmentadas nas intersecções;
 21. Identificar pontas soltas pequenas nas linhas;
-22. Linha para multilinha;
-23. Identificar erros de ortografia nos atributos;
-24. Identificar erros de atributação;
-25. Identificar erros de relacionamentos espaciais.
+22. Identificar erros de ortografia nos atributos;
+23. Identificar erros de atributação;
+24. Identificar erros de relacionamentos espaciais.
 
 ## Detalhamento dos processos
 
@@ -127,9 +126,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as camadas;
 - nome camada flags: não é o caso
 
-### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices*****************
+### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
 - camadas: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -137,15 +136,14 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 9. Snap
+### 9. Snap*****************
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/snap_hierarquico_via_deslocamento.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/snap_limites.model3
 - processos utilizados: Snap
-- configuração do snap hierárquico: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/snap_hierarquico_via_deslocamento.json
   
 ### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas pós snap
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
 - camadas: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -155,7 +153,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 11. Limpeza completa das linhas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/limpeza_completa_linhas.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/limpeza_completa_linhas.model3
 - processos utilizados: Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
 - camada: todas as linhas;
 - nome camada flags: não há;
@@ -168,7 +166,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 12: Identifica problemas de construção entre geometrias pós limpeza completa
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
 - processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
 - obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
 - camada: todas as camadas;
@@ -176,31 +174,32 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 13. Simplificação de Douglas-Peucker
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/simplificacao_linhas.model3
-- processos utilizados: Topological Douglas/Unir linhas;
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/simplificacao_linhas.model3
+- processos utilizados: Topological Douglas (1e-5/1e-5) / Unir linhas;
 - camada: todas as linhas;
 - nome camada flags: não há;
 - admite falsos positivos? Não é o caso;
-- nome da camada de saída: flags_suavizacao
+- nome da camada de saída: flags_simplificacao
 - para após a execução? Sim
 - Texto para tooltip: 
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
 ### 14: Identifica problemas de compartilhamento de vértices
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_problemas_compartilhamento_vertices.model3
-- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_problemas_compartilhamento_vertices.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vértice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+- camada: todas as linhas;
 - nome camada flags: flag_geometrias_invalidas,flag_vertices_proximo_arestas,flag_vertices_nao_compartilhados_interseccoes,flag_vertice_nao_compartilhado_em_seg_compartilhado, flag_linha_nao_seccionada_na_interseccao
 - Texto para tooltip: Todas as feições devem compartilhar vértices, logo, onde for apontado erro, deve-se adicionar o vértice nas linhas que possuem intersecção ponto ou linha.
 
 ### 15: Identificar geometrias com densidade incorreta de vértices
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_geometrias_com_densidade_incorreta_de_vertices.model3
+- arquivo: /configuracoes_producao/edgv_orto\2_5\modelo_qgis\gerais\identifica_geometrias_com_densidade_incorreta_de_vertices.model3
 - camadas: todas as camadas carregadas;
 - tol: 0.00001 grau
 - nome camada flags: flag_densidade_incorreta_vertices
 
-### 16. Identificar undershoot com moldura e conexão de linhas
+### 16. Identificar undershoot com moldura e conexão de linhas**********
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_undershoot_moldura_conexao_linhas.model3
 - camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
@@ -245,21 +244,14 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - tamanho: 5 m (0.00005 grau)
 - nome camada flags: flags_pontas_soltas_pequenas
 
-### 22. Linha para multilinha
-
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/linha_para_multilinha_rodovia.model3;
-- camadas: infra_via_deslocamento_l
-- nome saida: multilinha
-- para após a execução? Sim
-
-### 23. Identificar erros de ortografia no atributo nome
+### 22. Identificar erros de ortografia no atributo nome
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3;
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
-### 24. Identificar erros de atributação
+### 23. Identificar erros de atributação
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erros_atributacao.model3
 - camadas: todas;
@@ -267,7 +259,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada de flags: flags_erros_atributos
 - nome camada de saída: atributos_incomuns
 
-### 25. Identificar erros de relacionamentos espaciais
+### 24. Identificar erros de relacionamentos espaciais
 
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_erros_relacionamentos_espaciais_transportes.model3
 - camadas: todas;
