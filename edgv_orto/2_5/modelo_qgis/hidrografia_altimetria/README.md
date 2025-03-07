@@ -137,7 +137,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camadas: todas as camadas de hidrografia e altimetria carregadas;
 - processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
-- nome camadas flags: flags_unicode_invalido_ponto,flags_unicode_invalido_linha,flags_unicode_invalido_poligono
+- nome camadas flags: flags_unicode_invalido_p,flags_unicode_invalido_l,flags_unicode_invalido_a
 
 ### 9. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
 
