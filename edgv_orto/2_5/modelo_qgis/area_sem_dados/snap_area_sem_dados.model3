@@ -1,0 +1,478 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="dsgtools:batchrunalgorithm_1" type="Map">
+      <Option name="active" value="false" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="632" type="double"/>
+        <Option name="component_pos_y" value="178" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Batch Run Algorithm" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="946" type="double"/>
+      <Option name="component_pos_y" value="227" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:batchrunalgorithm_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:snaplayeronlayer" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="PARAMETER_DICT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&#xa;  &quot;area_units&quot;: &quot;m2&quot;,&#xa;  &quot;distance_units&quot;: &quot;meters&quot;,&#xa;  &quot;ellipsoid&quot;: &quot;EPSG:7030&quot;,&#xa;  &quot;inputs&quot;: {&#xa;    &quot;BEHAVIOR&quot;: 0,&#xa;    &quot;BUILD_CACHE&quot;: false,&#xa;    &quot;INPUT&quot;: &quot;postgres://dbname='DSGTools_Testes' host=localhost port=5432 user='postgres' password='admin' key='id' checkPrimaryKeyUnicity='1' table=\&quot;edgv\&quot;.\&quot;delimitador_area_sem_dados_l\&quot; (geom)&quot;,&#xa;    &quot;REFERENCE_LAYER&quot;: &quot;postgres://dbname='DSGTools_Testes' host=localhost port=5432 user='postgres' password='admin' key='id' checkPrimaryKeyUnicity='1' table=\&quot;edgv\&quot;.\&quot;delimitador_massa_dagua_l\&quot; (geom)&quot;,&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;TOLERANCE&quot;: 1e-05&#xa;  }&#xa;}" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:snaplayeronlayer_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:snaplayeronlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="311" type="double"/>
+        <Option name="component_pos_y" value="132" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Snap para delimitador_massa_dagua_l" type="QString"/>
+      <Option name="component_height" value="42" type="double"/>
+      <Option name="component_pos_x" value="140" type="double"/>
+      <Option name="component_pos_y" value="83" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:snaplayeronlayer_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BEHAVIOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BUILD_CACHE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_area_sem_dados_l_f7f14207_2fd1_40c5_ae1e_4fca8538a982" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="REFERENCE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_massa_dagua_l_82bec9d5_1b4e_495a_bbd2_cf3062889050" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1e-06" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:snaplayeronlayer_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:snaplayeronlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="438" type="double"/>
+        <Option name="component_pos_y" value="241" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Snap para infra_via_deslocamento_l" type="QString"/>
+      <Option name="component_height" value="42" type="double"/>
+      <Option name="component_pos_x" value="531" type="double"/>
+      <Option name="component_pos_y" value="315" type="double"/>
+      <Option name="component_width" value="210" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:snaplayeronlayer_5" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:snaplayeronlayer_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BEHAVIOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BUILD_CACHE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_area_sem_dados_l_f7f14207_2fd1_40c5_ae1e_4fca8538a982" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="REFERENCE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="infra_via_deslocamento_l_5f287b6b_7873_4d60_824a_c776c220cd04" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1e-06" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:snaplayeronlayer_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:snaplayeronlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="546" type="double"/>
+        <Option name="component_pos_y" value="414" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Snap para infra_ferrovia_l" type="QString"/>
+      <Option name="component_height" value="42" type="double"/>
+      <Option name="component_pos_x" value="586" type="double"/>
+      <Option name="component_pos_y" value="435" type="double"/>
+      <Option name="component_width" value="218.00000000000003" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:snaplayeronlayer_2" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:snaplayeronlayer_3" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BEHAVIOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BUILD_CACHE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_area_sem_dados_l_f7f14207_2fd1_40c5_ae1e_4fca8538a982" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="REFERENCE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="infra_ferrovia_l_6995a00c_bc10_4f88_89e5_8927844abdc1" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1e-06" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:snaplayeronlayer_4" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:snaplayeronlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="649" type="double"/>
+        <Option name="component_pos_y" value="517" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Snap para elemnat_trecho_drenagem_l" type="QString"/>
+      <Option name="component_height" value="53" type="double"/>
+      <Option name="component_pos_x" value="154" type="double"/>
+      <Option name="component_pos_y" value="310.5" type="double"/>
+      <Option name="component_width" value="236" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:snaplayeronlayer_6" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:snaplayeronlayer_4" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BEHAVIOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BUILD_CACHE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_area_sem_dados_l_f7f14207_2fd1_40c5_ae1e_4fca8538a982" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="REFERENCE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="elemnat_trecho_drenagem_l_89c03b95_e946_42c9_9d86_239128316e7e" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1e-06" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:snaplayeronlayer_5" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:snaplayeronlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="708" type="double"/>
+        <Option name="component_pos_y" value="640" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Snap para elemnat_elemento_hidrografico_l" type="QString"/>
+      <Option name="component_height" value="56.00000000000001" type="double"/>
+      <Option name="component_pos_x" value="164" type="double"/>
+      <Option name="component_pos_y" value="423" type="double"/>
+      <Option name="component_width" value="254" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:snaplayeronlayer_4" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:snaplayeronlayer_5" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BEHAVIOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BUILD_CACHE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_area_sem_dados_l_f7f14207_2fd1_40c5_ae1e_4fca8538a982" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="REFERENCE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="elemnat_elemento_hidrografico_l_976b3d27_9fe3_4b4a_93ed_acbcc9a62bba" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1e-06" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:snaplayeronlayer_6" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:snaplayeronlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="874" type="double"/>
+        <Option name="component_pos_y" value="797" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Snap para delimitador_elemento_hidrografico_l" type="QString"/>
+      <Option name="component_height" value="50" type="double"/>
+      <Option name="component_pos_x" value="164.5" type="double"/>
+      <Option name="component_pos_y" value="200" type="double"/>
+      <Option name="component_width" value="251" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:snaplayeronlayer_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:snaplayeronlayer_6" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BEHAVIOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BUILD_CACHE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_area_sem_dados_l_f7f14207_2fd1_40c5_ae1e_4fca8538a982" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="REFERENCE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="delimitador_elemento_hidrografico_l_cecadb9a_ac12_4b31_8021_8c5984ba9afe" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1e-06" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="internal_version" value="Version2" type="QString"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="CDGV_EDGV_Topo" type="QString"/>
+  <Option name="model_name" value="Snap Area sem Dados" type="QString"/>
+  <Option name="outputGroup" value="" type="QString"/>
+  <Option name="outputOrder"/>
+  <Option name="parameterDefinitions"/>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>

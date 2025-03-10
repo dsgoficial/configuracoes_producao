@@ -1,8 +1,10 @@
-# EDGV 3.0 Orto: Models QGIS Area sem Dados
+# EDGV 3.0 Orto: Models QGIS Area Sem Dados
 
-Modelos construídos para a produção EDGV 3.0 Orto, de acordo com os parâmetros definidos pelo GT Carta Ortoimagem.
+------------------------------------
 
-## Classes recebidas via SAP
+Modelos construídos para a produção EDGV 3.0 Orto versão 2.5, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
+
+## Classes recebidas via SAP/ Classes utilizadas****
 - moldura;
 - elemnat_toponimo_fisiografico_natural_p
 - llp_aglomerado_rural_p
@@ -10,157 +12,290 @@ Modelos construídos para a produção EDGV 3.0 Orto, de acordo com os parâmetr
 - llp_nome_local_p
 - elemnat_toponimo_fisiografico_natural_l
 
-## Classes Area sem Dados
-- centroide_area_sem_dados_p --> sem atributos
-- delimitador_area_sem_dados_l --> sem atributos
--*** llp_area_sem_dados_a --> gerado temporariamente --> 
-
 ## Consideracoes
---> subfases anteriores
-    --> ferrovia
-        --> "infra_ferrovia_l" nao pode cruzar "delimitador_area_sem_dados_l"
-        --> "infra_ferrovia_l" pode sobrepor "delimitador_area_sem_dados_l" (vertices compativeis)?
-    --> via deslocamento
-        --> "infra_via_deslocamento_l" nao pode cruzar "delimitador_area_sem_dados_l"
-        --> "infra_via_deslocamento_l" pode sobrepor "delimitador_area_sem_dados_l" (vertices compativeis) ? 
-    --> hidrografia
-        --> tipo ponto 
-            --> centroides diferentes de "centroide_area_sem_dados" nao podem estar dentro de area_sem_dados (poligono de area sem dados construido temporariamente p verificacao)
-            --> somente 1 centroide "centroide_area_sem_dados_p" dentro de area sem dados
-        --> tipo linha
-            --> elementos tipo linha nao podem cruzar "delimitador_area_sem_dados_l"
-    --> curva de nivel
-        --> "elemnat_curva_nivel_l" nao pode cruzar area sem dados
 
 --> Processings para area sem dados
-    --> 1 Identificar geometrias invalidas ("delimitador_area_sem_dados_l")
-    --> 2 Identificar geometrias com mais de uma parte ("delimitador_area_sem_dados_l")
-    --> 3 Identificar feicoes duplicadas ("delimitador_area_sem_dados_l")
-    --> 4 Rotinas validade geometrica ("delimitador_area_sem_dados_l")
-    --> 5? Identificar vertice nao compartilhado nas intersecoes ("delimitador_area_sem_dados_l") 
-    --> 6? Identificar vertice nao compartilhado nos segmentos compartilhados ("delimitador_area_sem_dados_l")
-    --> 7? Identificar vertice proximo de aresta ("delimitador_area_sem_dados_l")
-    --> 8 Identificar geometrias com densidade incorreta de vertices ("delimitador_area_sem_dados_l")
-    --> 9 Identificar angulos pequenos ("delimitador_area_sem_dados_l")
-    --> 10 Identificar angulos pequenos entre camadas ("delimitador_area_sem_dados_l")
-    --> 11 Identificar Z ("delimitador_area_sem_dados_l")
-    --> 12 Rotina validade de vertices ("delimitador_area_sem_dados_l")
-    --> 13 Identificar overlaps dentro da mesma camada ("delimitador_area_sem_dados_l")
-    --> 14 Identificar undershoot com moldura e conexao de linhas ("delimitador_area_sem_dados_l")
-    --> 15 Identificar linhas segmentadas com mesmo conjunto de atributos ("delimitador_area_sem_dados_l")
-    --> 16? Identificar linhas nao segmentadas nas intersecoes ("delimitador_area_sem_dados_l") é o caso? verificar se isso nao vai segmentar o delimitador de area sem dados
-    --> 17 Identificar elementos pequenos na rede
-    --> 18? Identificar erros na construcao?
-    --> 19 Identificar erros de relacionamentos espaciais
+    
+    VERIFICACOES PADRAO
+    --> 1 Manipulação preliminar de geometrias ☑
+    --> 2 Identificar geometrias invalidas e angulos pequenos ☑
+    --> 3 Unir linhas com mesmo conjunto de atributos ☑
+    --> 4 Identificar linhas entrelaçadas ☑ --> VERIFICAR CAMADAS QUE ENTRAM
+    --> 5 Limpeza suave das linhas ☑
+    --> 6 Identifica problemas de construção entre geometrias ☑
+    --> 7 Corrige compartilhamento de vértices entre camadas ☑
+    --> 8 Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices 
+        |_ Verificar MODEL
+    
+    SNAP
+    --> 9 Snap de delimitador_area_sem_dados_l--> ☑
+        ["delimitador_elemento_hidrografico_l","delimitador_massa_dagua_l", "elemnat_elemento_hidrografico_l","elemnat_trecho_drenagem_l","infra_ferrovia_l","infra_via_deslocamento_l"]
+    
+    VERIFICACOES POS SNAP
+    --> 10 Identificar geometrias inválidas e angulos pequenos entre camadas pós snap
+        |_ Verificar MODEL
+    --> 11 Limpeza completa das linhas ☑
+    --> 12 Identifica problemas de construção entre geometrias pós limpeza completa ☑
+    --> 13 Simplificação de Douglas-Peucker ☑
+        14 --> Identificar geometrias inválidas e ângulos pequenos entre camadas pós douglas peucker
+            |_ Verificar MODEL
+    --> 15 Identifica problemas de compartilhamento de vértices ☑
+    --> 16 Identificar geometrias com densidade incorreta de vértices ☑
+    --> 17 Identificar undershoot com moldura e conexao de linhas ☑
+    --> 18 Identificar Z ☑
+    --> 19 Identificar overlaps dentro da mesma camada ☑
+    --> 20 Identificar linhas segmentadas com mesmo conjunto de atributos ☑
+    
+    IDENTIFICAR PONTAS SOLTAS ANTES DE CONSTRUIR POLIGONO
+    --> 21 Identificar pontas soltas pequenas nas linhas ☑
+    --> 22 Identificar erros de ortografia no atributo nome ☑
+    --> 23 Identificar erros de atributação ☑
+    
+    CONSTRUIR POLIGONO
+    --> 24 Construir poligono area sem dados e verificar flags
 
-Organização dos dados:
+### Expressão para capturar todas as geometrias carregadas
 
-## 1. Identificar geometrias inválidas
-- arquivo: identifica_geometrias_invalidas_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- nome camada flags: geometrias_invalidas
+```
+array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))
+```
 
-## 2. Identificar geometrias com mais de uma parte
-- arquivo: identifica_multipart_transportes_carta_orto.model3
-- camadas ponto: nenhuma
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- camadas poligono: nenhuma
-- nome camada flags: geometrias_multipart_l
+## Ordem dos processos
 
-## 3. Identificar feições duplicadas
-- arquivo: identifica_feicoes_duplicadas_transportes_carta_orto.model3
-- camadas ponto: nenhuma
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- camadas poligono: nenhuma
-- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
-- nome camada flags: feicoes_duplicadas_l
+1. Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
+2. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos;
+3. Unir linhas de mesmo conjunto de atributos;
+4. Identificar linhas entrelaçadas;
+5. Limpeza topológica (1e-6) / Remover elementos pequenos (1e-5 - 1m);
+6. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
+7. Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
+8. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+9. Snap Hierárquico;
+10. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+11. Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
+12. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
+13. Suavização de Douglas-Peucker / Unir linhas;
+14. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+15. Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+16. Identificar geometrias com densidade incorreta de vértices;
+17. Identificar undershoot com moldura e conexão de linhas;
+18. Identificar Z;
+19. Identificar overlaps;
+20. Identificar linhas segmentadas com mesmo conjunto de atributos;
+21. Identificar pontas soltas pequenas nas linhas;
+22. Identificar erros de ortografia nos atributos;
+23. Identificar erros de atributação;
+24. Construir poligonos a partir de centros e linhas;
 
-## 4. Rotinas validade geométrica
-- arquivo: rotinas_validade_geometrica_transportes.model3
-- descrição: rotina que consolida as rotinas 1 a 3. Serve para rodar fora do workflow ou encapsular em alguns casos do workflow.
-- nome camada flags: flags_validade_geometrica_p,flags_validade_geometrica_l,flags_validade_geometrica_a
+## Detalhamento dos processos
 
-## 5. Identificar vérfice não compartilhado nas intersecções
-- arquivo: identifica_vertice_nao_compartilhado_nas_interseccoes_transportes_carta_orto.model3
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- camadas poligono: nenhuma
-- nome camada flags: flag_vertice_nao_compartilhado
+### 1. Manipulação preliminar de geometrias
 
-## 6. Identificar vérfice não compartilhado nos segmentos compartilhados
-- arquivo: identifica_vertice_nao_compartilhado_nos_segmentos_compartilhados_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- tol: 0.00001 grau
-- nome camada flags: flag_vertice_nao_compartilhado_em_seg_compartilhado
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/manipulacao_preliminar_geometria.model3
+- camadas: todas as camadas carregadas;
+- processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+- nome camadas flags: flags_unicode_invalido_ponto,flags_unicode_invalido_linha,flags_unicode_invalido_poligono
 
-## 7. Identificar vérfice próximo de aresta
-- arquivo: identifica_vertice_proximo_de_aresta_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- tol: 0.00001 grau
-- nome camada flags: flag_vertice_proximo_aresta
+### 2. Identifica geometrias inválidas (com correção) e ângulos pequenos
 
-## 8. Identificar geometrias com densidade incorreta de vértices
-- arquivo: identifica_geometrias_com_densidade_incorreta_de_vertices_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus);
+- camadas: todas as camadas carregadas;
+- nome camada flags: flags_geometrias_invalidas
+- admite falsos positivos? Não.
+- para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
+
+### 3. Unir linhas com mesmo conjunto de atributos
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/unir_linhas_com_mesmo_conjunto_de_atributos.model3
+- processos utilizados: Unir linhas com mesmo conjunto de atributos
+- camada: todas as camadas do tipo linha carregadas;
+- nome camada flags: não aponta flags;
+- admite falsos positivos? Não é o caso;
+- para após a execução? Não.
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+- Texto para tooltip: O algoritmo une linhas com mesmo conjunto de atributos.
+
+### 4. Identificar linhas entrelaçadas de delimitador de area sem dados
+
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/area_sem_dados/identifica_linhas_entrelacadas_delimitador_area_sem_dados_l.model3
+- processos utilizados: Identify Intertwined Lines;
+- camada: delimitador_area_sem_dados_l;
+- nome camada flags: flags_linhas_entrelacadas;
+- admite falsos positivos? Não;
+- para após a execução? Somente se tiver flags;
+- Texto para tooltip: O operador deve corrigir manualmente linhas que se entrelaçam. Normalmente, tais problemas são de digitalização.
+  
+### 5. Limpeza Suave das Linhas
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/limpeza_suave_linhas.model3
+- processos utilizados: Clean geometries (1e-6) / Remove small lines (1e-5) / Remove Duplicated Features;
+- camada: todas as linhas;
+- nome camada flags: não há;
+- admite falsos positivos? Não é o caso;
+- nome da camada de saída: saida_clean_flags
+- para após a execução? Sim
+- Texto para tooltip: 
+  
+### 6. Identifica problemas de construção entre geometrias
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
+- processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
+- obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
+- camada: todas as camadas;
+- nome camada flags: flags_p, flags_l, flags_a
+  
+### 7. Corrige compartilhamento de vértices entre camadas
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/corrige_compartilhamento_de_vertices.model3
+- processos utilizados: Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias
+- obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
+- camada: todas as camadas;
+- nome camada flags: não é o caso
+
+### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
+- camadas: todas as camadas carregadas;
+- nome camada flags: flags_geometrias_invalidas
+- admite falsos positivos? Não.
+- para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
+
+### 9. Snap do Delimitador de Area sem Dados
+
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/area_sem_dados/snap_area_sem_dados.model3
+- camadas: delimitador_area_sem_dados_l, delimitador_massa_dagua_l, delimitador_elemento_hidrografico_l, elemnat_elemento_hidrografico_l, elemnat_trecho_drenagem_l, infra_ferrovia_l, infra_via_deslocamento_l
+- processos utilizados: snap layer on layer
+  
+### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas pós snap
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
+- camadas: todas as camadas carregadas;
+- nome camada flags: flags_geometrias_invalidas
+- admite falsos positivos? Não.
+- para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
+
+### 11. Limpeza completa das linhas
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/limpeza_completa_linhas.model3
+- processos utilizados: Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
+- camada: todas as linhas;
+- nome camada flags: não há;
+- admite falsos positivos? Não é o caso;
+- nome da camada de saída: saida_clean
+- para após a execução? Sim
+- Texto para tooltip: 
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+- para após a execução? Sim
+
+### 12: Identifica problemas de construção entre geometrias pós limpeza completa
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
+- processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
+- obs: fluxo genérico para atender diversas etapas de produção (atende os casos de ponto, linha e polígono)
+- camada: todas as camadas;
+- nome camada flags: flags_p, flags_l, flags_a
+
+### 13. Simplificação de Douglas-Peucker
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/simplificacao_linhas.model3
+- processos utilizados: Topological Douglas/Unir linhas;
+- camada: todas as linhas;
+- nome camada flags: não há;
+- admite falsos positivos? Não é o caso;
+- nome da camada de saída: flags_suavizacao
+- para após a execução? Sim
+- Texto para tooltip: 
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+
+### 14. Identificar geometrias inválidas e ângulos pequenos entre camadas pós Douglas-Peucker
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
+- camadas: todas as camadas carregadas;
+- nome camada flags: flags_geometrias_invalidas
+- admite falsos positivos? Não.
+- para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
+
+### 15: Identifica problemas de compartilhamento de vértices
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_problemas_compartilhamento_vertices.model3
+- processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+- nome camada flags: flag_geometrias_invalidas,flag_vertices_proximo_arestas,flag_vertices_nao_compartilhados_interseccoes,flag_vertice_nao_compartilhado_em_seg_compartilhado, flag_linha_nao_seccionada_na_interseccao
+- Texto para tooltip: Todas as feições devem compartilhar vértices, logo, onde for apontado erro, deve-se adicionar o vértice nas linhas que possuem intersecção ponto ou linha.
+
+### 16: Identificar geometrias com densidade incorreta de vértices
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_geometrias_com_densidade_incorreta_de_vertices.model3
+- camadas: todas as camadas carregadas;
 - tol: 0.00001 grau
 - nome camada flags: flag_densidade_incorreta_vertices
 
-## 9. Identificar ângulos pequenos
-- arquivo: identifica_angulos_pequenos_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- tol: 10 graus
-- nome camada flags: flag_angulo_pequeno
+### 17. Identificar undershoot com moldura e conexão de linhas
 
-## 10. Identificar ângulos pequenos entre camadas
-- descrição: Identifica ângulos pequenos entre camadas.
-- arquivo: identifica_angulos_pequenos_entre_camadas_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- tol: 10 graus
-- nome camada flags: flag_angulo_pequeno_entre_camadas
-
-## 11. Identificar Z
-- arquivo: identifica_z_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- nome camada flags: flag_z
-
-## 12. Rotinas validade de vértices
-- arquivo: rotinas_validade_de_vertices_transportes.model3
-- descrição: rotina que consolida as rotinas 5 a 11. Serve para rodar fora do workflow ou encapsular em alguns casos do workflow.
-- nome camada flags: flags_validade_vertices_p
-
-## 13. Identificar overlaps dentro da mesma camada
-- arquivo: identifica_overlaps_linhas_transportes_carta_orto.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
-- nome camada flags: flags_overlaps_l
-
-## 14. Identificar undershoot com moldura e conexão de linhas
-- arquivo: identifica_undershoot_moldura_conexao_linhas_transportes.model3
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_undershoot_moldura_conexao_linhas.model3
+- camadas linha: todas as camadas do tipo linha
 - camadas poligono: nenhuma
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 - nome camada flags: flags_undershoot_l
+- pode admitir falso positivo? sim
 
-## 15. Identificar linhas segmentadas com mesmo conjunto de atributos
-- arquivo: identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+### 18. Identificar Z
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_z.model3
+- camadas: todas carregadas
+- nome camada flags: flag_z
+
+
+### 19. Identificar overlaps dentro da mesma camada
+
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_overlaps_linhas.model3
+- camadas: todas
+- nome camada flags: flags_overlaps_l
+
+
+### 20. Identificar linhas não unidas com mesmo conjunto de atributos
+
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identificar_linhas_nao_unidas_com_mesmo_atributo.model3
+- camadas: todas as camadas do tipo linha
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
-- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
 - nome camada flags: flags_linhas_nao_unidas
 
-## 16. Identificar linhas não segmentadas nas intersecções
-- arquivo: identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
-- camadas: infra_ferrovia_l,infra_via_deslocamento_l
-- nome camada flags: flags_elem_rede_nao_segmentados
+### 21. Identificar pontas soltas pequenas nos delimitadores de area sem dados
 
-## 17. Identificar elementos pequenos na rede
-- arquivo: identificar_elementos_pequenos_na_rede.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/area_sem_dados/identificar_pontas_soltas_pequenas_delimitador_area_sem_dados_l.model3
 - camadas do pontas livre de primeira ordem: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
 - raio de busca: 1000 m (0.01 grau)
 - tamanho: 5 m (0.00005 grau)
-- nome camada flags: flags_linhas_pequenas
+- nome camada flags: flags_pontas_soltas_pequenas
 
-## 18. Identificar erros na construção das redes de rodoviárias e ferroviárias
-- arquivo: identificar_erros_rede_drenagem.model3
-- camadas: infra_via_deslocamento_l, infra_ferrovia_l
-- camadas filtro linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l
-- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf"]
-- nome camada flags: flags_redes_transporte
+### 22. Identificar erros de ortografia no atributo nome
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3;
+- camadas: todas;
+- para após a execução? Sim
+- nome camada de saída: saida_verifica_ortografia_nome
+
+### 23. Identificar erros de atributação
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erros_atributacao.model3
+- camadas: todas;
+- para após a execução? Sim
+- nome camada de flags: flags_erros_atributos
+- nome camada de saída: atributos_incomuns
+
+### 24. Construir poligonos de Area sem Dados
+
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/area_sem_dados/construcao_de_poligonos_area_sem_dados.model3
+- camada de pontos: centroide_area_sem_dados_p;
+- camada de linhas: delimitador_area_sem_dados_l;
+- processos utilizados: Build Polygons From Center Points and Boundaries 
+- nome camada de flags: flags_ponto, flags_linha
