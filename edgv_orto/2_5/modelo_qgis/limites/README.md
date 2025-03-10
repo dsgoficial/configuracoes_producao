@@ -57,23 +57,22 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 21. Identificar pontas soltas pequenas nas linhas;
 22. Identificar erros de ortografia nos atributos;
 23. Identificar erros de atributação;
-24. Identificar erros de relacionamentos espaciais.
 
 ## Detalhamento dos processos
 
 ### 1. Manipulação preliminar de geometrias
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/manipulacao_preliminar_geometria.model3
-- camadas: todas as camadas carregadas;
+- camada: todas as camadas carregadas;
 - processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
-- nome camadas flags: flags_unicode_invalido_ponto,flags_unicode_invalido_linha,flags_unicode_invalido_poligono
+- nome camada flags: flags_unicode_invalido_ponto,flags_unicode_invalido_linha,flags_unicode_invalido_poligono
 
 ### 2. Identifica geometrias inválidas (com correção) e ângulos pequenos
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus);
-- camadas: todas as camadas carregadas;
+- camada: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
 - admite falsos positivos? Não.
 - para após a execução? Somente se tiver flags.
@@ -130,7 +129,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
-- camadas: todas as camadas carregadas;
+- camada: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
 - admite falsos positivos? Não.
 - para após a execução? Somente se tiver flags.
@@ -145,7 +144,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
-- camadas: todas as camadas carregadas;
+- camada: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
 - admite falsos positivos? Não.
 - para após a execução? Somente se tiver flags.
@@ -194,15 +193,17 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 15: Identificar geometrias com densidade incorreta de vértices
 
-- arquivo: /configuracoes_producao/edgv_orto\2_5\modelo_qgis\gerais\identifica_geometrias_com_densidade_incorreta_de_vertices.model3
-- camadas: todas as camadas carregadas;
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_geometrias_com_densidade_incorreta_de_vertices.model3
+- processos utilizados: identify geometries with large vertex density algorithm (1e-05);
+- camada: todas as camadas carregadas;
 - tol: 0.00001 grau
 - nome camada flags: flag_densidade_incorreta_vertices
 
-### 16. Identificar undershoot com moldura e conexão de linhas**********
+### 16. Identificar undershoot com moldura e conexão de linhas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_undershoot_moldura_conexao_linhas.model3
-- camadas linha: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_undershoot_moldura_conexao_linhas.model3
+- processos utilizados: identify dangles (1e-5);
+- camadas linha: delimitador_limite_especial_l, llp_limite_legal_l;
 - camadas poligono: nenhuma
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 - nome camada flags: flags_undershoot_l
@@ -210,57 +211,59 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 17. Identificar Z
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_z.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_z.model3
+- processos utilizados: identify z angles between features (300°)
 - camadas: todas carregadas
 - nome camada flags: flag_z
 
 
 ### 18. Identificar overlaps dentro da mesma camada
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_overlaps_linhas.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_overlaps_linhas.model3
+- processos utilizados: identify overlaps
 - camadas: todas
 - nome camada flags: flags_overlaps_l
 
 
 ### 19. Identificar linhas segmentadas com mesmo conjunto de atributos
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_transportes.model3
-- camadas: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_limites_carta_orto.model3
+- processos utilizados: Identify Unmerged Lines With Same Attribute Set
+- camadas: delimitador_limite_especial_l, llp_limite_legal_l;
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 - nome camada flags: flags_linhas_nao_unidas
 
-### 20. Identificar pontas soltas e linhas não segmentadas transportes
+### 20. Identificar pontas soltas e linhas não segmentadas limites
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identificar_linhas_nao_segmentadas_nas_interseccoes_transportes.model3
-- camadas: infra_ferrovia_l,infra_via_deslocamento_l
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identificar_linhas_nao_segmentadas_nas_interseccoes_limites.model3
+- processos utilizados: identify dangles (1e-5);
+- camadas: delimitador_limite_especial_l,llp_limite_legal_l;
 - nome camada flags: flags_elem_rede_nao_segmentados
 
 ### 21. Identificar pontas soltas pequenas nas linhas
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identificar_pontas_soltas_pequenas_transportes.model3
-- camadas do pontas livre de primeira ordem: infra_ferrovia_l,infra_mobilidade_urbana_l,infra_travessia_hidroviaria_l,infra_via_deslocamento_l
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identificar_pontas_soltas_pequenas_limites.model3
+- processos utilizados: identify small first order dangles;
+- camadas do pontas livre de primeira ordem: delimitador_limite_especial_l,llp_limite_legal_l;
 - raio de busca: 1000 m (0.01 grau)
 - tamanho: 5 m (0.00005 grau)
 - nome camada flags: flags_pontas_soltas_pequenas
 
 ### 22. Identificar erros de ortografia no atributo nome
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3;
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3
+- processos utilizados: spell checker;
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
 ### 23. Identificar erros de atributação
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erros_atributacao.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identifica_erros_atributacao_limites.model3
+- processos utilizados: Assign Format Rules to Layers, Rule Statistics;
+- arquivo de regras de atributação para limites: /configuracoes_producao/edgv_orto/2_5/regra_atributacao/edgv_3_orto_2_5/limites.json
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de flags: flags_erros_atributos
 - nome camada de saída: atributos_incomuns
-
-### 24. Identificar erros de relacionamentos espaciais
-
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/identifica_erros_relacionamentos_espaciais_transportes.model3
-- camadas: todas;
-- nome camada de flags: flags_ponto,flags_linha
