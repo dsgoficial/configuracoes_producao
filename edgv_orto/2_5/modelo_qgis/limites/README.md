@@ -135,10 +135,11 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 9. Snap*****************
+### 9. Snap
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/snap_limites.model3
-- processos utilizados: Snap
+- processos utilizados: Snap Layer On Layer;
+- camadas: delimitador_limite_especial_l, llp_limite_legal_l, delimitador_elemento_hidrografico_l, elemnat_elemento_hidrografico_l, delimitador_massa_dagua_l, elemnat_trecho_drenagem_l, infra_barragem_l, infra_ferrovia_l, infra_via_deslocamento_l;
   
 ### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas pós snap
 
