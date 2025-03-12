@@ -32,40 +32,40 @@ Modelos construídos para a produção EDGV 3.0 Orto versão 2.5, na linha de pr
 ## Models utilizados para criação do Workflow
     
 - VERIFICAÇÕES PADRÃO INICIAIS
-    1. Manipulação preliminar de geometrias 
-    2. Identificar geometrias invalidas e angulos pequenos
-    3. Unir linhas com mesmo conjunto de atributos 
-    4. Identificar linhas entrelaçadas
-    5. Limpeza suave das linhas 
-    6. Identifica problemas de construção entre geometrias 
-    7. Corrige compartilhamento de vértices entre camadas 
-    8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices 
+    + Manipulação preliminar de geometrias 
+    + Identificar geometrias invalidas e angulos pequenos
+    + Unir linhas com mesmo conjunto de atributos
+    + Identificar linhas entrelaçadas
+    + Limpeza suave das linhas
+    + Identifica problemas de construção entre geometrias
+    + Corrige compartilhamento de vértices entre camadas
+    + Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices 
     
 - SNAP
-    9. Snap de delimitador_area_sem_dados_l 
+    + Snap de delimitador_area_sem_dados_l 
     
 - VERIFICAÇÕES PADRÃO PÓS SNAP
-    10. Identificar geometrias inválidas e angulos pequenos entre camadas pós snap 
-    11. Limpeza completa das linhas 
-    12. Identifica problemas de construção entre geometrias pós limpeza completa 
-    13. Simplificação de Douglas-Peucker 
-    14. Identificar geometrias inválidas e ângulos pequenos entre camadas pós douglas peucker
-    15. Identifica problemas de compartilhamento de vértices 
-    16. Identificar geometrias com densidade incorreta de vértices 
-    17. Identificar undershoot com moldura e conexao de linhas 
-    18. Identificar Z
-    19. Identificar overlaps dentro da mesma camada 
-    20. Identificar linhas segmentadas com mesmo conjunto de atributos 
+    + Identificar geometrias inválidas e angulos pequenos entre camadas pós snap
+    + Limpeza completa das linhas
+    + Identifica problemas de construção entre geometrias pós limpeza completa
+    + Simplificação de Douglas-Peucker
+    + Identificar geometrias inválidas e ângulos pequenos entre camadas pós douglas peucker
+    + Identifica problemas de compartilhamento de vértices
+    + Identificar geometrias com densidade incorreta de vértices
+    + Identificar undershoot com moldura e conexao de linhas
+    + Identificar Z
+    + Identificar overlaps dentro da mesma camada
+    + Identificar linhas segmentadas com mesmo conjunto de atributos 
     
 - IDENTIFICAR PONTAS SOLTAS ANTES DE CONSTRUIR POLIGONO
-    21. Identificar pontas soltas pequenas nas linhas 
+    + Identificar pontas soltas pequenas nas linhas 
     
 - VERIFICAÇÕES DE ATRIBUTO
-    22. Identificar erros de ortografia no atributo nome 
-    23. Identificar erros de atributação 
+    + Identificar erros de ortografia no atributo nome
+    + Identificar erros de atributação 
     
 - CONSTRUIR POLIGONO
-    24. Construir poligono area sem dados e verificar flags
+    + Construir poligono area sem dados e verificar flags
 
 ### Expressão para capturar todas as geometrias carregadas
 
