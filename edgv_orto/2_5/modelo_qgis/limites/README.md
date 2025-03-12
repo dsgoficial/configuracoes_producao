@@ -34,29 +34,31 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ## Ordem dos processos
 
-1. Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
+1. Manipulação preliminar de geometrias: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / Identificar feições com unicode inválido;
 2. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos;
 3. Unir linhas de mesmo conjunto de atributos;
 4. Identificar linhas entrelaçadas;
-5. Limpeza topológica (1e-6) / Remover elementos pequenos (1e-5 - 1m);
+5. Limpeza Suave das Linhas;
 6. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
 7. Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
-8. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
-9. Snap;
-10. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
-11. Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
-12. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
-13. Suavização de Douglas-Peucker / Unir linhas;
-14. Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
-15. Identificar geometrias com densidade incorreta de vértices;
-16. Identificar undershoot com moldura e conexão de linhas;
-17. Identificar Z;
-18. Identificar overlaps;
-19. Identificar linhas segmentadas com mesmo conjunto de atributos;
-20. Identificar linhas não segmentadas nas intersecções;
-21. Identificar pontas soltas pequenas nas linhas;
-22. Identificar erros de ortografia nos atributos;
-23. Identificar erros de atributação;
+8. Manipulação preliminar de geometrias: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / Identificar feições com unicode inválido;
+9. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+10. Snap;
+11. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+12. Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
+13. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
+14. Suavização de Douglas-Peucker / Unir linhas;
+15. Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+16. Identificar geometrias com densidade incorreta de vértices;
+17. Identificar undershoot com moldura e conexão de linhas;
+18. Identificar Z;
+19. Identificar overlaps;
+20. Identificar linhas segmentadas com mesmo conjunto de atributos;
+21. Identificar linhas não segmentadas nas intersecções;
+22. Identificar pontas soltas pequenas nas linhas;
+23. Construção de polígonos (centróide/linha);
+24. Identificar erros de ortografia nos atributos;
+25. Identificar erros de atributação;
 
 ## Detalhamento dos processos
 
