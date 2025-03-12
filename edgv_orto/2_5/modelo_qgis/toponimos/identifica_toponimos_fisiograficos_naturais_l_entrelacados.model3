@@ -176,7 +176,7 @@
   <Option name="help"/>
   <Option name="internal_version" value="Version2" type="QString"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" value="CDGV_EDGV_Topo" type="QString"/>
+  <Option name="model_group" value="CDGV_EDGV_Orto" type="QString"/>
   <Option name="model_name" value="Identifica toponimos fisiograficos naturais linha entrelaçados" type="QString"/>
   <Option name="outputGroup" value="" type="QString"/>
   <Option name="outputOrder"/>
