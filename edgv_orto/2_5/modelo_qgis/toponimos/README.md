@@ -19,30 +19,30 @@ Modelos construídos para a produção EDGV 3.0 Orto versão 2.5, na linha de pr
 ## Models utilizados para criação do Workflow
     
 - VERIFICAÇÕES PADRÃO INICIAIS
-    1. Manipulação preliminar de geometrias 
-    2. Identificar geometrias invalidas e angulos pequenos 
-    3. Unir linhas com mesmo conjunto de atributos 
-    4. Identificar linhas entrelaçadas
-    5. Limpeza suave das linhas 
-    6. Identifica problemas de construção entre geometrias 
-    7. Corrige compartilhamento de vértices entre camadas 
-    8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
-    9. Limpeza completa das linhas 
-    10. Identifica problemas de construção entre geometrias pós limpeza completa 
-    11. Simplificação de Douglas-Peucker 
-    12. Identificar geometrias inválidas e ângulos pequenos entre camadas pós douglas peucker
-    13. Identificar geometrias com densidade incorreta de vértices 
-    14. Identificar undershoot com moldura e conexao de linhas 
-    15. Identificar Z
-    16. Identificar overlaps dentro da mesma camada 
-    17. Identificar linhas segmentadas com mesmo conjunto de atributos 
+    + Manipulação preliminar de geometrias
+    + Identificar geometrias invalidas e angulos pequenos
+    + Unir linhas com mesmo conjunto de atributos
+    + Identificar linhas entrelaçadas
+    + Limpeza suave das linhas
+    + Identifica problemas de construção entre geometrias
+    + Corrige compartilhamento de vértices entre camadas
+    + Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
+    + Limpeza completa das linhas
+    + Identifica problemas de construção entre geometrias pós limpeza completa
+    + Simplificação de Douglas-Peucker
+    + Identificar geometrias inválidas e ângulos pequenos entre camadas pós douglas peucker
+    + Identificar geometrias com densidade incorreta de vértices
+    + Identificar undershoot com moldura e conexao de linhas
+    + Identificar Z
+    + Identificar overlaps dentro da mesma camada
+    + Identificar linhas segmentadas com mesmo conjunto de atributos 
     
 - VERIFICAÇÕES DE ATRIBUTO
-    18. Identificar erros de ortografia no atributo nome 
-    19. Identificar erros de atributação 
+    + Identificar erros de ortografia no atributo nome
+    + Identificar erros de atributação 
     
 - VERIFICAÇÃO DE RELACIONAMENTO ESPACIAL
-    20. Identificar erros de relacionamentos espaciais
+    + Identificar erros de relacionamentos espaciais
 
 ### Expressão para capturar todas as geometrias carregadas
 
