@@ -35,20 +35,20 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 ## Ordem dos processos
 
 1. Manipulação preliminar de geometrias: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / Identificar feições com unicode inválido;
-2. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos;
-3. Unir linhas de mesmo conjunto de atributos;
-4. Identificar linhas entrelaçadas;
-5. Limpeza Suave das Linhas;
-6. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
-7. Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
+2. Identificação e correção de geometrias inválidas e ângulos pequenos: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos;
+3. União de linhas com mesmo conjunto de atributos: Unir linhas de mesmo conjunto de atributos;
+4. Identificar linhas entrelaçadas para limites;
+5. Limpeza suave das linhas: Limpeza topológica suave (1e-6) / Remover elementos pequenos (1e-5 - 1m);
+6. Identificação de problemas de construção entre geometrias: Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
+7. Correção de compartilhamento de vértices entre camadas: Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
 8. Manipulação preliminar de geometrias: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / Identificar feições com unicode inválido;
-9. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+9. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
 10. Snap;
-11. Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
-12. Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
-13. Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
-14. Suavização de Douglas-Peucker / Unir linhas;
-15. Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
+11. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós snap: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
+12. Limpeza completa das linhas: Limpeza topológica completa (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
+13. Identificação de problemas de construção entre geometrias pós limpeza completa: Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
+14. Simplificação de Douglas-Peucker: Suavização de Douglas-Peucker;
+15. Identificação de problemas de compartilhamento de vértices: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vérfice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
 16. Identificar geometrias com densidade incorreta de vértices;
 17. Identificar undershoot com moldura e conexão de linhas;
 18. Identificar Z;
@@ -56,7 +56,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 20. Identificar linhas segmentadas com mesmo conjunto de atributos;
 21. Identificar linhas não segmentadas nas intersecções;
 22. Identificar pontas soltas pequenas nas linhas;
-23. Construção de polígonos (centróide/linha);
+23. Construção de polígonos (centróide/linha) de área especial 'llp_area_especial_a';
 24. Identificar erros de ortografia nos atributos;
 25. Identificar erros de atributação;
 
@@ -72,7 +72,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 2. Identifica geometrias inválidas (com correção) e ângulos pequenos
 
-- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_entre_camadas.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus);
 - camada: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -127,9 +127,17 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as camadas;
 - nome camada flags: não é o caso
 
-### 8. Identificar geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
+### 8. Manipulação preliminar de geometrias
 
-- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/manipulacao_preliminar_geometria.model3
+- camada: todas as camadas carregadas;
+- processos utilizados: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / identify features with invalid unicode;
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
+- nome camada flags: flags_unicode_invalido_ponto,flags_unicode_invalido_linha,flags_unicode_invalido_poligono
+
+### 9. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices
+
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_entre_camadas.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
 - camada: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -137,15 +145,15 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 9. Snap
+### 10. Snap
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/snap_limites.model3
 - processos utilizados: Snap Layer On Layer;
 - camadas: delimitador_limite_especial_l, llp_limite_legal_l, delimitador_elemento_hidrografico_l, elemnat_elemento_hidrografico_l, delimitador_massa_dagua_l, elemnat_trecho_drenagem_l, infra_barragem_l, infra_ferrovia_l, infra_via_deslocamento_l;
   
-### 10. Identificar geometrias inválidas e ângulos pequenos entre camadas pós snap
+### 11. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós snap
 
-- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_entre_camadas.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos (10 graus) / Identificar ângulos pequenos entre camadas;
 - camada: todas as camadas carregadas;
 - nome camada flags: flags_geometrias_invalidas
@@ -153,7 +161,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 11. Limpeza completa das linhas
+### 12. Limpeza completa das linhas
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/limpeza_completa_linhas.model3
 - processos utilizados: Limpeza topológica (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
@@ -166,7 +174,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 - para após a execução? Sim
 
-### 12: Identifica problemas de construção entre geometrias pós limpeza completa
+### 13: Identifica problemas de construção entre geometrias pós limpeza completa
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_problemas_construcao_entre_geometrias.model3
 - processos utilizados: Identificar Geometrias duplicadas / Identificar overlaps / Identificar Geometrias inválidas (com correção automática)
@@ -174,7 +182,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as camadas;
 - nome camada flags: flags_p, flags_l, flags_a
 
-### 13. Simplificação de Douglas-Peucker
+### 14. Simplificação de Douglas-Peucker
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/simplificacao_linhas.model3
 - processos utilizados: Topological Douglas (1e-5/1e-5) / Unir linhas;
@@ -186,7 +194,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - Texto para tooltip: 
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
-### 14: Identifica problemas de compartilhamento de vértices
+### 15: Identifica problemas de compartilhamento de vértices
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_problemas_compartilhamento_vertices.model3
 - processos utilizados: Identificar Geometrias inválidas (com correção automática) / Identificar vértices próximos de arestas / Identificar vértice não compartilhado nas intersecções / Identificar vértice não compartilhado em segmentos compartilhados;
@@ -194,7 +202,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flag_geometrias_invalidas,flag_vertices_proximo_arestas,flag_vertices_nao_compartilhados_interseccoes,flag_vertice_nao_compartilhado_em_seg_compartilhado, flag_linha_nao_seccionada_na_interseccao
 - Texto para tooltip: Todas as feições devem compartilhar vértices, logo, onde for apontado erro, deve-se adicionar o vértice nas linhas que possuem intersecção ponto ou linha.
 
-### 15: Identificar geometrias com densidade incorreta de vértices
+### 16: Identificar geometrias com densidade incorreta de vértices
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_geometrias_com_densidade_incorreta_de_vertices.model3
 - processos utilizados: identify geometries with large vertex density algorithm (1e-05);
@@ -202,7 +210,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - tol: 0.00001 grau
 - nome camada flags: flag_densidade_incorreta_vertices
 
-### 16. Identificar undershoot com moldura e conexão de linhas
+### 17. Identificar undershoot com moldura e conexão de linhas
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_undershoot_moldura_conexao_linhas.model3
 - processos utilizados: identify dangles (1e-5);
@@ -212,7 +220,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flags_undershoot_l
 - pode admitir falso positivo? sim
 
-### 17. Identificar Z
+### 18. Identificar Z
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_z.model3
 - processos utilizados: identify z angles between features (300°)
@@ -220,7 +228,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flag_z
 
 
-### 18. Identificar overlaps dentro da mesma camada
+### 19. Identificar overlaps dentro da mesma camada
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_overlaps_linhas.model3
 - processos utilizados: identify overlaps
@@ -228,7 +236,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flags_overlaps_l
 
 
-### 19. Identificar linhas segmentadas com mesmo conjunto de atributos
+### 20. Identificar linhas segmentadas com mesmo conjunto de atributos
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_limites_carta_orto.model3
 - processos utilizados: Identify Unmerged Lines With Same Attribute Set
@@ -237,14 +245,14 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 - nome camada flags: flags_linhas_nao_unidas
 
-### 20. Identificar pontas soltas e linhas não segmentadas limites
+### 21. Identificar pontas soltas e linhas não segmentadas limites
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identificar_linhas_nao_segmentadas_nas_interseccoes_limites.model3
 - processos utilizados: identify dangles (1e-5);
 - camadas: delimitador_limite_especial_l,llp_limite_legal_l;
 - nome camada flags: flags_elem_rede_nao_segmentados
 
-### 21. Identificar pontas soltas pequenas nas linhas
+### 22. Identificar pontas soltas pequenas nas linhas limites
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identificar_pontas_soltas_pequenas_limites.model3
 - processos utilizados: identify small first order dangles;
@@ -253,7 +261,15 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - tamanho: 5 m (0.00005 grau)
 - nome camada flags: flags_pontas_soltas_pequenas
 
-### 22. Identificar erros de ortografia no atributo nome
+### 23. Construção de polígonos de área especial llp_area_especial_a
+
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/construcao_area_especial.model3
+- processos utilizados: Build Polygons From Center Points And Boundaries Algorithm;
+- camadas: delimitador_limite_especial_l, centroide_limite_especial_p, delimitador_limite_especial_l, delimitador_area_sem_dados_l, delimitador_massa_dagua_l, elemnat_trecho_drenagem_l, infra_barragem_l, infra_barragem_a, infra_via_deslocamento_l, infra_ferrovia_l
+- para após a execução? Sim
+- nome camada de saída: area_especial
+
+### 24. Identificar erros de ortografia no atributo nome
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3
 - processos utilizados: spell checker;
@@ -261,7 +277,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
-### 23. Identificar erros de atributação
+### 25. Identificar erros de atributação
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/identifica_erros_atributacao_limites.model3
 - processos utilizados: Assign Format Rules to Layers, Rule Statistics;
