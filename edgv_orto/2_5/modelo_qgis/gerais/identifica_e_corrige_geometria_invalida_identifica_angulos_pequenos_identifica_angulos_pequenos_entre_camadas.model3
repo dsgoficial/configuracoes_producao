@@ -304,14 +304,27 @@
       <Option type="Map" name="params">
         <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
-            <Option type="QString" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line', 'Point')), layer_property (@element,'name')))" name="expression"/>
+            <Option type="QString" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" name="expression"/>
             <Option type="int" value="3" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
-  <Option name="designerParameterValues"/>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="dsgtools:filterlayerlistbygeographicboundary_1:flags_geometrias_invalidas">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option type="QString" value="windows-1252" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option type="bool" value="true" name="active"/>
+          <Option type="int" value="1" name="type"/>
+          <Option type="QString" value="TEMPORARY_OUTPUT" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option type="QString" value="Version1" name="internal_version"/>
