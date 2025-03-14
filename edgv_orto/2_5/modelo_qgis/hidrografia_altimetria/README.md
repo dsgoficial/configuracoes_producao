@@ -267,17 +267,20 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 22. Identificação de pontas soltas em delimitadores de corpos d'água
 
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_livres_limite_massa_dagua_alt_hid.model3
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_soltas_limite_massa_dagua.model3
 - camada: delimitador_massa_dagua_l
-- filtros: infra_barragem_l,elemnat_elemento_hidrografico_l
-- nome camada flags: pontas_soltas_hid
+- filtros: infra_barragem_l
+- nome camada flags: pontas_soltas_limite_massa_dagua
 
-### 23. Fechamento de Polígonos de Massa D'água
+### 23. Fechar Polígonos de Massa D'água
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/fechar_poligonos_massa_dagua.model3
 - camada de centroide: centroide_massa_dagua_p
 - camada de delimitador: delimitador_massa_dagua_l
-- camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
+- camadas de linha: infra_barragem_l
+- ignorar flags de área sem centroide? Sim
+- camada de saída: cobter_massa_dagua_a
+- camadas de flags: flags_delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
 - Para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo para garantir o fechamento correto dos polígonos de massa d'água.
 
