@@ -57,15 +57,16 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 28. Identificar elementos pequenos na rede de drenagem;
 29. Identificar erros na construção da rede de drenagem;
 30. Identificar linhas segmentadas com mesmo conjunto de atributos;
-31. Realizar o direcionamento da rede de drenagem;
-32. Identificar erros de fluxo de drenagem com outros elementos da rede hidrográfica;
+31. Linha para multipart (drenagens);
+32. Realizar o direcionamento da rede de drenagem;
 33. Identificar erros na construção das curvas de nível;
 34. Identificar erros de validação do terreno;
 35. Identificar intersecções inválidas entre curvas de nível e drenagens;
-36. Identificar inconsistências entre curvas de nível e drenagens;
-37. Identificar erros de ortografia nos atributos;
-38. Identificar erros de atributação;
-39. Identificar erros de relacionamentos espaciais.
+36. Identificar intersecções inválidas entre curvas de nível e massas d'água;
+37. Identificar inconsistências entre curvas de nível e drenagens;
+38. Identificar erros de ortografia nos atributos;
+39. Identificar erros de atributação;
+40. Identificar erros de relacionamentos espaciais.
 
 ## Detalhamento dos processos
 
@@ -246,29 +247,90 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camadas: delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,infra_barragem_l,elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l,cobter_massa_dagua_a,infra_barragem_a
 - nome camada flags: flags_overlaps_l,flags_overlaps_a
 
-### 20. Identificação de linhas segmentadas com mesmo conjunto de atributos
-
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_alt_hid.model3
-- camadas: delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l,elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l
-- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
-- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
-- nome camada flags: flags_linhas_nao_unidas
-
-### 21. Identificação de linhas não segmentadas nas intersecções
+### 20. Identificação de linhas não segmentadas nas intersecções
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_linhas_nao_segmentadas_nas_interseccoes_alt_hid.model3
 - camadas: elemnat_trecho_drenagem_l
 - camadas filtro linha: delimitador_massa_dagua_l,infra_barragem_l,elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l
 - nome camada flags: flags_drenagens_nao_segmentadas
 
-### 22. Identificação de elementos pequenos na rede de drenagem
+### 21. União de delimitadores / barragem / elemento_hidrografico_l / curva_nivel
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/unir_delimitadores_barragem_elemento_hidrografico_curva_nivel.model3
+- processos utilizados: Unir linhas por tipo / Verificar consistência após união
+- camadas: delimitador_massa_dagua_l, infra_barragem_l, elemnat_elemento_hidrografico_l, delimitador_elemento_hidrografico_l, elemnat_curva_nivel_l
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
+- nome camada flags: flags_uniao_l
+- admite falsos positivos? Não
+- para após a execução? Somente se tiver flags
+- Texto para tooltip: Este processo une linhas do mesmo tipo que compartilham extremidades, formando feições contínuas sempre que possível.
+
+### 22. Identificação de pontas soltas em delimitadores de corpos d'água
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_soltas_delimitador_massa_dagua.model3
+- camada: delimitador_massa_dagua_l
+- filtros: infra_barragem_l
+- nome camada flags: pontas_soltas_limite_massa_dagua
+
+### 23. Fechar Polígonos de Massa D'água
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/fechar_poligonos_massa_dagua.model3
+- camada de centroide: centroide_massa_dagua_p
+- camada de delimitador: delimitador_massa_dagua_l
+- camadas de linha: infra_barragem_l
+- ignorar flags de área sem centroide? Sim
+- camada de saída: cobter_massa_dagua_a
+- camadas de flags: flags_delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
+- Para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo para garantir o fechamento correto dos polígonos de massa d'água.
+
+### 24. Identificar pontas soltas em delimitadores de limite de elementos hidrográficos
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_soltas_elem_hidrografico_alt_hid.model3
+- camada: delimitador_elemento_hidrografico_l
+- filtros: infra_barragem_l,delimitador_massa_dagua_l
+- nome camada flags: pontas_soltas_elem_hid
+
+### 25. Fechamento de polígonos de elementos hidrográficos e construção de ilhas
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/fechar_poligonos_elem_hidrograficos_e_ilhas.model3
+- camada de centroide elem hid: centroide_elemento_hidrografico_p
+- camada de centroide ilha: centroide_ilha_p
+- camada de delimitador: delimitador_elemento_hidrografico_l
+- camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
+- Para após a execução? Somente se tiver flags.
+- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo para garantir o fechamento correto dos polígonos de elementos hidrográficos e ilhas.
+
+### 26. Correção de atributação dentro_de_poligono nas drenagens
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/corrigir_atributacao_dentro_de_poligono.model3
+- processos utilizados: Atualização de atributo dentro_de_poligono
+- camada: elemnat_trecho_drenagem_l
+- camadas de referência: cobter_massa_dagua_a, elemnat_elemento_hidrografico_a, elemnat_terreno_sujeito_inundacao_a
+- nome camada flags: flags_atributo_dentro_de_poligono
+- admite falsos positivos? Não
+- para após a execução? Somente se tiver flags
+- Texto para tooltip: Este processo corrige a atributação do campo "dentro_de_poligono" nas drenagens, verificando se cada trecho está contido em algum polígono de água ou terreno sujeito a inundação.
+
+### 27. União de drenagens
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/unir_drenagens.model3
+- processos utilizados: União de trechos de drenagem
+- camada: elemnat_trecho_drenagem_l
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
+- nome camada flags: flags_uniao_drenagens
+- admite falsos positivos? Não
+- para após a execução? Somente se tiver flags
+- Texto para tooltip: Realiza a união de trechos de drenagem que compartilham extremidades e possuem os mesmos atributos, criando uma rede hidrográfica contínua.
+
+### 28. Identificação de elementos pequenos na rede de drenagem
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_elementos_pequenos_na_rede.model3
 - camada: elemnat_trecho_drenagem_l
 - tamanho: 1000 m (0.01 grau)
 - nome camada flags: flags_linhas_pequenas
 
-### 23. Identificação de erros na construção da rede de drenagem
+### 29. Identificação de erros na construção da rede de drenagem
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_rede_drenagem.model3
 - camadas: elemnat_trecho_drenagem_l
@@ -276,7 +338,30 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
 - nome camada flags: flags_rede_drenagem
 
-### 24. Identificação de erros na construção das curvas de nível
+### 30. Identificação de linhas segmentadas com mesmo conjunto de atributos
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_alt_hid.model3
+- camadas: delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l,elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l
+- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
+- nome camada flags: flags_linhas_nao_unidas
+
+### 31. Linha para multilinha
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/linha_para_multilinha_rodovia.model3;
+- camadas: infra_via_deslocamento_l
+- nome saida: multilinha
+- para após a execução? Sim
+
+### 32. Direcionamento da rede de drenagem
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/direcionar_rede_drenagem.model3
+- camadas: elemnat_trecho_drenagem_l
+- processos utilizados: Definir direção dos trechos / Verificar conectividade e coerência da rede
+- nome camada flags: flags_direcionamento_p,flags_direcionamento_l,flags_direcionamento_a
+- Texto para tooltip: Verifica e corrige o direcionamento da rede de drenagem, garantindo que todos os trechos sigam a direção correta do escoamento da água.
+
+### 33. Identificação de erros na construção das curvas de nível
 
 - arquivos:
   - /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_na_construcao_das_curvas_de_nivel_100k.model3
@@ -287,7 +372,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flags_modelo_p, flags_modelo_l, flags_modelo_a
 - camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
 
-### 25. Identificação de erros de validação do terreno
+### 34. Identificação de erros de validação do terreno
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_validacao_terreno.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
@@ -295,48 +380,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flags_validacao_terreno
 - Texto para tooltip: Verifica a consistência do modelo de terreno, identificando problemas como curvas de nível com valores inconsistentes ou drenagens que "sobem" em vez de "descer".
 
-### 26. Identificação de pontas soltas em delimitadores de corpos d'água
-
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_livres_limite_massa_dagua_alt_hid.model3
-- camada: delimitador_massa_dagua_l
-- filtros: infra_barragem_l,elemnat_elemento_hidrografico_l
-- nome camada flags: pontas_soltas_hid
-
-### 27. Fechamento de Polígonos de Massa D'água
-
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/fechar_poligonos_massa_dagua.model3
-- camada de centroide: centroide_massa_dagua_p
-- camada de delimitador: delimitador_massa_dagua_l
-- camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
-- Para após a execução? Somente se tiver flags.
-- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo para garantir o fechamento correto dos polígonos de massa d'água.
-
-### 28. Identificação de pontas soltas em delimitadores de elementos hidrográficos
-
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_livres_elem_hidrografico_alt_hid.model3
-- camada: delimitador_elemento_hidrografico_l
-- filtros: infra_barragem_l,delimitador_massa_dagua_l
-- nome camada flags: pontas_soltas_elem_hid
-
-### 29. Fechamento de polígonos de elementos hidrográficos e construção de ilhas
-
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/fechar_poligonos_elem_hidrograficos_e_ilhas.model3
-- camada de centroide elem hid: centroide_elemento_hidrografico_p
-- camada de centroide ilha: centroide_ilha_p
-- camada de delimitador: delimitador_elemento_hidrografico_l
-- camadas de flags: delimitadores_nao_utilizados,flags_poligonos,flag_invalida_poligono
-- Para após a execução? Somente se tiver flags.
-- Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo para garantir o fechamento correto dos polígonos de elementos hidrográficos e ilhas.
-
-### 30. Direcionamento da rede de drenagem
-
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/direcionar_rede_drenagem.model3
-- camadas: elemnat_trecho_drenagem_l
-- processos utilizados: Definir direção dos trechos / Verificar conectividade e coerência da rede
-- nome camada flags: flags_direcao_drenagem
-- Texto para tooltip: Verifica e corrige o direcionamento da rede de drenagem, garantindo que todos os trechos sigam a direção correta do escoamento da água.
-
-### 31. Identificação de intersecções inválidas entre curvas de nível e drenagens
+### 35. Identificação de intersecções inválidas entre curvas de nível e drenagens
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_interseccoes_invalidas_cn_drenagens.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
@@ -344,21 +388,32 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flags_interseccoes_invalidas_cn_hidrografia
 - Texto para tooltip: Verifica intersecções entre curvas de nível e drenagens, identificando padrões inconsistentes com o comportamento natural da água sobre o terreno.
 
-### 32. Identificação de inconsistências entre curvas de nível e drenagens
+### 36. Identificação de intersecções inválidas entre curvas de nível e massas d'água
+
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_interseccoes_invalidas_cn_massas_dagua.model3
+- camadas: elemnat_curva_nivel_l
+- camadas auxiliares: cobter_massa_dagua_a, delimitador_massa_dagua_l
+- processos utilizados: Identificar intersecções inválidas entre curvas e massas d'água
+- nome camada flags: flags_interseccoes_invalidas_cn_massas
+- admite falsos positivos? Não
+- para após a execução? Somente se tiver flags
+- Texto para tooltip: Verifica intersecções entre curvas de nível e massas d'água, identificando inconsistências como curvas de diferentes valores atravessando corpos d'água ou não respeitando suas margens.
+
+### 37. Identificação de inconsistências entre curvas de nível e drenagens
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_inconsistencias_cn_hidrografia.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
 - nome camada flags: flags_inconsistencia_cn_hidrografia
 - Texto para tooltip: Verifica se as curvas de nível estão em conformidade com a hidrografia, identificando inconsistências como curvas que não formam "V" no sentido da drenagem.
 
-### 33. Identificação de erros de ortografia no atributo nome
+### 38. Identificação de erros de ortografia no atributo nome
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3
 - camadas: todas as camadas de hidrografia e altimetria;
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
-### 34. Identificação de erros de atributação
+### 39. Identificação de erros de atributação
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/gerais/identifica_erros_atributacao.model3
 - camadas: todas as camadas de hidrografia e altimetria;
@@ -366,8 +421,12 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada de flags: flags_erros_atributos
 - nome camada de saída: atributos_incomuns
 
-### 35. Identificação de erros de relacionamentos espaciais
+### 40. Identificação de erros de relacionamentos espaciais
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_erros_relacionamentos_espaciais_hidrografia.model3
 - camadas: todas as camadas de hidrografia e altimetria;
+- processos utilizados: Verificar relacionamentos espaciais entre elementos hidrográficos
 - nome camada de flags: flags_ponto,flags_linha,flags_area
+- admite falsos positivos? Raramente
+- para após a execução? Somente se tiver flags
+- Texto para tooltip: Este processo identifica inconsistências nos relacionamentos espaciais entre os elementos hidrográficos, como sumidouros desconectados da rede, elementos hidrográficos isolados, ou relacionamentos topológicos inválidos.
