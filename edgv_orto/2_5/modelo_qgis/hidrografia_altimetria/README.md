@@ -57,8 +57,8 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 28. Identificar elementos pequenos na rede de drenagem;
 29. Identificar erros na construção da rede de drenagem;
 30. Identificar linhas segmentadas com mesmo conjunto de atributos;
-31. Realizar o direcionamento da rede de drenagem;
-32. Identificar erros de fluxo de drenagem com outros elementos da rede hidrográfica;
+31. Linha para multipart (drenagens);
+32. Realizar o direcionamento da rede de drenagem;
 33. Identificar erros na construção das curvas de nível;
 34. Identificar erros de validação do terreno;
 35. Identificar intersecções inválidas entre curvas de nível e drenagens;
@@ -267,7 +267,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 22. Identificação de pontas soltas em delimitadores de corpos d'água
 
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_soltas_limite_massa_dagua.model3
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_soltas_delimitador_massa_dagua.model3
 - camada: delimitador_massa_dagua_l
 - filtros: infra_barragem_l
 - nome camada flags: pontas_soltas_limite_massa_dagua
@@ -284,9 +284,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - Para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo para garantir o fechamento correto dos polígonos de massa d'água.
 
-### 24. Identificação de pontas soltas em delimitadores de elementos hidrográficos
+### 24. Identificar pontas soltas em delimitadores de limite de elementos hidrográficos
 
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_livres_elem_hidrografico_alt_hid.model3
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_pontas_soltas_elem_hidrografico_alt_hid.model3
 - camada: delimitador_elemento_hidrografico_l
 - filtros: infra_barragem_l,delimitador_massa_dagua_l
 - nome camada flags: pontas_soltas_elem_hid
@@ -346,24 +346,20 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
 - nome camada flags: flags_linhas_nao_unidas
 
-### 31. Direcionamento da rede de drenagem
+### 31. Linha para multilinha
+
+- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/via_deslocamento/linha_para_multilinha_rodovia.model3;
+- camadas: infra_via_deslocamento_l
+- nome saida: multilinha
+- para após a execução? Sim
+
+### 32. Direcionamento da rede de drenagem
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/direcionar_rede_drenagem.model3
 - camadas: elemnat_trecho_drenagem_l
 - processos utilizados: Definir direção dos trechos / Verificar conectividade e coerência da rede
-- nome camada flags: flags_direcao_drenagem
+- nome camada flags: flags_direcionamento_p,flags_direcionamento_l,flags_direcionamento_a
 - Texto para tooltip: Verifica e corrige o direcionamento da rede de drenagem, garantindo que todos os trechos sigam a direção correta do escoamento da água.
-
-### 32. Identificação de erros de fluxo de drenagem com outros elementos da rede hidrográfica
-
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_fluxo_drenagem.model3
-- processos utilizados: Verificação de fluxo em relação a outros elementos
-- camadas: elemnat_trecho_drenagem_l
-- camadas auxiliares: delimitador_massa_dagua_l, elemnat_elemento_hidrografico_l, elemnat_elemento_hidrografico_p, elemnat_sumidouro_vertedouro_p
-- nome camada flags: flags_fluxo_drenagem
-- admite falsos positivos? Não
-- para após a execução? Somente se tiver flags
-- Texto para tooltip: Este processo verifica inconsistências no fluxo das drenagens em relação a outros elementos da rede hidrográfica, como massas d'água, elementos hidrográficos e sumidouros/vertedouros.
 
 ### 33. Identificação de erros na construção das curvas de nível
 
