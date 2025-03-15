@@ -267,6 +267,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - processos utilizados: Build Polygons From Center Points And Boundaries Algorithm;
 - camadas: delimitador_limite_especial_l, centroide_limite_especial_p, delimitador_limite_especial_l, delimitador_area_sem_dados_l, delimitador_massa_dagua_l, elemnat_trecho_drenagem_l, infra_barragem_l, infra_barragem_a, infra_via_deslocamento_l, infra_ferrovia_l
 - para após a execução? Sim
+- nome das camadas flags: flags_localizacao_invalida_area_especial, flags_delimitador_nao_utilizado, flags_erro_contrucao_area_especial
 - nome camada de saída: area_especial
 
 ### 24. Identificar erros de ortografia no atributo nome
