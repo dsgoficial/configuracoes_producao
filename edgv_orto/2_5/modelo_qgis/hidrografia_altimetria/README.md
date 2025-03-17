@@ -377,8 +377,21 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_validacao_terreno.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
 - processos utilizados: Verificar consistência de elevação nas curvas de nível / Verificar declive adequado ao longo das drenagens
-- nome camada flags: flags_validacao_terreno
+- nome camada flags: flags_validacao_terreno_p,flags_validacao_terreno_l,flags_validacao_terreno_a
 - Texto para tooltip: Verifica a consistência do modelo de terreno, identificando problemas como curvas de nível com valores inconsistentes ou drenagens que "sobem" em vez de "descer".
+- equidistancias:
+  - 250k: 100
+  - 100k: 40
+  - 50k: 20
+  - 25k: 10
+- Run algorithm grouping by spatial partition expression:
+```
+layer_property( @moldura_OUTPUT , 'feature_count') > 1
+```
+- Scale expression:
+```
+if(@productiontools_scale =25000, 10, if(@productiontools_scale =50000, 20, if(@productiontools_scale =100000, 40, if(@productiontools_scale =250000, 100, 10))))
+```
 
 ### 35. Identificação de intersecções inválidas entre curvas de nível e drenagens
 
