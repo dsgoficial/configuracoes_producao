@@ -390,7 +390,7 @@ layer_property( @moldura_OUTPUT , 'feature_count') > 1
 ```
 - Scale expression:
 ```
-if(@productiontools_scale =25000, 10, if(@productiontools_scale =50000, 20, if(@productiontools_scale =100000, 40, if(@productiontools_scale =250000, 100, 10))))
+if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
 ```
 
 ### 35. Identificação de intersecções inválidas entre curvas de nível e drenagens
