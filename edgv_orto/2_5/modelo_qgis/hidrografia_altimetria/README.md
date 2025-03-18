@@ -430,7 +430,12 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_inconsistencias_cn_hidrografia.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
 - nome camada flags: flags_inconsistencia_cn_hidrografia
-- Texto para tooltip: Verifica se as curvas de nível estão em conformidade com a hidrografia, identificando inconsistências como curvas que não formam "V" no sentido da drenagem.
+- Texto para tooltip: Verifica se as curvas de nível estão em conformidade com a hidrografia, verificando de cima para baixo no terreno e verificando se existe alguma curva faltando.
+- Scale expression:
+
+```
+if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
+```
 
 ### 38. Identificação de erros de ortografia no atributo nome
 
@@ -439,9 +444,9 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
-### 39. Identificação de erros de atributação
+### 39. Identificação de erros de atributação na hidrografia
 
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/gerais/identifica_erros_atributacao.model3
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_erros_atributacao_hidrografia_altimetria.model3
 - camadas: todas as camadas de hidrografia e altimetria;
 - para após a execução? Sim
 - nome camada de flags: flags_erros_atributos
