@@ -385,10 +385,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
   - 50k: 20
   - 25k: 10
 - Run algorithm grouping by spatial partition expression:
+
 ```
 layer_property( @moldura_OUTPUT , 'feature_count') > 1
 ```
+
 - Scale expression:
+
 ```
 if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
 ```
@@ -400,6 +403,11 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - processos utilizados: Identificar intersecções inválidas
 - nome camada flags: flags_interseccoes_invalidas_cn_hidrografia
 - Texto para tooltip: Verifica intersecções entre curvas de nível e drenagens, identificando padrões inconsistentes com o comportamento natural da água sobre o terreno.
+- Scale expression:
+
+```
+if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
+```
 
 ### 36. Identificação de intersecções inválidas entre curvas de nível e massas d'água
 
@@ -411,6 +419,11 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - admite falsos positivos? Não
 - para após a execução? Somente se tiver flags
 - Texto para tooltip: Verifica intersecções entre curvas de nível e massas d'água, identificando inconsistências como curvas de diferentes valores atravessando corpos d'água ou não respeitando suas margens.
+- Scale expression:
+
+```
+if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
+```
 
 ### 37. Identificação de inconsistências entre curvas de nível e drenagens
 
