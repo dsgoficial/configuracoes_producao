@@ -3,7 +3,7 @@
     "metadata": {
         "author": "Cap Borba",
         "version": "0.1",
-        "lastModified": "06/03/2025 17:05:18"
+        "lastModified": "19/03/2025 14:00:19"
     },
     "workflowItemList": [
         {
@@ -21,7 +21,8 @@
             },
             "metadata": {
                 "originalName": "manipulacao_preliminar_geometria.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identifica geometrias inv\u00e1lidas (com corre\u00e7\u00e3o) e \u00e2ngulos pequenos",
@@ -40,7 +41,8 @@
             },
             "metadata": {
                 "originalName": "identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos.model3"
-            }
+            },
+            "tooltip": "O operador deve corrigir manualmente os apontamentos desse processo."
         },
         {
             "displayName": "Unir linhas com mesmo conjunto de atributos",
@@ -57,7 +59,8 @@
             },
             "metadata": {
                 "originalName": "unir_linhas_com_mesmo_conjunto_de_atributos.model3"
-            }
+            },
+            "tooltip": "O algoritmo une linhas com mesmo conjunto de atributos."
         },
         {
             "displayName": "Identificar trechos de drenagens entrela\u00e7ados",
@@ -76,7 +79,8 @@
             },
             "metadata": {
                 "originalName": "identifica_drenagens_entrelacadas.model3"
-            }
+            },
+            "tooltip": "Identifica situa\u00e7\u00f5es onde trechos de drenagem se entrela\u00e7am, o que pode indicar problemas na representa\u00e7\u00e3o da rede hidrogr\u00e1fica."
         },
         {
             "displayName": "Limpeza Suave das Linhas",
@@ -93,7 +97,8 @@
             },
             "metadata": {
                 "originalName": "limpeza_suave_linhas.model3"
-            }
+            },
+            "tooltip": "Realiza limpeza suave de linhas para corrigir pequenas imperfei\u00e7\u00f5es geom\u00e9tricas."
         },
         {
             "displayName": "Identifica problemas de constru\u00e7\u00e3o entre geometrias p\u00f3s limpeza suave",
@@ -114,7 +119,8 @@
             },
             "metadata": {
                 "originalName": "identifica_problemas_construcao_entre_geometrias.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Corrige compartilhamento de v\u00e9rtices entre camadas",
@@ -131,7 +137,8 @@
             },
             "metadata": {
                 "originalName": "corrige_compartilhamento_de_vertices.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Manipula\u00e7\u00e3o preliminar de geometrias",
@@ -148,7 +155,8 @@
             },
             "metadata": {
                 "originalName": "manipulacao_preliminar_geometria.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar geometrias inv\u00e1lidas e \u00e2ngulos pequenos entre camadas p\u00f3s corre\u00e7\u00e3o de v\u00e9rtices",
@@ -167,7 +175,8 @@
             },
             "metadata": {
                 "originalName": "identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_identifica_angulos_pequenos_entre_camadas.model3"
-            }
+            },
+            "tooltip": "O operador deve corrigir manualmente os apontamentos desse processo."
         },
         {
             "displayName": "Snap Hier\u00e1rquico",
@@ -184,7 +193,8 @@
             },
             "metadata": {
                 "originalName": "snap_hierarquico_hidrografia.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar geometrias inv\u00e1lidas e \u00e2ngulos pequenos entre camadas p\u00f3s snap",
@@ -203,7 +213,8 @@
             },
             "metadata": {
                 "originalName": "identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_identifica_angulos_pequenos_entre_camadas.model3"
-            }
+            },
+            "tooltip": "O operador deve corrigir manualmente os apontamentos desse processo."
         },
         {
             "displayName": "Limpeza completa das linhas",
@@ -220,7 +231,8 @@
             },
             "metadata": {
                 "originalName": "limpeza_completa_linhas.model3"
-            }
+            },
+            "tooltip": "Realiza limpeza completa das linhas para garantir consist\u00eancia topol\u00f3gica."
         },
         {
             "displayName": "Identifica problemas de constru\u00e7\u00e3o entre geometrias p\u00f3s limpeza completa",
@@ -241,7 +253,8 @@
             },
             "metadata": {
                 "originalName": "identifica_problemas_construcao_entre_geometrias.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Simplifica\u00e7\u00e3o de Douglas-Peucker",
@@ -258,7 +271,8 @@
             },
             "metadata": {
                 "originalName": "simplificacao_linhas.model3"
-            }
+            },
+            "tooltip": "Realiza simplifica\u00e7\u00e3o topol\u00f3gica de Douglas-Peucker preservando a consist\u00eancia entre as camadas. Nesse processo, \u00e9 feita a retirada de excesso de v\u00e9rtices, mantendo o ponto inicial e final das linhas."
         },
         {
             "displayName": "Identifica problemas de compartilhamento de v\u00e9rtices",
@@ -280,7 +294,8 @@
             },
             "metadata": {
                 "originalName": "identifica_problemas_compartilhamento_vertices.model3"
-            }
+            },
+            "tooltip": "Todas as fei\u00e7\u00f5es devem compartilhar v\u00e9rtices, logo, onde for apontado erro, deve-se adicionar o v\u00e9rtice nas linhas que possuem intersec\u00e7\u00e3o ponto ou linha."
         },
         {
             "displayName": "Identificar geometrias com densidade incorreta de v\u00e9rtices",
@@ -299,7 +314,8 @@
             },
             "metadata": {
                 "originalName": "identifica_geometrias_com_densidade_incorreta_de_vertices.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar undershoot com moldura e conex\u00e3o de linhas",
@@ -318,7 +334,8 @@
             },
             "metadata": {
                 "originalName": "identifica_undershoot_moldura_conexao_linhas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar Z",
@@ -337,7 +354,8 @@
             },
             "metadata": {
                 "originalName": "identifica_z.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar overlaps dentro da mesma camada",
@@ -356,7 +374,8 @@
             },
             "metadata": {
                 "originalName": "identifica_overlaps_linhas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar linhas segmentadas com mesmo conjunto de atributos",
@@ -365,17 +384,36 @@
                 "modelCanHaveFalsePositiveFlags": false,
                 "loadOutput": false,
                 "flagLayerNames": [
-                    "flag_linhas_nao_mergeadas"
+                    "flags_drenagens_nao_segmentadas"
                 ]
             },
             "pauseAfterExecution": false,
             "source": {
                 "type": "xml",
-                "data": "<!DOCTYPE model>\n<Option type=\"Map\">\n  <Option type=\"Map\" name=\"children\">\n    <Option type=\"Map\" name=\"dsgtools:batchrunalgorithm_1\">\n      <Option type=\"bool\" value=\"true\" name=\"active\"/>\n      <Option name=\"alg_config\"/>\n      <Option type=\"QString\" value=\"dsgtools:batchrunalgorithm\" name=\"alg_id\"/>\n      <Option type=\"QString\" value=\"\" name=\"color\"/>\n      <Option type=\"Map\" name=\"comment\">\n        <Option type=\"QString\" value=\"\" name=\"color\"/>\n        <Option type=\"QString\" value=\"\" name=\"component_description\"/>\n        <Option type=\"double\" value=\"60\" name=\"component_height\"/>\n        <Option type=\"double\" value=\"753.5\" name=\"component_pos_x\"/>\n        <Option type=\"double\" value=\"408.5\" name=\"component_pos_y\"/>\n        <Option type=\"double\" value=\"100\" name=\"component_width\"/>\n        <Option type=\"bool\" value=\"true\" name=\"outputs_collapsed\"/>\n        <Option type=\"bool\" value=\"true\" name=\"parameters_collapsed\"/>\n      </Option>\n      <Option type=\"QString\" value=\"Batch Run Algorithm\" name=\"component_description\"/>\n      <Option type=\"double\" value=\"45\" name=\"component_height\"/>\n      <Option type=\"double\" value=\"392.5\" name=\"component_pos_x\"/>\n      <Option type=\"double\" value=\"235\" name=\"component_pos_y\"/>\n      <Option type=\"double\" value=\"200\" name=\"component_width\"/>\n      <Option name=\"dependencies\"/>\n      <Option type=\"QString\" value=\"dsgtools:batchrunalgorithm_1\" name=\"id\"/>\n      <Option type=\"Map\" name=\"outputs\">\n        <Option type=\"Map\" name=\"flag_linhas_nao_mergeadas\">\n          <Option type=\"QString\" value=\"dsgtools:batchrunalgorithm_1\" name=\"child_id\"/>\n          <Option type=\"QString\" value=\"\" name=\"color\"/>\n          <Option type=\"Map\" name=\"comment\">\n            <Option type=\"QString\" value=\"\" name=\"color\"/>\n            <Option type=\"QString\" value=\"\" name=\"component_description\"/>\n            <Option type=\"double\" value=\"60\" name=\"component_height\"/>\n            <Option type=\"double\" value=\"0\" name=\"component_pos_x\"/>\n            <Option type=\"double\" value=\"0\" name=\"component_pos_y\"/>\n            <Option type=\"double\" value=\"100\" name=\"component_width\"/>\n            <Option type=\"bool\" value=\"true\" name=\"outputs_collapsed\"/>\n            <Option type=\"bool\" value=\"true\" name=\"parameters_collapsed\"/>\n          </Option>\n          <Option type=\"QString\" value=\"flag_linhas_nao_mergeadas\" name=\"component_description\"/>\n          <Option type=\"double\" value=\"30\" name=\"component_height\"/>\n          <Option type=\"double\" value=\"0\" name=\"component_pos_x\"/>\n          <Option type=\"double\" value=\"0\" name=\"component_pos_y\"/>\n          <Option type=\"double\" value=\"200\" name=\"component_width\"/>\n          <Option type=\"Map\" name=\"default_value\">\n            <Option type=\"QString\" value=\"QgsProcessingOutputLayerDefinition\" name=\"class\"/>\n            <Option type=\"Map\" name=\"create_options\">\n              <Option type=\"QString\" value=\"windows-1252\" name=\"fileEncoding\"/>\n            </Option>\n            <Option type=\"Map\" name=\"sink\">\n              <Option type=\"bool\" value=\"true\" name=\"active\"/>\n              <Option type=\"int\" value=\"1\" name=\"type\"/>\n              <Option type=\"QString\" value=\"TEMPORARY_OUTPUT\" name=\"val\"/>\n            </Option>\n          </Option>\n          <Option type=\"bool\" value=\"true\" name=\"mandatory\"/>\n          <Option type=\"QString\" value=\"flag_linhas_nao_mergeadas\" name=\"name\"/>\n          <Option type=\"QString\" value=\"OUTPUT\" name=\"output_name\"/>\n          <Option type=\"bool\" value=\"true\" name=\"outputs_collapsed\"/>\n          <Option type=\"bool\" value=\"true\" name=\"parameters_collapsed\"/>\n        </Option>\n      </Option>\n      <Option type=\"bool\" value=\"true\" name=\"outputs_collapsed\"/>\n      <Option type=\"bool\" value=\"true\" name=\"parameters_collapsed\"/>\n      <Option type=\"Map\" name=\"params\">\n        <Option type=\"List\" name=\"ALG_NAME\">\n          <Option type=\"Map\">\n            <Option type=\"int\" value=\"2\" name=\"source\"/>\n            <Option type=\"QString\" value=\"dsgtools:identifyunmergedlineswithsameattributeset\" name=\"static_value\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"INPUTLAYERS\">\n          <Option type=\"Map\">\n            <Option type=\"QString\" value=\"array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))\" name=\"expression\"/>\n            <Option type=\"int\" value=\"3\" name=\"source\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"INPUT_LAYER_PARAMETER_NAME\">\n          <Option type=\"Map\">\n            <Option type=\"int\" value=\"2\" name=\"source\"/>\n            <Option type=\"QString\" value=\"INPUT\" name=\"static_value\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"OUTPUT_LAYER_PARAMETER_NAME\">\n          <Option type=\"Map\">\n            <Option type=\"int\" value=\"2\" name=\"source\"/>\n            <Option type=\"QString\" value=\"FLAGS\" name=\"static_value\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"PARAMETER_DICT\">\n          <Option type=\"Map\">\n            <Option type=\"int\" value=\"2\" name=\"source\"/>\n            <Option type=\"QString\" value=\"{&#xa;    &quot;ATTRIBUTE_BLACK_LIST&quot;: [&quot;id&quot;, &quot;texto_edicao&quot;, &quot;label_x&quot;, &quot;label_y&quot;, &quot;justificativa_txt&quot;, &quot;tamanho_txt&quot;, &quot;visivel&quot;, &quot;carta_simbolizacao&quot;, &quot;simbolizar_carta_mini&quot;, &quot;simb_rot&quot;, &quot;rotular_carta_mini&quot;, &quot;espacamento&quot;, &quot;tamanho_txt&quot;, &quot;estilo_fonte&quot;, &quot;cor&quot;, &quot;cor_buffer&quot;, &quot;tamanho_buffer&quot;, &quot;observacao&quot;, &quot;length_otf&quot;, &quot;geometry_error&quot;, &quot;observacao&quot;, &quot;operador_criacao&quot;, &quot;data_criacao&quot;, &quot;operador_atualizacao&quot;, &quot;data_atualizacao&quot;],&#xa;    &quot;IGNORE_PK_FIELDS&quot;: true,&#xa;    &quot;IGNORE_VIRTUAL_FIELDS&quot;: true,&#xa;    &quot;LINE_FILTER_LAYERS&quot;: null,&#xa;    &quot;POINT_FILTER_LAYERS&quot;: null,&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;: &quot;TEMPORARY_OUTPUT&quot;&#xa;}&#xa;\" name=\"static_value\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n  </Option>\n  <Option type=\"Map\" name=\"designerParameterValues\">\n    <Option type=\"QgsProcessingOutputLayerDefinition\" name=\"dsgtools:batchrunalgorithm_1:TESTE\">\n      <Option type=\"Map\">\n        <Option type=\"Map\" name=\"create_options\">\n          <Option type=\"QString\" value=\"System\" name=\"fileEncoding\"/>\n        </Option>\n        <Option type=\"Map\" name=\"sink\">\n          <Option type=\"bool\" value=\"true\" name=\"active\"/>\n          <Option type=\"int\" value=\"1\" name=\"type\"/>\n          <Option type=\"QString\" value=\"TEMPORARY_OUTPUT\" name=\"val\"/>\n        </Option>\n      </Option>\n    </Option>\n  </Option>\n  <Option name=\"groupBoxes\"/>\n  <Option name=\"help\"/>\n  <Option type=\"QString\" value=\"Version1\" name=\"internal_version\"/>\n  <Option name=\"modelVariables\"/>\n  <Option type=\"QString\" value=\"CDGV_EDGV_Orto\" name=\"model_group\"/>\n  <Option type=\"QString\" value=\"Identificar linhas n\u00e3o unidas com mesmo conjunto de atributos\" name=\"model_name\"/>\n  <Option type=\"QString\" value=\"\" name=\"outputGroup\"/>\n  <Option name=\"outputOrder\"/>\n  <Option type=\"Map\" name=\"parameterDefinitions\">\n    <Option type=\"Map\" name=\"dsgtools:batchrunalgorithm_1:flag_linhas_nao_mergeadas\">\n      <Option type=\"bool\" value=\"true\" name=\"create_by_default\"/>\n      <Option type=\"int\" value=\"-1\" name=\"data_type\"/>\n      <Option type=\"QgsProcessingOutputLayerDefinition\" name=\"default\">\n        <Option type=\"Map\">\n          <Option type=\"Map\" name=\"create_options\">\n            <Option type=\"QString\" value=\"windows-1252\" name=\"fileEncoding\"/>\n          </Option>\n          <Option type=\"Map\" name=\"sink\">\n            <Option type=\"bool\" value=\"true\" name=\"active\"/>\n            <Option type=\"int\" value=\"1\" name=\"type\"/>\n            <Option type=\"QString\" value=\"TEMPORARY_OUTPUT\" name=\"val\"/>\n          </Option>\n        </Option>\n      </Option>\n      <Option type=\"invalid\" name=\"defaultGui\"/>\n      <Option type=\"QString\" value=\"flag_linhas_nao_mergeadas\" name=\"description\"/>\n      <Option type=\"int\" value=\"0\" name=\"flags\"/>\n      <Option type=\"QString\" value=\"\" name=\"help\"/>\n      <Option type=\"Map\" name=\"metadata\">\n        <Option type=\"QString\" value=\"dsgtools:batchrunalgorithm_1\" name=\"_modelChildId\"/>\n        <Option type=\"QString\" value=\"flag_linhas_nao_mergeadas\" name=\"_modelChildOutputName\"/>\n        <Option type=\"QString\" value=\"dsgtools\" name=\"_modelChildProvider\"/>\n      </Option>\n      <Option type=\"QString\" value=\"dsgtools:batchrunalgorithm_1:flag_linhas_nao_mergeadas\" name=\"name\"/>\n      <Option type=\"QString\" value=\"sink\" name=\"parameter_type\"/>\n      <Option type=\"bool\" value=\"false\" name=\"supports_append\"/>\n      <Option type=\"bool\" value=\"true\" name=\"supports_non_file_outputs\"/>\n    </Option>\n  </Option>\n  <Option name=\"parameterOrder\"/>\n  <Option name=\"parameters\"/>\n</Option>\n"
+                "data": "<!DOCTYPE model>\n<Option type=\"Map\">\n  <Option name=\"children\" type=\"Map\">\n    <Option name=\"dsgtools:filterlayerlistbygeographicboundary_1\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:filterlayerlistbygeographicboundary\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"832.5\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"397\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"Filter layer list by geographic boundary\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"453.5\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"351\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:filterlayerlistbygeographicboundary_1\"/>\n      <Option name=\"outputs\" type=\"Map\">\n        <Option name=\"flags_drenagens_nao_segmentadas\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:filterlayerlistbygeographicboundary_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flags_drenagens_nao_segmentadas\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"661.5\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"437\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flags_drenagens_nao_segmentadas\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"POINT_OUTPUT\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n      </Option>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"GEOGRAPHIC_BOUNDARY\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1\"/>\n            <Option name=\"output_name\" type=\"QString\" value=\"OUTPUT\"/>\n            <Option name=\"source\" type=\"int\" value=\"1\"/>\n          </Option>\n        </Option>\n        <Option name=\"INPUT_LAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:identifyunmergedlineswithsameattributeset_1\"/>\n            <Option name=\"output_name\" type=\"QString\" value=\"FLAGS\"/>\n            <Option name=\"source\" type=\"int\" value=\"1\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n    <Option name=\"dsgtools:identifyunmergedlineswithsameattributeset_1\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:identifyunmergedlineswithsameattributeset\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"548.5\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"215.5\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"Identifica linhas segmentadas com mesmo conjunto de atributos na rede de drenagem\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"71\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"412.5\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"213\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"236\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:identifyunmergedlineswithsameattributeset_1\"/>\n      <Option name=\"outputs\"/>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"ATTRIBUTE_BLACK_LIST\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"StringList\">\n              <Option type=\"QString\" value=\"id\"/>\n              <Option type=\"QString\" value=\"texto_edicao\"/>\n              <Option type=\"QString\" value=\"label_x\"/>\n              <Option type=\"QString\" value=\"label_y\"/>\n              <Option type=\"QString\" value=\"justificativa_txt\"/>\n              <Option type=\"QString\" value=\"tamanho_txt\"/>\n              <Option type=\"QString\" value=\"visivel\"/>\n              <Option type=\"QString\" value=\"carta_simbolizacao\"/>\n              <Option type=\"QString\" value=\"simbolizar_carta_mini\"/>\n              <Option type=\"QString\" value=\"simb_rot\"/>\n              <Option type=\"QString\" value=\"rotular_carta_mini\"/>\n              <Option type=\"QString\" value=\"espacamento\"/>\n              <Option type=\"QString\" value=\"tamanho_txt\"/>\n              <Option type=\"QString\" value=\"estilo_fonte\"/>\n              <Option type=\"QString\" value=\"cor\"/>\n              <Option type=\"QString\" value=\"cor_buffer\"/>\n              <Option type=\"QString\" value=\"tamanho_buffer\"/>\n              <Option type=\"QString\" value=\"observacao\"/>\n              <Option type=\"QString\" value=\"length_otf\"/>\n              <Option type=\"QString\" value=\"geometry_error\"/>\n              <Option type=\"QString\" value=\"observacao\"/>\n              <Option type=\"QString\" value=\"operador_criacao\"/>\n              <Option type=\"QString\" value=\"data_criacao\"/>\n              <Option type=\"QString\" value=\"operador_atualizacao\"/>\n              <Option type=\"QString\" value=\"data_atualizacao\"/>\n            </Option>\n          </Option>\n        </Option>\n        <Option name=\"IGNORE_PK_FIELDS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n        <Option name=\"IGNORE_VIRTUAL_FIELDS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n        <Option name=\"INPUT\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"expression\" type=\"QString\" value=\"'elemnat_trecho_drenagem_l'\"/>\n            <Option name=\"source\" type=\"int\" value=\"3\"/>\n          </Option>\n        </Option>\n        <Option name=\"LINE_FILTER_LAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm_2\"/>\n            <Option name=\"output_name\" type=\"QString\" value=\"OUTPUT\"/>\n            <Option name=\"source\" type=\"int\" value=\"1\"/>\n          </Option>\n        </Option>\n        <Option name=\"POINT_FILTER_LAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"invalid\"/>\n          </Option>\n        </Option>\n        <Option name=\"SELECTED\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"false\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n    <Option name=\"dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:stringcsvtofirstlayerwithelementsalgorithm\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"2241\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"796\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"moldura\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"226\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"484\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1\"/>\n      <Option name=\"outputs\"/>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"INPUTLAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"QString\" value=\"aux_moldura_a,moldura,aux_moldura_area_continua_a\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n    <Option name=\"dsgtools:stringcsvtolayerlistalgorithm_2\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"863\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"628\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"String CSV to Layer List Algorithm\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"44\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"184\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"110\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm_2\"/>\n      <Option name=\"outputs\"/>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"INPUTLAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"QString\" value=\"delimitador_massa_dagua_l,infra_barragem_l,elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n  </Option>\n  <Option name=\"designerParameterValues\"/>\n  <Option name=\"groupBoxes\"/>\n  <Option name=\"help\"/>\n  <Option name=\"internal_version\" type=\"QString\" value=\"Version1\"/>\n  <Option name=\"modelVariables\"/>\n  <Option name=\"model_group\" type=\"QString\" value=\"CDGV_EDGV_Orto\"/>\n  <Option name=\"model_name\" type=\"QString\" value=\"Identificar drenagens segmentadas com mesmo conjunto de atributos\"/>\n  <Option name=\"outputGroup\" type=\"QString\" value=\"\"/>\n  <Option name=\"outputOrder\"/>\n  <Option name=\"parameterDefinitions\" type=\"Map\">\n    <Option name=\"dsgtools:filterlayerlistbygeographicboundary_1:flags_drenagens_nao_segmentadas\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flags_drenagens_nao_segmentadas\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:filterlayerlistbygeographicboundary_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flags_drenagens_nao_segmentadas\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"dsgtools:filterlayerlistbygeographicboundary_1:flags_drenagens_nao_segmentadas\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n  </Option>\n  <Option name=\"parameterOrder\"/>\n  <Option name=\"parameters\"/>\n</Option>\n"
             },
             "metadata": {
-                "originalName": "identificar_linhas_nao_unidas_com_mesmo_atributo.model3"
-            }
+                "originalName": "identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_hidrografia.model3"
+            },
+            "tooltip": ""
+        },
+        {
+            "displayName": "Uni\u00e3o de delimitadores / barragem / elemento_hidrografico_l / curva_nivel",
+            "flags": {
+                "onFlagsRaised": "halt",
+                "modelCanHaveFalsePositiveFlags": false,
+                "loadOutput": false,
+                "flagLayerNames": []
+            },
+            "pauseAfterExecution": false,
+            "source": {
+                "type": "xml",
+                "data": "<!DOCTYPE model>\n<Option type=\"Map\">\n  <Option type=\"Map\" name=\"children\">\n    <Option type=\"Map\" name=\"dsgtools:batchrunalgorithm_1\">\n      <Option type=\"bool\" name=\"active\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option type=\"QString\" name=\"alg_id\" value=\"dsgtools:batchrunalgorithm\"/>\n      <Option type=\"QString\" name=\"color\" value=\"\"/>\n      <Option type=\"Map\" name=\"comment\">\n        <Option type=\"QString\" name=\"color\" value=\"\"/>\n        <Option type=\"QString\" name=\"component_description\" value=\"\"/>\n        <Option type=\"double\" name=\"component_height\" value=\"30\"/>\n        <Option type=\"double\" name=\"component_pos_x\" value=\"375\"/>\n        <Option type=\"double\" name=\"component_pos_y\" value=\"120\"/>\n        <Option type=\"double\" name=\"component_width\" value=\"200\"/>\n        <Option type=\"bool\" name=\"outputs_collapsed\" value=\"true\"/>\n        <Option type=\"bool\" name=\"parameters_collapsed\" value=\"true\"/>\n      </Option>\n      <Option type=\"QString\" name=\"component_description\" value=\"Unir linhas com mesmo conjunto de atributos\"/>\n      <Option type=\"double\" name=\"component_height\" value=\"70.99999999999999\"/>\n      <Option type=\"double\" name=\"component_pos_x\" value=\"259.4354325733426\"/>\n      <Option type=\"double\" name=\"component_pos_y\" value=\"132.18486168995054\"/>\n      <Option type=\"double\" name=\"component_width\" value=\"277.33333333333326\"/>\n      <Option name=\"dependencies\"/>\n      <Option type=\"QString\" name=\"id\" value=\"dsgtools:batchrunalgorithm_1\"/>\n      <Option name=\"outputs\"/>\n      <Option type=\"bool\" name=\"outputs_collapsed\" value=\"true\"/>\n      <Option type=\"bool\" name=\"parameters_collapsed\" value=\"true\"/>\n      <Option type=\"Map\" name=\"params\">\n        <Option type=\"List\" name=\"ALG_NAME\">\n          <Option type=\"Map\">\n            <Option type=\"int\" name=\"source\" value=\"2\"/>\n            <Option type=\"QString\" name=\"static_value\" value=\"dsgtools:mergelineswithsameattributeset\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"INPUTLAYERS\">\n          <Option type=\"Map\">\n            <Option type=\"int\" name=\"source\" value=\"2\"/>\n            <Option type=\"QString\" name=\"static_value\" value=\"delimitador_massa_dagua_l,infra_barragem_l,elemnat_elemento_hidrografico_l,elemnat_curva_nivel_l\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"INPUT_LAYER_PARAMETER_NAME\">\n          <Option type=\"Map\">\n            <Option type=\"int\" name=\"source\" value=\"2\"/>\n            <Option type=\"QString\" name=\"static_value\" value=\"INPUT\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"OUTPUT_LAYER_PARAMETER_NAME\">\n          <Option type=\"Map\">\n            <Option type=\"int\" name=\"source\" value=\"2\"/>\n            <Option type=\"QString\" name=\"static_value\" value=\"\"/>\n          </Option>\n        </Option>\n        <Option type=\"List\" name=\"PARAMETER_DICT\">\n          <Option type=\"Map\">\n            <Option type=\"int\" name=\"source\" value=\"2\"/>\n            <Option type=\"QString\" name=\"static_value\" value=\"{&#xa;    &quot;ATTRIBUTE_BLACK_LIST&quot;: [&quot;id&quot;,&quot;texto_edicao&quot;,&quot;label_x&quot;,&quot;label_y&quot;,&quot;justificativa_txt&quot;,&quot;tamanho_txt&quot;,&quot;visivel&quot;,&quot;carta_simbolizacao&quot;,&quot;simbolizar_carta_mini&quot;,&quot;simb_rot&quot;,&quot;rotular_carta_mini&quot;,&quot;espacamento&quot;,&quot;tamanho_txt&quot;,&quot;estilo_fonte&quot;,&quot;cor&quot;,&quot;cor_buffer&quot;,&quot;tamanho_buffer&quot;,&quot;observacao&quot;,&quot;length_otf&quot;,&quot;geometry_error&quot;,&quot;observacao&quot;,&quot;operador_criacao&quot;,&quot;data_criacao&quot;,&quot;operador_atualizacao&quot;,&quot;data_atualizacao&quot;],&#xa;    &quot;IGNORE_PK_FIELDS&quot;: true,&#xa;    &quot;IGNORE_VIRTUAL_FIELDS&quot;: true,&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;ALLOW_CLOSED_LINES_ON_OUTPUT&quot;: false&#xa;}\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n  </Option>\n  <Option name=\"designerParameterValues\"/>\n  <Option name=\"groupBoxes\"/>\n  <Option type=\"Map\" name=\"help\">\n    <Option type=\"QString\" name=\"ALG_CREATOR\" value=\"Cap Borba\"/>\n    <Option type=\"QString\" name=\"ALG_DESC\" value=\"&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>\"/>\n    <Option type=\"invalid\" name=\"ALG_HELP_CREATOR\"/>\n    <Option type=\"QString\" name=\"ALG_VERSION\" value=\"0.1\"/>\n    <Option type=\"QString\" name=\"SHORT_DESCRIPTION\" value=\"O algoritmo une linhas com mesmo conjunto de atributos.\"/>\n  </Option>\n  <Option type=\"QString\" name=\"internal_version\" value=\"Version1\"/>\n  <Option name=\"modelVariables\"/>\n  <Option type=\"QString\" name=\"model_group\" value=\"CDGV_EDGV_Orto\"/>\n  <Option type=\"QString\" name=\"model_name\" value=\"Unir linhas da hidrografia (exceto drenagem) e altimetria com mesmo conjunto de atributos\"/>\n  <Option type=\"QString\" name=\"outputGroup\" value=\"\"/>\n  <Option name=\"outputOrder\"/>\n  <Option name=\"parameterDefinitions\"/>\n  <Option name=\"parameterOrder\"/>\n  <Option name=\"parameters\"/>\n</Option>\n"
+            },
+            "metadata": {
+                "originalName": "unir_delimitadores_barragens_elemento_hidrografico_curva_nivel.model3"
+            },
+            "tooltip": "O algoritmo une linhas com mesmo conjunto de atributos."
         },
         {
             "displayName": "Identificar pontas soltas e drenagens n\u00e3o segmentadas",
@@ -394,7 +432,8 @@
             },
             "metadata": {
                 "originalName": "identificar_drenagens_nao_segmentadas_nas_interseccoes.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar pontas soltas pequenas nas linhas",
@@ -413,7 +452,8 @@
             },
             "metadata": {
                 "originalName": "identificar_pontas_soltas_pequenas_hidrografia.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar erros na constru\u00e7\u00e3o da rede de drenagem",
@@ -432,7 +472,8 @@
             },
             "metadata": {
                 "originalName": "identificar_erros_rede_drenagem.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Linha para multilinha",
@@ -449,7 +490,8 @@
             },
             "metadata": {
                 "originalName": "linha_para_multilinha_drenagem.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar erros de ortografia no atributo nome",
@@ -466,7 +508,8 @@
             },
             "metadata": {
                 "originalName": "identifica_erro_ortografia_atributo_nome.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar erros de atributa\u00e7\u00e3o",
@@ -485,7 +528,8 @@
             },
             "metadata": {
                 "originalName": "identifica_erros_atributacao_hidrografia_altimetria.model3"
-            }
+            },
+            "tooltip": ""
         }
     ]
 }

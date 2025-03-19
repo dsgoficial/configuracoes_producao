@@ -46,7 +46,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 17. Identificar undershoot com moldura e conexão de linhas;
 18. Identificar Z;
 19. Identificar overlaps;
-20. Identificar linhas não segmentadas nas intersecções;
+20. Identificar linhas segmentadas com mesmo conjunto de atributos;
 21. Unir delimitadores / barragem / elemento_hidrografico_l / curva_nivel;
 22. Identificar pontas soltas em delimitadores de corpos d'água;
 23. Fechar Polígonos de Massa D'água;
@@ -59,14 +59,15 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 30. Identificar linhas segmentadas com mesmo conjunto de atributos;
 31. Linha para multipart (drenagens);
 32. Realizar o direcionamento da rede de drenagem;
-33. Identificar erros na construção das curvas de nível;
-34. Identificar erros de validação do terreno;
-35. Identificar intersecções inválidas entre curvas de nível e drenagens;
-36. Identificar intersecções inválidas entre curvas de nível e massas d'água;
-37. Identificar inconsistências entre curvas de nível e drenagens;
-38. Identificar erros de ortografia nos atributos;
-39. Identificar erros de atributação;
-40. Identificar erros de relacionamentos espaciais.
+33. Identificar de erros na atributação de drenagens;
+34. Identificar erros na construção das curvas de nível;
+35. Identificar erros de validação do terreno;
+36. Identificar intersecções inválidas entre curvas de nível e drenagens;
+37. Identificar intersecções inválidas entre curvas de nível e massas d'água;
+38. Identificar inconsistências entre curvas de nível e drenagens;
+39. Identificar erros de ortografia nos atributos;
+40. Identificar erros de atributação;
+41. Identificar erros de relacionamentos espaciais.
 
 ## Detalhamento dos processos
 
@@ -208,7 +209,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - admite falsos positivos? Não é o caso;
 - nome da camada de saída: flags_suavizacao
 - para após a execução? Sim
-- Texto para tooltip: Realiza simplificação topológica de Douglas-Peucker preservando a consistência entre as camadas.
+- Texto para tooltip: Realiza simplificação topológica de Douglas-Peucker preservando a consistência entre as camadas. Nesse processo, é feita a retirada de excesso de vértices, mantendo o ponto inicial e final das linhas.
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
 ### 15. Identificação de problemas de compartilhamento de vértices
@@ -247,12 +248,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camadas: delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,elemnat_curva_nivel_l,infra_barragem_l,elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l,cobter_massa_dagua_a,infra_barragem_a
 - nome camada flags: flags_overlaps_l,flags_overlaps_a
 
-### 20. Identificação de linhas não segmentadas nas intersecções
+### 20. Identificar drenagens segmentadas com mesmo conjunto de atributos
 
-- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_linhas_nao_segmentadas_nas_interseccoes_alt_hid.model3
+- arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_linhas_segmentadas_com_mesmo_conjunto_de_atributos_hidrografia.model3
 - camadas: elemnat_trecho_drenagem_l
 - camadas filtro linha: delimitador_massa_dagua_l,infra_barragem_l,elemnat_elemento_hidrografico_l,delimitador_elemento_hidrografico_l
 - nome camada flags: flags_drenagens_nao_segmentadas
+- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
 
 ### 21. União de delimitadores / barragem / elemento_hidrografico_l / curva_nivel
 
@@ -360,19 +362,22 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - processos utilizados: Definir direção dos trechos / Verificar conectividade e coerência da rede
 - nome camada flags: flags_direcionamento_p,flags_direcionamento_l,flags_direcionamento_a
 - Texto para tooltip: Verifica e corrige o direcionamento da rede de drenagem, garantindo que todos os trechos sigam a direção correta do escoamento da água.
-
-### 33. Identificação de erros na construção das curvas de nível
+  
+### 33. Identificação de erros na atributação de drenagens
 
 - arquivos:
-  - /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_na_construcao_das_curvas_de_nivel_100k.model3
-- camadas: elemnat_curva_nivel_l
-- equidistancias:
-  - 100k: 40
-- black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf", "geometry_error", "observacao", "operador_criacao", "data_criacao", "operador_atualizacao", "data_atualizacao"]
-- nome camada flags: flags_modelo_p, flags_modelo_l, flags_modelo_a
-- camada de moldura: aux_moldura_area_continua_a | aux_moldura_a | moldura
+  - /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_de_atributacao_das_drenagens.model3
+- camadas: elemnat_trecho_drenagem_l
+- nome camada flags: flags_atributacao_drenagem
 
-### 34. Identificação de erros de validação do terreno
+### 34. Identificação de erros na atributação de curvas de nível
+
+- arquivos:
+  - /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_de_atributacao_das_curvas_de_nivel.model3
+- camadas: elemnat_curva_nivel_l
+- nome camada flags: flags_atributacao_curva_de_nivel
+
+### 35. Identificação de erros de validação do terreno
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_erros_validacao_terreno.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
@@ -396,7 +401,7 @@ layer_property( @moldura_OUTPUT , 'feature_count') > 1
 if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
 ```
 
-### 35. Identificação de intersecções inválidas entre curvas de nível e drenagens
+### 36. Identificação de intersecções inválidas entre curvas de nível e drenagens
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_interseccoes_invalidas_cn_drenagens.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
@@ -409,7 +414,7 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
 ```
 
-### 36. Identificação de intersecções inválidas entre curvas de nível e massas d'água
+### 37. Identificação de intersecções inválidas entre curvas de nível e massas d'água
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_interseccoes_invalidas_cn_massas_dagua.model3
 - camadas: elemnat_curva_nivel_l
@@ -425,7 +430,7 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
 ```
 
-### 37. Identificação de inconsistências entre curvas de nível e drenagens
+### 38. Identificação de inconsistências entre curvas de nível e drenagens
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_inconsistencias_cn_hidrografia.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
@@ -437,14 +442,14 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if(@productiontools_scale = 100000, 40, if(@productiontools_scale = 250000, 100, 10))))
 ```
 
-### 38. Identificação de erros de ortografia no atributo nome
+### 39. Identificação de erros de ortografia no atributo nome
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3
 - camadas: todas as camadas de hidrografia e altimetria;
 - para após a execução? Sim
 - nome camada de saída: saida_verifica_ortografia_nome
 
-### 39. Identificação de erros de atributação na hidrografia
+### 40. Identificação de erros de atributação na hidrografia
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_erros_atributacao_hidrografia_altimetria.model3
 - camadas: todas as camadas de hidrografia e altimetria;
@@ -452,7 +457,7 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - nome camada de flags: flags_erros_atributos
 - nome camada de saída: atributos_incomuns
 
-### 40. Identificação de erros de relacionamentos espaciais
+### 41. Identificação de erros de relacionamentos espaciais
 
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identifica_erros_relacionamentos_espaciais_hidrografia.model3
 - camadas: todas as camadas de hidrografia e altimetria;
