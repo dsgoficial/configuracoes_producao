@@ -1,0 +1,26 @@
+{
+    "metadata": {
+        "version": 0.2,
+        "lastModified": "18/03/2025 11:47:02"
+    },
+    "0": {
+        "0": "elemento energia desconectado da linha de transmiss\u00e3o.",
+        "1": "infra_elemento_energia_p",
+        "2": "\"tipo\" = 1401 OR \"tipo\" = 1801 OR \"tipo\" = 1802",
+        "3": 3,
+        "4": "",
+        "5": "infra_elemento_energia_l",
+        "6": "",
+        "7": "1..*"
+    },
+    "1": {
+        "0": "Elemento energia area sem um elemento energia ponto dentro.",
+        "1": "infra_elemento_energia_a",
+        "2": "\"tipo\" = 1401 OR \"tipo\" = 1801 OR \"tipo\" = 1802",
+        "3": 13,
+        "4": "",
+        "5": "infra_elemento_energia_p",
+        "6": "",
+        "7": "1..*"
+    }
+}

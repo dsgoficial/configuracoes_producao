@@ -1,0 +1,178 @@
+{
+    "metadados":{
+        "modelo": "EDGV 3.0 Orto",
+        "versao_modelo": "2.2.6",
+        "versao_regras":"0.1"
+    },
+    "grupo_estilo": [
+        {
+            "tipo_estilo": "Atributo incorreto",
+            "cor_rgb": "255,127,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum - atributo extra",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo",
+            "cor_rgb": "255,189,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo - atributo extra",
+            "cor_rgb": "255,189,127"
+        }
+    ],
+    "regras": [
+        {
+            "atributo": "tipo",
+            "descricao": "tipo - Preencher atributo",
+            "regra": "tipo in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.constr_extracao_mineral_p",
+                "edgv.infra_elemento_energia_p",
+                "edgv.infra_elemento_infraestrutura_p",
+                "edgv.infra_obstaculo_vertical_p",
+                "edgv.infra_pista_pouso_p",
+                "edgv.infra_elemento_energia_l",
+                "edgv.infra_elemento_infraestrutura_l",
+                "edgv.infra_pista_pouso_l",
+                "edgv.constr_extracao_mineral_a",
+                "edgv.infra_elemento_energia_a",
+                "edgv.infra_elemento_infraestrutura_a",
+                "edgv.infra_pista_pouso_a"
+            ]
+        },
+        {
+            "atributo": "tipo_produto",
+            "descricao": "tipo_produto - Preencher atributo",
+            "regra": "tipo_produto in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.constr_extracao_mineral_p",
+                "edgv.constr_extracao_mineral_a"
+            ]
+        },
+        {
+            "atributo": "forma_extracao",
+            "descricao": "forma_extracao - Preencher atributo",
+            "regra": "forma_extracao in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.constr_extracao_mineral_p",
+                "edgv.constr_extracao_mineral_a"
+            ]
+        },
+        {
+            "atributo": "forma_extracao",
+            "descricao": "forma_extracao - Incomum, confirmar atributação",
+            "regra": "forma_extracao in (6)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "edgv.constr_extracao_mineral_p",
+                "edgv.constr_extracao_mineral_a"
+            ]
+        },
+        {
+            "atributo": "situacao_fisica",
+            "descricao": "situacao_fisica - Preencher atributo",
+            "regra": "situacao_fisica in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.constr_extracao_mineral_p",
+                "edgv.infra_elemento_energia_p",
+                "edgv.infra_elemento_infraestrutura_p",
+                "edgv.infra_pista_pouso_p",
+                "edgv.infra_elemento_energia_l",
+                "edgv.infra_elemento_infraestrutura_l",
+                "edgv.infra_pista_pouso_l",
+                "edgv.constr_extracao_mineral_a",
+                "edgv.infra_elemento_energia_a",
+                "edgv.infra_elemento_infraestrutura_a"
+            ]
+        },
+        {
+            "atributo": "altitude",
+            "descricao": "altitude - torre de energia requer altitude não nula",
+            "regra": "tipo in (1401) and altitude is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.infra_elemento_energia_p"
+            ]
+        },
+        {
+            "atributo": "altura",
+            "descricao": "altura - torre de energia requer altura não nula",
+            "regra": "tipo in (1401) and altura is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.infra_elemento_energia_p"
+            ]
+        },
+        {
+            "atributo": "altitude",
+            "descricao": "altitude - ov requer altitude não nula",
+            "regra": "altitude is NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.infra_obstaculo_vertical_p"
+            ]
+        },
+        {
+            "atributo": "altura",
+            "descricao": "altura - ov requer altura >= 46m",
+            "regra": "altura < 46",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "edgv.infra_obstaculo_vertical_p"
+            ]
+        },
+        {
+            "atributo": "revestimento",
+            "descricao": "revestimento - Preencher atributo",
+            "regra": "revestimento in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.infra_pista_pouso_p",
+                "edgv.infra_pista_pouso_l",
+                "edgv.infra_pista_pouso_a"
+            ]
+        },
+        {
+            "atributo": "uso_pista",
+            "descricao": "uso_pista - Preencher atributo",
+            "regra": "uso_pista in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.infra_pista_pouso_p",
+                "edgv.infra_pista_pouso_l",
+                "edgv.infra_pista_pouso_a"
+            ]
+        },
+        {
+            "atributo": "uso_pista",
+            "descricao": "uso_pista - Incomum, confirmar atributação",
+            "regra": "uso_pista in (6)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "edgv.infra_pista_pouso_p",
+                "edgv.infra_pista_pouso_l",
+                "edgv.infra_pista_pouso_a"
+            ]
+        },
+        {
+            "atributo": "tipo",
+            "descricao": "tipo - Incomum, confirmar atributação",
+            "regra": "tipo in (1, 5, 6, 8)",
+            "tipo_estilo": "Atributo incomum",
+            "camadas": [
+                "edgv.constr_extracao_mineral_p",
+                "edgv.constr_extracao_mineral_a"
+            ]
+        }
+    ]
+}

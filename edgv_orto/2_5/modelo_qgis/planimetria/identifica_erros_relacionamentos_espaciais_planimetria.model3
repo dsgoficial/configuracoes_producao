@@ -1,0 +1,1481 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="990.6" type="double"/>
+        <Option name="component_pos_y" value="536.8" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Build Polygons From Center Points and Boundaries" type="QString"/>
+      <Option name="component_height" value="70.33952239329822" type="double"/>
+      <Option name="component_pos_x" value="214.847116392906" type="double"/>
+      <Option name="component_pos_y" value="1002.1795840561416" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ATTRIBUTE_BLACK_LIST" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="StringList">
+              <Option value="id,observacao,operador_criacao,data_criacao,operador_atualizacao,data_atualizacao" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="BOUNDARY_LINE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'delimitador_massa_dagua_l'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="CHECK_INVALID_GEOMETRIES_ON_OUTPUT_POLYGONS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="CHECK_UNUSED_BOUNDARY_LINES" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="CONSTRAINT_LINE_LAYERS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="CONSTRAINT_POLYGON_LAYERS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="GEOGRAPHIC_BOUNDARY" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="GROUP_BY_SPATIAL_PARTITION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_CENTER_POINTS" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'centroide_massa_dagua_p'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MERGE_OUTPUT_POLYGONS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="SUPPRESS_AREA_WITHOUT_CENTROID_FLAG" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:enforcespatialrules_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:enforcespatialrules" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="0,200,60,255" type="QString"/>
+        <Option name="component_description" value="Regras espaciais que não requerem a criação de massa d'água previamente" type="QString"/>
+        <Option name="component_height" value="90.25464179497362" type="double"/>
+        <Option name="component_pos_x" value="1132.2473773652164" type="double"/>
+        <Option name="component_pos_y" value="547.9290099655451" type="double"/>
+        <Option name="component_width" value="96.21816977562844" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Enforce spatial rules" type="QString"/>
+      <Option name="component_height" value="46.987694952786114" type="double"/>
+      <Option name="component_pos_x" value="1056.5809450230522" type="double"/>
+      <Option name="component_pos_y" value="697.0742611803979" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:enforcespatialrules_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="RULES_SET" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="cardinality" value="1..*" type="QString"/>
+                <Option name="de9im_predicate" value="" type="QString"/>
+                <Option name="filter_a" value="&quot;tipo&quot; = 1401 OR &quot;tipo&quot; = 1801 OR &quot;tipo&quot; = 1802" type="QString"/>
+                <Option name="filter_b" value="" type="QString"/>
+                <Option name="layer_a" value="infra_elemento_energia_p" type="QString"/>
+                <Option name="layer_b" value="infra_elemento_energia_l" type="QString"/>
+                <Option name="name" value="elemento energia desconectado da linha de transmissão." type="QString"/>
+                <Option name="predicate" value="3" type="int"/>
+                <Option name="useDE9IM" value="false" type="bool"/>
+              </Option>
+              <Option type="Map">
+                <Option name="cardinality" value="1..*" type="QString"/>
+                <Option name="de9im_predicate" value="" type="QString"/>
+                <Option name="filter_a" value="&quot;tipo&quot; = 1401 OR &quot;tipo&quot; = 1801 OR &quot;tipo&quot; = 1802" type="QString"/>
+                <Option name="filter_b" value="" type="QString"/>
+                <Option name="layer_a" value="infra_elemento_energia_a" type="QString"/>
+                <Option name="layer_b" value="infra_elemento_energia_p" type="QString"/>
+                <Option name="name" value="Elemento energia area sem um elemento energia ponto dentro." type="QString"/>
+                <Option name="predicate" value="13" type="int"/>
+                <Option name="useDE9IM" value="false" type="bool"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1076.6135381009012" type="double"/>
+        <Option name="component_pos_y" value="648.2920629930319" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="moldura" type="QString"/>
+      <Option name="component_height" value="44.39999999999998" type="double"/>
+      <Option name="component_pos_x" value="43.6241380554452" type="double"/>
+      <Option name="component_pos_y" value="888.1534459742641" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="aux_moldura_a,moldura,aux_moldura_area_continua_a" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyattribute_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbyattribute" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1203.2562358276643" type="double"/>
+        <Option name="component_pos_y" value="1068.5" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="extração mineral diferente de petroleo e salina que está dentro de massa d agua_ P" type="QString"/>
+      <Option name="component_height" value="51.768707482993136" type="double"/>
+      <Option name="component_pos_x" value="858.365244253372" type="double"/>
+      <Option name="component_pos_y" value="889.1843308511271" type="double"/>
+      <Option name="component_width" value="221.76870748299314" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="native:extractbylocation_8" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbyattribute_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="tipo" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_8" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OPERATOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="4" type="int"/>
+          </Option>
+        </Option>
+        <Option name="VALUE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="6" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyattribute_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbyattribute" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1241.4965986394554" type="double"/>
+        <Option name="component_pos_y" value="1165.4648526077096" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="extração mineral diferente de petroleo e salina que está dentro de massa d agua_A" type="QString"/>
+      <Option name="component_height" value="51.768707482993136" type="double"/>
+      <Option name="component_pos_x" value="861.2336390597859" type="double"/>
+      <Option name="component_pos_y" value="1017.4544523449397" type="double"/>
+      <Option name="component_width" value="221.76870748299314" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="native:extractbylocation_9" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbyattribute_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="tipo" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_9" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OPERATOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="4" type="int"/>
+          </Option>
+        </Option>
+        <Option name="VALUE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="6" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyexpression_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbyexpression" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2178.1464561035755" type="double"/>
+        <Option name="component_pos_y" value="1512.626566922749" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="infra_Elemento_energia_p que nao pode estar dentro de massa d agua_p" type="QString"/>
+      <Option name="component_height" value="76.39999999999998" type="double"/>
+      <Option name="component_pos_x" value="603.7464561035755" type="double"/>
+      <Option name="component_pos_y" value="448.8265669227487" type="double"/>
+      <Option name="component_width" value="236.79999999999995" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractbyexpression_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&quot;tipo&quot; NOT LIKE '408' AND &quot;tipo&quot; NOT LIKE '407'&#xd;&#xa;" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyexpression_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbyexpression" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2178.1464561035755" type="double"/>
+        <Option name="component_pos_y" value="1512.626566922749" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="infra_Elemento_energia_A que nao pode estar dentro de massa d agua" type="QString"/>
+      <Option name="component_height" value="68.40000000000009" type="double"/>
+      <Option name="component_pos_x" value="618.1464561035755" type="double"/>
+      <Option name="component_pos_y" value="590.8265669227488" type="double"/>
+      <Option name="component_width" value="224.00000000000003" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractbyexpression_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&quot;tipo&quot; NOT LIKE '408' AND &quot;tipo&quot; NOT LIKE '407'&#xa;" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyexpression_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbyexpression" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2178.1464561035755" type="double"/>
+        <Option name="component_pos_y" value="1512.626566922749" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="infra_Elemento_energia_L que nao pode estar dentro de massa d agua" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="569.3464561035757" type="double"/>
+      <Option name="component_pos_y" value="736.0265669227489" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractbyexpression_3" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&quot;tipo&quot; NOT LIKE '408' AND &quot;tipo&quot; NOT LIKE '407' AND &quot;tipo&quot; NOT LIKE '303'&#xa;" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_3" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="923.715384337853" type="double"/>
+        <Option name="component_pos_y" value="418.54535820502633" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="'infra_elemento_energia_p'" type="QString"/>
+      <Option name="component_height" value="40" type="double"/>
+      <Option name="component_pos_x" value="280.4400610593368" type="double"/>
+      <Option name="component_pos_y" value="507.14862376514577" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'infra_elemento_energia_p'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_10" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1200.4119881783836" type="double"/>
+        <Option name="component_pos_y" value="1353.1016106873315" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="infra_pista_pouso_p" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="572.3794417654582" type="double"/>
+      <Option name="component_pos_y" value="1040.3891675564" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_10" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'infra_pista_pouso_p'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_11" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1275.341141010146" type="double"/>
+        <Option name="component_pos_y" value="1439.4330259065357" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="infra_pista_pouso_l" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="590.4932119247679" type="double"/>
+      <Option name="component_pos_y" value="1107.6363899216885" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_11" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'infra_pista_pouso_l'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_12" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1315.2490593661933" type="double"/>
+        <Option name="component_pos_y" value="1549.383413214013" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="infra_pista_pouso_a" type="QString"/>
+      <Option name="component_height" value="40.587815074053196" type="double"/>
+      <Option name="component_pos_x" value="583.6796713181755" type="double"/>
+      <Option name="component_pos_y" value="1198.7565024023577" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_12" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'infra_pista_pouso_a'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="916" type="double"/>
+        <Option name="component_pos_y" value="584" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="'infra_elemento_energia_a'" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="284.4424402991623" type="double"/>
+      <Option name="component_pos_y" value="569.4000000000001" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'infra_elemento_energia_a'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="993" type="double"/>
+        <Option name="component_pos_y" value="638" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="'infra_elemento_energia_l'" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="287.38183022437187" type="double"/>
+      <Option name="component_pos_y" value="655.5999999999999" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_3" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'infra_elemento_energia_l'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_8" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1160" type="double"/>
+        <Option name="component_pos_y" value="1211" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="'constr_extracao_mineral_p'" type="QString"/>
+      <Option name="component_height" value="35" type="double"/>
+      <Option name="component_pos_x" value="570.0488043155763" type="double"/>
+      <Option name="component_pos_y" value="893.9532644786707" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_8" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'constr_extracao_mineral_p'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_9" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1250.938775510204" type="double"/>
+        <Option name="component_pos_y" value="1329.9659863945576" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="'constr_extracao_mineral_a'" type="QString"/>
+      <Option name="component_height" value="35" type="double"/>
+      <Option name="component_pos_x" value="575.0774461013539" type="double"/>
+      <Option name="component_pos_y" value="977.4866805883682" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:extractbylocation_9" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'constr_extracao_mineral_a'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="6" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1410.6128320598305" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Merge vector layers-linha" type="QString"/>
+      <Option name="component_height" value="51.82874588381946" type="double"/>
+      <Option name="component_pos_x" value="1752.2385893020987" type="double"/>
+      <Option name="component_pos_y" value="1126.2170897281324" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:mergevectorlayers_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_linha" type="Map">
+          <Option name="child_id" value="native:mergevectorlayers_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="flags_linha" type="QString"/>
+          <Option name="component_height" value="58.9940317201831" type="double"/>
+          <Option name="component_pos_x" value="2032.1277997952043" type="double"/>
+          <Option name="component_pos_y" value="1160.1208220282" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="flags_linha" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:enforcespatialrules_1" type="QString"/>
+            <Option name="output_name" value="LINE_FLAGS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:refactorfields_3" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2097.747993973565" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Merge vector layers-linhas- " type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="921.1962131516073" type="double"/>
+      <Option name="component_pos_y" value="1320.7356589050921" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:mergevectorlayers_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbyexpression_3" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_11" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1983.1470780835132" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Merge vector layers- Ponto" type="QString"/>
+      <Option name="component_height" value="36.54862376514575" type="double"/>
+      <Option name="component_pos_x" value="937.0048585754936" type="double"/>
+      <Option name="component_pos_y" value="1457.626566922749" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:mergevectorlayers_3" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_10" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbyattribute_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbyexpression_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_4" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1983.1470780835132" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Merge vector layers-ponto" type="QString"/>
+      <Option name="component_height" value="69.07891231850772" type="double"/>
+      <Option name="component_pos_x" value="1754.9713889675538" type="double"/>
+      <Option name="component_pos_y" value="1019.4931222063068" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:mergevectorlayers_4" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_pontos" type="Map">
+          <Option name="child_id" value="native:mergevectorlayers_4" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="flags_pontos" type="QString"/>
+          <Option name="component_height" value="51.67594466263267" type="double"/>
+          <Option name="component_pos_x" value="2074.320952587533" type="double"/>
+          <Option name="component_pos_y" value="1032.9384656276927" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="flags_pontos" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:enforcespatialrules_1" type="QString"/>
+            <Option name="output_name" value="POINT_FLAGS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:refactorfields_4" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_5" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1989.2253684220832" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Merge vector layers-poligono" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="979.574310481328" type="double"/>
+      <Option name="component_pos_y" value="1179.0939758564434" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:mergevectorlayers_5" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_12" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbyattribute_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbyexpression_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_6" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:mergevectorlayers" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2030.8255008901722" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Merge vector layers-poligono" type="QString"/>
+      <Option name="component_height" value="65.29708209413593" type="double"/>
+      <Option name="component_pos_x" value="1758.1464561035757" type="double"/>
+      <Option name="component_pos_y" value="1251.3854870750288" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:mergevectorlayers_6" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_poligonos" type="Map">
+          <Option name="child_id" value="native:mergevectorlayers_6" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="flags_poligonos" type="QString"/>
+          <Option name="component_height" value="52.69098134623028" type="double"/>
+          <Option name="component_pos_x" value="2033.2860655953027" type="double"/>
+          <Option name="component_pos_y" value="1281.0713472058042" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="flags_poligonos" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:enforcespatialrules_1" type="QString"/>
+            <Option name="output_name" value="POLYGON_FLAGS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" value="native:refactorfields_5" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:refactorfields_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:refactorfields" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2097.747993973565" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="linhas dentro de massa d agua-L" type="QString"/>
+      <Option name="component_height" value="53.951591421020794" type="double"/>
+      <Option name="component_pos_x" value="1259.4496934951815" type="double"/>
+      <Option name="component_pos_y" value="1268.5102925683823" type="double"/>
+      <Option name="component_width" value="240.64512483567157" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="native:mergevectorlayers_2" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="native:refactorfields_3" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" value="'linhas dentro de massa dagua ou  erro na construção dos poligonos de massa dagua'" type="QString"/>
+                <Option name="length" value="255" type="int"/>
+                <Option name="name" value="reason" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:mergevectorlayers_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:refactorfields_4" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:refactorfields" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1983.1470780835132" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="pontos  dentro de massa d agua_p" type="QString"/>
+      <Option name="component_height" value="49.67492247594076" type="double"/>
+      <Option name="component_pos_x" value="1254.6185683715366" type="double"/>
+      <Option name="component_pos_y" value="1454.9743742978644" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:refactorfields_4" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" value="'pontos dentro de massa dagua ou  erro na construção dos poligonos de massa dagua'" type="QString"/>
+                <Option name="length" value="255" type="int"/>
+                <Option name="name" value="reason" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:mergevectorlayers_3" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:refactorfields_5" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:refactorfields" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2030.8255008901722" type="double"/>
+        <Option name="component_pos_y" value="2413.152591694081" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="poligonos dentro de massa dagua_a" type="QString"/>
+      <Option name="component_height" value="37.563660448743576" type="double"/>
+      <Option name="component_pos_x" value="1250.3327974587878" type="double"/>
+      <Option name="component_pos_y" value="1147.6758060808147" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:refactorfields_5" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" value="'poligonos dentro de massa dagua ou  erro na construção dos poligonos de massa dagua'" type="QString"/>
+                <Option name="length" value="255" type="int"/>
+                <Option name="name" value="reason" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:mergevectorlayers_5" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option name="native:mergevectorlayers_1:flags_linha" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_4:flags_pontos" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_6:flags_poligonos" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="CDGV_EDGV_ORTO_2.5" type="QString"/>
+  <Option name="model_name" value="Identifica erros de relacionamentos espaciais planimetria" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="native:mergevectorlayers_1:flags_linha" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="flags_linha" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:mergevectorlayers_1:flags_linha" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+    <Option name="native:mergevectorlayers_4:flags_pontos" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="flags_pontos" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:mergevectorlayers_4:flags_pontos" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+    <Option name="native:mergevectorlayers_6:flags_poligonos" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="flags_poligonos" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:mergevectorlayers_6:flags_poligonos" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>
