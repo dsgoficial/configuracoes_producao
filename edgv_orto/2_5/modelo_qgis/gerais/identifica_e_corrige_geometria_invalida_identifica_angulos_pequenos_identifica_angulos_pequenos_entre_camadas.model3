@@ -275,8 +275,8 @@
       </Option>
       <Option name="component_description" type="QString" value="Identify Out Of Bounds Angles in Coverage"/>
       <Option name="component_height" type="double" value="55.33333333333334"/>
-      <Option name="component_pos_x" type="double" value="270.0175778550805"/>
-      <Option name="component_pos_y" type="double" value="362.4482697008127"/>
+      <Option name="component_pos_x" type="double" value="394.0175778550805"/>
+      <Option name="component_pos_y" type="double" value="403.4482697008127"/>
       <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="dsgtools:identifyoutofboundsanglesincoverage_1"/>
@@ -322,8 +322,8 @@
       </Option>
       <Option name="component_description" type="QString" value="moldura"/>
       <Option name="component_height" type="double" value="41.99999999999994"/>
-      <Option name="component_pos_x" type="double" value="174.6708464285801"/>
-      <Option name="component_pos_y" type="double" value="492.4368839426603"/>
+      <Option name="component_pos_x" type="double" value="194.6708464285801"/>
+      <Option name="component_pos_y" type="double" value="605.4368839426603"/>
       <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1"/>
@@ -390,19 +390,19 @@
       </Option>
       <Option name="component_description" type="QString" value="camadas"/>
       <Option name="component_height" type="double" value="57.87481789928851"/>
-      <Option name="component_pos_x" type="double" value="123.50778566148645"/>
-      <Option name="component_pos_y" type="double" value="218.03768107342708"/>
+      <Option name="component_pos_x" type="double" value="132.50778566148645"/>
+      <Option name="component_pos_y" type="double" value="220.03768107342708"/>
       <Option name="component_width" type="double" value="212.86530056890237"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="dsgtools:stringcsvtolayerlistalgorithm_1"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="outputs_collapsed" type="bool" value="false"/>
       <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option name="expression" type="QString" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags|elemnat_curva_nivel_l)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))"/>
-            <Option name="source" type="int" value="3"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="infra_barragem_l,elemnat_trecho_drenagem_l,delimitador_massa_dagua_l,infra_ferrovia_l,infra_via_deslocamento_l,delimitador_area_sem_dados_l,delimitador_area_edificada_l,delimitador_vegetacao_l,infra_mobilidade_urbana_l,infra_vala_l"/>
           </Option>
         </Option>
       </Option>
