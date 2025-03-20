@@ -361,7 +361,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camadas: elemnat_trecho_drenagem_l
 - processos utilizados: Definir direção dos trechos / Verificar conectividade e coerência da rede
 - nome camada flags: flags_direcionamento_p,flags_direcionamento_l,flags_direcionamento_a
-- Texto para tooltip: Verifica e corrige o direcionamento da rede de drenagem, garantindo que todos os trechos sigam a direção correta do escoamento da água.
+- Texto para tooltip: Verifica e corrige o direcionamento da rede de drenagem, garantindo que todos os trechos sigam a direção correta do escoamento da água. PRIMEIRO PASSO: Direcione as drenagens que cruzam a moldura. SEGUNDO PASSO: Rode o direcionamento. As drenagens que tiverem o fluxo adequado, troque o atributo direcao_fixada para sim. Prossiga no direcionamento até zerarem as flags.
   
 ### 33. Identificação de erros na atributação de drenagens
 
@@ -383,7 +383,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
 - processos utilizados: Verificar consistência de elevação nas curvas de nível / Verificar declive adequado ao longo das drenagens
 - nome camada flags: flags_validacao_terreno_p,flags_validacao_terreno_l,flags_validacao_terreno_a
-- Texto para tooltip: Verifica a consistência do modelo de terreno, identificando problemas como curvas de nível com valores inconsistentes ou drenagens que "sobem" em vez de "descer".
+- Texto para tooltip: Verifica a consistência do modelo de terreno, identificando problemas como curvas de nível com cotas fora da equidistância, curvas de nível com cotas diferentes que se intersectam, curvas de nível faltando e curvas de depressão incorretas. Antes de rodar, garanta que todas as curvas estão cruzando a moldura.
 - equidistancias:
   - 250k: 100
   - 100k: 40
@@ -407,7 +407,7 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
 - processos utilizados: Identificar intersecções inválidas
 - nome camada flags: flags_interseccoes_invalidas_cn_hidrografia
-- Texto para tooltip: Verifica intersecções entre curvas de nível e drenagens, identificando padrões inconsistentes com o comportamento natural da água sobre o terreno.
+- Texto para tooltip: Verifica intersecções entre curvas de nível e drenagens, identificando padrões inconsistentes com o comportamento natural da água sobre o terreno. Identifica drenagens que cruzam mais de uma vez a mesma cota.
 - Scale expression:
 
 ```
@@ -423,7 +423,7 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - nome camada flags: flags_interseccoes_invalidas_cn_massas
 - admite falsos positivos? Não
 - para após a execução? Somente se tiver flags
-- Texto para tooltip: Verifica intersecções entre curvas de nível e massas d'água, identificando inconsistências como curvas de diferentes valores atravessando corpos d'água ou não respeitando suas margens.
+- Texto para tooltip: Verifica intersecções entre curvas de nível e massas d'água, identificando inconsistências como curvas de diferentes valores atravessando corpos d'água ou não respeitando suas margens. Curvas de nível que cruzam de fato a massa d'água devem ter atributo dentro_massa_dagua = 1 .
 - Scale expression:
 
 ```
@@ -435,7 +435,7 @@ if(@productiontools_scale = 25000, 10, if(@productiontools_scale = 50000, 20, if
 - arquivo: /configuracoes_producao/edgv_orto/modelo_qgis/hidrografia_altimetria/identificar_inconsistencias_cn_hidrografia.model3
 - camadas: elemnat_curva_nivel_l, elemnat_trecho_drenagem_l
 - nome camada flags: flags_inconsistencia_cn_hidrografia
-- Texto para tooltip: Verifica se as curvas de nível estão em conformidade com a hidrografia, verificando de cima para baixo no terreno e verificando se existe alguma curva faltando.
+- Texto para tooltip: Verifica se as curvas de nível estão em conformidade com a hidrografia, verificando de cima para baixo no terreno e verificando se existe alguma curva faltando. As drenagens devem estar corretamente direcionadas para esse algoritmo funcionar corretamente.
 - Scale expression:
 
 ```
