@@ -54,7 +54,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 25. Fechar polígonos de elementos hidrográficos e construir ilhas;
 26. Corrigir atributação dentro_de_poligono nas drenagens;
 27. Unir drenagens;
-28. Identificar elementos pequenos na rede de drenagem;
+28. Identificar drenagens de primeira ordem menores que o tamanho mínimo;
 29. Identificar erros na construção da rede de drenagem;
 30. Identificar linhas segmentadas com mesmo conjunto de atributos;
 31. Linha para multipart (drenagens);
@@ -325,9 +325,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags
 - Texto para tooltip: Realiza a união de trechos de drenagem que compartilham extremidades e possuem os mesmos atributos, criando uma rede hidrográfica contínua.
 
-### 28. Identificação de elementos pequenos na rede de drenagem
+### 28. Identificar drenagens de primeira ordem menores que o tamanho mínimo
 
-- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/hidrografia_altimetria/identificar_elementos_pequenos_na_rede.model3
+- arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/hidrografia_altimetria/identificar_pontas_soltas_pequenas_hidrografia.model3
 - camada: elemnat_trecho_drenagem_l
 - tamanho: 1000 m (0.01 grau)
 - nome camada flags: flags_linhas_pequenas
