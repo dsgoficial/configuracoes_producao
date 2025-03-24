@@ -1,60 +1,113 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option type="Map" name="children">
-    <Option type="Map" name="dsgtools:batchrunalgorithm_1">
-      <Option type="bool" name="active" value="true"/>
+    <Option type="Map" name="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="dsgtools:batchrunalgorithm"/>
-      <Option type="QString" name="color" value=""/>
+      <Option value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
       <Option type="Map" name="comment">
-        <Option type="QString" name="color" value=""/>
-        <Option type="QString" name="component_description" value=""/>
-        <Option type="double" name="component_height" value="30"/>
-        <Option type="double" name="component_pos_x" value="375"/>
-        <Option type="double" name="component_pos_y" value="120"/>
-        <Option type="double" name="component_width" value="200"/>
-        <Option type="bool" name="outputs_collapsed" value="true"/>
-        <Option type="bool" name="parameters_collapsed" value="true"/>
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="679.4354325733426" type="double" name="component_pos_x"/>
+        <Option value="187.18486168995054" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option type="QString" name="component_description" value="Unir linhas com mesmo conjunto de atributos"/>
-      <Option type="double" name="component_height" value="70.99999999999999"/>
-      <Option type="double" name="component_pos_x" value="259.4354325733426"/>
-      <Option type="double" name="component_pos_y" value="132.18486168995054"/>
-      <Option type="double" name="component_width" value="277.33333333333326"/>
+      <Option value="Unir linhas com mesmo conjunto de atributos" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="459.4354325733426" type="double" name="component_pos_x"/>
+      <Option value="224.18486168995054" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="dsgtools:batchrunalgorithm_1"/>
+      <Option value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option type="bool" name="outputs_collapsed" value="true"/>
-      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
       <Option type="Map" name="params">
         <Option type="List" name="ALG_NAME">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="dsgtools:mergelineswithsameattributeset"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="dsgtools:mergelineswithsameattributeset" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GEOGRAPHIC_BOUNDARY">
+          <Option type="Map">
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GEOGRAPHIC_BOUNDARY_PARAMETER_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="GEOGRAPHIC_BOUNDARY" type="QString" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="delimitador_massa_dagua_l,infra_barragem_l,elemnat_elemento_hidrografico_l,elemnat_curva_nivel_l"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="delimitador_massa_dagua_l,infra_barragem_l,elemnat_elemento_hidrografico_l,elemnat_curva_nivel_l" type="QString" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="INPUT"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="INPUT" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MODE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value=""/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="PARAMETER_DICT">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="{&#xa;    &quot;ATTRIBUTE_BLACK_LIST&quot;: [&quot;id&quot;,&quot;texto_edicao&quot;,&quot;label_x&quot;,&quot;label_y&quot;,&quot;justificativa_txt&quot;,&quot;tamanho_txt&quot;,&quot;visivel&quot;,&quot;carta_simbolizacao&quot;,&quot;simbolizar_carta_mini&quot;,&quot;simb_rot&quot;,&quot;rotular_carta_mini&quot;,&quot;espacamento&quot;,&quot;tamanho_txt&quot;,&quot;estilo_fonte&quot;,&quot;cor&quot;,&quot;cor_buffer&quot;,&quot;tamanho_buffer&quot;,&quot;observacao&quot;,&quot;length_otf&quot;,&quot;geometry_error&quot;,&quot;observacao&quot;,&quot;operador_criacao&quot;,&quot;data_criacao&quot;,&quot;operador_atualizacao&quot;,&quot;data_atualizacao&quot;],&#xa;    &quot;IGNORE_PK_FIELDS&quot;: true,&#xa;    &quot;IGNORE_VIRTUAL_FIELDS&quot;: true,&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;ALLOW_CLOSED_LINES_ON_OUTPUT&quot;: false&#xa;}"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="{&#xa;    &quot;ATTRIBUTE_BLACK_LIST&quot;: [&quot;id&quot;,&quot;texto_edicao&quot;,&quot;label_x&quot;,&quot;label_y&quot;,&quot;justificativa_txt&quot;,&quot;tamanho_txt&quot;,&quot;visivel&quot;,&quot;carta_simbolizacao&quot;,&quot;simbolizar_carta_mini&quot;,&quot;simb_rot&quot;,&quot;rotular_carta_mini&quot;,&quot;espacamento&quot;,&quot;tamanho_txt&quot;,&quot;estilo_fonte&quot;,&quot;cor&quot;,&quot;cor_buffer&quot;,&quot;tamanho_buffer&quot;,&quot;observacao&quot;,&quot;length_otf&quot;,&quot;geometry_error&quot;,&quot;observacao&quot;,&quot;operador_criacao&quot;,&quot;data_criacao&quot;,&quot;operador_atualizacao&quot;,&quot;data_atualizacao&quot;],&#xa;    &quot;IGNORE_PK_FIELDS&quot;: true,&#xa;    &quot;IGNORE_VIRTUAL_FIELDS&quot;: true,&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;ALLOW_CLOSED_LINES_ON_OUTPUT&quot;: false&#xa;}" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1659" type="double" name="component_pos_x"/>
+        <Option value="215" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="moldura" type="QString" name="component_description"/>
+      <Option value="51" type="double" name="component_height"/>
+      <Option value="192" type="double" name="component_pos_x"/>
+      <Option value="295.5" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="aux_moldura_a,moldura,aux_moldura_area_continua_a" type="QString" name="static_value"/>
           </Option>
         </Option>
       </Option>
@@ -63,17 +116,17 @@
   <Option name="designerParameterValues"/>
   <Option name="groupBoxes"/>
   <Option type="Map" name="help">
-    <Option type="QString" name="ALG_CREATOR" value="Cap Borba"/>
-    <Option type="QString" name="ALG_DESC" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+    <Option value="Cap Borba" type="QString" name="ALG_CREATOR"/>
+    <Option value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" type="QString" name="ALG_DESC"/>
     <Option type="invalid" name="ALG_HELP_CREATOR"/>
-    <Option type="QString" name="ALG_VERSION" value="0.1"/>
-    <Option type="QString" name="SHORT_DESCRIPTION" value="O algoritmo une linhas com mesmo conjunto de atributos."/>
+    <Option value="0.1" type="QString" name="ALG_VERSION"/>
+    <Option value="O algoritmo une linhas com mesmo conjunto de atributos." type="QString" name="SHORT_DESCRIPTION"/>
   </Option>
-  <Option type="QString" name="internal_version" value="Version1"/>
+  <Option value="Version1" type="QString" name="internal_version"/>
   <Option name="modelVariables"/>
-  <Option type="QString" name="model_group" value="CDGV_EDGV_Orto"/>
-  <Option type="QString" name="model_name" value="Unir linhas da hidrografia (exceto drenagem) e altimetria com mesmo conjunto de atributos"/>
-  <Option type="QString" name="outputGroup" value=""/>
+  <Option value="CDGV_EDGV_Orto" type="QString" name="model_group"/>
+  <Option value="Unir linhas da hidrografia (exceto drenagem) e altimetria com mesmo conjunto de atributos" type="QString" name="model_name"/>
+  <Option value="" type="QString" name="outputGroup"/>
   <Option name="outputOrder"/>
   <Option name="parameterDefinitions"/>
   <Option name="parameterOrder"/>
