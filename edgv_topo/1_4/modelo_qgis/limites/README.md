@@ -1,30 +1,35 @@
-# EDGV 3.0 Orto 2.5: Fluxo de Produção de Limites
+# EDGV 3.0 Topo 1.4: Fluxo de Produção de Limites
 
-Modelos construídos para a produção EDGV 3.0 Orto 2.5, de acordo com os parâmetros definidos pelo GT Carta Ortoimagem, com foco na extração e validação de Limites.
+Modelos construídos para a produção EDGV 3.0 Topo 1.4, de acordo com os parâmetros definidos pelo GT Carta Topográfica, com foco na extração e validação de Limites e Ponto de Controle.
 
 ## Classes utilizadas
 
-- centroide_area_sem_dados_p
-- centroide_elemento_hidrografico_p
-- centroide_ilha_p
-- centroide_limite_especial_p
-- centroide_massa_dagua_p
-- elemnat_elemento_hidrografico_p
-- elemnat_ilha_p
-- elemnat_sumidouro_vertedouro_p
-- delimitador_area_sem_dados_l
-- delimitador_elemento_hidrografico_l
-- delimitador_limite_especial_l
-- delimitador_massa_dagua_l
-- elemnat_curva_nivel_l
-- elemnat_elemento_hidrografico_l
-- elemnat_trecho_drenagem_l
-- infra_barragem_l
-- infra_ferrovia_l
-- infra_via_deslocamento_l
-- llp_limite_legal_l
-- elemnat_terreno_sujeito_inundacao_a
-- infra_barragem_a
+-  centroide_area_sem_dados_p
+-  centroide_elemento_hidrografico_p
+-  centroide_ilha_p
+-  centroide_limite_especial_p
+-  centroide_massa_dagua_p
+-  elemnat_elemento_hidrografico_p
+-  elemnat_ilha_p
+-  elemnat_sumidouro_vertedouro_p
+-  infra_travessia_hidroviaria_p
+-  llp_ponto_controle_p
+-  delimitador_area_sem_dados
+-  delimitador_elemento_hidrografico_l
+-  delimitador_limite_especial_l
+-  delimitador_massa_dagua_l
+-  elemnat_curva_nivel_l
+-  elemnat_elemento_hidrografico_l
+-  elemnat_trecho_drenagem_l
+-  infra_barragem_l
+-  infra_ferrovia_l
+-  infra_mobilidade_urbana_l
+-  infra_travessia_hidroviaria_l
+-  infra_vala_l
+-  infra_via_deslocamento_l
+-  llp_limite_legal_l
+-  infra_barragem_a
+
 
 ### Expressão para capturar todas as geometrias carregadas
 
