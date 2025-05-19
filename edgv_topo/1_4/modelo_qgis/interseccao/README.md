@@ -22,7 +22,6 @@ Modelos construídos para a produção EDGV 3.0 Topo versão 1.4, na linha de pr
 -  elemnat_trecho_drenagem_l
 -  infra_barragem_a
 -  infra_barragem_l
--  infra_ferrovia_l
 -  infra_via_deslocamento_l
 -  elemnat_sumidouro_vertedouro_p
 -  infra_mobilidade_urbana_l
@@ -180,7 +179,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 ### 15. Identificar erros de atributação
 
-- arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/gerais/identifica_erros_atributacao.model3
+- arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/interseccao/identifica_erros_atributacao_interseccao.model3
+- processos utilizados: Assign Format Rules to Layers, Rule Statistics;
+- arquivo de regras de atributação para limites: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/interseccao/interseccao.json
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de flags: flags_erros_atributos
