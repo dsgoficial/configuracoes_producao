@@ -1,23 +1,36 @@
-# EDGV 3.0 Topo 1.3: Models QGIS Elemento Intersecção
+# EDGV 3.0 Topo 1.4: Models QGIS Elemento Intersecção
 
 ------------------------------------
 
-Modelos construídos para a produção EDGV 3.0 Topo versão 1.3, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
+Modelos construídos para a produção EDGV 3.0 Topo versão 1.4, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
 
 ## Classes utilizadas
 
-- elemnat_trecho_drenagem_l;
-- delimitador_massa_dagua_l
-- infra_elemento_viario_l;
-- infra_ferrovia_l;
-- infra_via_deslocamento_l;
-- infra_mobilidade_urbana_l;
-- infra_travessia_hidroviaria_l;
-- infra_barragem_l
-- aux_moldura_a;
-- moldura;
-- aux_moldura_area_continua_a;
-
+-  infra_via_deslocamento_l
+-  infra_ferrovia_l
+-  infra_barragem_l
+-  elemnat_trecho_drenagem_l
+-  centroide_elemento_hidrografico_p
+-  centroide_ilha_p
+-  centroide_massa_dagua_p
+-  delimitador_elemento_hidrografico_l
+-  delimitador_massa_dagua_l
+-  elemnat_curva_nivel_l
+-  elemnat_elemento_hidrografico_l
+-  elemnat_elemento_hidrografico_p
+-  elemnat_ilha_p
+-  elemnat_trecho_drenagem_l
+-  infra_barragem_a
+-  infra_barragem_l
+-  infra_ferrovia_l
+-  infra_via_deslocamento_l
+-  elemnat_sumidouro_vertedouro_p
+-  infra_mobilidade_urbana_l
+-  infra_travessia_hidroviaria_l
+-  infra_vala_l
+-  moldura
+-  aux_moldura_a
+-  aux_moldura_area_continua_a
 
 ### Expressão para capturar todas as geometrias carregadas
 

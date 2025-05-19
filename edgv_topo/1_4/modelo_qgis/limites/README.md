@@ -48,7 +48,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 7. Correção de compartilhamento de vértices entre camadas: Ajustar conectividade das linhas (1m de raio) / Adicionar vértices não compartilhados nas intersecções / Adicionar vértices não compartilhados em segmentos compartilhados / Unir linhas / Desagregar geometrias;
 8. Manipulação preliminar de geometrias: Remover geometrias nulas / Desagregar geometrias / Remover vértices duplicados / Remover feições duplicadas / Identificar feições com unicode inválido;
 9. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós correção de vértices: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
-10. Snap;
+10. Snap Ancorado;
 11. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós snap: Identificar Geometrias inválidas (com correção automática) / Identificar ângulos pequenos / Identificar ângulos pequenos entre camadas;
 12. Limpeza completa das linhas: Limpeza topológica completa (1e-5) / Remover elementos pequenos (1m) / Ajustar conectividade das linhas (1m de raio) / Remover feições duplicadas;
 13. Identificação de problemas de construção entre geometrias pós limpeza completa: Identificar Geometrias duplicadas / Identificar Overlaps / Identificar Geometrias inválidas (com correção automática);
@@ -150,10 +150,10 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - para após a execução? Somente se tiver flags.
 - Texto para tooltip: O operador deve corrigir manualmente os apontamentos desse processo.
 
-### 10. Snap
+### 10. Snap Ancorado
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/snap_limites.model3
-- processos utilizados: Snap Layer On Layer;
+- processos utilizados: Anchored Snapper;
 - camadas: delimitador_limite_especial_l, llp_limite_legal_l, delimitador_elemento_hidrografico_l, elemnat_elemento_hidrografico_l, delimitador_massa_dagua_l, elemnat_trecho_drenagem_l, infra_barragem_l, infra_ferrovia_l, infra_via_deslocamento_l;
   
 ### 11. Identificação de geometrias inválidas e ângulos pequenos entre camadas pós snap
@@ -270,7 +270,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 - arquivo: /configuracoes_producao/edgv_orto/2_5/modelo_qgis/limites/construcao_area_especial.model3
 - processos utilizados: Build Polygons From Center Points And Boundaries Algorithm;
-- camadas: delimitador_limite_especial_l, centroide_limite_especial_p, delimitador_limite_especial_l, delimitador_area_sem_dados_l, delimitador_massa_dagua_l, elemnat_trecho_drenagem_l, infra_barragem_l, infra_barragem_a, infra_via_deslocamento_l, infra_ferrovia_l
+- camadas: delimitador_limite_especial_l, centroide_limite_especial_p, delimitador_area_sem_dados_l, delimitador_massa_dagua_l, elemnat_trecho_drenagem_l, infra_barragem_l, infra_barragem_a, infra_via_deslocamento_l, infra_ferrovia_l
 - para após a execução? Sim
 - nome das camadas flags: flags_localizacao_invalida_area_especial, flags_delimitador_nao_utilizado, flags_erro_contrucao_area_especial
 - nome camada de saída: area_especial
