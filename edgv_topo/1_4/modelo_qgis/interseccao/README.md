@@ -80,8 +80,9 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - arquivo: /configuracoes_producao/edgv_topo/1_3/modelo_qgis/interseccao/identifica_entrelacamento.model3
 - processos utilizados: Identify Intertwined Lines;
 - camada: infra_via_deslocamento_l e infra_elemento_viario_l ;
+- tolerância: 3
 - nome camada flags: flags_linhas_entrelacadas;
-- admite falsos positivos? Não;
+- admite falsos positivos? Sim;
 - para após a execução? Somente se tiver flags;
 - Texto para tooltip: O operador deve corrigir manualmente linhas que se entrelaçam. Normalmente, tais problemas são de digitalização.
   
