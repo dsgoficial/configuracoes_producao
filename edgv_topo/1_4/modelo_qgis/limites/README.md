@@ -1,6 +1,8 @@
-# EDGV 3.0 Topo 1.4: Fluxo de Produção de Limites
+# EDGV 3.0 Topo 1.4: Models QGIS Limites e Ponto de Controle
 
-Modelos construídos para a produção EDGV 3.0 Topo 1.4, de acordo com os parâmetros definidos pelo GT Carta Topográfica, com foco na extração e validação de Limites e Pontos de Controle.
+------------------------------------
+
+Modelos construídos para a produção EDGV 3.0 Topo versão 1.4, na linha de produção de Conjunto de Dados Geoespaciais Vetoriais.
 
 ## Classes utilizadas
 
@@ -287,7 +289,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 
 - arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/limites/identifica_erros_atributacao_limites.model3
 - processos utilizados: Assign Format Rules to Layers, Rule Statistics;
-- arquivo de regras de atributação para limites: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/limites/limites.json
+- arquivo de regras de atributação para limites: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/regra_atributacao/limites.json
 - camadas: todas;
 - para após a execução? Sim
 - nome camada de flags: flags_erros_atributos
