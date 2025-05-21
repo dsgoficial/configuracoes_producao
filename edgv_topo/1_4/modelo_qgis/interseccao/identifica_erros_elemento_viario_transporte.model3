@@ -71,7 +71,7 @@
         </Option>
         <Option type="List" name="FILTER_LINE_LIST">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="native:extractbyattribute_1"/>
+            <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
             <Option type="QString" name="output_name" value="OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -85,7 +85,7 @@
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="native:extractbyattribute_1"/>
+            <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
             <Option type="QString" name="output_name" value="FAIL_OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -158,7 +158,7 @@
         </Option>
         <Option type="List" name="FILTER_LINE_LIST">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="native:extractbyattribute_2"/>
+            <Option type="QString" name="child_id" value="native:extractbyexpression_2"/>
             <Option type="QString" name="output_name" value="OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -172,7 +172,7 @@
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="native:extractbyattribute_2"/>
+            <Option type="QString" name="child_id" value="native:extractbyexpression_2"/>
             <Option type="QString" name="output_name" value="FAIL_OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -287,36 +287,36 @@
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:extractbyattribute_1">
+    <Option type="Map" name="native:extractbyexpression_1">
       <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="native:extractbyattribute"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
       <Option type="QString" name="color" value=""/>
       <Option type="Map" name="comment">
         <Option type="QString" name="color" value=""/>
         <Option type="QString" name="component_description" value=""/>
         <Option type="double" name="component_height" value="60"/>
-        <Option type="double" name="component_pos_x" value="1371.3333333333335"/>
-        <Option type="double" name="component_pos_y" value="399.99999999999994"/>
+        <Option type="double" name="component_pos_x" value="1476"/>
+        <Option type="double" name="component_pos_y" value="539"/>
         <Option type="double" name="component_width" value="100"/>
         <Option type="bool" name="outputs_collapsed" value="true"/>
         <Option type="bool" name="parameters_collapsed" value="true"/>
       </Option>
       <Option type="QString" name="component_description" value="filtrar elementos viarios em via_deslocamento"/>
-      <Option type="double" name="component_height" value="56"/>
-      <Option type="double" name="component_pos_x" value="602.0000000000002"/>
-      <Option type="double" name="component_pos_y" value="120.66666666666666"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="644"/>
+      <Option type="double" name="component_pos_y" value="36"/>
       <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="native:extractbyattribute_1"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_1"/>
       <Option name="outputs"/>
       <Option type="bool" name="outputs_collapsed" value="true"/>
       <Option type="bool" name="parameters_collapsed" value="true"/>
       <Option type="Map" name="params">
-        <Option type="List" name="FIELD">
+        <Option type="List" name="EXPRESSION">
           <Option type="Map">
             <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="tipo_elemento_viario"/>
+            <Option type="QString" name="static_value" value="tipo_elemento_viario = 97 OR tipo_elemento_viario = 9999"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT">
@@ -326,50 +326,38 @@
             <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
-        <Option type="List" name="OPERATOR">
-          <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="int" name="static_value" value="0"/>
-          </Option>
-        </Option>
-        <Option type="List" name="VALUE">
-          <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="97"/>
-          </Option>
-        </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:extractbyattribute_2">
+    <Option type="Map" name="native:extractbyexpression_2">
       <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="native:extractbyattribute"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
       <Option type="QString" name="color" value=""/>
       <Option type="Map" name="comment">
         <Option type="QString" name="color" value=""/>
         <Option type="QString" name="component_description" value=""/>
         <Option type="double" name="component_height" value="60"/>
-        <Option type="double" name="component_pos_x" value="1474"/>
-        <Option type="double" name="component_pos_y" value="511"/>
+        <Option type="double" name="component_pos_x" value="1476"/>
+        <Option type="double" name="component_pos_y" value="539"/>
         <Option type="double" name="component_width" value="100"/>
         <Option type="bool" name="outputs_collapsed" value="true"/>
         <Option type="bool" name="parameters_collapsed" value="true"/>
       </Option>
       <Option type="QString" name="component_description" value="filtrar elementos viarios em ferrovia"/>
       <Option type="double" name="component_height" value="30"/>
-      <Option type="double" name="component_pos_x" value="534"/>
-      <Option type="double" name="component_pos_y" value="484"/>
+      <Option type="double" name="component_pos_x" value="536"/>
+      <Option type="double" name="component_pos_y" value="467"/>
       <Option type="double" name="component_width" value="200"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="native:extractbyattribute_2"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_2"/>
       <Option name="outputs"/>
       <Option type="bool" name="outputs_collapsed" value="true"/>
       <Option type="bool" name="parameters_collapsed" value="true"/>
       <Option type="Map" name="params">
-        <Option type="List" name="FIELD">
+        <Option type="List" name="EXPRESSION">
           <Option type="Map">
             <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="tipo_elemento_viario"/>
+            <Option type="QString" name="static_value" value="tipo_elemento_viario = 97 OR tipo_elemento_viario = 9999"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT">
@@ -377,18 +365,6 @@
             <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3"/>
             <Option type="QString" name="output_name" value="OUTPUT"/>
             <Option type="int" name="source" value="1"/>
-          </Option>
-        </Option>
-        <Option type="List" name="OPERATOR">
-          <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="int" name="static_value" value="0"/>
-          </Option>
-        </Option>
-        <Option type="List" name="VALUE">
-          <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="97"/>
           </Option>
         </Option>
       </Option>
