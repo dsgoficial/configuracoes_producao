@@ -1,0 +1,686 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="788" type="double"/>
+        <Option name="component_pos_y" value="355" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Vértice próximo de aresta - Batch Run Algorithm With Geographic Bounds Constraint" type="QString"/>
+      <Option name="component_height" value="88.66666666666666" type="double"/>
+      <Option name="component_pos_x" value="471.33333333333337" type="double"/>
+      <Option name="component_pos_y" value="321.99999999999994" type="double"/>
+      <Option name="component_width" value="214.66666666666666" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_2" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyvertexnearedges" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GEOGRAPHIC_BOUNDARY" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="GEOGRAPHIC_BOUNDARY_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="MODE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="FLAGS" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="PARAMETER_DICT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;SEARCH_RADIUS&quot;: 1e-05,&#xa;    &quot;FLAGS&quot;:&quot;TEMPORARY_OUTPUT&quot;&#xa;}" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="872" type="double"/>
+        <Option name="component_pos_y" value="758" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Identifica e corrige geometrias inválidas - Batch Run Algorithm With Geographic Bounds Constraint" type="QString"/>
+      <Option name="component_height" value="129.99999999999994" type="double"/>
+      <Option name="component_pos_x" value="468.6666666666666" type="double"/>
+      <Option name="component_pos_y" value="108.99999999999997" type="double"/>
+      <Option name="component_width" value="214.66666666666666" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifyandfixinvalidgeometries" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GEOGRAPHIC_BOUNDARY" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="GEOGRAPHIC_BOUNDARY_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="MODE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="FLAGS" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="PARAMETER_DICT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&quot;SELECTED&quot;:false,&quot;TYPE&quot;:true,&quot;IGNORE_CLOSED&quot;: false,&quot;FLAGS&quot;:&quot;memory:&quot;}" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:exportToMemoryLayer_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:exportToMemoryLayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1239.3372703412072" type="double"/>
+        <Option name="component_pos_y" value="1066.9204724409449" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="flag_geometrias_invalidas" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="962.8626602779905" type="double"/>
+      <Option name="component_pos_y" value="211.70189591408655" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:exportToMemoryLayer_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_LAYER" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="flag_geometrias_invalidas" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_QML_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&lt;!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>&#xa;&lt;qgis maxScale=&quot;0&quot; simplifyDrawingTol=&quot;1&quot; version=&quot;3.24.3-Tisler&quot; simplifyDrawingHints=&quot;0&quot; minScale=&quot;100000000&quot; simplifyMaxScale=&quot;1&quot; readOnly=&quot;0&quot; styleCategories=&quot;AllStyleCategories&quot; hasScaleBasedVisibilityFlag=&quot;0&quot; labelsEnabled=&quot;0&quot; simplifyAlgorithm=&quot;0&quot; simplifyLocal=&quot;1&quot; symbologyReferenceScale=&quot;-1&quot;>&#xa; &lt;flags>&#xa;  &lt;Identifiable>1&lt;/Identifiable>&#xa;  &lt;Removable>1&lt;/Removable>&#xa;  &lt;Searchable>1&lt;/Searchable>&#xa;  &lt;Private>0&lt;/Private>&#xa; &lt;/flags>&#xa; &lt;temporal enabled=&quot;0&quot; fixedDuration=&quot;0&quot; endField=&quot;&quot; accumulate=&quot;0&quot; durationUnit=&quot;min&quot; limitMode=&quot;0&quot; startField=&quot;&quot; endExpression=&quot;&quot; durationField=&quot;&quot; mode=&quot;0&quot; startExpression=&quot;&quot;>&#xa;  &lt;fixedRange>&#xa;   &lt;start>&lt;/start>&#xa;   &lt;end>&lt;/end>&#xa;  &lt;/fixedRange>&#xa; &lt;/temporal>&#xa; &lt;renderer-v2 type=&quot;singleSymbol&quot; symbollevels=&quot;0&quot; enableorderby=&quot;0&quot; forceraster=&quot;0&quot; referencescale=&quot;-1&quot;>&#xa;  &lt;symbols>&#xa;   &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;marker&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;0&quot;>&#xa;    &lt;data_defined_properties>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;      &lt;Option name=&quot;properties&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;     &lt;/Option>&#xa;    &lt;/data_defined_properties>&#xa;    &lt;layer enabled=&quot;1&quot; class=&quot;SimpleMarker&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;angle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;cap_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,255,255,0&quot; name=&quot;color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;horizontal_anchor_point&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;circle&quot; name=&quot;name&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0,0&quot; name=&quot;offset&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,0,0,255&quot; name=&quot;outline_color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;outline_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0.8&quot; name=&quot;outline_width&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;outline_width_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;outline_width_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;diameter&quot; name=&quot;scale_method&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;10&quot; name=&quot;size&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;size_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;size_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;/Option>&#xa;     &lt;prop v=&quot;0&quot; k=&quot;angle&quot;/>&#xa;     &lt;prop v=&quot;square&quot; k=&quot;cap_style&quot;/>&#xa;     &lt;prop v=&quot;255,255,255,0&quot; k=&quot;color&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;horizontal_anchor_point&quot;/>&#xa;     &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;     &lt;prop v=&quot;circle&quot; k=&quot;name&quot;/>&#xa;     &lt;prop v=&quot;0,0&quot; k=&quot;offset&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;     &lt;prop v=&quot;255,0,0,255&quot; k=&quot;outline_color&quot;/>&#xa;     &lt;prop v=&quot;solid&quot; k=&quot;outline_style&quot;/>&#xa;     &lt;prop v=&quot;0.8&quot; k=&quot;outline_width&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;outline_width_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;outline_width_unit&quot;/>&#xa;     &lt;prop v=&quot;diameter&quot; k=&quot;scale_method&quot;/>&#xa;     &lt;prop v=&quot;10&quot; k=&quot;size&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;size_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;size_unit&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;    &lt;/layer>&#xa;   &lt;/symbol>&#xa;  &lt;/symbols>&#xa;  &lt;rotation/>&#xa;  &lt;sizescale/>&#xa; &lt;/renderer-v2>&#xa; &lt;customproperties>&#xa;  &lt;Option type=&quot;Map&quot;>&#xa;   &lt;Option type=&quot;int&quot; value=&quot;0&quot; name=&quot;embeddedWidgets/count&quot;/>&#xa;   &lt;Option name=&quot;variableNames&quot;/>&#xa;   &lt;Option name=&quot;variableValues&quot;/>&#xa;  &lt;/Option>&#xa; &lt;/customproperties>&#xa; &lt;blendMode>0&lt;/blendMode>&#xa; &lt;featureBlendMode>0&lt;/featureBlendMode>&#xa; &lt;layerOpacity>1&lt;/layerOpacity>&#xa; &lt;SingleCategoryDiagramRenderer diagramType=&quot;Histogram&quot; attributeLegend=&quot;1&quot;>&#xa;  &lt;DiagramCategory lineSizeType=&quot;MM&quot; height=&quot;15&quot; scaleBasedVisibility=&quot;0&quot; spacing=&quot;5&quot; rotationOffset=&quot;270&quot; lineSizeScale=&quot;3x:0,0,0,0,0,0&quot; barWidth=&quot;5&quot; width=&quot;15&quot; spacingUnit=&quot;MM&quot; enabled=&quot;0&quot; sizeType=&quot;MM&quot; minimumSize=&quot;0&quot; penColor=&quot;#000000&quot; opacity=&quot;1&quot; backgroundColor=&quot;#ffffff&quot; penWidth=&quot;0&quot; minScaleDenominator=&quot;0&quot; direction=&quot;0&quot; penAlpha=&quot;255&quot; sizeScale=&quot;3x:0,0,0,0,0,0&quot; scaleDependency=&quot;Area&quot; spacingUnitScale=&quot;3x:0,0,0,0,0,0&quot; maxScaleDenominator=&quot;1e+08&quot; diagramOrientation=&quot;Up&quot; backgroundAlpha=&quot;255&quot; labelPlacementMethod=&quot;XHeight&quot; showAxis=&quot;1&quot;>&#xa;   &lt;fontProperties style=&quot;&quot; description=&quot;MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0&quot;/>&#xa;   &lt;axisSymbol>&#xa;    &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;&quot;>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;     &lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;align_dash_pattern&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;capstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;5;2&quot; name=&quot;customdash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;customdash_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;dash_pattern_offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;draw_inside_polygon&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;35,35,35,255&quot; name=&quot;line_color&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;line_style&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0.26&quot; name=&quot;line_width&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;line_width_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;ring_filter&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_end&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_start&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;use_custom_dash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;/Option>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&#xa;      &lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&#xa;      &lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&#xa;      &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;      &lt;prop v=&quot;35,35,35,255&quot; k=&quot;line_color&quot;/>&#xa;      &lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&#xa;      &lt;prop v=&quot;0.26&quot; k=&quot;line_width&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_end&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_end_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_start&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_start_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;data_defined_properties>&#xa;       &lt;Option type=&quot;Map&quot;>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;        &lt;Option name=&quot;properties&quot;/>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;       &lt;/Option>&#xa;      &lt;/data_defined_properties>&#xa;     &lt;/layer>&#xa;    &lt;/symbol>&#xa;   &lt;/axisSymbol>&#xa;  &lt;/DiagramCategory>&#xa; &lt;/SingleCategoryDiagramRenderer>&#xa; &lt;DiagramLayerSettings linePlacementFlags=&quot;18&quot; obstacle=&quot;0&quot; dist=&quot;0&quot; zIndex=&quot;0&quot; priority=&quot;0&quot; placement=&quot;0&quot; showAll=&quot;1&quot;>&#xa;  &lt;properties>&#xa;   &lt;Option type=&quot;Map&quot;>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;    &lt;Option name=&quot;properties&quot;/>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;   &lt;/Option>&#xa;  &lt;/properties>&#xa; &lt;/DiagramLayerSettings>&#xa; &lt;geometryOptions removeDuplicateNodes=&quot;0&quot; geometryPrecision=&quot;0&quot;>&#xa;  &lt;activeChecks/>&#xa;  &lt;checkConfiguration/>&#xa; &lt;/geometryOptions>&#xa; &lt;legend type=&quot;default-vector&quot; showLabelLegend=&quot;0&quot;/>&#xa; &lt;referencedLayers/>&#xa; &lt;fieldConfiguration>&#xa;  &lt;field configurationFlags=&quot;None&quot; name=&quot;reason&quot;>&#xa;   &lt;editWidget type=&quot;TextEdit&quot;>&#xa;    &lt;config>&#xa;     &lt;Option/>&#xa;    &lt;/config>&#xa;   &lt;/editWidget>&#xa;  &lt;/field>&#xa; &lt;/fieldConfiguration>&#xa; &lt;aliases>&#xa;  &lt;alias index=&quot;0&quot; field=&quot;reason&quot; name=&quot;&quot;/>&#xa; &lt;/aliases>&#xa; &lt;defaults>&#xa;  &lt;default expression=&quot;&quot; field=&quot;reason&quot; applyOnUpdate=&quot;0&quot;/>&#xa; &lt;/defaults>&#xa; &lt;constraints>&#xa;  &lt;constraint constraints=&quot;0&quot; unique_strength=&quot;0&quot; exp_strength=&quot;0&quot; notnull_strength=&quot;0&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraints>&#xa; &lt;constraintExpressions>&#xa;  &lt;constraint exp=&quot;&quot; desc=&quot;&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraintExpressions>&#xa; &lt;expressionfields/>&#xa; &lt;attributeactions>&#xa;  &lt;defaultAction key=&quot;Canvas&quot; value=&quot;{00000000-0000-0000-0000-000000000000}&quot;/>&#xa; &lt;/attributeactions>&#xa; &lt;attributetableconfig sortExpression=&quot;&quot; actionWidgetStyle=&quot;dropDown&quot; sortOrder=&quot;0&quot;>&#xa;  &lt;columns>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;field&quot; hidden=&quot;0&quot; name=&quot;reason&quot;/>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;actions&quot; hidden=&quot;1&quot;/>&#xa;  &lt;/columns>&#xa; &lt;/attributetableconfig>&#xa; &lt;conditionalstyles>&#xa;  &lt;rowstyles/>&#xa;  &lt;fieldstyles/>&#xa; &lt;/conditionalstyles>&#xa; &lt;storedexpressions/>&#xa; &lt;editform tolerant=&quot;1&quot;>&lt;/editform>&#xa; &lt;editforminit/>&#xa; &lt;editforminitcodesource>0&lt;/editforminitcodesource>&#xa; &lt;editforminitfilepath>&lt;/editforminitfilepath>&#xa; &lt;editforminitcode>&lt;![CDATA[# -*- coding: utf-8 -*-&#xa;&quot;&quot;&quot;&#xa;QGIS forms can have a Python function that is called when the form is&#xa;opened.&#xa;&#xa;Use this function to add extra logic to your forms.&#xa;&#xa;Enter the name of the function in the &quot;Python Init function&quot;&#xa;field.&#xa;An example follows:&#xa;&quot;&quot;&quot;&#xa;from qgis.PyQt.QtWidgets import QWidget&#xa;&#xa;def my_form_open(dialog, layer, feature):&#xa;    geom = feature.geometry()&#xa;    control = dialog.findChild(QWidget, &quot;MyLineEdit&quot;)&#xa;]]&gt;&lt;/editforminitcode>&#xa; &lt;featformsuppress>0&lt;/featformsuppress>&#xa; &lt;editorlayout>generatedlayout&lt;/editorlayout>&#xa; &lt;editable>&#xa;  &lt;field name=&quot;reason&quot; editable=&quot;1&quot;/>&#xa; &lt;/editable>&#xa; &lt;labelOnTop>&#xa;  &lt;field labelOnTop=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/labelOnTop>&#xa; &lt;reuseLastValue>&#xa;  &lt;field reuseLastValue=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/reuseLastValue>&#xa; &lt;dataDefinedFieldProperties/>&#xa; &lt;widgets/>&#xa; &lt;previewExpression>&quot;reason&quot;&lt;/previewExpression>&#xa; &lt;mapTip>&lt;/mapTip>&#xa; &lt;layerGeometryType>0&lt;/layerGeometryType>&#xa;&lt;/qgis>&#xa;" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:exportToMemoryLayer_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:exportToMemoryLayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2012.8626602779905" type="double"/>
+        <Option name="component_pos_y" value="1066.9204724409449" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="flag_vertices_proximo_arestas" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="999.3626602779905" type="double"/>
+      <Option name="component_pos_y" value="405.00998777485336" type="double"/>
+      <Option name="component_width" value="255" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:exportToMemoryLayer_3" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_LAYER" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="flag_vertices_proximo_arestas" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_QML_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&lt;!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>&#xa;&lt;qgis maxScale=&quot;0&quot; simplifyDrawingTol=&quot;1&quot; version=&quot;3.24.3-Tisler&quot; simplifyDrawingHints=&quot;0&quot; minScale=&quot;100000000&quot; simplifyMaxScale=&quot;1&quot; readOnly=&quot;0&quot; styleCategories=&quot;AllStyleCategories&quot; hasScaleBasedVisibilityFlag=&quot;0&quot; labelsEnabled=&quot;0&quot; simplifyAlgorithm=&quot;0&quot; simplifyLocal=&quot;1&quot; symbologyReferenceScale=&quot;-1&quot;>&#xa; &lt;flags>&#xa;  &lt;Identifiable>1&lt;/Identifiable>&#xa;  &lt;Removable>1&lt;/Removable>&#xa;  &lt;Searchable>1&lt;/Searchable>&#xa;  &lt;Private>0&lt;/Private>&#xa; &lt;/flags>&#xa; &lt;temporal enabled=&quot;0&quot; fixedDuration=&quot;0&quot; endField=&quot;&quot; accumulate=&quot;0&quot; durationUnit=&quot;min&quot; limitMode=&quot;0&quot; startField=&quot;&quot; endExpression=&quot;&quot; durationField=&quot;&quot; mode=&quot;0&quot; startExpression=&quot;&quot;>&#xa;  &lt;fixedRange>&#xa;   &lt;start>&lt;/start>&#xa;   &lt;end>&lt;/end>&#xa;  &lt;/fixedRange>&#xa; &lt;/temporal>&#xa; &lt;renderer-v2 type=&quot;singleSymbol&quot; symbollevels=&quot;0&quot; enableorderby=&quot;0&quot; forceraster=&quot;0&quot; referencescale=&quot;-1&quot;>&#xa;  &lt;symbols>&#xa;   &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;marker&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;0&quot;>&#xa;    &lt;data_defined_properties>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;      &lt;Option name=&quot;properties&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;     &lt;/Option>&#xa;    &lt;/data_defined_properties>&#xa;    &lt;layer enabled=&quot;1&quot; class=&quot;SimpleMarker&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;angle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;cap_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,255,255,0&quot; name=&quot;color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;horizontal_anchor_point&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;circle&quot; name=&quot;name&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0,0&quot; name=&quot;offset&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,0,0,255&quot; name=&quot;outline_color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;outline_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0.8&quot; name=&quot;outline_width&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;outline_width_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;outline_width_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;diameter&quot; name=&quot;scale_method&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;10&quot; name=&quot;size&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;size_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;size_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;/Option>&#xa;     &lt;prop v=&quot;0&quot; k=&quot;angle&quot;/>&#xa;     &lt;prop v=&quot;square&quot; k=&quot;cap_style&quot;/>&#xa;     &lt;prop v=&quot;255,255,255,0&quot; k=&quot;color&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;horizontal_anchor_point&quot;/>&#xa;     &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;     &lt;prop v=&quot;circle&quot; k=&quot;name&quot;/>&#xa;     &lt;prop v=&quot;0,0&quot; k=&quot;offset&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;     &lt;prop v=&quot;255,0,0,255&quot; k=&quot;outline_color&quot;/>&#xa;     &lt;prop v=&quot;solid&quot; k=&quot;outline_style&quot;/>&#xa;     &lt;prop v=&quot;0.8&quot; k=&quot;outline_width&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;outline_width_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;outline_width_unit&quot;/>&#xa;     &lt;prop v=&quot;diameter&quot; k=&quot;scale_method&quot;/>&#xa;     &lt;prop v=&quot;10&quot; k=&quot;size&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;size_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;size_unit&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;    &lt;/layer>&#xa;   &lt;/symbol>&#xa;  &lt;/symbols>&#xa;  &lt;rotation/>&#xa;  &lt;sizescale/>&#xa; &lt;/renderer-v2>&#xa; &lt;customproperties>&#xa;  &lt;Option type=&quot;Map&quot;>&#xa;   &lt;Option type=&quot;int&quot; value=&quot;0&quot; name=&quot;embeddedWidgets/count&quot;/>&#xa;   &lt;Option name=&quot;variableNames&quot;/>&#xa;   &lt;Option name=&quot;variableValues&quot;/>&#xa;  &lt;/Option>&#xa; &lt;/customproperties>&#xa; &lt;blendMode>0&lt;/blendMode>&#xa; &lt;featureBlendMode>0&lt;/featureBlendMode>&#xa; &lt;layerOpacity>1&lt;/layerOpacity>&#xa; &lt;SingleCategoryDiagramRenderer diagramType=&quot;Histogram&quot; attributeLegend=&quot;1&quot;>&#xa;  &lt;DiagramCategory lineSizeType=&quot;MM&quot; height=&quot;15&quot; scaleBasedVisibility=&quot;0&quot; spacing=&quot;5&quot; rotationOffset=&quot;270&quot; lineSizeScale=&quot;3x:0,0,0,0,0,0&quot; barWidth=&quot;5&quot; width=&quot;15&quot; spacingUnit=&quot;MM&quot; enabled=&quot;0&quot; sizeType=&quot;MM&quot; minimumSize=&quot;0&quot; penColor=&quot;#000000&quot; opacity=&quot;1&quot; backgroundColor=&quot;#ffffff&quot; penWidth=&quot;0&quot; minScaleDenominator=&quot;0&quot; direction=&quot;0&quot; penAlpha=&quot;255&quot; sizeScale=&quot;3x:0,0,0,0,0,0&quot; scaleDependency=&quot;Area&quot; spacingUnitScale=&quot;3x:0,0,0,0,0,0&quot; maxScaleDenominator=&quot;1e+08&quot; diagramOrientation=&quot;Up&quot; backgroundAlpha=&quot;255&quot; labelPlacementMethod=&quot;XHeight&quot; showAxis=&quot;1&quot;>&#xa;   &lt;fontProperties style=&quot;&quot; description=&quot;MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0&quot;/>&#xa;   &lt;axisSymbol>&#xa;    &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;&quot;>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;     &lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;align_dash_pattern&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;capstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;5;2&quot; name=&quot;customdash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;customdash_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;dash_pattern_offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;draw_inside_polygon&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;35,35,35,255&quot; name=&quot;line_color&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;line_style&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0.26&quot; name=&quot;line_width&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;line_width_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;ring_filter&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_end&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_start&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;use_custom_dash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;/Option>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&#xa;      &lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&#xa;      &lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&#xa;      &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;      &lt;prop v=&quot;35,35,35,255&quot; k=&quot;line_color&quot;/>&#xa;      &lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&#xa;      &lt;prop v=&quot;0.26&quot; k=&quot;line_width&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_end&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_end_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_start&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_start_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;data_defined_properties>&#xa;       &lt;Option type=&quot;Map&quot;>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;        &lt;Option name=&quot;properties&quot;/>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;       &lt;/Option>&#xa;      &lt;/data_defined_properties>&#xa;     &lt;/layer>&#xa;    &lt;/symbol>&#xa;   &lt;/axisSymbol>&#xa;  &lt;/DiagramCategory>&#xa; &lt;/SingleCategoryDiagramRenderer>&#xa; &lt;DiagramLayerSettings linePlacementFlags=&quot;18&quot; obstacle=&quot;0&quot; dist=&quot;0&quot; zIndex=&quot;0&quot; priority=&quot;0&quot; placement=&quot;0&quot; showAll=&quot;1&quot;>&#xa;  &lt;properties>&#xa;   &lt;Option type=&quot;Map&quot;>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;    &lt;Option name=&quot;properties&quot;/>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;   &lt;/Option>&#xa;  &lt;/properties>&#xa; &lt;/DiagramLayerSettings>&#xa; &lt;geometryOptions removeDuplicateNodes=&quot;0&quot; geometryPrecision=&quot;0&quot;>&#xa;  &lt;activeChecks/>&#xa;  &lt;checkConfiguration/>&#xa; &lt;/geometryOptions>&#xa; &lt;legend type=&quot;default-vector&quot; showLabelLegend=&quot;0&quot;/>&#xa; &lt;referencedLayers/>&#xa; &lt;fieldConfiguration>&#xa;  &lt;field configurationFlags=&quot;None&quot; name=&quot;reason&quot;>&#xa;   &lt;editWidget type=&quot;TextEdit&quot;>&#xa;    &lt;config>&#xa;     &lt;Option/>&#xa;    &lt;/config>&#xa;   &lt;/editWidget>&#xa;  &lt;/field>&#xa; &lt;/fieldConfiguration>&#xa; &lt;aliases>&#xa;  &lt;alias index=&quot;0&quot; field=&quot;reason&quot; name=&quot;&quot;/>&#xa; &lt;/aliases>&#xa; &lt;defaults>&#xa;  &lt;default expression=&quot;&quot; field=&quot;reason&quot; applyOnUpdate=&quot;0&quot;/>&#xa; &lt;/defaults>&#xa; &lt;constraints>&#xa;  &lt;constraint constraints=&quot;0&quot; unique_strength=&quot;0&quot; exp_strength=&quot;0&quot; notnull_strength=&quot;0&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraints>&#xa; &lt;constraintExpressions>&#xa;  &lt;constraint exp=&quot;&quot; desc=&quot;&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraintExpressions>&#xa; &lt;expressionfields/>&#xa; &lt;attributeactions>&#xa;  &lt;defaultAction key=&quot;Canvas&quot; value=&quot;{00000000-0000-0000-0000-000000000000}&quot;/>&#xa; &lt;/attributeactions>&#xa; &lt;attributetableconfig sortExpression=&quot;&quot; actionWidgetStyle=&quot;dropDown&quot; sortOrder=&quot;0&quot;>&#xa;  &lt;columns>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;field&quot; hidden=&quot;0&quot; name=&quot;reason&quot;/>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;actions&quot; hidden=&quot;1&quot;/>&#xa;  &lt;/columns>&#xa; &lt;/attributetableconfig>&#xa; &lt;conditionalstyles>&#xa;  &lt;rowstyles/>&#xa;  &lt;fieldstyles/>&#xa; &lt;/conditionalstyles>&#xa; &lt;storedexpressions/>&#xa; &lt;editform tolerant=&quot;1&quot;>&lt;/editform>&#xa; &lt;editforminit/>&#xa; &lt;editforminitcodesource>0&lt;/editforminitcodesource>&#xa; &lt;editforminitfilepath>&lt;/editforminitfilepath>&#xa; &lt;editforminitcode>&lt;![CDATA[# -*- coding: utf-8 -*-&#xa;&quot;&quot;&quot;&#xa;QGIS forms can have a Python function that is called when the form is&#xa;opened.&#xa;&#xa;Use this function to add extra logic to your forms.&#xa;&#xa;Enter the name of the function in the &quot;Python Init function&quot;&#xa;field.&#xa;An example follows:&#xa;&quot;&quot;&quot;&#xa;from qgis.PyQt.QtWidgets import QWidget&#xa;&#xa;def my_form_open(dialog, layer, feature):&#xa;    geom = feature.geometry()&#xa;    control = dialog.findChild(QWidget, &quot;MyLineEdit&quot;)&#xa;]]&gt;&lt;/editforminitcode>&#xa; &lt;featformsuppress>0&lt;/featformsuppress>&#xa; &lt;editorlayout>generatedlayout&lt;/editorlayout>&#xa; &lt;editable>&#xa;  &lt;field name=&quot;reason&quot; editable=&quot;1&quot;/>&#xa; &lt;/editable>&#xa; &lt;labelOnTop>&#xa;  &lt;field labelOnTop=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/labelOnTop>&#xa; &lt;reuseLastValue>&#xa;  &lt;field reuseLastValue=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/reuseLastValue>&#xa; &lt;dataDefinedFieldProperties/>&#xa; &lt;widgets/>&#xa; &lt;previewExpression>&quot;reason&quot;&lt;/previewExpression>&#xa; &lt;mapTip>&lt;/mapTip>&#xa; &lt;layerGeometryType>0&lt;/layerGeometryType>&#xa;&lt;/qgis>&#xa;" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:exportToMemoryLayer_4" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:exportToMemoryLayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2232.8626602779905" type="double"/>
+        <Option name="component_pos_y" value="966.9204724409449" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="flag_vertices_nao_compartilhados_interseccoes" type="QString"/>
+      <Option name="component_height" value="126.97624160519501" type="double"/>
+      <Option name="component_pos_x" value="954.8626602779905" type="double"/>
+      <Option name="component_pos_y" value="807.4323516383474" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:exportToMemoryLayer_4" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_LAYER" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="flag_vertices_nao_compartilhados_interseccoes" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_QML_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&lt;!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>&#xa;&lt;qgis maxScale=&quot;0&quot; simplifyDrawingTol=&quot;1&quot; version=&quot;3.24.3-Tisler&quot; simplifyDrawingHints=&quot;0&quot; minScale=&quot;100000000&quot; simplifyMaxScale=&quot;1&quot; readOnly=&quot;0&quot; styleCategories=&quot;AllStyleCategories&quot; hasScaleBasedVisibilityFlag=&quot;0&quot; labelsEnabled=&quot;0&quot; simplifyAlgorithm=&quot;0&quot; simplifyLocal=&quot;1&quot; symbologyReferenceScale=&quot;-1&quot;>&#xa; &lt;flags>&#xa;  &lt;Identifiable>1&lt;/Identifiable>&#xa;  &lt;Removable>1&lt;/Removable>&#xa;  &lt;Searchable>1&lt;/Searchable>&#xa;  &lt;Private>0&lt;/Private>&#xa; &lt;/flags>&#xa; &lt;temporal enabled=&quot;0&quot; fixedDuration=&quot;0&quot; endField=&quot;&quot; accumulate=&quot;0&quot; durationUnit=&quot;min&quot; limitMode=&quot;0&quot; startField=&quot;&quot; endExpression=&quot;&quot; durationField=&quot;&quot; mode=&quot;0&quot; startExpression=&quot;&quot;>&#xa;  &lt;fixedRange>&#xa;   &lt;start>&lt;/start>&#xa;   &lt;end>&lt;/end>&#xa;  &lt;/fixedRange>&#xa; &lt;/temporal>&#xa; &lt;renderer-v2 type=&quot;singleSymbol&quot; symbollevels=&quot;0&quot; enableorderby=&quot;0&quot; forceraster=&quot;0&quot; referencescale=&quot;-1&quot;>&#xa;  &lt;symbols>&#xa;   &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;marker&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;0&quot;>&#xa;    &lt;data_defined_properties>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;      &lt;Option name=&quot;properties&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;     &lt;/Option>&#xa;    &lt;/data_defined_properties>&#xa;    &lt;layer enabled=&quot;1&quot; class=&quot;SimpleMarker&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;angle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;cap_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,255,255,0&quot; name=&quot;color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;horizontal_anchor_point&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;circle&quot; name=&quot;name&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0,0&quot; name=&quot;offset&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,0,0,255&quot; name=&quot;outline_color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;outline_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0.8&quot; name=&quot;outline_width&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;outline_width_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;outline_width_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;diameter&quot; name=&quot;scale_method&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;10&quot; name=&quot;size&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;size_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;size_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;/Option>&#xa;     &lt;prop v=&quot;0&quot; k=&quot;angle&quot;/>&#xa;     &lt;prop v=&quot;square&quot; k=&quot;cap_style&quot;/>&#xa;     &lt;prop v=&quot;255,255,255,0&quot; k=&quot;color&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;horizontal_anchor_point&quot;/>&#xa;     &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;     &lt;prop v=&quot;circle&quot; k=&quot;name&quot;/>&#xa;     &lt;prop v=&quot;0,0&quot; k=&quot;offset&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;     &lt;prop v=&quot;255,0,0,255&quot; k=&quot;outline_color&quot;/>&#xa;     &lt;prop v=&quot;solid&quot; k=&quot;outline_style&quot;/>&#xa;     &lt;prop v=&quot;0.8&quot; k=&quot;outline_width&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;outline_width_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;outline_width_unit&quot;/>&#xa;     &lt;prop v=&quot;diameter&quot; k=&quot;scale_method&quot;/>&#xa;     &lt;prop v=&quot;10&quot; k=&quot;size&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;size_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;size_unit&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;    &lt;/layer>&#xa;   &lt;/symbol>&#xa;  &lt;/symbols>&#xa;  &lt;rotation/>&#xa;  &lt;sizescale/>&#xa; &lt;/renderer-v2>&#xa; &lt;customproperties>&#xa;  &lt;Option type=&quot;Map&quot;>&#xa;   &lt;Option type=&quot;int&quot; value=&quot;0&quot; name=&quot;embeddedWidgets/count&quot;/>&#xa;   &lt;Option name=&quot;variableNames&quot;/>&#xa;   &lt;Option name=&quot;variableValues&quot;/>&#xa;  &lt;/Option>&#xa; &lt;/customproperties>&#xa; &lt;blendMode>0&lt;/blendMode>&#xa; &lt;featureBlendMode>0&lt;/featureBlendMode>&#xa; &lt;layerOpacity>1&lt;/layerOpacity>&#xa; &lt;SingleCategoryDiagramRenderer diagramType=&quot;Histogram&quot; attributeLegend=&quot;1&quot;>&#xa;  &lt;DiagramCategory lineSizeType=&quot;MM&quot; height=&quot;15&quot; scaleBasedVisibility=&quot;0&quot; spacing=&quot;5&quot; rotationOffset=&quot;270&quot; lineSizeScale=&quot;3x:0,0,0,0,0,0&quot; barWidth=&quot;5&quot; width=&quot;15&quot; spacingUnit=&quot;MM&quot; enabled=&quot;0&quot; sizeType=&quot;MM&quot; minimumSize=&quot;0&quot; penColor=&quot;#000000&quot; opacity=&quot;1&quot; backgroundColor=&quot;#ffffff&quot; penWidth=&quot;0&quot; minScaleDenominator=&quot;0&quot; direction=&quot;0&quot; penAlpha=&quot;255&quot; sizeScale=&quot;3x:0,0,0,0,0,0&quot; scaleDependency=&quot;Area&quot; spacingUnitScale=&quot;3x:0,0,0,0,0,0&quot; maxScaleDenominator=&quot;1e+08&quot; diagramOrientation=&quot;Up&quot; backgroundAlpha=&quot;255&quot; labelPlacementMethod=&quot;XHeight&quot; showAxis=&quot;1&quot;>&#xa;   &lt;fontProperties style=&quot;&quot; description=&quot;MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0&quot;/>&#xa;   &lt;axisSymbol>&#xa;    &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;&quot;>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;     &lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;align_dash_pattern&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;capstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;5;2&quot; name=&quot;customdash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;customdash_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;dash_pattern_offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;draw_inside_polygon&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;35,35,35,255&quot; name=&quot;line_color&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;line_style&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0.26&quot; name=&quot;line_width&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;line_width_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;ring_filter&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_end&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_start&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;use_custom_dash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;/Option>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&#xa;      &lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&#xa;      &lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&#xa;      &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;      &lt;prop v=&quot;35,35,35,255&quot; k=&quot;line_color&quot;/>&#xa;      &lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&#xa;      &lt;prop v=&quot;0.26&quot; k=&quot;line_width&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_end&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_end_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_start&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_start_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;data_defined_properties>&#xa;       &lt;Option type=&quot;Map&quot;>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;        &lt;Option name=&quot;properties&quot;/>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;       &lt;/Option>&#xa;      &lt;/data_defined_properties>&#xa;     &lt;/layer>&#xa;    &lt;/symbol>&#xa;   &lt;/axisSymbol>&#xa;  &lt;/DiagramCategory>&#xa; &lt;/SingleCategoryDiagramRenderer>&#xa; &lt;DiagramLayerSettings linePlacementFlags=&quot;18&quot; obstacle=&quot;0&quot; dist=&quot;0&quot; zIndex=&quot;0&quot; priority=&quot;0&quot; placement=&quot;0&quot; showAll=&quot;1&quot;>&#xa;  &lt;properties>&#xa;   &lt;Option type=&quot;Map&quot;>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;    &lt;Option name=&quot;properties&quot;/>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;   &lt;/Option>&#xa;  &lt;/properties>&#xa; &lt;/DiagramLayerSettings>&#xa; &lt;geometryOptions removeDuplicateNodes=&quot;0&quot; geometryPrecision=&quot;0&quot;>&#xa;  &lt;activeChecks/>&#xa;  &lt;checkConfiguration/>&#xa; &lt;/geometryOptions>&#xa; &lt;legend type=&quot;default-vector&quot; showLabelLegend=&quot;0&quot;/>&#xa; &lt;referencedLayers/>&#xa; &lt;fieldConfiguration>&#xa;  &lt;field configurationFlags=&quot;None&quot; name=&quot;reason&quot;>&#xa;   &lt;editWidget type=&quot;TextEdit&quot;>&#xa;    &lt;config>&#xa;     &lt;Option/>&#xa;    &lt;/config>&#xa;   &lt;/editWidget>&#xa;  &lt;/field>&#xa; &lt;/fieldConfiguration>&#xa; &lt;aliases>&#xa;  &lt;alias index=&quot;0&quot; field=&quot;reason&quot; name=&quot;&quot;/>&#xa; &lt;/aliases>&#xa; &lt;defaults>&#xa;  &lt;default expression=&quot;&quot; field=&quot;reason&quot; applyOnUpdate=&quot;0&quot;/>&#xa; &lt;/defaults>&#xa; &lt;constraints>&#xa;  &lt;constraint constraints=&quot;0&quot; unique_strength=&quot;0&quot; exp_strength=&quot;0&quot; notnull_strength=&quot;0&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraints>&#xa; &lt;constraintExpressions>&#xa;  &lt;constraint exp=&quot;&quot; desc=&quot;&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraintExpressions>&#xa; &lt;expressionfields/>&#xa; &lt;attributeactions>&#xa;  &lt;defaultAction key=&quot;Canvas&quot; value=&quot;{00000000-0000-0000-0000-000000000000}&quot;/>&#xa; &lt;/attributeactions>&#xa; &lt;attributetableconfig sortExpression=&quot;&quot; actionWidgetStyle=&quot;dropDown&quot; sortOrder=&quot;0&quot;>&#xa;  &lt;columns>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;field&quot; hidden=&quot;0&quot; name=&quot;reason&quot;/>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;actions&quot; hidden=&quot;1&quot;/>&#xa;  &lt;/columns>&#xa; &lt;/attributetableconfig>&#xa; &lt;conditionalstyles>&#xa;  &lt;rowstyles/>&#xa;  &lt;fieldstyles/>&#xa; &lt;/conditionalstyles>&#xa; &lt;storedexpressions/>&#xa; &lt;editform tolerant=&quot;1&quot;>&lt;/editform>&#xa; &lt;editforminit/>&#xa; &lt;editforminitcodesource>0&lt;/editforminitcodesource>&#xa; &lt;editforminitfilepath>&lt;/editforminitfilepath>&#xa; &lt;editforminitcode>&lt;![CDATA[# -*- coding: utf-8 -*-&#xa;&quot;&quot;&quot;&#xa;QGIS forms can have a Python function that is called when the form is&#xa;opened.&#xa;&#xa;Use this function to add extra logic to your forms.&#xa;&#xa;Enter the name of the function in the &quot;Python Init function&quot;&#xa;field.&#xa;An example follows:&#xa;&quot;&quot;&quot;&#xa;from qgis.PyQt.QtWidgets import QWidget&#xa;&#xa;def my_form_open(dialog, layer, feature):&#xa;    geom = feature.geometry()&#xa;    control = dialog.findChild(QWidget, &quot;MyLineEdit&quot;)&#xa;]]&gt;&lt;/editforminitcode>&#xa; &lt;featformsuppress>0&lt;/featformsuppress>&#xa; &lt;editorlayout>generatedlayout&lt;/editorlayout>&#xa; &lt;editable>&#xa;  &lt;field name=&quot;reason&quot; editable=&quot;1&quot;/>&#xa; &lt;/editable>&#xa; &lt;labelOnTop>&#xa;  &lt;field labelOnTop=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/labelOnTop>&#xa; &lt;reuseLastValue>&#xa;  &lt;field reuseLastValue=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/reuseLastValue>&#xa; &lt;dataDefinedFieldProperties/>&#xa; &lt;widgets/>&#xa; &lt;previewExpression>&quot;reason&quot;&lt;/previewExpression>&#xa; &lt;mapTip>&lt;/mapTip>&#xa; &lt;layerGeometryType>0&lt;/layerGeometryType>&#xa;&lt;/qgis>&#xa;" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:exportToMemoryLayer_5" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:exportToMemoryLayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2452.8626602779905" type="double"/>
+        <Option name="component_pos_y" value="1018.4323516383474" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="flag_vertice_nao_compartilhado_em_seg_compartilhado" type="QString"/>
+      <Option name="component_height" value="62.000000000000014" type="double"/>
+      <Option name="component_pos_x" value="757.5021706219047" type="double"/>
+      <Option name="component_pos_y" value="1014.083179375144" type="double"/>
+      <Option name="component_width" value="375" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:exportToMemoryLayer_5" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_LAYER" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbylocation_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="flag_vertice_nao_compartilhado_em_seg_compartilhado" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_QML_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="&lt;!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>&#xa;&lt;qgis maxScale=&quot;0&quot; simplifyDrawingTol=&quot;1&quot; version=&quot;3.24.3-Tisler&quot; simplifyDrawingHints=&quot;0&quot; minScale=&quot;100000000&quot; simplifyMaxScale=&quot;1&quot; readOnly=&quot;0&quot; styleCategories=&quot;AllStyleCategories&quot; hasScaleBasedVisibilityFlag=&quot;0&quot; labelsEnabled=&quot;0&quot; simplifyAlgorithm=&quot;0&quot; simplifyLocal=&quot;1&quot; symbologyReferenceScale=&quot;-1&quot;>&#xa; &lt;flags>&#xa;  &lt;Identifiable>1&lt;/Identifiable>&#xa;  &lt;Removable>1&lt;/Removable>&#xa;  &lt;Searchable>1&lt;/Searchable>&#xa;  &lt;Private>0&lt;/Private>&#xa; &lt;/flags>&#xa; &lt;temporal enabled=&quot;0&quot; fixedDuration=&quot;0&quot; endField=&quot;&quot; accumulate=&quot;0&quot; durationUnit=&quot;min&quot; limitMode=&quot;0&quot; startField=&quot;&quot; endExpression=&quot;&quot; durationField=&quot;&quot; mode=&quot;0&quot; startExpression=&quot;&quot;>&#xa;  &lt;fixedRange>&#xa;   &lt;start>&lt;/start>&#xa;   &lt;end>&lt;/end>&#xa;  &lt;/fixedRange>&#xa; &lt;/temporal>&#xa; &lt;renderer-v2 type=&quot;singleSymbol&quot; symbollevels=&quot;0&quot; enableorderby=&quot;0&quot; forceraster=&quot;0&quot; referencescale=&quot;-1&quot;>&#xa;  &lt;symbols>&#xa;   &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;marker&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;0&quot;>&#xa;    &lt;data_defined_properties>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;      &lt;Option name=&quot;properties&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;     &lt;/Option>&#xa;    &lt;/data_defined_properties>&#xa;    &lt;layer enabled=&quot;1&quot; class=&quot;SimpleMarker&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;     &lt;Option type=&quot;Map&quot;>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;angle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;cap_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,255,255,0&quot; name=&quot;color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;horizontal_anchor_point&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;circle&quot; name=&quot;name&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0,0&quot; name=&quot;offset&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;255,0,0,255&quot; name=&quot;outline_color&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;outline_style&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;0.8&quot; name=&quot;outline_width&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;outline_width_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;outline_width_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;diameter&quot; name=&quot;scale_method&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;10&quot; name=&quot;size&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;size_map_unit_scale&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;size_unit&quot;/>&#xa;      &lt;Option type=&quot;QString&quot; value=&quot;1&quot; name=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;/Option>&#xa;     &lt;prop v=&quot;0&quot; k=&quot;angle&quot;/>&#xa;     &lt;prop v=&quot;square&quot; k=&quot;cap_style&quot;/>&#xa;     &lt;prop v=&quot;255,255,255,0&quot; k=&quot;color&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;horizontal_anchor_point&quot;/>&#xa;     &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;     &lt;prop v=&quot;circle&quot; k=&quot;name&quot;/>&#xa;     &lt;prop v=&quot;0,0&quot; k=&quot;offset&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;     &lt;prop v=&quot;255,0,0,255&quot; k=&quot;outline_color&quot;/>&#xa;     &lt;prop v=&quot;solid&quot; k=&quot;outline_style&quot;/>&#xa;     &lt;prop v=&quot;0.8&quot; k=&quot;outline_width&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;outline_width_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;outline_width_unit&quot;/>&#xa;     &lt;prop v=&quot;diameter&quot; k=&quot;scale_method&quot;/>&#xa;     &lt;prop v=&quot;10&quot; k=&quot;size&quot;/>&#xa;     &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;size_map_unit_scale&quot;/>&#xa;     &lt;prop v=&quot;MM&quot; k=&quot;size_unit&quot;/>&#xa;     &lt;prop v=&quot;1&quot; k=&quot;vertical_anchor_point&quot;/>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;    &lt;/layer>&#xa;   &lt;/symbol>&#xa;  &lt;/symbols>&#xa;  &lt;rotation/>&#xa;  &lt;sizescale/>&#xa; &lt;/renderer-v2>&#xa; &lt;customproperties>&#xa;  &lt;Option type=&quot;Map&quot;>&#xa;   &lt;Option type=&quot;int&quot; value=&quot;0&quot; name=&quot;embeddedWidgets/count&quot;/>&#xa;   &lt;Option name=&quot;variableNames&quot;/>&#xa;   &lt;Option name=&quot;variableValues&quot;/>&#xa;  &lt;/Option>&#xa; &lt;/customproperties>&#xa; &lt;blendMode>0&lt;/blendMode>&#xa; &lt;featureBlendMode>0&lt;/featureBlendMode>&#xa; &lt;layerOpacity>1&lt;/layerOpacity>&#xa; &lt;SingleCategoryDiagramRenderer diagramType=&quot;Histogram&quot; attributeLegend=&quot;1&quot;>&#xa;  &lt;DiagramCategory lineSizeType=&quot;MM&quot; height=&quot;15&quot; scaleBasedVisibility=&quot;0&quot; spacing=&quot;5&quot; rotationOffset=&quot;270&quot; lineSizeScale=&quot;3x:0,0,0,0,0,0&quot; barWidth=&quot;5&quot; width=&quot;15&quot; spacingUnit=&quot;MM&quot; enabled=&quot;0&quot; sizeType=&quot;MM&quot; minimumSize=&quot;0&quot; penColor=&quot;#000000&quot; opacity=&quot;1&quot; backgroundColor=&quot;#ffffff&quot; penWidth=&quot;0&quot; minScaleDenominator=&quot;0&quot; direction=&quot;0&quot; penAlpha=&quot;255&quot; sizeScale=&quot;3x:0,0,0,0,0,0&quot; scaleDependency=&quot;Area&quot; spacingUnitScale=&quot;3x:0,0,0,0,0,0&quot; maxScaleDenominator=&quot;1e+08&quot; diagramOrientation=&quot;Up&quot; backgroundAlpha=&quot;255&quot; labelPlacementMethod=&quot;XHeight&quot; showAxis=&quot;1&quot;>&#xa;   &lt;fontProperties style=&quot;&quot; description=&quot;MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0&quot;/>&#xa;   &lt;axisSymbol>&#xa;    &lt;symbol clip_to_extent=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;&quot;>&#xa;     &lt;data_defined_properties>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;       &lt;Option name=&quot;properties&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;      &lt;/Option>&#xa;     &lt;/data_defined_properties>&#xa;     &lt;layer enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&#xa;      &lt;Option type=&quot;Map&quot;>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;align_dash_pattern&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;capstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;5;2&quot; name=&quot;customdash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;customdash_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;dash_pattern_offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;draw_inside_polygon&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;35,35,35,255&quot; name=&quot;line_color&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;line_style&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0.26&quot; name=&quot;line_width&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;line_width_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;offset&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;ring_filter&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_end&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_start&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;use_custom_dash&quot;/>&#xa;       &lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;/Option>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;align_dash_pattern&quot;/>&#xa;      &lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&#xa;      &lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;dash_pattern_offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;dash_pattern_offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;dash_pattern_offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&#xa;      &lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&#xa;      &lt;prop v=&quot;35,35,35,255&quot; k=&quot;line_color&quot;/>&#xa;      &lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&#xa;      &lt;prop v=&quot;0.26&quot; k=&quot;line_width&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_end&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_end_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_end_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;trim_distance_start&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;trim_distance_start_map_unit_scale&quot;/>&#xa;      &lt;prop v=&quot;MM&quot; k=&quot;trim_distance_start_unit&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;tweak_dash_pattern_on_corners&quot;/>&#xa;      &lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&#xa;      &lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&#xa;      &lt;data_defined_properties>&#xa;       &lt;Option type=&quot;Map&quot;>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;        &lt;Option name=&quot;properties&quot;/>&#xa;        &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;       &lt;/Option>&#xa;      &lt;/data_defined_properties>&#xa;     &lt;/layer>&#xa;    &lt;/symbol>&#xa;   &lt;/axisSymbol>&#xa;  &lt;/DiagramCategory>&#xa; &lt;/SingleCategoryDiagramRenderer>&#xa; &lt;DiagramLayerSettings linePlacementFlags=&quot;18&quot; obstacle=&quot;0&quot; dist=&quot;0&quot; zIndex=&quot;0&quot; priority=&quot;0&quot; placement=&quot;0&quot; showAll=&quot;1&quot;>&#xa;  &lt;properties>&#xa;   &lt;Option type=&quot;Map&quot;>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&#xa;    &lt;Option name=&quot;properties&quot;/>&#xa;    &lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&#xa;   &lt;/Option>&#xa;  &lt;/properties>&#xa; &lt;/DiagramLayerSettings>&#xa; &lt;geometryOptions removeDuplicateNodes=&quot;0&quot; geometryPrecision=&quot;0&quot;>&#xa;  &lt;activeChecks/>&#xa;  &lt;checkConfiguration/>&#xa; &lt;/geometryOptions>&#xa; &lt;legend type=&quot;default-vector&quot; showLabelLegend=&quot;0&quot;/>&#xa; &lt;referencedLayers/>&#xa; &lt;fieldConfiguration>&#xa;  &lt;field configurationFlags=&quot;None&quot; name=&quot;reason&quot;>&#xa;   &lt;editWidget type=&quot;TextEdit&quot;>&#xa;    &lt;config>&#xa;     &lt;Option/>&#xa;    &lt;/config>&#xa;   &lt;/editWidget>&#xa;  &lt;/field>&#xa; &lt;/fieldConfiguration>&#xa; &lt;aliases>&#xa;  &lt;alias index=&quot;0&quot; field=&quot;reason&quot; name=&quot;&quot;/>&#xa; &lt;/aliases>&#xa; &lt;defaults>&#xa;  &lt;default expression=&quot;&quot; field=&quot;reason&quot; applyOnUpdate=&quot;0&quot;/>&#xa; &lt;/defaults>&#xa; &lt;constraints>&#xa;  &lt;constraint constraints=&quot;0&quot; unique_strength=&quot;0&quot; exp_strength=&quot;0&quot; notnull_strength=&quot;0&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraints>&#xa; &lt;constraintExpressions>&#xa;  &lt;constraint exp=&quot;&quot; desc=&quot;&quot; field=&quot;reason&quot;/>&#xa; &lt;/constraintExpressions>&#xa; &lt;expressionfields/>&#xa; &lt;attributeactions>&#xa;  &lt;defaultAction key=&quot;Canvas&quot; value=&quot;{00000000-0000-0000-0000-000000000000}&quot;/>&#xa; &lt;/attributeactions>&#xa; &lt;attributetableconfig sortExpression=&quot;&quot; actionWidgetStyle=&quot;dropDown&quot; sortOrder=&quot;0&quot;>&#xa;  &lt;columns>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;field&quot; hidden=&quot;0&quot; name=&quot;reason&quot;/>&#xa;   &lt;column width=&quot;-1&quot; type=&quot;actions&quot; hidden=&quot;1&quot;/>&#xa;  &lt;/columns>&#xa; &lt;/attributetableconfig>&#xa; &lt;conditionalstyles>&#xa;  &lt;rowstyles/>&#xa;  &lt;fieldstyles/>&#xa; &lt;/conditionalstyles>&#xa; &lt;storedexpressions/>&#xa; &lt;editform tolerant=&quot;1&quot;>&lt;/editform>&#xa; &lt;editforminit/>&#xa; &lt;editforminitcodesource>0&lt;/editforminitcodesource>&#xa; &lt;editforminitfilepath>&lt;/editforminitfilepath>&#xa; &lt;editforminitcode>&lt;![CDATA[# -*- coding: utf-8 -*-&#xa;&quot;&quot;&quot;&#xa;QGIS forms can have a Python function that is called when the form is&#xa;opened.&#xa;&#xa;Use this function to add extra logic to your forms.&#xa;&#xa;Enter the name of the function in the &quot;Python Init function&quot;&#xa;field.&#xa;An example follows:&#xa;&quot;&quot;&quot;&#xa;from qgis.PyQt.QtWidgets import QWidget&#xa;&#xa;def my_form_open(dialog, layer, feature):&#xa;    geom = feature.geometry()&#xa;    control = dialog.findChild(QWidget, &quot;MyLineEdit&quot;)&#xa;]]&gt;&lt;/editforminitcode>&#xa; &lt;featformsuppress>0&lt;/featformsuppress>&#xa; &lt;editorlayout>generatedlayout&lt;/editorlayout>&#xa; &lt;editable>&#xa;  &lt;field name=&quot;reason&quot; editable=&quot;1&quot;/>&#xa; &lt;/editable>&#xa; &lt;labelOnTop>&#xa;  &lt;field labelOnTop=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/labelOnTop>&#xa; &lt;reuseLastValue>&#xa;  &lt;field reuseLastValue=&quot;0&quot; name=&quot;reason&quot;/>&#xa; &lt;/reuseLastValue>&#xa; &lt;dataDefinedFieldProperties/>&#xa; &lt;widgets/>&#xa; &lt;previewExpression>&quot;reason&quot;&lt;/previewExpression>&#xa; &lt;mapTip>&lt;/mapTip>&#xa; &lt;layerGeometryType>0&lt;/layerGeometryType>&#xa;&lt;/qgis>&#xa;" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:identifyunsharedvertexonintersectionsalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="829.3333333333333" type="double"/>
+        <Option name="component_pos_y" value="488.66666666666663" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Identify Unshared Vertex on Intersections" type="QString"/>
+      <Option name="component_height" value="76.66666666666674" type="double"/>
+      <Option name="component_pos_x" value="516.4211809776255" type="double"/>
+      <Option name="component_pos_y" value="481.8300356549919" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_LINES" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtolayerlistalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_POINTS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_POLYGONS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:identifyunsharedvertexonsharededgesalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:identifyunsharedvertexonsharededgesalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="464" type="double"/>
+        <Option name="component_pos_y" value="636.6666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Identify Unshared Vertex on Shared Edges" type="QString"/>
+      <Option name="component_height" value="65.53832020997379" type="double"/>
+      <Option name="component_pos_x" value="408.53490813648284" type="double"/>
+      <Option name="component_pos_y" value="801.2279527559056" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option name="child_id" value="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1" type="QString"/>
+          <Option name="conditional_branch" value="" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="id" value="dsgtools:identifyunsharedvertexonsharededgesalgorithm_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_LINES" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtolayerlistalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_POLYGONS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtolayerlistalgorithm_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SEARCH_RADIUS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1e-05" type="double"/>
+          </Option>
+        </Option>
+        <Option name="SELECTED" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1909" type="double"/>
+        <Option name="component_pos_y" value="389" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="moldura" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="129.66666666666666" type="double"/>
+      <Option name="component_pos_y" value="246.66666666666666" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="aux_moldura_a,moldura,aux_moldura_area_continua_a" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:stringcsvtolayerlistalgorithm_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:stringcsvtolayerlistalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="775.6666666666666" type="double"/>
+        <Option name="component_pos_y" value="575.3333333333333" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Camadas Linha" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="151.5917126520443" type="double"/>
+      <Option name="component_pos_y" value="451.2169425789321" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:stringcsvtolayerlistalgorithm_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:stringcsvtolayerlistalgorithm_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:stringcsvtolayerlistalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="943.1694257893222" type="double"/>
+        <Option name="component_pos_y" value="1216.6301863676795" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Camadas Polygon" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="270.60635097210235" type="double"/>
+      <Option name="component_pos_y" value="1099.6972209173668" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:stringcsvtolayerlistalgorithm_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="977.3333333333333" type="double"/>
+        <Option name="component_pos_y" value="564.3333333333333" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Extract by location1" type="QString"/>
+      <Option name="component_height" value="31.545144356955348" type="double"/>
+      <Option name="component_pos_x" value="599.3372703412072" type="double"/>
+      <Option name="component_pos_y" value="693.192782152231" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractbylocation_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:identifyunsharedvertexonintersectionsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="FLAGS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="0" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbylocation_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbylocation" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="684" type="double"/>
+        <Option name="component_pos_y" value="790.6666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Extract by location2" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="349.5314960629921" type="double"/>
+      <Option name="component_pos_y" value="911.9204724409449" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractbylocation_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:identifyunsharedvertexonsharededgesalgorithm_1" type="QString"/>
+            <Option name="output_name" value="FLAGS" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option value="0" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help" type="Map">
+    <Option name="ALG_CREATOR" value="Cap Borba" type="QString"/>
+    <Option name="ALG_DESC" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" type="QString"/>
+    <Option name="ALG_VERSION" value="0.1" type="QString"/>
+    <Option name="EXAMPLES" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" type="QString"/>
+    <Option name="SHORT_DESCRIPTION" value="Todas as feições devem compartilhar vértices, logo, onde for apontado erro, deve-se adicionar o vértice nas linhas que possuem intersecção ponto ou linha." type="QString"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="EDGV_CDGV_Topo" type="QString"/>
+  <Option name="model_name" value="Identifica problemas de compartilhamento de vértices" type="QString"/>
+  <Option name="parameterDefinitions"/>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>
