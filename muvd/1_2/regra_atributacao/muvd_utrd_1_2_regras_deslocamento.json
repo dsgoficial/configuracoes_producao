@@ -1,0 +1,213 @@
+{
+    "metadados": {
+        "modelo": "MUVD",
+        "versao_modelo": "1.0",
+        "versao_regras": "0.1"
+    },
+    "grupo_estilo": [
+        {
+            "tipo_estilo": "Atributo incorreto",
+            "cor_rgb": "255,127,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo",
+            "cor_rgb": "255,189,127"
+        }
+    ],
+    "regras": [
+        {
+            "atributo": "acc",
+            "descricao": "acc - Preencher atributo obrigatório",
+            "regra": "acc IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "acc",
+            "descricao": "acc - Valor incorreto, acc = 1",
+            "regra": "acc NOT IN (1)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "acc",
+            "descricao": "acc - Valor padrão para preenchimento necessário (9999)",
+            "regra": "acc = 9999",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "cud",
+            "descricao": "cud - Valor no formato errado (YYYY-MM-DDTHH:MM:SSZ)",
+            "regra": "(NOT (cud ~ '^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}Z$'))",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "cud",
+            "descricao": "cud - Preencher atributo obrigatório",
+            "regra": "cud IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "dev",
+            "descricao": "LOC = 44 (Na Superfície), o Nível do Convés (DEV) deve ser 0",
+            "regra": "loc = 44 AND (dev IS NULL OR dev != 0)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "dev",
+            "descricao": "LOC = 40 ou LOC = 45, o Nível do Convés (DEV) deve ser diferente de 0",
+            "regra": "(loc = 40 OR loc = 45) AND (dev = 0 OR dev IS NULL)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "dev",
+            "descricao": "dev - Preencher atributo obrigatório",
+            "regra": "dev IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "dsc",
+            "descricao": "dsc - O atributo não pode ser NULL",
+            "regra": "dsc IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "ela",
+            "descricao": "ela - O atributo deve ser 998",
+            "regra": "ela != 998",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "ela",
+            "descricao": "ela - O atributo não pode ser NULL",
+            "regra": "ela IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "fco",
+            "descricao": "Se LTN = 1, então FCO = 7 e MES = 1000",
+            "regra": "(ltn = 1 AND fco != 7) OR (ltn = 1 AND mes != 1000)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "fco",
+            "descricao": "fco - O atributo não pode ser NULL",
+            "regra": "fco IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        
+        {
+            "atributo": "loc",
+            "descricao": "loc - Preencher atributo obrigatório",
+            "regra": "loc IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "loc",
+            "descricao": "loc - Valor incorreto, fora dos códigos válidos",
+            "regra": "loc NOT IN (17, 40, 44, 45, 998, 999, -999999, 9999)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+        {
+            "atributo": "loc",
+            "descricao": "loc - Valor padrão para preenchimento necessário (9999)",
+            "regra": "loc = 9999",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+		
+		{
+			"atributo": "ltn",
+			"descricao": "ltn - O valor de LTN deve estar dentro do intervalo correspondente ao WD1 min e WD1 max.",
+			"regra": " NOT((ltn = 1 AND wd1 >= 2.5 AND wd1 <= 4.5) OR (ltn = 2 AND wd1 >= 5.0 AND wd1 <= 7.0) OR (ltn = 3 AND wd1 >= 7.5 AND wd1 <= 9.5) OR (ltn = 4 AND wd1 >= 10.0 AND wd1 <= 12.0) OR (ltn = 5 AND wd1 >= 12.5 AND wd1 <= 14.5) OR (ltn = 6 AND wd1 >= 15.0 AND wd1 <= 17.0))",
+			"tipo_estilo": "Atributo incorreto",
+			"camadas": [
+				"muvd.tran_ap075_l"
+			]
+		},
+		
+		{
+            "atributo": "ltn",
+            "descricao": "ltn - Preencher atributo obrigatório",
+            "regra": "ltn IS NULL",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "muvd.tran_ap075_l"
+            ]
+        },
+		
+		{
+			"atributo": "mes",
+			"descricao": "mes errado",
+			"regra": " NOT ((MES = 1001 AND (FCO = 5 OR FCO = 6)) OR (MES = 1000 AND FCO NOT IN (5, 6)))",
+			"tipo_estilo": "Atributo incorreto",
+			"camadas": [
+				"muvd.tran_ap075_l"
+			]
+		},
+		
+		{
+			"atributo": "ws0",
+			"descricao": "conferência entre rst e wso incorreta",
+			"regra": " NOT ((rst IN (22, 29, 11, 28, 31, 27) AND ws0 = 4) OR (rst IN (24) AND ws0 = 1) OR (rst = 36 AND ws0 = 3) OR  (rst = 9999 AND ws0 = 9999) OR  (rst = -999999 AND ws0 = -999999))",
+			"tipo_estilo": "Atributo incorreto",
+			"camadas": [
+				"muvd.tran_ap075_l"
+			]
+}
+
+		
+		
+			
+
+    ]
+}
