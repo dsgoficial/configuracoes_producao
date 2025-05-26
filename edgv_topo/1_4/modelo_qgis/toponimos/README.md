@@ -7,14 +7,15 @@ Modelos construídos para a produção EDGV 3.0 Topo versão 1.4, na linha de pr
 ## Classes recebidas via SAP/ Classes utilizadas
 - moldura;
 - elemnat_toponimo_fisiografico_natural_p
-- llp_aglomerado_rural_p
 - llp_localidade_p
-- llp_nome_local_p
 - elemnat_toponimo_fisiografico_natural_l
 
 ## Classes Toponimos
 - elemnat_toponimo_fisiografico_natural_p
 - elemnat_toponimo_fisiografico_natural_l
+
+## Classes Localidade
+- llp_localidade_p
 
 ## Models utilizados para criação do Workflow
     
