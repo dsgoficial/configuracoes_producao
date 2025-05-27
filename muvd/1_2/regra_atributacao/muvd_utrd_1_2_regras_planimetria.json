@@ -1,0 +1,41 @@
+{
+    "metadados": {
+        "modelo": "MUVD",
+        "versao_modelo": "1.0",
+        "versao_regras": "0.1"
+    },
+    "grupo_estilo": [
+        {
+            "tipo_estilo": "Atributo incorreto",
+            "cor_rgb": "255,127,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo",
+            "cor_rgb": "255,189,127"
+        }
+    ],
+    "regras": [
+        {
+            "atributo": "ssr",
+            "descricao": "ssr - Preencher atributo obrigatório",
+            "regra": "ssr IS 9999",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.cul_al013_a"
+            ]
+        },
+        {
+            "atributo": "area_otf",
+            "descricao": "area_otf - Não respeita Área >= 6 m²",
+            "regra": "NOT(area_otf >= 6)",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "muvd.cul_al013_a"
+            ]
+        }
+    ]
+}
