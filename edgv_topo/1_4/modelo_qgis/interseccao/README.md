@@ -154,7 +154,7 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - camada: todas as linhas;
 - nome camada flags: não há;
 - admite falsos positivos? Não é o caso;
-- nome da camada de saída: flags_suavizacao
+- nome da camada de saída: flags_simplificacao
 - para após a execução? Sim
 - Texto para tooltip: 
 - black list de atributos: ["id","texto_edicao","label_x","label_y","justificativa_txt","tamanho_txt","visivel","carta_simbolizacao","simbolizar_carta_mini","simb_rot","rotular_carta_mini","espacamento","tamanho_txt","estilo_fonte","cor","cor_buffer","tamanho_buffer","observacao","length_otf","geometry_error","observacao","operador_criacao","data_criacao","operador_atualizacao","data_atualizacao"]
@@ -196,7 +196,6 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada flags: flags_overlaps_l
 
 
-
 ### 16. Identificar erros de ortografia no atributo nome
 
 - arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/gerais/identifica_erro_ortografia_atributo_nome.model3;
@@ -214,13 +213,13 @@ array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (rege
 - nome camada de flags: flags_erros_atributos
 - nome camada de saída: atributos_incomuns
 
-### 18. Identificar erros de relacionamentos espaciais nos elementos viários de transportes;
+### 18. Identificar erros de relacionamentos espaciais nos elementos viários de transportes
 
 - arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/interseccao/identifica_erros_elemento_viario_transportes.model3
 - camadas: infra_via_deslocamento_l, infra_ferrovia_l
 - nome camada de flags: flags_elemento_viario_ferrovia_solto, flags_elemento_viario_via_deslocamento_solto
 
-### 19. Identificar erros de relacionamentos espaciais nos elementos viários de hidrografia;
+### 19. Identificar erros de relacionamentos espaciais nos elementos viários de hidrografia
 
 - arquivo: /configuracoes_producao/edgv_topo/1_4/modelo_qgis/interseccao/identifica_erros_elemento_viario_hidrografia.model3
 - camadas: elemnat_trecho_drenagem_l;
