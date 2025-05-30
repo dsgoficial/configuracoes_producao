@@ -95,6 +95,17 @@
                 <Option value="12" type="int" name="predicate"/>
                 <Option value="false" type="bool" name="useDE9IM"/>
               </Option>
+              <Option type="Map">
+                <Option value="1..*" type="QString" name="cardinality"/>
+                <Option value="" type="QString" name="de9im_predicate"/>
+                <Option value=" &quot;tipo_elemento_viario&quot; = '97'" type="QString" name="filter_a"/>
+                <Option value="&quot;tipo_elemento_viario&quot; != 97&#xd;&#xa;" type="QString" name="filter_b"/>
+                <Option value="infra_via_deslocamento_l" type="QString" name="layer_a"/>
+                <Option value="infra_via_deslocamento_l" type="QString" name="layer_b"/>
+                <Option value="Sobreposição de Via Deslocamento e Elemento Viario" type="QString" name="name"/>
+                <Option value="12" type="int" name="predicate"/>
+                <Option value="false" type="bool" name="useDE9IM"/>
+              </Option>
             </Option>
           </Option>
         </Option>
@@ -190,7 +201,7 @@
         <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
             <Option value="2" type="int" name="source"/>
-            <Option value="infra_travessia_hidroviaria_l,infra_trecho_hidroviario_l" type="QString" name="static_value"/>
+            <Option value="infra_travessia_hidroviaria_l" type="QString" name="static_value"/>
           </Option>
         </Option>
       </Option>
@@ -364,14 +375,11 @@
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
-  <Option value="Version2" type="QString" name="internal_version"/>
   <Option name="modelVariables"/>
   <Option value="CDGV_EDGV_Topo" type="QString" name="model_group"/>
   <Option value="Identifica erros de relacionamentos espaciais transportes" type="QString" name="model_name"/>
-  <Option value="" type="QString" name="outputGroup"/>
-  <Option name="outputOrder"/>
   <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="flags_linha">
+    <Option type="Map" name="dsgtools:enforcespatialrules_1:flags_linha">
       <Option value="true" type="bool" name="create_by_default"/>
       <Option value="-1" type="int" name="data_type"/>
       <Option type="invalid" name="default"/>
@@ -379,17 +387,13 @@
       <Option value="flags_linha" type="QString" name="description"/>
       <Option value="0" type="int" name="flags"/>
       <Option value="" type="QString" name="help"/>
-      <Option type="Map" name="metadata">
-        <Option value="dsgtools:enforcespatialrules_1" type="QString" name="_modelChildId"/>
-        <Option value="flags_linha" type="QString" name="_modelChildOutputName"/>
-        <Option value="dsgtools" type="QString" name="_modelChildProvider"/>
-      </Option>
-      <Option value="flags_linha" type="QString" name="name"/>
+      <Option name="metadata"/>
+      <Option value="dsgtools:enforcespatialrules_1:flags_linha" type="QString" name="name"/>
       <Option value="sink" type="QString" name="parameter_type"/>
       <Option value="false" type="bool" name="supports_append"/>
       <Option value="true" type="bool" name="supports_non_file_outputs"/>
     </Option>
-    <Option type="Map" name="flags_ponto">
+    <Option type="Map" name="native:mergevectorlayers_1:flags_ponto">
       <Option value="true" type="bool" name="create_by_default"/>
       <Option value="-1" type="int" name="data_type"/>
       <Option type="invalid" name="default"/>
@@ -397,12 +401,8 @@
       <Option value="flags_ponto" type="QString" name="description"/>
       <Option value="0" type="int" name="flags"/>
       <Option value="" type="QString" name="help"/>
-      <Option type="Map" name="metadata">
-        <Option value="native:mergevectorlayers_1" type="QString" name="_modelChildId"/>
-        <Option value="flags_ponto" type="QString" name="_modelChildOutputName"/>
-        <Option value="native" type="QString" name="_modelChildProvider"/>
-      </Option>
-      <Option value="flags_ponto" type="QString" name="name"/>
+      <Option name="metadata"/>
+      <Option value="native:mergevectorlayers_1:flags_ponto" type="QString" name="name"/>
       <Option value="sink" type="QString" name="parameter_type"/>
       <Option value="false" type="bool" name="supports_append"/>
       <Option value="true" type="bool" name="supports_non_file_outputs"/>

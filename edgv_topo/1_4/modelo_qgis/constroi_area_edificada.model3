@@ -2,145 +2,145 @@
 <Option type="Map">
   <Option name="children" type="Map">
     <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="320" type="double"/>
-        <Option name="component_pos_y" value="115" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="320" name="component_pos_x" type="double"/>
+        <Option value="115" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option name="component_description" value="Build Polygons From Center Points and Boundaries" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="311" type="double"/>
-      <Option name="component_pos_y" value="136" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="Build Polygons From Center Points and Boundaries" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="311" name="component_pos_x" type="double"/>
+      <Option value="136" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
+      <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" name="id" type="QString"/>
       <Option name="outputs" type="Map">
         <Option name="area_edificada" type="Map">
-          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
+          <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
           <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
           </Option>
-          <Option name="component_description" value="area_edificada" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="511" type="double"/>
-          <Option name="component_pos_y" value="181" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
+          <Option value="area_edificada" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="557" name="component_pos_x" type="double"/>
+          <Option value="157" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
           <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" value="false" type="bool"/>
-          <Option name="name" value="area_edificada" type="QString"/>
-          <Option name="output_name" value="OUTPUT_POLYGONS" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="area_edificada" name="name" type="QString"/>
+          <Option value="OUTPUT_POLYGONS" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
         </Option>
         <Option name="delimitadores_nao_utilizados_limite_area_edificada" type="Map">
-          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
+          <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
           <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
           </Option>
-          <Option name="component_description" value="delimitadores_nao_utilizados_limite_area_edificada" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="511" type="double"/>
-          <Option name="component_pos_y" value="211" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
+          <Option value="delimitadores_nao_utilizados_limite_area_edificada" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="511" name="component_pos_x" type="double"/>
+          <Option value="211" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
           <Option name="default_value" type="Map">
-            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
+            <Option value="QgsProcessingOutputLayerDefinition" name="class" type="QString"/>
             <Option name="create_options" type="Map">
-              <Option name="fileEncoding" value="System" type="QString"/>
+              <Option value="System" name="fileEncoding" type="QString"/>
             </Option>
             <Option name="sink" type="Map">
-              <Option name="active" value="true" type="bool"/>
-              <Option name="type" value="1" type="int"/>
-              <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+              <Option value="true" name="active" type="bool"/>
+              <Option value="1" name="type" type="int"/>
+              <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
             </Option>
           </Option>
-          <Option name="mandatory" value="true" type="bool"/>
-          <Option name="name" value="delimitadores_nao_utilizados_limite_area_edificada" type="QString"/>
-          <Option name="output_name" value="UNUSED_BOUNDARY_LINES" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option value="true" name="mandatory" type="bool"/>
+          <Option value="delimitadores_nao_utilizados_limite_area_edificada" name="name" type="QString"/>
+          <Option value="UNUSED_BOUNDARY_LINES" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
         </Option>
         <Option name="flag_invalida_poligono_area_edificada" type="Map">
-          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
+          <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
           <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
           </Option>
-          <Option name="component_description" value="flag_invalida_poligono_area_edificada" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="511" type="double"/>
-          <Option name="component_pos_y" value="241" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
+          <Option value="flag_invalida_poligono_area_edificada" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="511" name="component_pos_x" type="double"/>
+          <Option value="241" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
           <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" value="false" type="bool"/>
-          <Option name="name" value="flag_invalida_poligono_area_edificada" type="QString"/>
-          <Option name="output_name" value="INVALID_POLYGON_LOCATION" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="flag_invalida_poligono_area_edificada" name="name" type="QString"/>
+          <Option value="INVALID_POLYGON_LOCATION" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
         </Option>
         <Option name="flags_poligonos_area_edificada" type="Map">
-          <Option name="child_id" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" type="QString"/>
-          <Option name="color" value="" type="QString"/>
+          <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
           <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
           </Option>
-          <Option name="component_description" value="flags_poligonos_area_edificada" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="511" type="double"/>
-          <Option name="component_pos_y" value="271" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
+          <Option value="flags_poligonos_area_edificada" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="511" name="component_pos_x" type="double"/>
+          <Option value="271" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
           <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" value="false" type="bool"/>
-          <Option name="name" value="flags_poligonos_area_edificada" type="QString"/>
-          <Option name="output_name" value="FLAGS" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="flags_poligonos_area_edificada" name="name" type="QString"/>
+          <Option value="FLAGS" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
       <Option name="params" type="Map">
         <Option name="ATTRIBUTE_BLACK_LIST" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option value="2" name="source" type="int"/>
             <Option name="static_value" type="StringList">
               <Option value="id,observacao" type="QString"/>
             </Option>
@@ -148,177 +148,189 @@
         </Option>
         <Option name="BOUNDARY_LINE_LAYER" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="aquisicao_limite_area_edificada_l" type="QString"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="delimitador_area_edificada_l" name="static_value" type="QString"/>
           </Option>
         </Option>
         <Option name="CHECK_INVALID_GEOMETRIES_ON_OUTPUT_POLYGONS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="true" type="bool"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="CHECK_UNUSED_BOUNDARY_LINES" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
           </Option>
         </Option>
         <Option name="CONSTRAINT_LINE_LAYERS" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:stringcsvtolayerlistalgorithm_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
           </Option>
         </Option>
         <Option name="CONSTRAINT_POLYGON_LAYERS" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:stringcsvtolayerlistalgorithm_2" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option value="dsgtools:stringcsvtolayerlistalgorithm_2" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
           </Option>
         </Option>
         <Option name="GEOGRAPHIC_BOUNDARY" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="aux_moldura_area_continua_a" type="QString"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="moldura_b5cf08f1_513f_4b8a_8c41_af7985ec6e07" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GROUP_BY_SPATIAL_PARTITION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
           </Option>
         </Option>
         <Option name="INPUT_CENTER_POINTS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="centroide_area_construida_p" type="QString"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="centroide_area_edificada_p" name="static_value" type="QString"/>
           </Option>
         </Option>
         <Option name="MERGE_OUTPUT_POLYGONS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="true" type="bool"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
           </Option>
         </Option>
         <Option name="SELECTED" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
           </Option>
         </Option>
         <Option name="SUPPRESS_AREA_WITHOUT_CENTROID_FLAG" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="true" type="bool"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="dsgtools:stringcsvtolayerlistalgorithm_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:stringcsvtolayerlistalgorithm" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option value="dsgtools:stringcsvtolayerlistalgorithm" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="657" type="double"/>
-        <Option name="component_pos_y" value="157" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="657" name="component_pos_x" type="double"/>
+        <Option value="157" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option name="component_description" value="line_list" type="QString"/>
-      <Option name="component_height" value="44" type="double"/>
-      <Option name="component_pos_x" value="158" type="double"/>
-      <Option name="component_pos_y" value="26" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="line_list" name="component_description" type="QString"/>
+      <Option value="44" name="component_height" type="double"/>
+      <Option value="158" name="component_pos_x" type="double"/>
+      <Option value="26" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:stringcsvtolayerlistalgorithm_1" type="QString"/>
+      <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" name="id" type="QString"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
       <Option name="params" type="Map">
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="delimitador_massa_dagua_l,infra_barragem_l,infra_ferrovia_l,infra_mobilidade_urbana_l,infra_vala_l,infra_via_deslocamento_l" type="QString"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="delimitador_massa_dagua_l,infra_barragem_l,infra_ferrovia_l,infra_mobilidade_urbana_l,infra_vala_l,infra_via_deslocamento_l" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="dsgtools:stringcsvtolayerlistalgorithm_2" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:stringcsvtolayerlistalgorithm" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option value="dsgtools:stringcsvtolayerlistalgorithm" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="657" type="double"/>
-        <Option name="component_pos_y" value="157" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="657" name="component_pos_x" type="double"/>
+        <Option value="157" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option name="component_description" value="polygon_list" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="129" type="double"/>
-      <Option name="component_pos_y" value="232" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option value="polygon_list" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="129" name="component_pos_x" type="double"/>
+      <Option value="232" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:stringcsvtolayerlistalgorithm_2" type="QString"/>
+      <Option value="dsgtools:stringcsvtolayerlistalgorithm_2" name="id" type="QString"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
       <Option name="params" type="Map">
         <Option name="INPUTLAYERS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="corpos_dagua" type="QString"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="corpos_dagua" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:corpos_dagua" type="QgsProcessingOutputLayerDefinition">
+    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:area_edificada" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="System" type="QString"/>
+          <Option value="System" name="fileEncoding" type="QString"/>
         </Option>
         <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+          <Option value="true" name="active" type="bool"/>
+          <Option value="1" name="type" type="int"/>
+          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:delimitadores_nao_utilizados" type="QgsProcessingOutputLayerDefinition">
+    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:delimitadores_nao_utilizados_limite_area_edificada" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="System" type="QString"/>
+          <Option value="System" name="fileEncoding" type="QString"/>
         </Option>
         <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+          <Option value="true" name="active" type="bool"/>
+          <Option value="1" name="type" type="int"/>
+          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flags_poligonos" type="QgsProcessingOutputLayerDefinition">
+    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flag_invalida_poligono_area_edificada" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="System" type="QString"/>
+          <Option value="System" name="fileEncoding" type="QString"/>
         </Option>
         <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+          <Option value="true" name="active" type="bool"/>
+          <Option value="1" name="type" type="int"/>
+          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:invalidas" type="QgsProcessingOutputLayerDefinition">
+    <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flags_poligonos_area_edificada" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="System" type="QString"/>
+          <Option value="System" name="fileEncoding" type="QString"/>
         </Option>
         <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+          <Option value="true" name="active" type="bool"/>
+          <Option value="1" name="type" type="int"/>
+          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
         </Option>
       </Option>
     </Option>
@@ -326,75 +338,75 @@
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" value="EDGV 3.0 Pro" type="QString"/>
-  <Option name="model_name" value="Constroi Área Edificada" type="QString"/>
+  <Option value="EDGV 3.0 Pro" name="model_group" type="QString"/>
+  <Option value="Constroi Área Edificada" name="model_name" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:area_edificada" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="data_type" value="-1" type="int"/>
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="area_edificada" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option value="area_edificada" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
       <Option name="metadata"/>
-      <Option name="name" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:area_edificada" type="QString"/>
-      <Option name="parameter_type" value="sink" type="QString"/>
-      <Option name="supports_append" value="false" type="bool"/>
-      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+      <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:area_edificada" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_append" type="bool"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
     </Option>
     <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:delimitadores_nao_utilizados_limite_area_edificada" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="data_type" value="-1" type="int"/>
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
       <Option name="default" type="QgsProcessingOutputLayerDefinition">
         <Option type="Map">
           <Option name="create_options" type="Map">
-            <Option name="fileEncoding" value="System" type="QString"/>
+            <Option value="System" name="fileEncoding" type="QString"/>
           </Option>
           <Option name="sink" type="Map">
-            <Option name="active" value="true" type="bool"/>
-            <Option name="type" value="1" type="int"/>
-            <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+            <Option value="true" name="active" type="bool"/>
+            <Option value="1" name="type" type="int"/>
+            <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
           </Option>
         </Option>
       </Option>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="delimitadores_nao_utilizados_limite_area_edificada" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option value="delimitadores_nao_utilizados_limite_area_edificada" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
       <Option name="metadata"/>
-      <Option name="name" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:delimitadores_nao_utilizados_limite_area_edificada" type="QString"/>
-      <Option name="parameter_type" value="sink" type="QString"/>
-      <Option name="supports_append" value="false" type="bool"/>
-      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+      <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:delimitadores_nao_utilizados_limite_area_edificada" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_append" type="bool"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
     </Option>
     <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flag_invalida_poligono_area_edificada" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="data_type" value="-1" type="int"/>
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="flag_invalida_poligono_area_edificada" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option value="flag_invalida_poligono_area_edificada" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
       <Option name="metadata"/>
-      <Option name="name" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flag_invalida_poligono_area_edificada" type="QString"/>
-      <Option name="parameter_type" value="sink" type="QString"/>
-      <Option name="supports_append" value="false" type="bool"/>
-      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+      <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flag_invalida_poligono_area_edificada" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_append" type="bool"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
     </Option>
     <Option name="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flags_poligonos_area_edificada" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="data_type" value="-1" type="int"/>
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="flags_poligonos_area_edificada" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option value="flags_poligonos_area_edificada" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
       <Option name="metadata"/>
-      <Option name="name" value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flags_poligonos_area_edificada" type="QString"/>
-      <Option name="parameter_type" value="sink" type="QString"/>
-      <Option name="supports_append" value="false" type="bool"/>
-      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+      <Option value="dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1:flags_poligonos_area_edificada" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_append" type="bool"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
