@@ -1,10 +1,12 @@
 {
     "metadata": {
-        "lastModified": "27/02/2025 15:15:00"
+        "lastModified": "19/03/2025 13:11:24"
     },
-    "0": {
-        "0": "infra_ferrovia_l",
-        "1": 1e-06,
-        "2": 0
-    }
+    "snapSettings": [
+        {
+            "layer": "infra_ferrovia_l",
+            "snap": 1e-06,
+            "mode": 0
+        }
+    ]
 }
