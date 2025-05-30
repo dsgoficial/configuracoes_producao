@@ -1,0 +1,197 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="dsgtools:batchrunalgorithm_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="115" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="identifica overlaps linha" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="215" type="double" name="component_pos_x"/>
+      <Option value="86" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:batchrunalgorithm_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ALG_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="dsgtools:identifyoverlaps" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="INPUT" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="FLAGS" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PARAMETER_DICT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;FLAGS&quot;: &quot;TEMPORARY_OUTPUT&quot;&#xa;}" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1764" type="double" name="component_pos_x"/>
+        <Option value="391" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="moldura" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="228" type="double" name="component_pos_x"/>
+      <Option value="187" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="aux_moldura_a,moldura,aux_moldura_area_continua_a" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractbylocation_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:extractbylocation" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="923" type="double" name="component_pos_x"/>
+        <Option value="290" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Extract by location" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="480" type="double" name="component_pos_x"/>
+      <Option value="141" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:extractbylocation_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="flags_overlaps_l">
+          <Option value="native:extractbylocation_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="flags_overlaps_l" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="0" type="double" name="component_pos_x"/>
+          <Option value="0" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="flags_overlaps_l" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="dsgtools:batchrunalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INTERSECT">
+          <Option type="Map">
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PREDICATE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option value="0" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="CDGV_EDGV_Topo" type="QString" name="model_group"/>
+  <Option value="Identificar overlaps dentro da mesma camada" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="native:extractbylocation_1:flags_overlaps_l">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="flags_overlaps_l" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="native:extractbylocation_1:flags_overlaps_l" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>

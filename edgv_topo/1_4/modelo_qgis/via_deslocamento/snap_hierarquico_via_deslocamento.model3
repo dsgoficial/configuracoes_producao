@@ -2,79 +2,90 @@
 <Option type="Map">
   <Option type="Map" name="children">
     <Option type="Map" name="dsgtools:hierarchicalsnaplayeronlayer_1">
-      <Option type="bool" value="true" name="active"/>
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="dsgtools:hierarchicalsnaplayeronlayer" name="alg_id"/>
-      <Option type="QString" value="" name="color"/>
+      <Option value="dsgtools:hierarchicalsnaplayeronlayer" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
       <Option type="Map" name="comment">
-        <Option type="QString" value="" name="color"/>
-        <Option type="QString" value="" name="component_description"/>
-        <Option type="double" value="60" name="component_height"/>
-        <Option type="double" value="320" name="component_pos_x"/>
-        <Option type="double" value="115" name="component_pos_y"/>
-        <Option type="double" value="100" name="component_width"/>
-        <Option type="bool" value="true" name="outputs_collapsed"/>
-        <Option type="bool" value="true" name="parameters_collapsed"/>
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="115" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option type="QString" value="Hierarchical Snap layer on layer" name="component_description"/>
-      <Option type="double" value="30" name="component_height"/>
-      <Option type="double" value="469.3333333333334" name="component_pos_x"/>
-      <Option type="double" value="150.66666666666666" name="component_pos_y"/>
-      <Option type="double" value="200" name="component_width"/>
+      <Option value="Hierarchical Snap layer on layer" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="469.3333333333334" type="double" name="component_pos_x"/>
+      <Option value="150.66666666666666" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="dsgtools:hierarchicalsnaplayeronlayer_1" name="id"/>
+      <Option value="dsgtools:hierarchicalsnaplayeronlayer_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option type="bool" value="true" name="outputs_collapsed"/>
-      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
       <Option type="Map" name="params">
         <Option type="List" name="GEOGRAPHIC_BOUNDARY">
           <Option type="Map">
-            <Option type="QString" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" name="child_id"/>
-            <Option type="QString" value="OUTPUT" name="output_name"/>
-            <Option type="int" value="1" name="source"/>
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
         <Option type="List" name="SELECTED">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="bool" value="false" name="static_value"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="SNAP_HIERARCHY">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
+            <Option value="2" type="int" name="source"/>
             <Option type="List" name="static_value">
               <Option type="Map">
-                <Option type="int" value="0" name="mode"/>
-                <Option type="QString" value="infra_via_deslocamento_l" name="referenceLayer"/>
-                <Option type="double" value="1e-06" name="snap"/>
+                <Option value="0" type="int" name="mode"/>
+                <Option value="infra_via_deslocamento_l" type="QString" name="referenceLayer"/>
+                <Option value="1e-06" type="double" name="snap"/>
                 <Option type="List" name="snapLayerList">
-                  <Option type="QString" value="infra_ferrovia_l"/>
-                  <Option type="QString" value="infra_mobilidade_urbana_l"/>
-                  <Option type="QString" value="infra_travessia_hidroviaria_l"/>
+                  <Option value="infra_ferrovia_l" type="QString"/>
+                  <Option value="infra_mobilidade_urbana_l" type="QString"/>
+                  <Option value="infra_travessia_hidroviaria_l" type="QString"/>
+                  <Option value="infra_travessia_hidroviaria_p" type="QString"/>
                 </Option>
               </Option>
               <Option type="Map">
-                <Option type="int" value="0" name="mode"/>
-                <Option type="QString" value="infra_ferrovia_l" name="referenceLayer"/>
-                <Option type="double" value="1e-06" name="snap"/>
+                <Option value="0" type="int" name="mode"/>
+                <Option value="infra_ferrovia_l" type="QString" name="referenceLayer"/>
+                <Option value="1e-06" type="double" name="snap"/>
                 <Option type="List" name="snapLayerList">
-                  <Option type="QString" value="infra_mobilidade_urbana_l"/>
-                  <Option type="QString" value="infra_travessia_hidroviaria_l"/>
+                  <Option value="infra_mobilidade_urbana_l" type="QString"/>
+                  <Option value="infra_travessia_hidroviaria_l" type="QString"/>
+                  <Option value="infra_travessia_hidroviaria_p" type="QString"/>
                 </Option>
               </Option>
               <Option type="Map">
-                <Option type="int" value="0" name="mode"/>
-                <Option type="QString" value="infra_mobilidade_urbana_l" name="referenceLayer"/>
-                <Option type="double" value="1e-06" name="snap"/>
+                <Option value="0" type="int" name="mode"/>
+                <Option value="infra_mobilidade_urbana_l" type="QString" name="referenceLayer"/>
+                <Option value="1e-06" type="double" name="snap"/>
                 <Option type="List" name="snapLayerList">
-                  <Option type="QString" value="infra_travessia_hidroviaria_l"/>
+                  <Option value="infra_travessia_hidroviaria_l" type="QString"/>
+                  <Option value="infra_travessia_hidroviaria_p" type="QString"/>
                 </Option>
               </Option>
               <Option type="Map">
-                <Option type="int" value="0" name="mode"/>
-                <Option type="QString" value="infra_travessia_hidroviaria_l" name="referenceLayer"/>
-                <Option type="double" value="1e-06" name="snap"/>
+                <Option value="0" type="int" name="mode"/>
+                <Option value="infra_travessia_hidroviaria_l" type="QString" name="referenceLayer"/>
+                <Option value="1e-06" type="double" name="snap"/>
+                <Option type="List" name="snapLayerList">
+                  <Option value="infra_travessia_hidroviaria_p" type="QString"/>
+                </Option>
+              </Option>
+              <Option type="Map">
+                <Option value="0" type="int" name="mode"/>
+                <Option value="infra_travessia_hidroviaria_p" type="QString" name="referenceLayer"/>
+                <Option value="1e-06" type="double" name="snap"/>
                 <Option name="snapLayerList"/>
               </Option>
             </Option>
@@ -83,35 +94,35 @@
       </Option>
     </Option>
     <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
-      <Option type="bool" value="true" name="active"/>
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" name="alg_id"/>
-      <Option type="QString" value="" name="color"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
       <Option type="Map" name="comment">
-        <Option type="QString" value="" name="color"/>
-        <Option type="QString" value="" name="component_description"/>
-        <Option type="double" value="60" name="component_height"/>
-        <Option type="double" value="2140.662486904753" name="component_pos_x"/>
-        <Option type="double" value="678.0631160573396" name="component_pos_y"/>
-        <Option type="double" value="100" name="component_width"/>
-        <Option type="bool" value="true" name="outputs_collapsed"/>
-        <Option type="bool" value="true" name="parameters_collapsed"/>
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="2140.662486904753" type="double" name="component_pos_x"/>
+        <Option value="678.0631160573396" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option type="QString" value="moldura" name="component_description"/>
-      <Option type="double" value="41.99999999999994" name="component_height"/>
-      <Option type="double" value="247.99999999999997" name="component_pos_x"/>
-      <Option type="double" value="270.3333333333332" name="component_pos_y"/>
-      <Option type="double" value="200" name="component_width"/>
+      <Option value="moldura" type="QString" name="component_description"/>
+      <Option value="41.99999999999994" type="double" name="component_height"/>
+      <Option value="247.99999999999997" type="double" name="component_pos_x"/>
+      <Option value="270.3333333333332" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" name="id"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option type="bool" value="true" name="outputs_collapsed"/>
-      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
       <Option type="Map" name="params">
         <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="moldura,aux_moldura_a,aux_moldura_area_continua_a" name="static_value"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="moldura,aux_moldura_a,aux_moldura_area_continua_a" type="QString" name="static_value"/>
           </Option>
         </Option>
       </Option>
@@ -120,12 +131,9 @@
   <Option name="designerParameterValues"/>
   <Option name="groupBoxes"/>
   <Option name="help"/>
-  <Option type="QString" value="Version2" name="internal_version"/>
   <Option name="modelVariables"/>
-  <Option type="QString" value="CDGV_EDGV_Topo" name="model_group"/>
-  <Option type="QString" value="Snap Hierárquico Via Deslocamento" name="model_name"/>
-  <Option type="QString" value="" name="outputGroup"/>
-  <Option name="outputOrder"/>
+  <Option value="CDGV_EDGV_Topo" type="QString" name="model_group"/>
+  <Option value="Snap Hierárquico Via Deslocamento" type="QString" name="model_name"/>
   <Option name="parameterDefinitions"/>
   <Option name="parameterOrder"/>
   <Option name="parameters"/>

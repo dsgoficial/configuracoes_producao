@@ -1,0 +1,30 @@
+{
+    "metadata": {
+        "version": 0.1,
+        "lastModified": "24/05/2024 07:35:52"
+    },
+    "0": {
+        "0": "Falta preencher Nome",
+        "1": "centroide_area_construida_p",
+        "2": "nome",
+        "3": "'nome' is null",
+        "4": "Preencher atributo",
+        "5": "#ff0000"
+    },
+    "1": {
+        "0": "Falta preencher densamente_edificada",
+        "1": "centroide_area_construida_p",
+        "2": "desamente edificada",
+        "3": "'densamente_edificada' is null",
+        "4": "Preencher atributo",
+        "5": "#ff0000"
+    },
+    "2": {
+        "0": "Falta preencher assentamento_precario",
+        "1": "centroide_area_construida_p",
+        "2": "assentamento_precario",
+        "3": "'assentamento_precario' is null",
+        "4": "Preencher atributo",
+        "5": "#ff0000"
+    }
+}

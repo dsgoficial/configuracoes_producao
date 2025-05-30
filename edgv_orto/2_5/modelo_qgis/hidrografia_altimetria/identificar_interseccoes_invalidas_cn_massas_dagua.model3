@@ -62,7 +62,7 @@
         <Option name="CONTOUR_INSIDE_WATER_BODY_EXPRESSION" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="&quot;dentro_massa_dagua&quot; = 1"/>
+            <Option name="static_value" type="QString" value="&quot;dentro_de_massa_dagua&quot; = 1"/>
           </Option>
         </Option>
         <Option name="DAM_LAYER" type="List">
