@@ -3,7 +3,7 @@
     "metadata": {
         "author": "1 Ten Campos",
         "version": "1.0",
-        "lastModified": "11/03/2025 22:58:27"
+        "lastModified": "30/05/2025 22:43:31"
     },
     "workflowItemList": [
         {
@@ -21,7 +21,8 @@
             },
             "metadata": {
                 "originalName": "manipulacao_preliminar_geometria.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identifica geometrias inv\u00e1lidas (com corre\u00e7\u00e3o) e \u00e2ngulos pequenos",
@@ -40,7 +41,8 @@
             },
             "metadata": {
                 "originalName": "identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_identifica_angulos_pequenos_entre_camadas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Unir linhas com mesmo conjunto de atributos",
@@ -57,7 +59,8 @@
             },
             "metadata": {
                 "originalName": "unir_linhas_com_mesmo_conjunto_de_atributos.model3"
-            }
+            },
+            "tooltip": "O algoritmo une linhas com mesmo conjunto de atributos."
         },
         {
             "displayName": "Identificar linhas entrela\u00e7adas",
@@ -76,7 +79,8 @@
             },
             "metadata": {
                 "originalName": "identifica_linhas_entrelacadas_delimitador_area_sem_dados_l.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Limpeza suave das linhas",
@@ -93,7 +97,8 @@
             },
             "metadata": {
                 "originalName": "limpeza_suave_linhas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identifica problemas de constru\u00e7\u00e3o entre geometrias",
@@ -114,7 +119,8 @@
             },
             "metadata": {
                 "originalName": "identifica_problemas_construcao_entre_geometrias.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Corrige compartilhamento de v\u00e9rtices entre camadas",
@@ -131,7 +137,8 @@
             },
             "metadata": {
                 "originalName": "corrige_compartilhamento_de_vertices.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar geometrias inv\u00e1lidas e \u00e2ngulos pequenos entre camadas p\u00f3s corre\u00e7\u00e3o de v\u00e9rtices",
@@ -150,7 +157,8 @@
             },
             "metadata": {
                 "originalName": "identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_identifica_angulos_pequenos_entre_camadas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Snap do Delimitador de Area sem Dados",
@@ -167,7 +175,8 @@
             },
             "metadata": {
                 "originalName": "snap_area_sem_dados.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar geometrias inv\u00e1lidas e \u00e2ngulos pequenos entre camadas p\u00f3s snap",
@@ -186,7 +195,8 @@
             },
             "metadata": {
                 "originalName": "identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_identifica_angulos_pequenos_entre_camadas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Limpeza completa das linhas",
@@ -203,7 +213,8 @@
             },
             "metadata": {
                 "originalName": "limpeza_completa_linhas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identifica problemas de constru\u00e7\u00e3o entre geometrias p\u00f3s limpeza completa",
@@ -224,7 +235,8 @@
             },
             "metadata": {
                 "originalName": "identifica_problemas_construcao_entre_geometrias.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Simplifica\u00e7\u00e3o de Douglas-Peucker",
@@ -241,7 +253,8 @@
             },
             "metadata": {
                 "originalName": "simplificacao_linhas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar geometrias inv\u00e1lidas e \u00e2ngulos pequenos entre camadas p\u00f3s simplifica\u00e7\u00e3o",
@@ -258,7 +271,8 @@
             },
             "metadata": {
                 "originalName": "identifica_e_corrige_geometria_invalida_identifica_angulos_pequenos_identifica_angulos_pequenos_entre_camadas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identifica problemas de compartilhamento de v\u00e9rtices",
@@ -280,7 +294,8 @@
             },
             "metadata": {
                 "originalName": "identifica_problemas_compartilhamento_vertices.model3"
-            }
+            },
+            "tooltip": "Todas as fei\u00e7\u00f5es devem compartilhar v\u00e9rtices, logo, onde for apontado erro, deve-se adicionar o v\u00e9rtice nas linhas que possuem intersec\u00e7\u00e3o ponto ou linha."
         },
         {
             "displayName": "Identificar geometrias com densidade incorreta de v\u00e9rtices",
@@ -299,7 +314,8 @@
             },
             "metadata": {
                 "originalName": "identifica_geometrias_com_densidade_incorreta_de_vertices.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar undershoot com moldura e conex\u00e3o de linhas",
@@ -318,7 +334,8 @@
             },
             "metadata": {
                 "originalName": "identifica_undershoot_moldura_conexao_linhas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar Z",
@@ -337,7 +354,8 @@
             },
             "metadata": {
                 "originalName": "identifica_z.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar overlaps dentro da mesma camada",
@@ -356,7 +374,8 @@
             },
             "metadata": {
                 "originalName": "identifica_overlaps_linhas.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar linhas segmentadas com mesmo conjunto de atributos",
@@ -373,7 +392,8 @@
             },
             "metadata": {
                 "originalName": "identificar_linhas_nao_unidas_com_mesmo_atributo.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar pontas soltas pequenas nas linhas",
@@ -392,7 +412,8 @@
             },
             "metadata": {
                 "originalName": "identificar_pontas_soltas_pequenas_delimitador_area_sem_dados_l.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar erros de ortografia no atributo nome",
@@ -409,7 +430,8 @@
             },
             "metadata": {
                 "originalName": "identifica_erro_ortografia_atributo_nome.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Identificar erros de atributa\u00e7\u00e3o",
@@ -426,7 +448,8 @@
             },
             "metadata": {
                 "originalName": "identifica_erros_atributacao.model3"
-            }
+            },
+            "tooltip": ""
         },
         {
             "displayName": "Construir poligono de Area sem Dados",
@@ -434,21 +457,17 @@
                 "onFlagsRaised": "halt",
                 "modelCanHaveFalsePositiveFlags": false,
                 "loadOutput": true,
-                "flagLayerNames": [
-                    "flag_delimitadores_nao_utilizados",
-                    "flag_llp_area_sem_dados_a",
-                    "flag_poligonos_sem_centroide",
-                    "flag_vertices_invalidos"
-                ]
+                "flagLayerNames": []
             },
             "pauseAfterExecution": false,
             "source": {
                 "type": "xml",
-                "data": "<!DOCTYPE model>\n<Option type=\"Map\">\n  <Option name=\"children\" type=\"Map\">\n    <Option name=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"320\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"115\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"Build Polygons From Center Points and Boundaries\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"53\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"303\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"217.5\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n      <Option name=\"outputs\" type=\"Map\">\n        <Option name=\"flag_delimitadores_nao_utilizados\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"511\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"288\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"UNUSED_BOUNDARY_LINES\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n        <Option name=\"flag_llp_area_sem_dados_a\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"510\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"384\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"OUTPUT_POLYGONS\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n        <Option name=\"flag_poligonos_sem_centroide\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"517.5\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"447\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"213\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"FLAGS\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n        <Option name=\"flag_vertices_invalidos\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"510\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"339\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"INVALID_POLYGON_LOCATION\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n      </Option>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"ATTRIBUTE_BLACK_LIST\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"StringList\">\n              <Option type=\"QString\" value=\"data_criacao\"/>\n            </Option>\n          </Option>\n        </Option>\n        <Option name=\"BOUNDARY_LINE_LAYER\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"expression\" type=\"QString\" value=\"'delimitador_area_sem_dados_l'\"/>\n            <Option name=\"source\" type=\"int\" value=\"3\"/>\n          </Option>\n        </Option>\n        <Option name=\"CHECK_INVALID_GEOMETRIES_ON_OUTPUT_POLYGONS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n        <Option name=\"CHECK_UNUSED_BOUNDARY_LINES\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n        <Option name=\"CONSTRAINT_LINE_LAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm_1\"/>\n            <Option name=\"output_name\" type=\"QString\" value=\"OUTPUT\"/>\n            <Option name=\"source\" type=\"int\" value=\"1\"/>\n          </Option>\n        </Option>\n        <Option name=\"CONSTRAINT_POLYGON_LAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"invalid\"/>\n          </Option>\n        </Option>\n        <Option name=\"GEOGRAPHIC_BOUNDARY\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"expression\" type=\"QString\" value=\"'aux_moldura_a'\"/>\n            <Option name=\"source\" type=\"int\" value=\"3\"/>\n          </Option>\n        </Option>\n        <Option name=\"GROUP_BY_SPATIAL_PARTITION\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"false\"/>\n          </Option>\n        </Option>\n        <Option name=\"INPUT_CENTER_POINTS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"expression\" type=\"QString\" value=\"'centroide_area_sem_dados_p'\"/>\n            <Option name=\"source\" type=\"int\" value=\"3\"/>\n          </Option>\n        </Option>\n        <Option name=\"MERGE_OUTPUT_POLYGONS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"false\"/>\n          </Option>\n        </Option>\n        <Option name=\"SUPPRESS_AREA_WITHOUT_CENTROID_FLAG\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n    <Option name=\"dsgtools:stringcsvtolayerlistalgorithm_1\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"1285\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"322\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"String CSV to Layer List Algorithm\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"48\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"130\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"94\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm_1\"/>\n      <Option name=\"outputs\"/>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"INPUTLAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"QString\" value=\"delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l,infra_ferrovia_l,infra_via_deslocamento_l\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n  </Option>\n  <Option name=\"designerParameterValues\"/>\n  <Option name=\"groupBoxes\"/>\n  <Option name=\"help\"/>\n  <Option name=\"internal_version\" type=\"QString\" value=\"Version2\"/>\n  <Option name=\"modelVariables\"/>\n  <Option name=\"model_group\" type=\"QString\" value=\"CDGV_EDGV_Topo\"/>\n  <Option name=\"model_name\" type=\"QString\" value=\"Construir Poligonos de Area sem Dados\"/>\n  <Option name=\"outputGroup\" type=\"QString\" value=\"\"/>\n  <Option name=\"outputOrder\"/>\n  <Option name=\"parameterDefinitions\" type=\"Map\">\n    <Option name=\"flag_delimitadores_nao_utilizados\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n    <Option name=\"flag_llp_area_sem_dados_a\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n    <Option name=\"flag_poligonos_sem_centroide\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n    <Option name=\"flag_vertices_invalidos\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n  </Option>\n  <Option name=\"parameterOrder\"/>\n  <Option name=\"parameters\"/>\n</Option>\n"
+                "data": "<!DOCTYPE model>\n<Option type=\"Map\">\n  <Option name=\"children\" type=\"Map\">\n    <Option name=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"320\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"115\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"Build Polygons From Center Points and Boundaries\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"53\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"303\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"217.5\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n      <Option name=\"outputs\" type=\"Map\">\n        <Option name=\"flag_delimitadores_nao_utilizados\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"511\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"288\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"UNUSED_BOUNDARY_LINES\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n        <Option name=\"flag_llp_area_sem_dados_a\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"510\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"384\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"OUTPUT_POLYGONS\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n        <Option name=\"flag_poligonos_sem_centroide\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"517.5\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"447\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"213\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"FLAGS\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n        <Option name=\"flag_vertices_invalidos\" type=\"Map\">\n          <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n          <Option name=\"color\" type=\"QString\" value=\"\"/>\n          <Option name=\"comment\" type=\"Map\">\n            <Option name=\"color\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n            <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n            <Option name=\"component_pos_x\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_pos_y\" type=\"double\" value=\"0\"/>\n            <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n            <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n            <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n          </Option>\n          <Option name=\"component_description\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n          <Option name=\"component_height\" type=\"double\" value=\"30\"/>\n          <Option name=\"component_pos_x\" type=\"double\" value=\"510\"/>\n          <Option name=\"component_pos_y\" type=\"double\" value=\"339\"/>\n          <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n          <Option name=\"default_value\" type=\"invalid\"/>\n          <Option name=\"mandatory\" type=\"bool\" value=\"false\"/>\n          <Option name=\"name\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n          <Option name=\"output_name\" type=\"QString\" value=\"INVALID_POLYGON_LOCATION\"/>\n          <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n          <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n        </Option>\n      </Option>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"ATTRIBUTE_BLACK_LIST\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"StringList\">\n              <Option type=\"QString\" value=\"data_criacao\"/>\n            </Option>\n          </Option>\n        </Option>\n        <Option name=\"BOUNDARY_LINE_LAYER\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"expression\" type=\"QString\" value=\"'delimitador_area_sem_dados_l'\"/>\n            <Option name=\"source\" type=\"int\" value=\"3\"/>\n          </Option>\n        </Option>\n        <Option name=\"CHECK_INVALID_GEOMETRIES_ON_OUTPUT_POLYGONS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n        <Option name=\"CHECK_UNUSED_BOUNDARY_LINES\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n        <Option name=\"CONSTRAINT_LINE_LAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"child_id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm_1\"/>\n            <Option name=\"output_name\" type=\"QString\" value=\"OUTPUT\"/>\n            <Option name=\"source\" type=\"int\" value=\"1\"/>\n          </Option>\n        </Option>\n        <Option name=\"CONSTRAINT_POLYGON_LAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"invalid\"/>\n          </Option>\n        </Option>\n        <Option name=\"GEOGRAPHIC_BOUNDARY\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"expression\" type=\"QString\" value=\"'aux_moldura_a'\"/>\n            <Option name=\"source\" type=\"int\" value=\"3\"/>\n          </Option>\n        </Option>\n        <Option name=\"GROUP_BY_SPATIAL_PARTITION\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"false\"/>\n          </Option>\n        </Option>\n        <Option name=\"INPUT_CENTER_POINTS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"expression\" type=\"QString\" value=\"'centroide_area_sem_dados_p'\"/>\n            <Option name=\"source\" type=\"int\" value=\"3\"/>\n          </Option>\n        </Option>\n        <Option name=\"MERGE_OUTPUT_POLYGONS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"false\"/>\n          </Option>\n        </Option>\n        <Option name=\"SUPPRESS_AREA_WITHOUT_CENTROID_FLAG\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"bool\" value=\"true\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n    <Option name=\"dsgtools:stringcsvtolayerlistalgorithm_1\" type=\"Map\">\n      <Option name=\"active\" type=\"bool\" value=\"true\"/>\n      <Option name=\"alg_config\"/>\n      <Option name=\"alg_id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm\"/>\n      <Option name=\"color\" type=\"QString\" value=\"\"/>\n      <Option name=\"comment\" type=\"Map\">\n        <Option name=\"color\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_description\" type=\"QString\" value=\"\"/>\n        <Option name=\"component_height\" type=\"double\" value=\"60\"/>\n        <Option name=\"component_pos_x\" type=\"double\" value=\"1285\"/>\n        <Option name=\"component_pos_y\" type=\"double\" value=\"322\"/>\n        <Option name=\"component_width\" type=\"double\" value=\"100\"/>\n        <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n        <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      </Option>\n      <Option name=\"component_description\" type=\"QString\" value=\"String CSV to Layer List Algorithm\"/>\n      <Option name=\"component_height\" type=\"double\" value=\"48\"/>\n      <Option name=\"component_pos_x\" type=\"double\" value=\"130\"/>\n      <Option name=\"component_pos_y\" type=\"double\" value=\"94\"/>\n      <Option name=\"component_width\" type=\"double\" value=\"200\"/>\n      <Option name=\"dependencies\"/>\n      <Option name=\"id\" type=\"QString\" value=\"dsgtools:stringcsvtolayerlistalgorithm_1\"/>\n      <Option name=\"outputs\"/>\n      <Option name=\"outputs_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"parameters_collapsed\" type=\"bool\" value=\"true\"/>\n      <Option name=\"params\" type=\"Map\">\n        <Option name=\"INPUTLAYERS\" type=\"List\">\n          <Option type=\"Map\">\n            <Option name=\"source\" type=\"int\" value=\"2\"/>\n            <Option name=\"static_value\" type=\"QString\" value=\"delimitador_massa_dagua_l,elemnat_trecho_drenagem_l,infra_barragem_l,infra_ferrovia_l,infra_via_deslocamento_l\"/>\n          </Option>\n        </Option>\n      </Option>\n    </Option>\n  </Option>\n  <Option name=\"designerParameterValues\"/>\n  <Option name=\"groupBoxes\"/>\n  <Option name=\"help\"/>\n  <Option name=\"internal_version\" type=\"QString\" value=\"Version2\"/>\n  <Option name=\"modelVariables\"/>\n  <Option name=\"model_group\" type=\"QString\" value=\"CDGV_EDGV_Orto\"/>\n  <Option name=\"model_name\" type=\"QString\" value=\"Construir Poligonos de Area sem Dados\"/>\n  <Option name=\"outputGroup\" type=\"QString\" value=\"\"/>\n  <Option name=\"outputOrder\"/>\n  <Option name=\"parameterDefinitions\" type=\"Map\">\n    <Option name=\"flag_delimitadores_nao_utilizados\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_delimitadores_nao_utilizados\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n    <Option name=\"flag_llp_area_sem_dados_a\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_llp_area_sem_dados_a\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n    <Option name=\"flag_poligonos_sem_centroide\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_poligonos_sem_centroide\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n    <Option name=\"flag_vertices_invalidos\" type=\"Map\">\n      <Option name=\"create_by_default\" type=\"bool\" value=\"true\"/>\n      <Option name=\"data_type\" type=\"int\" value=\"-1\"/>\n      <Option name=\"default\" type=\"invalid\"/>\n      <Option name=\"defaultGui\" type=\"invalid\"/>\n      <Option name=\"description\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n      <Option name=\"flags\" type=\"int\" value=\"0\"/>\n      <Option name=\"help\" type=\"QString\" value=\"\"/>\n      <Option name=\"metadata\" type=\"Map\">\n        <Option name=\"_modelChildId\" type=\"QString\" value=\"dsgtools:buildpolygonsfromcenterpointsandboundariesalgorithm_1\"/>\n        <Option name=\"_modelChildOutputName\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n        <Option name=\"_modelChildProvider\" type=\"QString\" value=\"dsgtools\"/>\n      </Option>\n      <Option name=\"name\" type=\"QString\" value=\"flag_vertices_invalidos\"/>\n      <Option name=\"parameter_type\" type=\"QString\" value=\"sink\"/>\n      <Option name=\"supports_append\" type=\"bool\" value=\"false\"/>\n      <Option name=\"supports_non_file_outputs\" type=\"bool\" value=\"true\"/>\n    </Option>\n  </Option>\n  <Option name=\"parameterOrder\"/>\n  <Option name=\"parameters\"/>\n</Option>\n"
             },
             "metadata": {
                 "originalName": "construcao_de_poligonos_area_sem_dados.model3"
-            }
+            },
+            "tooltip": "Gera flags relativas a construcao dos poligonos de area sem dados."
         }
     ]
 }
