@@ -1,377 +1,727 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option name="children" type="Map">
-    <Option name="dsgtools:batchrunalgorithm_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+  <Option type="Map" name="children">
+    <Option type="Map" name="dsgtools:adjustnetworkconnectivity_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="30" name="component_height" type="double"/>
-        <Option value="1191.5645674266575" name="component_pos_x" type="double"/>
-        <Option value="680.3151383100493" name="component_pos_y" type="double"/>
-        <Option value="200" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="dsgtools:adjustnetworkconnectivity" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1510.1031794003509" type="double" name="component_pos_x"/>
+        <Option value="707.4999999999999" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="Remove feições duplicadas" name="component_description" type="QString"/>
-      <Option value="51" name="component_height" type="double"/>
-      <Option value="534.6666666666666" name="component_pos_x" type="double"/>
-      <Option value="629.4999999999999" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option name="dependencies" type="List">
+      <Option value="Adjust Network Connectivity" type="QString" name="component_description"/>
+      <Option value="39.02452482704916" type="double" name="component_height"/>
+      <Option value="1188.2720942351873" type="double" name="component_pos_x"/>
+      <Option value="354.776298693619" type="double" name="component_pos_y"/>
+      <Option value="201.28921783243553" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
         <Option type="Map">
-          <Option value="dsgtools:batchrunalgorithm_6" name="child_id" type="QString"/>
-          <Option value="" name="conditional_branch" type="QString"/>
+          <Option value="dsgtools:removesmalllines_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
         </Option>
       </Option>
-      <Option value="dsgtools:batchrunalgorithm_1" name="id" type="QString"/>
+      <Option value="dsgtools:adjustnetworkconnectivity_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="ALG_NAME" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="dsgtools:removeduplicatedfeatures" name="static_value" type="QString"/>
+            <Option value="'elemnat_curva_nivel_l'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUTLAYERS" type="List">
+        <Option type="List" name="SELECTED">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" name="expression" type="QString"/>
-            <Option value="3" name="source" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
+        <Option type="List" name="TOLERANCE">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="INPUT" name="static_value" type="QString"/>
-          </Option>
-        </Option>
-        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="" name="static_value" type="QString"/>
-          </Option>
-        </Option>
-        <Option name="PARAMETER_DICT" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="{&quot;SELECTED&quot;:false,&quot;ATTRIBUTE_BLACK_LIST&quot;: [&quot;id&quot;,&quot;texto_edicao&quot;,&quot;label_x&quot;,&quot;label_y&quot;,&quot;justificativa_txt&quot;,&quot;tamanho_txt&quot;,&quot;visivel&quot;,&quot;carta_simbolizacao&quot;,&quot;simbolizar_carta_mini&quot;,&quot;simb_rot&quot;,&quot;rotular_carta_mini&quot;,&quot;espacamento&quot;,&quot;tamanho_txt&quot;,&quot;estilo_fonte&quot;,&quot;cor&quot;,&quot;cor_buffer&quot;,&quot;tamanho_buffer&quot;,&quot;observacao&quot;,&quot;length_otf&quot;,&quot;geometry_error&quot;,&quot;observacao&quot;,&quot;operador_criacao&quot;,&quot;data_criacao&quot;,&quot;operador_atualizacao&quot;,&quot;data_atualizacao&quot;], &quot;IGNORE_PK_FIELDS&quot;: true,&#xa;    &quot;IGNORE_VIRTUAL_FIELDS&quot;: true}" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="1e-07" type="double" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:batchrunalgorithm_2" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="dsgtools:batchrunalgorithm_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="1075.221411192214" name="component_pos_x" type="double"/>
-        <Option value="432.48905109489027" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="30" type="double" name="component_height"/>
+        <Option value="1191.5645674266575" type="double" name="component_pos_x"/>
+        <Option value="680.3151383100493" type="double" name="component_pos_y"/>
+        <Option value="200" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="Batch Run Algorithm - remove small lines" name="component_description" type="QString"/>
-      <Option value="60.66666666666663" name="component_height" type="double"/>
-      <Option value="474.6666666666666" name="component_pos_x" type="double"/>
-      <Option value="350.3333333333333" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option name="dependencies" type="List">
+      <Option value="Remove feições duplicadas" type="QString" name="component_description"/>
+      <Option value="51" type="double" name="component_height"/>
+      <Option value="787.6666666666666" type="double" name="component_pos_x"/>
+      <Option value="652.4999999999999" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
         <Option type="Map">
-          <Option value="dsgtools:topologicalcleanlines_1" name="child_id" type="QString"/>
-          <Option value="" name="conditional_branch" type="QString"/>
+          <Option value="dsgtools:batchrunalgorithm_6" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
         </Option>
       </Option>
-      <Option value="dsgtools:batchrunalgorithm_2" name="id" type="QString"/>
+      <Option value="dsgtools:batchrunalgorithm_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="ALG_NAME" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ALG_NAME">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="dsgtools:removesmalllines" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="dsgtools:removeduplicatedfeatures" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUTLAYERS" type="List">
+        <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" name="expression" type="QString"/>
-            <Option value="3" name="source" type="int"/>
+            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
+        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="INPUT" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="INPUT" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
+        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="PARAMETER_DICT" type="List">
+        <Option type="List" name="PARAMETER_DICT">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;TOLERANCE&quot;: 1e-5&#xa;}" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="{&quot;SELECTED&quot;:false,&quot;ATTRIBUTE_BLACK_LIST&quot;: [&quot;id&quot;,&quot;texto_edicao&quot;,&quot;label_x&quot;,&quot;label_y&quot;,&quot;justificativa_txt&quot;,&quot;tamanho_txt&quot;,&quot;visivel&quot;,&quot;carta_simbolizacao&quot;,&quot;simbolizar_carta_mini&quot;,&quot;simb_rot&quot;,&quot;rotular_carta_mini&quot;,&quot;espacamento&quot;,&quot;tamanho_txt&quot;,&quot;estilo_fonte&quot;,&quot;cor&quot;,&quot;cor_buffer&quot;,&quot;tamanho_buffer&quot;,&quot;observacao&quot;,&quot;length_otf&quot;,&quot;geometry_error&quot;,&quot;observacao&quot;,&quot;operador_criacao&quot;,&quot;data_criacao&quot;,&quot;operador_atualizacao&quot;,&quot;data_atualizacao&quot;], &quot;IGNORE_PK_FIELDS&quot;: true,&#xa;    &quot;IGNORE_VIRTUAL_FIELDS&quot;: true}" type="QString" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:batchrunalgorithm_6" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="dsgtools:batchrunalgorithm_2">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:batchrunalgorithm" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="30" name="component_height" type="double"/>
-        <Option value="1000.897900759991" name="component_pos_x" type="double"/>
-        <Option value="570.981804976716" name="component_pos_y" type="double"/>
-        <Option value="200" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1075.221411192214" type="double" name="component_pos_x"/>
+        <Option value="432.48905109489027" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="Ajusta conectividade de linhas" name="component_description" type="QString"/>
-      <Option value="51" name="component_height" type="double"/>
-      <Option value="498.66666666666663" name="component_pos_x" type="double"/>
-      <Option value="502.83333333333337" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option name="dependencies" type="List">
+      <Option value="Batch Run Algorithm - remove small lines" type="QString" name="component_description"/>
+      <Option value="60.66666666666663" type="double" name="component_height"/>
+      <Option value="453.6666666666666" type="double" name="component_pos_x"/>
+      <Option value="391.3333333333333" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
         <Option type="Map">
-          <Option value="dsgtools:batchrunalgorithm_2" name="child_id" type="QString"/>
-          <Option value="" name="conditional_branch" type="QString"/>
+          <Option value="dsgtools:topologicalcleanlines_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
         </Option>
       </Option>
-      <Option value="dsgtools:batchrunalgorithm_6" name="id" type="QString"/>
+      <Option value="dsgtools:batchrunalgorithm_2" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="ALG_NAME" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ALG_NAME">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="dsgtools:adjustnetworkconnectivity" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="dsgtools:removesmalllines" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUTLAYERS" type="List">
+        <Option type="List" name="INPUTLAYERS">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" name="expression" type="QString"/>
-            <Option value="3" name="source" type="int"/>
+            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags|curva_nivel)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
+        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="INPUT" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="INPUT" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
+        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="PARAMETER_DICT" type="List">
+        <Option type="List" name="PARAMETER_DICT">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="{&quot;SELECTED&quot;:false,&quot;TOLERANCE&quot;:1e-5}" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="{&#xa;    &quot;SELECTED&quot;: false,&#xa;    &quot;TOLERANCE&quot;: 1e-5&#xa;}" type="QString" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="dsgtools:batchrunalgorithm_6">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="1091.0031195081597" name="component_pos_x" type="double"/>
-        <Option value="638.5254031619625" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="dsgtools:batchrunalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="30" type="double" name="component_height"/>
+        <Option value="1000.897900759991" type="double" name="component_pos_x"/>
+        <Option value="570.981804976716" type="double" name="component_pos_y"/>
+        <Option value="200" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="moldura" name="component_description" type="QString"/>
-      <Option value="41.99999999999994" name="component_height" type="double"/>
-      <Option value="175.10462287104622" name="component_pos_x" type="double"/>
-      <Option value="118.41605839416047" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option name="dependencies"/>
-      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" name="id" type="QString"/>
+      <Option value="Ajusta conectividade de linhas" type="QString" name="component_description"/>
+      <Option value="51" type="double" name="component_height"/>
+      <Option value="487.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="570.8333333333334" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option value="dsgtools:batchrunalgorithm_2" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option value="dsgtools:batchrunalgorithm_6" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUTLAYERS" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ALG_NAME">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="moldura,aux_moldura_a,aux_moldura_area_continua_a" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="dsgtools:adjustnetworkconnectivity" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_LAYER_PARAMETER_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="INPUT" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PARAMETER_DICT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="{&quot;SELECTED&quot;:false,&quot;TOLERANCE&quot;:1e-6}" type="QString" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:stringcsvtolayerlistalgorithm_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="dsgtools:cleangeometries_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:stringcsvtolayerlistalgorithm" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="921.3454987834551" name="component_pos_x" type="double"/>
-        <Option value="510.66666666666663" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="dsgtools:cleangeometries" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1228" type="double" name="component_pos_x"/>
+        <Option value="684.4999999999999" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="String CSV to Layer List Algorithm" name="component_description" type="QString"/>
-      <Option value="51.333333333333314" name="component_height" type="double"/>
-      <Option value="154.67883211678844" name="component_pos_x" type="double"/>
-      <Option value="246.3333333333333" name="component_pos_y" type="double"/>
-      <Option value="221.3333333333333" name="component_width" type="double"/>
-      <Option name="dependencies"/>
-      <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" name="id" type="QString"/>
+      <Option value="Clean Geometries" type="QString" name="component_description"/>
+      <Option value="47" type="double" name="component_height"/>
+      <Option value="809.0245248270492" type="double" name="component_pos_x"/>
+      <Option value="182.24016817833717" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option value="native:condition_1" type="QString" name="child_id"/>
+          <Option value="Tem curva de nível" type="QString" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option value="dsgtools:cleangeometries_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUTLAYERS" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="GEOGRAPHIC_BOUNDARY">
           <Option type="Map">
-            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" name="expression" type="QString"/>
-            <Option value="3" name="source" type="int"/>
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MINAREA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1e-08" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SELECTED">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TOLERANCE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1e-05" type="double" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:topologicalcleanlines_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="dsgtools:filterlayerlistbygeographicboundary_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="dsgtools:topologicalcleanlines" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="887.9999999999999" name="component_pos_x" type="double"/>
-        <Option value="510.66666666666663" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="dsgtools:filterlayerlistbygeographicboundary" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1249" type="double" name="component_pos_x"/>
+        <Option value="684.4999999999999" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="Topological Clean Linestrings" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="482.6666666666666" name="component_pos_x" type="double"/>
-      <Option value="192.99999999999991" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option value="Filter layer list by geographic boundary" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="812" type="double" name="component_pos_x"/>
+      <Option value="376.4999999999999" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option value="dsgtools:topologicalcleanlines_1" name="id" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="saida_clean_flags" type="Map">
-          <Option value="dsgtools:topologicalcleanlines_1" name="child_id" type="QString"/>
-          <Option value="" name="color" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option value="" name="color" type="QString"/>
-            <Option value="" name="component_description" type="QString"/>
-            <Option value="60" name="component_height" type="double"/>
-            <Option value="0" name="component_pos_x" type="double"/>
-            <Option value="0" name="component_pos_y" type="double"/>
-            <Option value="100" name="component_width" type="double"/>
-            <Option value="true" name="outputs_collapsed" type="bool"/>
-            <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="dsgtools:filterlayerlistbygeographicboundary_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="saida_clean_flags">
+          <Option value="dsgtools:filterlayerlistbygeographicboundary_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
           </Option>
-          <Option value="saida_clean_flags" name="component_description" type="QString"/>
-          <Option value="30" name="component_height" type="double"/>
-          <Option value="718.6666666666665" name="component_pos_x" type="double"/>
-          <Option value="251.33333333333331" name="component_pos_y" type="double"/>
-          <Option value="200" name="component_width" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="saida_clean_flags" name="name" type="QString"/>
-          <Option value="FLAGS" name="output_name" type="QString"/>
-          <Option value="true" name="outputs_collapsed" type="bool"/>
-          <Option value="true" name="parameters_collapsed" type="bool"/>
+          <Option value="saida_clean_flags" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1031" type="double" name="component_pos_x"/>
+          <Option value="471.4999999999999" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="saida_clean_flags" type="QString" name="name"/>
+          <Option value="LINE_OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
         </Option>
       </Option>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="GEOGRAPHIC_BOUNDARY" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="GEOGRAPHIC_BOUNDARY">
           <Option type="Map">
-            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUTLAYERS" type="List">
+        <Option type="List" name="INPUT_LAYERS">
           <Option type="Map">
-            <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option value="dsgtools:cleangeometries_1" type="QString" name="child_id"/>
+            <Option value="FLAGS" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
-        </Option>
-        <Option name="MINAREA" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="1e-08" name="static_value" type="double"/>
-          </Option>
-        </Option>
-        <Option name="SELECTED" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="false" name="static_value" type="bool"/>
-          </Option>
-        </Option>
-        <Option name="TOLERANCE" type="List">
-          <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="1e-05" name="static_value" type="double"/>
+            <Option value="dsgtools:topologicalcleanlines_1" type="QString" name="child_id"/>
+            <Option value="FLAGS" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
       </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:removeduplicatedfeatures_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:removeduplicatedfeatures" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1608.2720942351873" type="double" name="component_pos_x"/>
+        <Option value="707.4999999999999" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Remove Duplicated Features" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="1318.026845964696" type="double" name="component_pos_x"/>
+      <Option value="449.5338093776353" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option value="dsgtools:adjustnetworkconnectivity_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option value="dsgtools:removeduplicatedfeatures_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ATTRIBUTE_BLACK_LIST">
+          <Option type="Map">
+            <Option value="'id,texto_edicao,label_x,label_y,justificativa_txt,tamanho_txt,visivel,carta_simbolizacao,simbolizar_carta_mini,simb_rot,rotular_carta_mini,espacamento,tamanho_txt,estilo_fonte,cor,cor_buffer,tamanho_buffer,observacao,length_otf,geometry_error,observacao,operador_criacao,data_criacao,operador_atualizacao,data_atualizacao'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="IGNORE_PK_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="IGNORE_VIRTUAL_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="'elemnat_curva_nivel_l'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SELECTED">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:removesmalllines_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:removesmalllines" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1239" type="double" name="component_pos_x"/>
+        <Option value="707.4999999999999" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Remove Small Lines" type="QString" name="component_description"/>
+      <Option value="56" type="double" name="component_height"/>
+      <Option value="1090.1031794003509" type="double" name="component_pos_x"/>
+      <Option value="237.70084089168628" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option value="dsgtools:cleangeometries_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option value="dsgtools:removesmalllines_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="'elemnat_curva_nivel_l'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SELECTED">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TOLERANCE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1e-05" type="double" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1091.0031195081597" type="double" name="component_pos_x"/>
+        <Option value="638.5254031619625" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="moldura" type="QString" name="component_description"/>
+      <Option value="41.99999999999994" type="double" name="component_height"/>
+      <Option value="175.10462287104622" type="double" name="component_pos_x"/>
+      <Option value="118.41605839416047" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="moldura,aux_moldura_a,aux_moldura_area_continua_a" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1708.32915357142" type="double" name="component_pos_x"/>
+        <Option value="1018.0631160573397" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="elemnat_curva_nivel_l" type="QString" name="component_description"/>
+      <Option value="41.99999999999994" type="double" name="component_height"/>
+      <Option value="551" type="double" name="component_pos_x"/>
+      <Option value="20.99999999999997" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="elemnat_curva_nivel_l" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtolayerlistalgorithm_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:stringcsvtolayerlistalgorithm" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="921.3454987834551" type="double" name="component_pos_x"/>
+        <Option value="510.66666666666663" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="String CSV to Layer List Algorithm" type="QString" name="component_description"/>
+      <Option value="51.333333333333314" type="double" name="component_height"/>
+      <Option value="154.67883211678844" type="double" name="component_pos_x"/>
+      <Option value="246.3333333333333" type="double" name="component_pos_y"/>
+      <Option value="221.3333333333333" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags|curva_nivel)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:topologicalcleanlines_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="dsgtools:topologicalcleanlines" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="887.9999999999999" type="double" name="component_pos_x"/>
+        <Option value="510.66666666666663" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Topological Clean Linestrings" type="QString" name="component_description"/>
+      <Option value="58.00000000000001" type="double" name="component_height"/>
+      <Option value="463.6666666666666" type="double" name="component_pos_x"/>
+      <Option value="244.99999999999991" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="dsgtools:topologicalcleanlines_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="GEOGRAPHIC_BOUNDARY">
+          <Option type="Map">
+            <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option value="dsgtools:stringcsvtolayerlistalgorithm_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MINAREA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1e-08" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SELECTED">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TOLERANCE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1e-05" type="double" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:condition_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option type="Map" name="alg_config">
+        <Option type="List" name="conditions">
+          <Option type="Map">
+            <Option value=" @elemnat_curva_nivel_l_OUTPUT is not NULL" type="QString" name="expression"/>
+            <Option value="Tem curva de nível" type="QString" name="name"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option value="native:condition" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1544" type="double" name="component_pos_x"/>
+        <Option value="639" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Conditional branch" type="QString" name="component_description"/>
+      <Option value="52" type="double" name="component_height"/>
+      <Option value="915.6913374326696" type="double" name="component_pos_x"/>
+      <Option value="32.76955418911014" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option value="native:condition_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="false" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="params"/>
     </Option>
   </Option>
   <Option name="designerParameterValues"/>
   <Option name="groupBoxes"/>
   <Option name="help"/>
-  <Option value="Version2" name="internal_version" type="QString"/>
+  <Option value="Version2" type="QString" name="internal_version"/>
   <Option name="modelVariables"/>
-  <Option value="CDGV_EDGV_Orto" name="model_group" type="QString"/>
-  <Option value="Limpeza Completa de Linhas" name="model_name" type="QString"/>
-  <Option value="" name="outputGroup" type="QString"/>
+  <Option value="CDGV_EDGV_Orto" type="QString" name="model_group"/>
+  <Option value="Limpeza Completa de Linhas" type="QString" name="model_name"/>
+  <Option value="" type="QString" name="outputGroup"/>
   <Option name="outputOrder"/>
-  <Option name="parameterDefinitions" type="Map">
-    <Option name="saida_clean_flags" type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="-1" name="data_type" type="int"/>
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option value="saida_clean_flags" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option name="metadata" type="Map">
-        <Option value="dsgtools:topologicalcleanlines_1" name="_modelChildId" type="QString"/>
-        <Option value="saida_clean_flags" name="_modelChildOutputName" type="QString"/>
-        <Option value="dsgtools" name="_modelChildProvider" type="QString"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="saida_clean_flags">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="saida_clean_flags" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="dsgtools:filterlayerlistbygeographicboundary_1" type="QString" name="_modelChildId"/>
+        <Option value="saida_clean_flags" type="QString" name="_modelChildOutputName"/>
+        <Option value="dsgtools" type="QString" name="_modelChildProvider"/>
       </Option>
-      <Option value="saida_clean_flags" name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="false" name="supports_append" type="bool"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+      <Option value="saida_clean_flags" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
