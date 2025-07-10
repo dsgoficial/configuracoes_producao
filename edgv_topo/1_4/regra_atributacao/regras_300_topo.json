@@ -419,7 +419,7 @@
         {
             "atributo": "material_construcao",
             "descricao": "material_construcao - Atributo incorreto para este tipo (R20_V)",
-            "regra": "(tipo in (110,112,113,198) and tipo_exposicao in (5)) and material_construcao in (0,1,2,3,5,97,98)",
+            "regra": "(tipo in (110,112,113,198) and tipo_exposicao in (5)) and not (material_construcao in (0,1,2,3,5,97,98))",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.constr_deposito_*"
