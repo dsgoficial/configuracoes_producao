@@ -6,23 +6,15 @@
     },
     "grupo_estilo": [
         {
-            "tipo_estilo": "Atributo incorreto",
-            "cor_rgb": "255,127,127"
-        },
-        {
             "tipo_estilo": "Atributo incomum",
             "cor_rgb": "255,255,127"
         },
         {
-            "tipo_estilo": "Atributo incomum - atributo extra",
-            "cor_rgb": "255,255,127"
+            "tipo_estilo": "Atributo incorreto",
+            "cor_rgb": "255,127,127"
         },
         {
             "tipo_estilo": "Preencher atributo",
-            "cor_rgb": "255,189,127"
-        },
-        {
-            "tipo_estilo": "Preencher atributo - atributo extra",
             "cor_rgb": "255,189,127"
         }
     ],
@@ -1409,7 +1401,7 @@
         {
             "atributo": "tipo",
             "descricao": "tipo - Incomum, confirmar atributação (R62_A)",
-            "regra": "((tipo - tipo %100)/100) in (1, 7, 14, 15, 16) or tipo in (3, 602, 603, 604, 605, 606, 607, 1306, 2030, 2031, 2320)",
+            "regra": "((tipo - tipo %100)/100) in (1, 7, 14, 15, 16) or tipo in (3, 602, 603, 604, 605, 606, 607, 1306, 2030, 2031, 2320) and (observacao is NULL or observacao = '')",
             "tipo_estilo": "Atributo incomum",
             "camadas": [
                 "edgv.constr_edificacao_*"
