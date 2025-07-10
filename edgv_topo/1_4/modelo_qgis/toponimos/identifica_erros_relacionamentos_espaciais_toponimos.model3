@@ -1,0 +1,289 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="dsgtools:enforcespatialrules_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="dsgtools:enforcespatialrules" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="842" name="component_pos_x"/>
+        <Option type="double" value="649" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Enforce spatial rules toponimos_linha" name="component_description"/>
+      <Option type="double" value="50" name="component_height"/>
+      <Option type="double" value="236.5" name="component_pos_x"/>
+      <Option type="double" value="201" name="component_pos_y"/>
+      <Option type="double" value="233" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="dsgtools:enforcespatialrules_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="RULES_SET">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="List" name="static_value">
+              <Option type="Map">
+                <Option type="QString" value="1..*" name="cardinality"/>
+                <Option type="QString" value="" name="de9im_predicate"/>
+                <Option type="QString" value="" name="filter_a"/>
+                <Option type="QString" value="" name="filter_b"/>
+                <Option type="QString" value="elemnat_toponimo_fisiografico_natural_l" name="layer_a"/>
+                <Option type="QString" value="elemnat_toponimo_fisiografico_natural_p" name="layer_b"/>
+                <Option type="QString" value="não deve tocar" name="name"/>
+                <Option type="int" value="13" name="predicate"/>
+                <Option type="bool" value="false" name="useDE9IM"/>
+              </Option>
+              <Option type="Map">
+                <Option type="QString" value="1..*" name="cardinality"/>
+                <Option type="QString" value="" name="de9im_predicate"/>
+                <Option type="QString" value="" name="filter_a"/>
+                <Option type="QString" value="" name="filter_b"/>
+                <Option type="QString" value="elemnat_toponimo_fisiografico_natural_l" name="layer_a"/>
+                <Option type="QString" value="llp_localidade_p" name="layer_b"/>
+                <Option type="QString" value="não deve conter" name="name"/>
+                <Option type="int" value="13" name="predicate"/>
+                <Option type="bool" value="false" name="useDE9IM"/>
+              </Option>
+              <Option type="Map">
+                <Option type="QString" value="1..*" name="cardinality"/>
+                <Option type="QString" value="" name="de9im_predicate"/>
+                <Option type="QString" value="" name="filter_a"/>
+                <Option type="QString" value="" name="filter_b"/>
+                <Option type="QString" value="elemnat_toponimo_fisiografico_natural_l" name="layer_a"/>
+                <Option type="QString" value="aux_moldura_a" name="layer_b"/>
+                <Option type="QString" value="não deve estar fora" name="name"/>
+                <Option type="int" value="9" name="predicate"/>
+                <Option type="bool" value="false" name="useDE9IM"/>
+              </Option>
+              <Option type="Map">
+                <Option type="QString" value="1..*" name="cardinality"/>
+                <Option type="QString" value="" name="de9im_predicate"/>
+                <Option type="QString" value="" name="filter_a"/>
+                <Option type="QString" value="" name="filter_b"/>
+                <Option type="QString" value="llp_localidade_p" name="layer_a"/>
+                <Option type="QString" value="aux_moldura_a" name="layer_b"/>
+                <Option type="QString" value="não deve estar fora" name="name"/>
+                <Option type="int" value="9" name="predicate"/>
+                <Option type="bool" value="false" name="useDE9IM"/>
+              </Option>
+              <Option type="Map">
+                <Option type="QString" value="1..*" name="cardinality"/>
+                <Option type="QString" value="" name="de9im_predicate"/>
+                <Option type="QString" value="" name="filter_a"/>
+                <Option type="QString" value="" name="filter_b"/>
+                <Option type="QString" value="elemnat_toponimo_fisiografico_natural_p" name="layer_a"/>
+                <Option type="QString" value="aux_moldura_a" name="layer_b"/>
+                <Option type="QString" value="não deve estar fora" name="name"/>
+                <Option type="int" value="9" name="predicate"/>
+                <Option type="bool" value="false" name="useDE9IM"/>
+              </Option>
+              <Option type="Map">
+                <Option type="QString" value="1..*" name="cardinality"/>
+                <Option type="QString" value="" name="de9im_predicate"/>
+                <Option type="QString" value="" name="filter_a"/>
+                <Option type="QString" value="" name="filter_b"/>
+                <Option type="QString" value="llp_localidade_p" name="layer_a"/>
+                <Option type="QString" value="elemnat_toponimo_fisiografico_natural_p" name="layer_b"/>
+                <Option type="QString" value="não sobrepõe" name="name"/>
+                <Option type="int" value="1" name="predicate"/>
+                <Option type="bool" value="false" name="useDE9IM"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:mergevectorlayers_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="native:mergevectorlayers" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="611.5" name="component_pos_x"/>
+        <Option type="double" value="612" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Merge points" name="component_description"/>
+      <Option type="double" value="37.00000000000001" name="component_height"/>
+      <Option type="double" value="688.5" name="component_pos_x"/>
+      <Option type="double" value="401.5" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="native:mergevectorlayers_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="flags_p">
+          <Option type="QString" value="native:mergevectorlayers_1" name="child_id"/>
+          <Option type="QString" value="" name="color"/>
+          <Option type="Map" name="comment">
+            <Option type="QString" value="" name="color"/>
+            <Option type="QString" value="" name="component_description"/>
+            <Option type="double" value="60" name="component_height"/>
+            <Option type="double" value="0" name="component_pos_x"/>
+            <Option type="double" value="0" name="component_pos_y"/>
+            <Option type="double" value="100" name="component_width"/>
+            <Option type="bool" value="true" name="outputs_collapsed"/>
+            <Option type="bool" value="true" name="parameters_collapsed"/>
+          </Option>
+          <Option type="QString" value="flags_p" name="component_description"/>
+          <Option type="double" value="30" name="component_height"/>
+          <Option type="double" value="917.5" name="component_pos_x"/>
+          <Option type="double" value="432" name="component_pos_y"/>
+          <Option type="double" value="200" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="flags_p" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
+          <Option type="bool" value="true" name="outputs_collapsed"/>
+          <Option type="bool" value="true" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CRS">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="LAYERS">
+          <Option type="Map">
+            <Option type="QString" value="dsgtools:enforcespatialrules_1" name="child_id"/>
+            <Option type="QString" value="POINT_FLAGS" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:mergevectorlayers_2">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="native:mergevectorlayers" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="731" name="component_pos_x"/>
+        <Option type="double" value="459" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Merge lines" name="component_description"/>
+      <Option type="double" value="37.00000000000001" name="component_height"/>
+      <Option type="double" value="691" name="component_pos_x"/>
+      <Option type="double" value="272.5" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="native:mergevectorlayers_2" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="flags_l">
+          <Option type="QString" value="native:mergevectorlayers_2" name="child_id"/>
+          <Option type="QString" value="" name="color"/>
+          <Option type="Map" name="comment">
+            <Option type="QString" value="" name="color"/>
+            <Option type="QString" value="" name="component_description"/>
+            <Option type="double" value="60" name="component_height"/>
+            <Option type="double" value="0" name="component_pos_x"/>
+            <Option type="double" value="0" name="component_pos_y"/>
+            <Option type="double" value="100" name="component_width"/>
+            <Option type="bool" value="true" name="outputs_collapsed"/>
+            <Option type="bool" value="true" name="parameters_collapsed"/>
+          </Option>
+          <Option type="QString" value="flags_l" name="component_description"/>
+          <Option type="double" value="30" name="component_height"/>
+          <Option type="double" value="921" name="component_pos_x"/>
+          <Option type="double" value="302" name="component_pos_y"/>
+          <Option type="double" value="200" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="flags_l" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
+          <Option type="bool" value="true" name="outputs_collapsed"/>
+          <Option type="bool" value="true" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CRS">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="LAYERS">
+          <Option type="Map">
+            <Option type="QString" value="dsgtools:enforcespatialrules_1" name="child_id"/>
+            <Option type="QString" value="LINE_FLAGS" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option type="QString" value="Version1" name="internal_version"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" value="CDGV_EDGV_Topo" name="model_group"/>
+  <Option type="QString" value="Identificar erros de relacionamentos espaciais toponimos" name="model_name"/>
+  <Option type="QString" value="" name="outputGroup"/>
+  <Option name="outputOrder"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="native:mergevectorlayers_1:flags_p">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="flags_p" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" value="native:mergevectorlayers_1" name="_modelChildId"/>
+        <Option type="QString" value="flags_p" name="_modelChildOutputName"/>
+        <Option type="QString" value="native" name="_modelChildProvider"/>
+      </Option>
+      <Option type="QString" value="native:mergevectorlayers_1:flags_p" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_append"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="native:mergevectorlayers_2:flags_l">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="flags_l" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" value="native:mergevectorlayers_2" name="_modelChildId"/>
+        <Option type="QString" value="flags_l" name="_modelChildOutputName"/>
+        <Option type="QString" value="native" name="_modelChildProvider"/>
+      </Option>
+      <Option type="QString" value="native:mergevectorlayers_2:flags_l" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_append"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>
