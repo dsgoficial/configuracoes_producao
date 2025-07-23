@@ -186,7 +186,7 @@
         <Option type="List" name="OUTPUT_LAYER_PARAMETER_NAME">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="" name="static_value"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="PARAMETER_DICT">
