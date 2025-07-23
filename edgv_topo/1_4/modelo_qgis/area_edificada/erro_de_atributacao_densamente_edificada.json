@@ -1,0 +1,40 @@
+{
+    "metadados": {
+        "modelo": "EDGV 3.0 Pro",
+        "versao_modelo": "1.2",
+        "versao_regras": "0.1"
+    },
+    "grupo_estilo": [
+        {
+            "tipo_estilo": "Atributo incorreto",
+            "cor_rgb": "255,127,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Atributo incomum - atributo extra",
+            "cor_rgb": "255,255,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo",
+            "cor_rgb": "255,189,127"
+        },
+        {
+            "tipo_estilo": "Preencher atributo - atributo extra",
+            "cor_rgb": "255,189,127"
+        }
+    ],
+    "regras": [
+        {
+            "atributo": "densamente_edificada",
+            "descricao": "densamente_edificada - Preencher atributo",
+            "regra": "densamente_edificada in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.*"
+            ]
+        }
+    ]
+}
