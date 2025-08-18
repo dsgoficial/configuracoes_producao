@@ -1,0 +1,15 @@
+{
+    "metadata": {
+        "lastModified": "18/03/2025 16:08:15"
+    },
+    "0": {
+        "0": "infra_via_deslocamento_l",
+        "1": 1e-06,
+        "2": 0
+    },
+    "1": {
+        "0": "infra_ferrovia_l",
+        "1": 1e-06,
+        "2": 0
+    }
+}
