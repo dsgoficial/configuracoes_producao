@@ -1,0 +1,173 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="598.6666666666666" type="double"/>
+        <Option name="component_pos_y" value="377.33333333333326" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Batch Run Algorithm With Geographic Bounds Constraint" type="QString"/>
+      <Option name="component_height" value="54" type="double"/>
+      <Option name="component_pos_x" value="350.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="182.33333333333326" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="flags_pontas_soltas_pequenas" type="Map">
+          <Option name="child_id" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="flags_pontas_soltas_pequenas" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="550.6666666666666" type="double"/>
+          <Option name="component_pos_y" value="266" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="flags_pontas_soltas_pequenas" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALG_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="dsgtools:identifysmallfirstorderdangles" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GEOGRAPHIC_BOUNDARY" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="GEOGRAPHIC_BOUNDARY_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="GEOGRAPHIC_BOUNDARY" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="expression" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Line')), layer_property (@element,'name')))" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="INPUT" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="MODE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_LAYER_PARAMETER_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="FLAGS" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="PARAMETER_DICT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="{&#xa;  &quot;FLAGS&quot;: &quot;memory:&quot;,&#xa;  &quot;LINEFILTERLAYERS&quot;: [&quot;delimitador_massa_dagua_l&quot;, &quot;elemnat_trecho_drenagem_l&quot;, &quot;infra_barragem_l&quot;, &quot;infra_ferrovia_l&quot;, &quot;infra_via_deslocamento_l&quot;],&#xa;  &quot;MIN_LENGTH&quot;: 0.000050,&#xa;  &quot;POLYGONFILTERLAYERS&quot;: [],&#xa;  &quot;SEARCH_RADIUS&quot;: 0.01,&#xa;  &quot;SELECTED&quot;: false&#xa;}" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1619.3291535714197" type="double"/>
+        <Option name="component_pos_y" value="826.0631160573397" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="moldura" type="QString"/>
+      <Option name="component_height" value="41.99999999999994" type="double"/>
+      <Option name="component_pos_x" value="130.66666666666666" type="double"/>
+      <Option name="component_pos_y" value="70.33333333333326" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUTLAYERS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="moldura,aux_moldura_a,aux_moldura_area_continua_a" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues"/>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="internal_version" value="Version2" type="QString"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="CDGV_EDGV_Orto" type="QString"/>
+  <Option name="model_name" value="Identifica pontas soltas pequenas area sem dados" type="QString"/>
+  <Option name="outputGroup" value="" type="QString"/>
+  <Option name="outputOrder"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="flags_pontas_soltas_pequenas" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="flags_pontas_soltas_pequenas" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" value="dsgtools:batchrunalgorithmwithgeographicboundsconstraint_1" type="QString"/>
+        <Option name="_modelChildOutputName" value="flags_pontas_soltas_pequenas" type="QString"/>
+        <Option name="_modelChildProvider" value="dsgtools" type="QString"/>
+      </Option>
+      <Option name="name" value="flags_pontas_soltas_pequenas" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>
