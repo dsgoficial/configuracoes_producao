@@ -1,0 +1,458 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="dsgtools:identifyuncoveredstartandendpointsalgorithm_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:identifyuncoveredstartandendpointsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="654"/>
+        <Option type="double" name="component_pos_y" value="439.99999999999994"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Identify Uncovered Start and End Points Algorithm"/>
+      <Option type="double" name="component_height" value="59.33333333333334"/>
+      <Option type="double" name="component_pos_x" value="1056"/>
+      <Option type="double" name="component_pos_y" value="167.66666666666663"/>
+      <Option type="double" name="component_width" value="229.3333333333334"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:identifyuncoveredstartandendpointsalgorithm_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="flags_elemento_viario_via_deslocamento_solto">
+          <Option type="QString" name="child_id" value="dsgtools:identifyuncoveredstartandendpointsalgorithm_1"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="flags_elemento_viario_via_deslocamento_solto"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="1285.3333333333335"/>
+          <Option type="double" name="component_pos_y" value="256.66666666666663"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="Map" name="default_value">
+            <Option type="QString" name="class" value="QgsProcessingOutputLayerDefinition"/>
+            <Option type="Map" name="create_options">
+              <Option type="QString" name="fileEncoding" value="windows-1252"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option type="bool" name="active" value="true"/>
+              <Option type="int" name="type" value="1"/>
+              <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+            </Option>
+          </Option>
+          <Option type="bool" name="mandatory" value="true"/>
+          <Option type="QString" name="name" value="flags_elemento_viario_via_deslocamento_solto"/>
+          <Option type="QString" name="output_name" value="FLAGS"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FILTER_EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="FILTER_LINE_LIST">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GEOGRAPHIC_BOUNDARY">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+            <Option type="QString" name="output_name" value="FAIL_OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SELECTED">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="false"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:identifyuncoveredstartandendpointsalgorithm_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:identifyuncoveredstartandendpointsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1476"/>
+        <Option type="double" name="component_pos_y" value="539"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Identify Uncovered Start and End Points Algorithm"/>
+      <Option type="double" name="component_height" value="63"/>
+      <Option type="double" name="component_pos_x" value="997"/>
+      <Option type="double" name="component_pos_y" value="458.5"/>
+      <Option type="double" name="component_width" value="234"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:identifyuncoveredstartandendpointsalgorithm_2"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="flags_elemento_viario_ferrovia_solto">
+          <Option type="QString" name="child_id" value="dsgtools:identifyuncoveredstartandendpointsalgorithm_2"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="flags_elemento_viario_ferrovia_solto"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="1313"/>
+          <Option type="double" name="component_pos_y" value="518"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="flags_elemento_viario_ferrovia_solto"/>
+          <Option type="QString" name="output_name" value="FLAGS"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FILTER_EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="FILTER_LINE_LIST">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GEOGRAPHIC_BOUNDARY">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:extractbyexpression_2"/>
+            <Option type="QString" name="output_name" value="FAIL_OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SELECTED">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="false"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="320"/>
+        <Option type="double" name="component_pos_y" value="115"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="infra_via_deslocamento_l"/>
+      <Option type="double" name="component_height" value="53.99999999999997"/>
+      <Option type="double" name="component_pos_x" value="226.00000000000003"/>
+      <Option type="double" name="component_pos_y" value="94.66666666666666"/>
+      <Option type="double" name="component_width" value="206.66666666666674"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="infra_via_deslocamento_l"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1525.9958202380865"/>
+        <Option type="double" name="component_pos_y" value="730.0631160573397"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="moldura"/>
+      <Option type="double" name="component_height" value="41.99999999999994"/>
+      <Option type="double" name="component_pos_x" value="194.66666666666669"/>
+      <Option type="double" name="component_pos_y" value="335.99999999999994"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="moldura,aux_moldura_a,aux_moldura_area_continua_a"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1474"/>
+        <Option type="double" name="component_pos_y" value="511"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="infra_ferrovia_l"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="186"/>
+      <Option type="double" name="component_pos_y" value="450"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="infra_ferrovia_l"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1476"/>
+        <Option type="double" name="component_pos_y" value="539"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="filtrar elementos viarios em via_deslocamento"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="644"/>
+      <Option type="double" name="component_pos_y" value="36"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="tipo_elemento_viario = 97 OR tipo_elemento_viario = 9999"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractbyexpression_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="1476"/>
+        <Option type="double" name="component_pos_y" value="539"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="filtrar elementos viarios em ferrovia"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="536"/>
+      <Option type="double" name="component_pos_y" value="467"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:extractbyexpression_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPRESSION">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="tipo_elemento_viario = 97 OR tipo_elemento_viario = 9999"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="dsgtools:stringcsvtofirstlayerwithelementsalgorithm_3"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="flags_elemento_viario_ferrovia_solto">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option type="QString" name="fileEncoding" value="windows-1252"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option type="bool" name="active" value="true"/>
+          <Option type="int" name="type" value="1"/>
+          <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="flags_elemento_viario_via_deslocamento_solto">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option type="QString" name="fileEncoding" value="windows-1252"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option type="bool" name="active" value="true"/>
+          <Option type="int" name="type" value="1"/>
+          <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option type="QString" name="internal_version" value="Version2"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" name="model_group" value="CDGV_EDGV_Topo"/>
+  <Option type="QString" name="model_name" value="Identificar erros de relacionamentos espaciais nos elementos viários de transporte"/>
+  <Option type="QString" name="outputGroup" value=""/>
+  <Option name="outputOrder"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="flags_elemento_viario_ferrovia_solto">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="flags_elemento_viario_ferrovia_solto"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="dsgtools:identifyuncoveredstartandendpointsalgorithm_2"/>
+        <Option type="QString" name="_modelChildOutputName" value="flags_elemento_viario_ferrovia_solto"/>
+        <Option type="QString" name="_modelChildProvider" value="dsgtools"/>
+      </Option>
+      <Option type="QString" name="name" value="flags_elemento_viario_ferrovia_solto"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="flags_elemento_viario_via_deslocamento_solto">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
+        <Option type="Map">
+          <Option type="Map" name="create_options">
+            <Option type="QString" name="fileEncoding" value="windows-1252"/>
+          </Option>
+          <Option type="Map" name="sink">
+            <Option type="bool" name="active" value="true"/>
+            <Option type="int" name="type" value="1"/>
+            <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="flags_elemento_viario_via_deslocamento_solto"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="dsgtools:identifyuncoveredstartandendpointsalgorithm_1"/>
+        <Option type="QString" name="_modelChildOutputName" value="flags_elemento_viario_via_deslocamento_solto"/>
+        <Option type="QString" name="_modelChildProvider" value="dsgtools"/>
+      </Option>
+      <Option type="QString" name="name" value="flags_elemento_viario_via_deslocamento_solto"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>
