@@ -1,7 +1,7 @@
 {
     "metadata": {
         "version": 0.2,
-        "lastModified": "06/02/2024 15:24:25"
+        "lastModified": "12/05/2025 14:30:49"
     },
     "0": {
         "0": "Sobreposi\u00e7\u00e3o inv\u00e1lida entre infra_via_deslocamento_l e infra_ferrovia_l",
@@ -31,6 +31,16 @@
         "4": "",
         "5": "infra_travessia_hidroviaria_l",
         "6": "",
+        "7": ""
+    },
+    "3": {
+        "0": "Sobreposi\u00e7\u00e3o de Via Deslocamento e Elemento Viario",
+        "1": "infra_via_deslocamento_l",
+        "2": " \"tipo_elemento_viario\" = '97'",
+        "3": 12,
+        "4": "",
+        "5": "infra_via_deslocamento_l",
+        "6": "\"tipo_elemento_viario\" != 97\r\n",
         "7": ""
     }
 }

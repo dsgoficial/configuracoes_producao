@@ -1,8 +1,8 @@
 {
-    "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 2.5 v1.0.0",
+    "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 2.5 v1.0.2",
     "descricao": "Linha de produção padrão para vetores de carta ortoimagem",
-    "versão": "1.0.0",
-    "nome_abrev": "cdgv_edgv_3orto25_v1.0.0",
+    "versao": "1.0.2",
+    "nome_abrev": "cdgv_edgv_3orto25_v1.0.2",
     "tipo_produto_id": 22,
     "fases": [
         {
@@ -299,6 +299,13 @@
             "schema": "edgv",
             "camada": "elemnat_curva_nivel_l",
             "subfase": "Extração de Área sem Dados",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "elemnat_curva_nivel_l",
+            "subfase": "Extração de Topônimos",
             "camada_apontamento": false,
             "camada_incomum": false
         },
@@ -1184,9 +1191,23 @@
             "camada_apontamento": false,
             "camada_incomum": false
         },
+                {
+            "schema": "edgv",
+            "camada": "llp_localidade_a",
+            "subfase": "Extração de Topônimos",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
         {
             "schema": "edgv",
             "camada": "llp_localidade_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+                {
+            "schema": "edgv",
+            "camada": "llp_localidade_a",
             "subfase": "Validação da Ligação",
             "camada_apontamento": false,
             "camada_incomum": false
@@ -1198,9 +1219,23 @@
             "camada_apontamento": false,
             "camada_incomum": false
         },
+                {
+            "schema": "edgv",
+            "camada": "llp_localidade_a",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
         {
             "schema": "edgv",
             "camada": "llp_localidade_p",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+                {
+            "schema": "edgv",
+            "camada": "llp_localidade_a",
             "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false

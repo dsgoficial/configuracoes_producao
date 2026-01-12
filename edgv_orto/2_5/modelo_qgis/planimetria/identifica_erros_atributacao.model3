@@ -1,0 +1,269 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="dsgtools:assignformatrulestolayersalgorithm_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="dsgtools:assignformatrulestolayersalgorithm" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="750.6666666666667" name="component_pos_x"/>
+        <Option type="double" value="426.3333333333333" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Assign Format Rules to Layers" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="390.6666666666668" name="component_pos_x"/>
+      <Option type="double" value="204.66666666666663" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="dsgtools:assignformatrulestolayersalgorithm_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CLEAN_BEFORE_ASSIGN">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="true" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FILE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_LAYERS">
+          <Option type="Map">
+            <Option type="QString" value="dsgtools:stringcsvtolayerlistalgorithm_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TEXT">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="{&#xa;    &quot;metadados&quot;:{&#xa;        &quot;modelo&quot;: &quot;EDGV 3.0 Orto&quot;,&#xa;        &quot;versao_modelo&quot;: &quot;2.2.6&quot;,&#xa;        &quot;versao_regras&quot;:&quot;0.1&quot;&#xa;    },&#xa;    &quot;grupo_estilo&quot;: [&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incorreto&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,127,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,255,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum - atributo extra&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,255,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,189,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo - atributo extra&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,189,127&quot;&#xa;        }&#xa;    ],&#xa;    &quot;regras&quot;: [&#xa;        {&#xa;            &quot;atributo&quot;: &quot;tipo&quot;,&#xa;            &quot;descricao&quot;: &quot;tipo - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_p&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_p&quot;,&#xa;                &quot;edgv.infra_obstaculo_vertical_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_l&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;,&#xa;                &quot;edgv.infra_elemento_energia_a&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_a&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;tipo_produto&quot;,&#xa;            &quot;descricao&quot;: &quot;tipo_produto - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;tipo_produto in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;forma_extracao&quot;,&#xa;            &quot;descricao&quot;: &quot;forma_extracao - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;forma_extracao in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;forma_extracao&quot;,&#xa;            &quot;descricao&quot;: &quot;forma_extracao - Incomum, confirmar atributação&quot;,&#xa;            &quot;regra&quot;: &quot;forma_extracao in (6)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;situacao_fisica&quot;,&#xa;            &quot;descricao&quot;: &quot;situacao_fisica - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;situacao_fisica in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_p&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_l&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;,&#xa;                &quot;edgv.infra_elemento_energia_a&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altitude&quot;,&#xa;            &quot;descricao&quot;: &quot;altitude - torre de energia requer altitude não nula&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (1401) and altitude is NULL&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_elemento_energia_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altura&quot;,&#xa;            &quot;descricao&quot;: &quot;altura - torre de energia requer altura não nula&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (1401) and altura is NULL&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_elemento_energia_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altitude&quot;,&#xa;            &quot;descricao&quot;: &quot;altitude - ov requer altitude não nula&quot;,&#xa;            &quot;regra&quot;: &quot;altitude is NULL&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_obstaculo_vertical_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altura&quot;,&#xa;            &quot;descricao&quot;: &quot;altura - ov requer altura >= 46m&quot;,&#xa;            &quot;regra&quot;: &quot;altura &lt; 46&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incorreto&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_obstaculo_vertical_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;revestimento&quot;,&#xa;            &quot;descricao&quot;: &quot;revestimento - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;revestimento in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;uso_pista&quot;,&#xa;            &quot;descricao&quot;: &quot;uso_pista - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;uso_pista in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;uso_pista&quot;,&#xa;            &quot;descricao&quot;: &quot;uso_pista - Incomum, confirmar atributação&quot;,&#xa;            &quot;regra&quot;: &quot;uso_pista in (6)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;tipo&quot;,&#xa;            &quot;descricao&quot;: &quot;tipo - Incomum, confirmar atributação&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (1, 5, 6, 8)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        }&#xa;    ]&#xa;}" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:rulestatistics_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="dsgtools:rulestatistics" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="581.3333333333334" name="component_pos_x"/>
+        <Option type="double" value="253" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Rule Statistics" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="330.66666666666674" name="component_pos_x"/>
+      <Option type="double" value="371.3333333333333" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option type="QString" value="dsgtools:assignformatrulestolayersalgorithm_1" name="child_id"/>
+          <Option type="QString" value="" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option type="QString" value="dsgtools:rulestatistics_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="atributos_incomuns">
+          <Option type="QString" value="dsgtools:rulestatistics_1" name="child_id"/>
+          <Option type="QString" value="" name="color"/>
+          <Option type="Map" name="comment">
+            <Option type="QString" value="" name="color"/>
+            <Option type="QString" value="" name="component_description"/>
+            <Option type="double" value="60" name="component_height"/>
+            <Option type="double" value="0" name="component_pos_x"/>
+            <Option type="double" value="0" name="component_pos_y"/>
+            <Option type="double" value="100" name="component_width"/>
+            <Option type="bool" value="true" name="outputs_collapsed"/>
+            <Option type="bool" value="true" name="parameters_collapsed"/>
+          </Option>
+          <Option type="QString" value="atributos_incomuns" name="component_description"/>
+          <Option type="double" value="30" name="component_height"/>
+          <Option type="double" value="581.3333333333334" name="component_pos_x"/>
+          <Option type="double" value="343" name="component_pos_y"/>
+          <Option type="double" value="200" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="atributos_incomuns" name="name"/>
+          <Option type="QString" value="UNUSUAL_ATTRIBUTES" name="output_name"/>
+          <Option type="bool" value="true" name="outputs_collapsed"/>
+          <Option type="bool" value="true" name="parameters_collapsed"/>
+        </Option>
+        <Option type="Map" name="flags_erros_atributos">
+          <Option type="QString" value="dsgtools:rulestatistics_1" name="child_id"/>
+          <Option type="QString" value="" name="color"/>
+          <Option type="Map" name="comment">
+            <Option type="QString" value="" name="color"/>
+            <Option type="QString" value="" name="component_description"/>
+            <Option type="double" value="60" name="component_height"/>
+            <Option type="double" value="0" name="component_pos_x"/>
+            <Option type="double" value="0" name="component_pos_y"/>
+            <Option type="double" value="100" name="component_width"/>
+            <Option type="bool" value="true" name="outputs_collapsed"/>
+            <Option type="bool" value="true" name="parameters_collapsed"/>
+          </Option>
+          <Option type="QString" value="flags_erros_atributos" name="component_description"/>
+          <Option type="double" value="30" name="component_height"/>
+          <Option type="double" value="581.3333333333334" name="component_pos_x"/>
+          <Option type="double" value="388" name="component_pos_y"/>
+          <Option type="double" value="200" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="flags_erros_atributos" name="name"/>
+          <Option type="QString" value="FLAGS" name="output_name"/>
+          <Option type="bool" value="true" name="outputs_collapsed"/>
+          <Option type="bool" value="true" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="QString" value="dsgtools:stringcsvtolayerlistalgorithm_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RULEDATA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="{&#xa;    &quot;metadados&quot;:{&#xa;        &quot;modelo&quot;: &quot;EDGV 3.0 Orto&quot;,&#xa;        &quot;versao_modelo&quot;: &quot;2.2.6&quot;,&#xa;        &quot;versao_regras&quot;:&quot;0.1&quot;&#xa;    },&#xa;    &quot;grupo_estilo&quot;: [&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incorreto&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,127,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,255,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum - atributo extra&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,255,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,189,127&quot;&#xa;        },&#xa;        {&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo - atributo extra&quot;,&#xa;            &quot;cor_rgb&quot;: &quot;255,189,127&quot;&#xa;        }&#xa;    ],&#xa;    &quot;regras&quot;: [&#xa;        {&#xa;            &quot;atributo&quot;: &quot;tipo&quot;,&#xa;            &quot;descricao&quot;: &quot;tipo - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_p&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_p&quot;,&#xa;                &quot;edgv.infra_obstaculo_vertical_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_l&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;,&#xa;                &quot;edgv.infra_elemento_energia_a&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_a&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;tipo_produto&quot;,&#xa;            &quot;descricao&quot;: &quot;tipo_produto - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;tipo_produto in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;forma_extracao&quot;,&#xa;            &quot;descricao&quot;: &quot;forma_extracao - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;forma_extracao in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;forma_extracao&quot;,&#xa;            &quot;descricao&quot;: &quot;forma_extracao - Incomum, confirmar atributação&quot;,&#xa;            &quot;regra&quot;: &quot;forma_extracao in (6)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;situacao_fisica&quot;,&#xa;            &quot;descricao&quot;: &quot;situacao_fisica - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;situacao_fisica in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_p&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_elemento_energia_l&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;,&#xa;                &quot;edgv.infra_elemento_energia_a&quot;,&#xa;                &quot;edgv.infra_elemento_infraestrutura_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altitude&quot;,&#xa;            &quot;descricao&quot;: &quot;altitude - torre de energia requer altitude não nula&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (1401) and altitude is NULL&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_elemento_energia_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altura&quot;,&#xa;            &quot;descricao&quot;: &quot;altura - torre de energia requer altura não nula&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (1401) and altura is NULL&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_elemento_energia_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altitude&quot;,&#xa;            &quot;descricao&quot;: &quot;altitude - ov requer altitude não nula&quot;,&#xa;            &quot;regra&quot;: &quot;altitude is NULL&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_obstaculo_vertical_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;altura&quot;,&#xa;            &quot;descricao&quot;: &quot;altura - ov requer altura >= 46m&quot;,&#xa;            &quot;regra&quot;: &quot;altura &lt; 46&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incorreto&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_obstaculo_vertical_p&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;revestimento&quot;,&#xa;            &quot;descricao&quot;: &quot;revestimento - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;revestimento in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;uso_pista&quot;,&#xa;            &quot;descricao&quot;: &quot;uso_pista - Preencher atributo&quot;,&#xa;            &quot;regra&quot;: &quot;uso_pista in (9999)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Preencher atributo&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;uso_pista&quot;,&#xa;            &quot;descricao&quot;: &quot;uso_pista - Incomum, confirmar atributação&quot;,&#xa;            &quot;regra&quot;: &quot;uso_pista in (6)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.infra_pista_pouso_p&quot;,&#xa;                &quot;edgv.infra_pista_pouso_l&quot;,&#xa;                &quot;edgv.infra_pista_pouso_a&quot;&#xa;            ]&#xa;        },&#xa;        {&#xa;            &quot;atributo&quot;: &quot;tipo&quot;,&#xa;            &quot;descricao&quot;: &quot;tipo - Incomum, confirmar atributação&quot;,&#xa;            &quot;regra&quot;: &quot;tipo in (1, 5, 6, 8)&quot;,&#xa;            &quot;tipo_estilo&quot;: &quot;Atributo incomum&quot;,&#xa;            &quot;camadas&quot;: [&#xa;                &quot;edgv.constr_extracao_mineral_p&quot;,&#xa;                &quot;edgv.constr_extracao_mineral_a&quot;&#xa;            ]&#xa;        }&#xa;    ]&#xa;}" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RULEFILE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="C:\Users\Gustavo.gomes\AppData\Roaming\QGIS\QGIS3\profiles\default\processing\models\edgv_3_orto\planimetria\planimetria.json" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="dsgtools:stringcsvtolayerlistalgorithm_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="dsgtools:stringcsvtolayerlistalgorithm" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="320" name="component_pos_x"/>
+        <Option type="double" value="115" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="String CSV to Layer List Algorithm" name="component_description"/>
+      <Option type="double" value="42" name="component_height"/>
+      <Option type="double" value="124.00000000000003" name="component_pos_x"/>
+      <Option type="double" value="188.66666666666669" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="dsgtools:stringcsvtolayerlistalgorithm_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUTLAYERS">
+          <Option type="Map">
+            <Option type="QString" value="array_to_string ( array_foreach ( array_filter ( array_filter (@layers,not (regexp_match (layer_property (@element,'name'), '(rascunho|rev_|val_|aux_|moldura|Flags|flags)'))), layer_property (@element,'geometry_type') in ('Polygon','Line','Point')), layer_property (@element,'name')))" name="expression"/>
+            <Option type="int" value="3" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="atributos_incomuns">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option type="QString" value="System" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option type="bool" value="true" name="active"/>
+          <Option type="int" value="1" name="type"/>
+          <Option type="QString" value="TEMPORARY_OUTPUT" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="flags_erros_atributos">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option type="QString" value="System" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option type="bool" value="true" name="active"/>
+          <Option type="int" value="1" name="type"/>
+          <Option type="QString" value="TEMPORARY_OUTPUT" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option type="QString" value="Version2" name="internal_version"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" value="EDGV 3.0 Orto - Planimetria" name="model_group"/>
+  <Option type="QString" value="21-identifica_erros_atributacao" name="model_name"/>
+  <Option type="QString" value="" name="outputGroup"/>
+  <Option name="outputOrder"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="atributos_incomuns">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="atributos_incomuns" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" value="dsgtools:rulestatistics_1" name="_modelChildId"/>
+        <Option type="QString" value="atributos_incomuns" name="_modelChildOutputName"/>
+        <Option type="QString" value="dsgtools" name="_modelChildProvider"/>
+      </Option>
+      <Option type="QString" value="atributos_incomuns" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_append"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="flags_erros_atributos">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="flags_erros_atributos" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" value="dsgtools:rulestatistics_1" name="_modelChildId"/>
+        <Option type="QString" value="flags_erros_atributos" name="_modelChildOutputName"/>
+        <Option type="QString" value="dsgtools" name="_modelChildProvider"/>
+      </Option>
+      <Option type="QString" value="flags_erros_atributos" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_append"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters"/>
+</Option>

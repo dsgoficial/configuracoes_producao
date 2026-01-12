@@ -1,8 +1,8 @@
 {
-    "nome": "Carta Ortoimagem EDGV 3.0 Orto 2.5 v1.0.0",
+    "nome": "Carta Ortoimagem EDGV 3.0 Orto 2.5 v1.0.1",
     "descricao": "Linha de produção padrão para cartas ortoimagem",
-    "versão": "1.0.0",
-    "nome_abrev": "co_edgv_3orto25_v1.0.0",
+    "versão": "1.0.1",
+    "nome_abrev": "co_edgv_3orto25_v1.0.1",
     "tipo_produto_id": 3,
     "fases": [
         {
@@ -260,6 +260,13 @@
         {
             "schema": "edgv",
             "camada": "llp_localidade_p",
+            "subfase": "Edição",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+                {
+            "schema": "edgv",
+            "camada": "llp_localidade_a",
             "subfase": "Edição",
             "camada_apontamento": false,
             "camada_incomum": false
