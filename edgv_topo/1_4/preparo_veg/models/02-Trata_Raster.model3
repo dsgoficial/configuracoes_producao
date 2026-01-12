@@ -2,1054 +2,1072 @@
 <Option type="Map">
   <Option name="children" type="Map">
     <Option name="dsgtools:medianfilternodataalgorithm_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:medianfilternodataalgorithm" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:medianfilternodataalgorithm"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1161.3902439024391" type="double"/>
-        <Option name="component_pos_y" value="916.890243902439" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1161.3902439024391"/>
+        <Option name="component_pos_y" type="double" value="916.890243902439"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Median Filter (NoData aware)" type="QString"/>
-      <Option name="component_height" value="43.89149999999999" type="double"/>
-      <Option name="component_pos_x" value="873.9357439024392" type="double"/>
-      <Option name="component_pos_y" value="260.87911890243896" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Median Filter (NoData aware)"/>
+      <Option name="component_height" type="double" value="43.89149999999999"/>
+      <Option name="component_pos_x" type="double" value="873.9357439024392"/>
+      <Option name="component_pos_y" type="double" value="260.87911890243896"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:medianfilternodataalgorithm_1" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:medianfilternodataalgorithm_1"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_2" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MIN_VALID_PIXELS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="PRESERVE_NODATA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="true" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
           </Option>
         </Option>
         <Option name="WINDOW_SIZE" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="3" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="3"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="dsgtools:rasterizepolygonswithbuffer_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:rasterizepolygonswithbuffer" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:rasterizepolygonswithbuffer"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="779" type="double"/>
-        <Option name="component_pos_y" value="321" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="779"/>
+        <Option name="component_pos_y" type="double" value="321"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Rasterize Polygons with Buffer" type="QString"/>
-      <Option name="component_height" value="48" type="double"/>
-      <Option name="component_pos_x" value="392.7816006097559" type="double"/>
-      <Option name="component_pos_y" value="37.8645975609756" type="double"/>
-      <Option name="component_width" value="204.99999999999997" type="double"/>
+      <Option name="component_description" type="QString" value="Rasterize Polygons with Buffer"/>
+      <Option name="component_height" type="double" value="48"/>
+      <Option name="component_pos_x" type="double" value="392.7816006097559"/>
+      <Option name="component_pos_y" type="double" value="37.8645975609756"/>
+      <Option name="component_width" type="double" value="204.99999999999997"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:rasterizepolygonswithbuffer_1" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:rasterizepolygonswithbuffer_1"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="INPUT_POLYGONS" type="List">
           <Option type="Map">
-            <Option name="parameter_name" value="area_edificada" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option name="parameter_name" type="QString" value="area_edificada"/>
+            <Option name="source" type="int" value="0"/>
           </Option>
           <Option type="Map">
-            <Option name="parameter_name" value="massa_dagua" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option name="parameter_name" type="QString" value="massa_dagua"/>
+            <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
         <Option name="INPUT_RASTER" type="List">
           <Option type="Map">
-            <Option name="child_id" value="gdal:sieve_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="gdal:sieve_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="NODATA_VALUE" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-9999" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="-9999"/>
           </Option>
         </Option>
         <Option name="SEARCH_RADIUS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-0.0001" type="double"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="-0.0001"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="dsgtools:rasterizepolygonswithbuffer_2" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:rasterizepolygonswithbuffer" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:rasterizepolygonswithbuffer"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="851.439024390244" type="double"/>
-        <Option name="component_pos_y" value="773.2439024390244" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="851.439024390244"/>
+        <Option name="component_pos_y" type="double" value="773.2439024390244"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Rasterize Polygons with Buffer" type="QString"/>
-      <Option name="component_height" value="73.4677500000007" type="double"/>
-      <Option name="component_pos_x" value="320.189" type="double"/>
-      <Option name="component_pos_y" value="573.5775" type="double"/>
-      <Option name="component_width" value="204.99999999999997" type="double"/>
+      <Option name="component_description" type="QString" value="Rasterize Polygons with Buffer 2"/>
+      <Option name="component_height" type="double" value="73.4677500000007"/>
+      <Option name="component_pos_x" type="double" value="440.1890000000001"/>
+      <Option name="component_pos_y" type="double" value="770.5775"/>
+      <Option name="component_width" type="double" value="204.99999999999997"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:rasterizepolygonswithbuffer_2" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:rasterizepolygonswithbuffer_2"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="INPUT_POLYGONS" type="List">
           <Option type="Map">
-            <Option name="parameter_name" value="area_edificada" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option name="parameter_name" type="QString" value="area_edificada"/>
+            <Option name="source" type="int" value="0"/>
           </Option>
           <Option type="Map">
-            <Option name="parameter_name" value="massa_dagua" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option name="parameter_name" type="QString" value="massa_dagua"/>
+            <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
         <Option name="INPUT_RASTER" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_2" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="NODATA_VALUE" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-9999" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="-9999"/>
           </Option>
         </Option>
         <Option name="SEARCH_RADIUS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-0.0001" type="double"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="-0.0001"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="993.5" type="double"/>
-        <Option name="component_pos_y" value="327" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="993.5"/>
+        <Option name="component_pos_y" type="double" value="327"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Reclassify Adjacent Pixels to Nearest Neighbor Algorithm" type="QString"/>
-      <Option name="component_height" value="51" type="double"/>
-      <Option name="component_pos_x" value="618.9000274390244" type="double"/>
-      <Option name="component_pos_y" value="166.0803414634146" type="double"/>
-      <Option name="component_width" value="233" type="double"/>
+      <Option name="component_description" type="QString" value="Reclassify Adjacent Pixels to Nearest Neighbor Algorithm"/>
+      <Option name="component_height" type="double" value="51"/>
+      <Option name="component_pos_x" type="double" value="618.9000274390244"/>
+      <Option name="component_pos_y" type="double" value="166.0803414634146"/>
+      <Option name="component_width" type="double" value="233"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_1" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_1"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="gdal:sieve_3" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="gdal:sieve_3"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="VALUES" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="0" type="QString"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="0"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_2" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1510.7560975609756" type="double"/>
-        <Option name="component_pos_y" value="1182.8536585365855" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1510.7560975609756"/>
+        <Option name="component_pos_y" type="double" value="1182.8536585365855"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Reclassify Adjacent Pixels to Nearest Neighbor Algorithm - 2" type="QString"/>
-      <Option name="component_height" value="51" type="double"/>
-      <Option name="component_pos_x" value="688.3291249999997" type="double"/>
-      <Option name="component_pos_y" value="584.312875" type="double"/>
-      <Option name="component_width" value="233" type="double"/>
+      <Option name="component_description" type="QString" value="Reclassify Adjacent Pixels to Nearest Neighbor Algorithm - 2"/>
+      <Option name="component_height" type="double" value="51"/>
+      <Option name="component_pos_x" type="double" value="734.3291249999997"/>
+      <Option name="component_pos_y" type="double" value="672.312875"/>
+      <Option name="component_width" type="double" value="233"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_2" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_2"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="native:fillnodata_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="native:fillnodata_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="VALUES" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="0" type="QString"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
-    <Option name="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
-      <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3" type="QString"/>
-      <Option name="color" value="" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1099" type="double"/>
-        <Option name="component_pos_y" value="356" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
-      </Option>
-      <Option name="component_description" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V3 - 15625" type="QString"/>
-      <Option name="component_height" value="55" type="double"/>
-      <Option name="component_pos_x" value="616.9604359756094" type="double"/>
-      <Option name="component_pos_y" value="260.0909359756097" type="double"/>
-      <Option name="component_width" value="222.00000000000003" type="double"/>
-      <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_1" type="QString"/>
-      <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
-          <Option type="Map">
-            <Option name="child_id" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
-          </Option>
-        </Option>
-        <Option name="MIN_AREA" type="List">
-          <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="15625" type="int"/>
-          </Option>
-        </Option>
-        <Option name="NODATA_VALUE" type="List">
-          <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-9999" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="0"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_2" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1215" type="double"/>
-        <Option name="component_pos_y" value="415" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1215"/>
+        <Option name="component_pos_y" type="double" value="415"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V3 62500" type="QString"/>
-      <Option name="component_height" value="55" type="double"/>
-      <Option name="component_pos_x" value="874.6473963414633" type="double"/>
-      <Option name="component_pos_y" value="177.90784451219506" type="double"/>
-      <Option name="component_width" value="222.00000000000003" type="double"/>
+      <Option name="component_description" type="QString" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V3 62500"/>
+      <Option name="component_height" type="double" value="55"/>
+      <Option name="component_pos_x" type="double" value="874.6473963414633"/>
+      <Option name="component_pos_y" type="double" value="177.90784451219506"/>
+      <Option name="component_width" type="double" value="222.00000000000003"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_2" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_2"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="gdal:sieve_4" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="gdal:sieve_4"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MIN_AREA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="62500" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="62500"/>
           </Option>
         </Option>
         <Option name="NODATA_VALUE" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-9999" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="-9999"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_3" type="Map">
-      <Option name="active" value="true" type="bool"/>
+    <Option name="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1746.3658536585367" type="double"/>
-        <Option name="component_pos_y" value="428.04878048780483" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1386"/>
+        <Option name="component_pos_y" type="double" value="793"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V3 62500" type="QString"/>
-      <Option name="component_height" value="55" type="double"/>
-      <Option name="component_pos_x" value="874.0286249999998" type="double"/>
-      <Option name="component_pos_y" value="370.55850000000004" type="double"/>
-      <Option name="component_width" value="222.00000000000003" type="double"/>
+      <Option name="component_description" type="QString" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V4 - novo - 15625"/>
+      <Option name="component_height" type="double" value="99"/>
+      <Option name="component_pos_x" type="double" value="608"/>
+      <Option name="component_pos_y" type="double" value="285.5"/>
+      <Option name="component_width" type="double" value="236.00000000000003"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_3" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_1"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
+        <Option name="GENERALIZATION_RULES" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="{&quot;class_restrictions&quot;: {&quot;4&quot;: [2, 3, 6]},&quot;size_thresholds&quot;: {&quot;1&quot;: 2500}, &quot;non_growing_classes&quot;: [1]}"/>
+          </Option>
+        </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="gdal:sieve_2" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:reclassifyadjacentpixelstonearestneighboralgorithm_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MIN_AREA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="62500" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="15625"/>
           </Option>
         </Option>
         <Option name="NODATA_VALUE" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-9999" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="-9999"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_4" type="Map">
-      <Option name="active" value="true" type="bool"/>
+    <Option name="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="2279.3658536585367" type="double"/>
-        <Option name="component_pos_y" value="619.0487804878048" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1410"/>
+        <Option name="component_pos_y" type="double" value="788"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V3 62500 -final" type="QString"/>
-      <Option name="component_height" value="55" type="double"/>
-      <Option name="component_pos_x" value="343.71462500000007" type="double"/>
-      <Option name="component_pos_y" value="706.7028749999998" type="double"/>
-      <Option name="component_width" value="222.00000000000003" type="double"/>
+      <Option name="component_description" type="QString" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V4 - novo - 62500"/>
+      <Option name="component_height" type="double" value="105"/>
+      <Option name="component_pos_x" type="double" value="897.5"/>
+      <Option name="component_pos_y" type="double" value="421.5"/>
+      <Option name="component_width" type="double" value="242.99999999999997"/>
       <Option name="dependencies"/>
-      <Option name="id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_4" type="QString"/>
+      <Option name="id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_2"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
+        <Option name="GENERALIZATION_RULES" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="{&quot;class_restrictions&quot;: {&quot;4&quot;: [2, 3, 6]},&quot;size_thresholds&quot;: {&quot;1&quot;: 10000}, &quot;non_growing_classes&quot;: [1]}"/>
+          </Option>
+        </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:rasterizepolygonswithbuffer_2" type="QString"/>
-            <Option name="output_name" value="OUTPUT_RASTER" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="gdal:sieve_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MIN_AREA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="62500" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="62500"/>
           </Option>
         </Option>
         <Option name="NODATA_VALUE" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="-9999" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="-9999"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_3" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1629"/>
+        <Option name="component_pos_y" type="double" value="1367"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Reclassify Groups of Pixels to Nearest Neighbor Algorithm V4 - novo - 62500 - final"/>
+      <Option name="component_height" type="double" value="105"/>
+      <Option name="component_pos_x" type="double" value="569.5"/>
+      <Option name="component_pos_y" type="double" value="911.5"/>
+      <Option name="component_width" type="double" value="242.99999999999997"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_3"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="GENERALIZATION_RULES" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="{&quot;class_restrictions&quot;: {&quot;4&quot;: [2, 3, 6]},&quot;size_thresholds&quot;: {&quot;1&quot;: 10000}, &quot;non_growing_classes&quot;: [1]}"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="dsgtools:rasterizepolygonswithbuffer_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_RASTER"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="MIN_AREA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="62500"/>
+          </Option>
+        </Option>
+        <Option name="NODATA_VALUE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="-9999"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="gdal:sieve_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:sieve" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="gdal:sieve"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="320" type="double"/>
-        <Option name="component_pos_y" value="115" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="320"/>
+        <Option name="component_pos_y" type="double" value="115"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Sieve" type="QString"/>
-      <Option name="component_height" value="33.4390243902439" type="double"/>
-      <Option name="component_pos_x" value="312.739" type="double"/>
-      <Option name="component_pos_y" value="279.72463719512194" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Sieve"/>
+      <Option name="component_height" type="double" value="33.4390243902439"/>
+      <Option name="component_pos_x" type="double" value="385.739"/>
+      <Option name="component_pos_y" type="double" value="202.72463719512194"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:sieve_1" type="QString"/>
+      <Option name="id" type="QString" value="gdal:sieve_1"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="EIGHT_CONNECTEDNESS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="parameter_name" value="raster" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option name="parameter_name" type="QString" value="raster"/>
+            <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
         <Option name="MASK_LAYER" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="NO_MASK" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="THRESHOLD" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="50" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="50"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="gdal:sieve_2" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:sieve" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="gdal:sieve"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1096" type="double"/>
-        <Option name="component_pos_y" value="123" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1096"/>
+        <Option name="component_pos_y" type="double" value="123"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Sieve 4" type="QString"/>
-      <Option name="component_height" value="40.93037500000002" type="double"/>
-      <Option name="component_pos_x" value="611.1356036585366" type="double"/>
-      <Option name="component_pos_y" value="362.25460518292664" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Sieve 4"/>
+      <Option name="component_height" type="double" value="42.93037500000001"/>
+      <Option name="component_pos_x" type="double" value="617.1356036585366"/>
+      <Option name="component_pos_y" type="double" value="442.25460518292664"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:sieve_2" type="QString"/>
+      <Option name="id" type="QString" value="gdal:sieve_2"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="EIGHT_CONNECTEDNESS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:medianfilternodataalgorithm_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:medianfilternodataalgorithm_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MASK_LAYER" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="NO_MASK" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="THRESHOLD" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="50" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="50"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="gdal:sieve_3" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:sieve" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="gdal:sieve"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="385.8048780487805" type="double"/>
-        <Option name="component_pos_y" value="363.8780487804878" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="385.8048780487805"/>
+        <Option name="component_pos_y" type="double" value="363.8780487804878"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Sieve 2" type="QString"/>
-      <Option name="component_height" value="33.4390243902439" type="double"/>
-      <Option name="component_pos_x" value="612.7777317073171" type="double"/>
-      <Option name="component_pos_y" value="83.502612804878" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Sieve 2"/>
+      <Option name="component_height" type="double" value="33.4390243902439"/>
+      <Option name="component_pos_x" type="double" value="612.7777317073171"/>
+      <Option name="component_pos_y" type="double" value="83.502612804878"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:sieve_3" type="QString"/>
+      <Option name="id" type="QString" value="gdal:sieve_3"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="EIGHT_CONNECTEDNESS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:rasterizepolygonswithbuffer_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT_RASTER" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:rasterizepolygonswithbuffer_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT_RASTER"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MASK_LAYER" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="NO_MASK" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="THRESHOLD" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="50" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="50"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="gdal:sieve_4" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:sieve" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="gdal:sieve"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1581.4390243902437" type="double"/>
-        <Option name="component_pos_y" value="72.78048780487802" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1581.4390243902437"/>
+        <Option name="component_pos_y" type="double" value="72.78048780487802"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Sieve 3" type="QString"/>
-      <Option name="component_height" value="32" type="double"/>
-      <Option name="component_pos_x" value="867.9608231707316" type="double"/>
-      <Option name="component_pos_y" value="80.42676524390228" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Sieve 3"/>
+      <Option name="component_height" type="double" value="32"/>
+      <Option name="component_pos_x" type="double" value="867.9608231707316"/>
+      <Option name="component_pos_y" type="double" value="80.42676524390228"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:sieve_4" type="QString"/>
+      <Option name="id" type="QString" value="gdal:sieve_4"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="EIGHT_CONNECTEDNESS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_1" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MASK_LAYER" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="NO_MASK" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="THRESHOLD" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="50" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="50"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="gdal:sieve_5" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:sieve" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="gdal:sieve"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1429.6341463414633" type="double"/>
-        <Option name="component_pos_y" value="61.73170731707319" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1429.6341463414633"/>
+        <Option name="component_pos_y" type="double" value="61.73170731707319"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Sieve 5" type="QString"/>
-      <Option name="component_height" value="32" type="double"/>
-      <Option name="component_pos_x" value="617.98675" type="double"/>
-      <Option name="component_pos_y" value="458.22125" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Sieve 5"/>
+      <Option name="component_height" type="double" value="32"/>
+      <Option name="component_pos_x" type="double" value="635.98675"/>
+      <Option name="component_pos_y" type="double" value="540.22125"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:sieve_5" type="QString"/>
+      <Option name="id" type="QString" value="gdal:sieve_5"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="EIGHT_CONNECTEDNESS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="" type="QString"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_3" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MASK_LAYER" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="NO_MASK" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="THRESHOLD" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="50" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="50"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="gdal:sieve_6" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="gdal:sieve" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="gdal:sieve"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1897.6341463414633" type="double"/>
-        <Option name="component_pos_y" value="186.7317073170732" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1897.6341463414633"/>
+        <Option name="component_pos_y" type="double" value="186.7317073170732"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Sieve 6" type="QString"/>
-      <Option name="component_height" value="32" type="double"/>
-      <Option name="component_pos_x" value="339.3216249999999" type="double"/>
-      <Option name="component_pos_y" value="822.3604999999998" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Sieve 6"/>
+      <Option name="component_height" type="double" value="32"/>
+      <Option name="component_pos_x" type="double" value="687.3216249999999"/>
+      <Option name="component_pos_y" type="double" value="1039.3604999999998"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="gdal:sieve_6" type="QString"/>
+      <Option name="id" type="QString" value="gdal:sieve_6"/>
       <Option name="outputs" type="Map">
         <Option name="raster_processado" type="Map">
-          <Option name="child_id" value="gdal:sieve_6" type="QString"/>
-          <Option name="color" value="" type="QString"/>
+          <Option name="child_id" type="QString" value="gdal:sieve_6"/>
+          <Option name="color" type="QString" value=""/>
           <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
+            <Option name="color" type="QString" value=""/>
+            <Option name="component_description" type="QString" value=""/>
+            <Option name="component_height" type="double" value="60"/>
+            <Option name="component_pos_x" type="double" value="0"/>
+            <Option name="component_pos_y" type="double" value="0"/>
+            <Option name="component_width" type="double" value="100"/>
+            <Option name="outputs_collapsed" type="bool" value="true"/>
+            <Option name="parameters_collapsed" type="bool" value="true"/>
           </Option>
-          <Option name="component_description" value="raster_processado" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="552.0554999999998" type="double"/>
-          <Option name="component_pos_y" value="883.0943749999999" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
+          <Option name="component_description" type="QString" value="raster_processado"/>
+          <Option name="component_height" type="double" value="30"/>
+          <Option name="component_pos_x" type="double" value="871.0554999999999"/>
+          <Option name="component_pos_y" type="double" value="1124.094375"/>
+          <Option name="component_width" type="double" value="200"/>
           <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" value="false" type="bool"/>
-          <Option name="name" value="raster_processado" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="raster_processado"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+          <Option name="outputs_collapsed" type="bool" value="true"/>
+          <Option name="parameters_collapsed" type="bool" value="true"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="EIGHT_CONNECTEDNESS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="" type="QString"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv3_4" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="dsgtools:reclassifygroupsofpixelstonearestneighboralgorithmv4_3"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
         <Option name="MASK_LAYER" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="NO_MASK" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="false" type="bool"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
           </Option>
         </Option>
         <Option name="THRESHOLD" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="50" type="int"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="50"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="native:fillnodata_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+      <Option name="active" type="bool" value="true"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="native:fillnodata" type="QString"/>
-      <Option name="color" value="" type="QString"/>
+      <Option name="alg_id" type="QString" value="native:fillnodata"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1209" type="double"/>
-        <Option name="component_pos_y" value="1022" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1209"/>
+        <Option name="component_pos_y" type="double" value="1022"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="Fill NoData cells" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="868.3101249999997" type="double"/>
-      <Option name="component_pos_y" value="465.2908749999999" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
+      <Option name="component_description" type="QString" value="Fill NoData cells"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="908.3101249999997"/>
+      <Option name="component_pos_y" type="double" value="543.2908749999999"/>
+      <Option name="component_width" type="double" value="200"/>
       <Option name="dependencies"/>
-      <Option name="id" value="native:fillnodata_1" type="QString"/>
+      <Option name="id" type="QString" value="native:fillnodata_1"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
       <Option name="params" type="Map">
         <Option name="BAND" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="1" type="QString"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="1"/>
           </Option>
         </Option>
         <Option name="CREATE_OPTIONS" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
+            <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="FILL_VALUE" type="List">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="0" type="double"/>
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="gdal:sieve_5" type="QString"/>
-            <Option name="output_name" value="OUTPUT" type="QString"/>
-            <Option name="source" value="1" type="int"/>
+            <Option name="child_id" type="QString" value="gdal:sieve_5"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="area_edificada" value="cobter_area_edificada_a_4dd16f26_3945_4a38_85f7_232575f7a042" type="QString"/>
-    <Option name="massa_dagua" value="cobter_massa_dagua_a_53d91087_35d9_44ba_be2e_edd2980e87ca" type="QString"/>
-    <Option name="raster" value="OUTPUT_RASTER_9633bba2_c80f_4e33_b97d_8e7a12d33952" type="QString"/>
+    <Option name="area_edificada" type="QString" value="cobter_area_edificada_a_4dd16f26_3945_4a38_85f7_232575f7a042"/>
+    <Option name="massa_dagua" type="QString" value="cobter_massa_dagua_a_53d91087_35d9_44ba_be2e_edd2980e87ca"/>
+    <Option name="raster" type="QString" value="OUTPUT_RASTER_9633bba2_c80f_4e33_b97d_8e7a12d33952"/>
     <Option name="raster_tratado" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="windows-1252" type="QString"/>
+          <Option name="fileEncoding" type="QString" value="windows-1252"/>
         </Option>
         <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+          <Option name="active" type="bool" value="true"/>
+          <Option name="type" type="int" value="1"/>
+          <Option name="val" type="QString" value="TEMPORARY_OUTPUT"/>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
-  <Option name="internal_version" value="Version2" type="QString"/>
+  <Option name="internal_version" type="QString" value="Version2"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" value="Processa_VEG" type="QString"/>
-  <Option name="model_name" value="02-Trata_Raster" type="QString"/>
-  <Option name="outputGroup" value="" type="QString"/>
+  <Option name="model_group" type="QString" value="Processa_VEG"/>
+  <Option name="model_name" type="QString" value="02-Trata_Raster"/>
+  <Option name="outputGroup" type="QString" value=""/>
   <Option name="outputOrder"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="area_edificada" type="Map">
       <Option name="data_types" type="List">
-        <Option value="2" type="int"/>
+        <Option type="int" value="2"/>
       </Option>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="Area_Edificada" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option name="description" type="QString" value="Area_Edificada"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
       <Option name="metadata"/>
-      <Option name="name" value="area_edificada" type="QString"/>
-      <Option name="parameter_type" value="vector" type="QString"/>
+      <Option name="name" type="QString" value="area_edificada"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
     </Option>
     <Option name="massa_dagua" type="Map">
       <Option name="data_types" type="List">
-        <Option value="2" type="int"/>
+        <Option type="int" value="2"/>
       </Option>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="Massa_Dagua" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option name="description" type="QString" value="Massa_Dagua"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
       <Option name="metadata"/>
-      <Option name="name" value="massa_dagua" type="QString"/>
-      <Option name="parameter_type" value="vector" type="QString"/>
+      <Option name="name" type="QString" value="massa_dagua"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
     </Option>
     <Option name="raster" type="Map">
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="Raster" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option name="description" type="QString" value="Raster"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
       <Option name="metadata"/>
-      <Option name="name" value="raster" type="QString"/>
-      <Option name="parameter_type" value="raster" type="QString"/>
+      <Option name="name" type="QString" value="raster"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
     </Option>
     <Option name="raster_processado" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="create_by_default" type="bool" value="true"/>
       <Option name="default" type="invalid"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="raster_processado" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
-      <Option name="help" value="" type="QString"/>
+      <Option name="description" type="QString" value="raster_processado"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
       <Option name="metadata" type="Map">
-        <Option name="_modelChildId" value="gdal:sieve_6" type="QString"/>
-        <Option name="_modelChildOutputName" value="raster_processado" type="QString"/>
-        <Option name="_modelChildProvider" value="gdal" type="QString"/>
+        <Option name="_modelChildId" type="QString" value="gdal:sieve_6"/>
+        <Option name="_modelChildOutputName" type="QString" value="raster_processado"/>
+        <Option name="_modelChildProvider" type="QString" value="gdal"/>
       </Option>
-      <Option name="name" value="raster_processado" type="QString"/>
-      <Option name="parameter_type" value="rasterDestination" type="QString"/>
-      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+      <Option name="name" type="QString" value="raster_processado"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
   <Option name="parameters" type="Map">
     <Option name="area_edificada" type="Map">
-      <Option name="color" value="" type="QString"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="564" type="double"/>
-        <Option name="component_pos_y" value="15" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="564"/>
+        <Option name="component_pos_y" type="double" value="15"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="area_edificada" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="136" type="double"/>
-      <Option name="component_pos_y" value="61" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
-      <Option name="name" value="area_edificada" type="QString"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="component_description" type="QString" value="area_edificada"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="136"/>
+      <Option name="component_pos_y" type="double" value="61"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="name" type="QString" value="area_edificada"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
     </Option>
     <Option name="massa_dagua" type="Map">
-      <Option name="color" value="" type="QString"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="786" type="double"/>
-        <Option name="component_pos_y" value="107" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="786"/>
+        <Option name="component_pos_y" type="double" value="107"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="massa_dagua" type="QString"/>
-      <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="139" type="double"/>
-      <Option name="component_pos_y" value="122" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
-      <Option name="name" value="massa_dagua" type="QString"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="component_description" type="QString" value="massa_dagua"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="139"/>
+      <Option name="component_pos_y" type="double" value="122"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="name" type="QString" value="massa_dagua"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
     </Option>
     <Option name="raster" type="Map">
-      <Option name="color" value="" type="QString"/>
+      <Option name="color" type="QString" value=""/>
       <Option name="comment" type="Map">
-        <Option name="color" value="" type="QString"/>
-        <Option name="component_description" value="" type="QString"/>
-        <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="814" type="double"/>
-        <Option name="component_pos_y" value="182" type="double"/>
-        <Option name="component_width" value="100" type="double"/>
-        <Option name="outputs_collapsed" value="true" type="bool"/>
-        <Option name="parameters_collapsed" value="true" type="bool"/>
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="814"/>
+        <Option name="component_pos_y" type="double" value="182"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
       </Option>
-      <Option name="component_description" value="raster" type="QString"/>
-      <Option name="component_height" value="35" type="double"/>
-      <Option name="component_pos_x" value="150" type="double"/>
-      <Option name="component_pos_y" value="198.5" type="double"/>
-      <Option name="component_width" value="200" type="double"/>
-      <Option name="name" value="raster" type="QString"/>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="component_description" type="QString" value="raster"/>
+      <Option name="component_height" type="double" value="35"/>
+      <Option name="component_pos_x" type="double" value="150"/>
+      <Option name="component_pos_y" type="double" value="198.5"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="name" type="QString" value="raster"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
     </Option>
   </Option>
 </Option>

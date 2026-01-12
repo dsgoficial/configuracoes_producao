@@ -100,7 +100,7 @@
         <Option name="TOLERANCE" type="List">
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
-            <Option value="1e-05" name="static_value" type="double"/>
+            <Option value="1e-06" name="static_value" type="double"/>
           </Option>
         </Option>
       </Option>
