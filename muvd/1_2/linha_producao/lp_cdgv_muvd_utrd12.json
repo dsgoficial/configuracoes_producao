@@ -13462,48 +13462,6 @@
         },
         {
             "schema": "muvd",
-            "camada": "aux_observacao_p",
-            "subfase": "Validação QGIS",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "muvd",
-            "camada": "aux_observacao_p",
-            "subfase": "Validação GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "muvd",
-            "camada": "aux_observacao_l",
-            "subfase": "Validação QGIS",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "muvd",
-            "camada": "aux_observacao_l",
-            "subfase": "Validação GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "muvd",
-            "camada": "aux_observacao_a",
-            "subfase": "Validação QGIS",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "muvd",
-            "camada": "aux_observacao_a",
-            "subfase": "Validação GAIT",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "muvd",
             "camada": "fou_zd019_p",
             "subfase": "Validação QGIS",
             "camada_apontamento": false,
