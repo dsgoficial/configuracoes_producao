@@ -2,7 +2,7 @@
     "metadados":{
         "modelo": "Extração de Ferrovia - EDGV 3.0 Pro - Topo 1.4",
         "versao_modelo": "1.2",
-        "versao_regras":"0.1"
+        "versao_regras":"0.2"
     },
     "grupo_estilo": [
         {
@@ -211,6 +211,42 @@
             "atributo": "concessionaria",
             "descricao": "concessionaria - Falta atributo",
             "regra": "(administracao in (7) and (concessionaria is NULL or concessionaria ='')) or (not(administracao in (7)) and (not(concessionaria is NULL or concessionaria ='')))",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "edgv.infra_ferrovia_l"
+            ]
+        },
+        {
+            "atributo": "tipo_elemento_viario",
+            "descricao": "tipo_elemento_viario - Preencher atributo",
+            "regra": "tipo_elemento_viario in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.infra_ferrovia_l"
+            ]
+        },
+        {
+            "atributo": "material_construcao_elemento_viario",
+            "descricao": "material_construcao_elemento_viario - Elemento viário preenchido exige material de construção preenchido",
+            "regra": "not (tipo_elemento_viario in (97, 9999)) and material_construcao_elemento_viario in (9999)",
+            "tipo_estilo": "Preencher atributo",
+            "camadas": [
+                "edgv.infra_ferrovia_l"
+            ]
+        },
+        {
+            "atributo": "material_construcao_elemento_viario",
+            "descricao": "material_construcao_elemento_viario - Sem elemento viário, material de construção deve ser Não aplicável (97)",
+            "regra": "tipo_elemento_viario in (97) and not (material_construcao_elemento_viario in (97))",
+            "tipo_estilo": "Atributo incorreto",
+            "camadas": [
+                "edgv.infra_ferrovia_l"
+            ]
+        },
+        {
+            "atributo": "nome_elemento_viario",
+            "descricao": "nome_elemento_viario - Sem elemento viário não há nome de elemento viário",
+            "regra": "tipo_elemento_viario in (97, 9999) and not (nome_elemento_viario is null or nome_elemento_viario = '')",
             "tipo_estilo": "Atributo incorreto",
             "camadas": [
                 "edgv.infra_ferrovia_l"
