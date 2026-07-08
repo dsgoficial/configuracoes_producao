@@ -674,27 +674,6 @@
         },
         {
             "schema": "edgv",
-            "camada": "infra_obstaculo_terrestre_p",
-            "subfase": "Edição",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_obstaculo_terrestre_l",
-            "subfase": "Edição",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "edgv",
-            "camada": "infra_obstaculo_terrestre_a",
-            "subfase": "Edição",
-            "camada_apontamento": false,
-            "camada_incomum": false
-        },
-        {
-            "schema": "edgv",
             "camada": "llp_delimitacao_fisica_l",
             "subfase": "Edição",
             "camada_apontamento": false,
