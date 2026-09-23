@@ -1,8 +1,8 @@
 {
-    "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 3.0",
+    "nome": "Conjunto de dados geoespaciais vetoriais para EDGV 3.0 Orto 3.0 v1.0.1",
     "descricao": "Linha de produção padrão para vetores de carta ortoimagem",
-    "versao": "1.0.0",
-    "nome_abrev": "cdgv_edgv_3orto30_v1.0.0",
+    "versao": "1.0.1",
+    "nome_abrev": "cdgv_edgv_3orto30_v1.0.1",
     "tipo_produto_id": 22,
     "fases": [
         {
@@ -2223,6 +2223,62 @@
             "schema": "edgv",
             "camada": "llp_limite_legal_a",
             "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_limite_legal_l",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_limite_legal_l",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_limite_legal_l",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "delimitador_limite_legal_l",
+            "subfase": "Verificação Final",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_limite_legal_p",
+            "subfase": "Extração de Limites",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_limite_legal_p",
+            "subfase": "Validação da Ligação",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_limite_legal_p",
+            "subfase": "Validação Nível Produto",
+            "camada_apontamento": false,
+            "camada_incomum": false
+        },
+        {
+            "schema": "edgv",
+            "camada": "centroide_limite_legal_p",
+            "subfase": "Verificação Final",
             "camada_apontamento": false,
             "camada_incomum": false
         }
